@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<html>
+<head>
+<title>Page not found</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Sorry, Page not found</h1>
+<h2> So be it </h2>
+
+<img src="/images/1.jpg" wight=300 height=300 alt="" />
+
+<br /><br />
+<script type="text/javascript">
+var s=`
+怒发冲冠，凭栏处、潇潇雨歇。
+抬望眼，仰天长啸，壮怀激烈。
+三十功名尘与土，八千里路云和月。
+莫等闲，白了少年头，空悲切! 
+靖康耻，犹未雪；
+臣子恨，何时灭？
+驾长车，踏破贺兰山缺！
+壮志饥餐胡虏肉，笑谈渴饮匈奴血。
+待从头，收拾旧山河，朝天阙！
+                                                -- 《满江红》
+`;
+
+s = s.replace(/\r\n/g,"<br>");
+s = s.replace(/\n/g,"<br>");
+s = s.replace(/ /g,"&nbsp");
+
+document.write(`<font face="Comic sans MS">` + s.fontcolor("rgb(200, 240, 60)").fontsize(4) + `</font>`);
+</script>
+
+
+</body>
+</html>
