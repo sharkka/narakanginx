@@ -46,7 +46,7 @@ var s=`
 
 s = s.replace(/\r\n/g,"<br>")
 s = s.replace(/\n/g,"<br>");
-
+s = s.replace(/ /g,"&nbsp");
 document.write(`<font face="隶书">` + s.fontcolor("rgb(200, 240, 60)").fontsize(4) + `</font>`);
 </script>
 </body>
