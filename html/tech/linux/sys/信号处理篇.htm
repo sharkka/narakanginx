@@ -51,24 +51,25 @@ signal，sleep
 定义函数
 unsigned int alarm(unsigned int seconds);
 函数说明
-alarm()用来设置信号SIGALRM在经过参数seconds指定的秒数后传送给目前的进程。如果参数seconds 为0，则之前设置的闹钟会被取消，并将剩下的时间返回。
+alarm()用来设置信号SIGALRM在经过参数seconds指定的秒数后传送给目前的进程。
+如果参数seconds 为0，则之前设置的闹钟会被取消，并将剩下的时间返回。
 返回值
 返回之前闹钟的剩余秒数，如果之前未设闹钟则返回0。
 范例
 #include<unistd.h>
 #include<signal.h>
+
 void handler() {
-printf(“hello\n”);
+    printf("hello\n");
 }
-main()
-{
-int i;
-signal(SIGALRM,handler);
-alarm(5);
-for(i=1;i<7;i++){
-printf(“sleep %d ...\n”,i);
-sleep(1);
-}
+void main() {
+    int i;
+    signal(SIGALRM,handler);
+    alarm(5);
+    for (i = 1; i < 7; i++){
+        printf("sleep %d ...\n", i);
+        sleep(1);
+    }
 }
 执行
 sleep 1 ...
@@ -78,8 +79,6 @@ sleep 4 ...
 sleep 5 ...
 hello
 sleep 6 ...
-　
-
 
 
 kill（传送信号给指定的进程）
@@ -108,30 +107,26 @@ EPERM 权限不够无法传送信号给指定进程
 #include<signal.h>
 #include<sys/types.h>
 #include<sys/wait.h>
-main()
-{
-pid_t pid;
-int status;
-if(!(pid= fork())){
-printf(“Hi I am child process!\n”);
-sleep(10);
-return;
-}
-else{
-printf(“send signal to child process (%d) \n”,pid);
-sleep(1);
-kill(pid ,SIGABRT);
-wait(&status);
-if(WIFSIGNALED(status))
-printf(“chile process receive signal %d\n”,WTERMSIG(status));
-}
+void main() {
+    pid_t pid;
+    int status;
+    if (!(pid = fork())) {
+        printf("Hi I am child process!\n");
+        sleep(10);
+        return;
+    } else {
+        printf("send signal to child process (%d) \n", pid);
+        sleep(1);
+        kill(pid, SIGABRT);
+        wait(&status);
+        if (WIFSIGNALED(status))
+            printf("chile process receive signal %d\n", WTERMSIG(status));
+    }
 }
 执行
 sen signal to child process(3170)
 Hi I am child process!
 child process receive signal 6
-　
-
 
 
 pause（让进程暂停直到信号出现）
@@ -147,8 +142,6 @@ pause()会令目前的进程暂停（进入睡眠状态），直到被信号(sig
 只返回-1。
 错误代码
 EINTR 有信号到达中断了此函数。
-　
-
 
 
 sigaction（查询或设置信号处理方式）
@@ -159,14 +152,14 @@ signal，sigprocmask，sigpending，sigsuspend
 定义函数
 int sigaction(int signum,const struct sigaction *act ,struct sigaction *oldact);
 函数说明
-sigaction()会依参数signum指定的信号编号来设置该信号的处理函数。参数signum可以指定SIGKILL和SIGSTOP以外的所有信号。
+sigaction()会依参数signum指定的信号编号来设置该信号的处理函数。
+参数signum可以指定SIGKILL和SIGSTOP以外的所有信号。
 如参数结构sigaction定义如下
-struct sigaction
-{
-void (*sa_handler) (int);
-sigset_t sa_mask;
-int sa_flags;
-void (*sa_restorer) (void);
+struct sigaction {
+    void (*sa_handler) (int);
+    sigset_t sa_mask;
+    int sa_flags;
+    void (*sa_restorer) (void);
 }
 sa_handler此参数和signal()的参数handler相同，代表新的信号处理函数，其他意义请参考signal()。
 sa_mask 用来设置在处理该信号时暂时将sa_mask 指定的信号搁置。
@@ -187,27 +180,28 @@ EINTR 此调用被中断
 范例
 #include<unistd.h>
 #include<signal.h>
-void show_handler(struct sigaction * act)
-{
-switch (act->sa_flags)
-{
-case SIG_DFL:printf(“Default action\n”);break;
-case SIG_IGN:printf(“Ignore the signal\n”);break;
-default: printf(“0x%x\n”,act->sa_handler);
+void show_handler(struct sigaction * act) {
+    switch (act->sa_flags) {
+      case SIG_DFL: printf("Default action\n");
+          break;
+      case SIG_IGN: printf("Ignore the signal\n");
+      break;
+       default:
+          printf("0x%x\n",
+          act->sa_handler);
+    }
 }
-}
-main()
-{
-int i;
-struct sigaction act,oldact;
-act.sa_handler = show_handler;
-act.sa_flags = SA_ONESHOT|SA_NOMASK;
-sigaction(SIGUSR1,&act,&oldact);
-for(i=5;i<15;i++)
-{
-printf(“sa_handler of signal %2d =”.i);
-sigaction(i,NULL,&oldact);
-}
+
+void main() {
+    int i;
+    struct sigaction act,oldact;
+    act.sa_handler = show_handler;
+    act.sa_flags = SA_ONESHOT|SA_NOMASK;
+    sigaction(SIGUSR1, &act, &oldact);
+    for(i = 5; i < 15; i++) {
+        printf("sa_handler of signal %2d =".i);
+        sigaction(i, NULL, &oldact);
+    }
 }
 执行
 sa_handler of signal 5 = Default action
@@ -220,8 +214,6 @@ sa_handler of signal 11 = Default action
 sa_handler of signal 12 = Default action
 sa_handler of signal 13 = Default action
 sa_handler of signal 14 = Default action
-　
-
 
 
 sigaddset（增加一个信号至信号集）
@@ -238,8 +230,6 @@ sigaddset()用来将参数signum 代表的信号加入至参数set 信号集里�
 错误代码
 EFAULT 参数set指针地址无法存取
 EINVAL 参数signum非合法的信号编号
-　
-
 
 
 sigdelset（从信号集里删除一个信号）
@@ -256,8 +246,6 @@ sigdelset()用来将参数signum代表的信号从参数set信号集里删除。
 错误代码
 EFAULT 参数set指针地址无法存取
 EINVAL 参数signum非合法的信号编号
-　
-
 
 
 sigemptyset（初始化信号集）
@@ -273,8 +261,6 @@ sigemptyset()用来将参数set信号集初始化并清空。
 执行成功则返回0，如果有错误则返回-1。
 错误代码
 EFAULT 参数set指针地址无法存取
-　
-
 
 
 sigfillset（将所有信号加入至信号集）
@@ -290,8 +276,6 @@ sigfillset()用来将参数set信号集初始化，然后把所有的信号加�
 执行成功则返回0，如果有错误则返回-1。
 附加说明
 EFAULT 参数set指针地址无法存取
-　
-
 
 
 sigismember（测试某个信号是否已加入至信号集里）
@@ -302,14 +286,13 @@ sigemptyset，sigfillset，sigaddset，sigdelset
 定义函数
 int sigismember(const sigset_t *set,int signum);
 函数说明
-sigismember()用来测试参数signum 代表的信号是否已加入至参数set信号集里。如果信号集里已有该信号则返回1，否则返回0。
+sigismember()用来测试参数signum 代表的信号是否已加入至参数set信号集里。
+如果信号集里已有该信号则返回1，否则返回0。
 返回值
 信号集已有该信号则返回1，没有则返回0。如果有错误则返回-1。
 错误代码
 EFAULT 参数set指针地址无法存取
 EINVAL 参数signum 非合法的信号编号
-　
-
 
 
 signal（设置信号处理方式）
@@ -320,18 +303,19 @@ sigaction，kill，raise
 定义函数
 void (*signal(int signum,void(* handler)(int)))(int);
 函数说明
-signal()会依参数signum 指定的信号编号来设置该信号的处理函数。当指定的信号到达时就会跳转到参数handler指定的函数执行。如果参数handler不是函数指针，则必须是下列两个常数之一:
+signal()会依参数signum 指定的信号编号来设置该信号的处理函数。
+当指定的信号到达时就会跳转到参数handler指定的函数执行。
+如果参数handler不是函数指针，则必须是下列两个常数之一:
 SIG_IGN 忽略参数signum指定的信号。
 SIG_DFL 将参数signum 指定的信号重设为核心预设的信号处理方式。
 关于信号的编号和说明，请参考附录D
 返回值
 返回先前的信号处理函数指针，如果有错误则返回SIG_ERR(-1)。
 附加说明
-在信号发生跳转到自定的handler处理函数执行后，系统会自动将此处理函数换回原来系统预设的处理方式，如果要改变此操作请改用sigaction()。
+在信号发生跳转到自定的handler处理函数执行后，系统会自动将此处理函数换回原来系统预设的处理方式，
+如果要改变此操作请改用sigaction()。
 范例
 参考alarm()或raise()。
-　
-
 
 
 sigpending（查询被搁置的信号）
@@ -348,8 +332,6 @@ sigpending()会将被搁置的信号集合由参数set指针返回。
 错误代码
 EFAULT 参数set指针地址无法存取
 EINTR 此调用被中断。
-　
-
 
 
 sigprocmask（查询或设置信号遮罩）
@@ -370,8 +352,6 @@ SIG_SETMASK 将目前的信号遮罩设成参数set指定的信号遮罩。
 错误代码
 EFAULT 参数set，oldset指针地址无法存取。
 EINTR 此调用被中断
-　
-
 
 
 sleep（让进程暂停执行一段时间）
@@ -385,7 +365,6 @@ unsigned int sleep(unsigned int seconds);
 sleep()会令目前的进程暂停，直到达到参数seconds 所指定的时间，或是被信号所中断。
 返回值
 若进程暂停到参数seconds 所指定的时间则返回0，若有信号中断则返回剩余秒数。
-　
 
 
 
@@ -400,8 +379,6 @@ int ferror(FILE *stream);
 ferror()用来检查参数stream所指定的文件流是否发生了错误情况，如有错误发生则返回非0值。
 返回值
 如果文件流有错误发生则返回非0值。
-　
-
 
 
 perror（打印出错误原因信息字符串）
@@ -412,22 +389,21 @@ strerror
 定义函数
 void perror(const char *s);
 函数说明
-perror()用来将上一个函数发生错误的原因输出到标准错误(stderr)。参数s所指的字符串会先打印出，后面再加上错误原因字符串。此错误原因依照全局变量errno的值来决定要输出的字符串。
+perror()用来将上一个函数发生错误的原因输出到标准错误(stderr)。
+参数s所指的字符串会先打印出，后面再加上错误原因字符串。
+此错误原因依照全局变量errno的值来决定要输出的字符串。
 返回值
 
 范例
 #include<stdio.h>
-main()
-{
-FILE *fp;
-fp = fopen(“/tmp/noexist”,”r+”);
-if(fp = =NULL) perror(“fopen”);
+void main() {
+    FILE *fp;
+    fp = fopen("/tmp/noexist","r+");
+    if(fp = =NULL) perror("fopen");
 }
 执行
 $ ./perror
 fopen : No such file or diretory
-　
-
 
 
 strerror（返回错误原因的描述字符串）
@@ -444,11 +420,11 @@ strerror()用来依参数errnum的错误代码来查询其错误原因的描述�
 范例
 /* 显示错误代码0 至9 的错误原因描述*/
 #include<string.h>
-main()
-{
-int i;
-for(i=0;i<10;i++)
-printf(“%d : %s\n”,i,strerror(i));
+
+void main() {
+    int i;
+    for (i = 0; i < 10; i++)
+        printf("%d : %s\n", i, strerror(i));
 }
 执行
 0 : Success
@@ -461,8 +437,6 @@ printf(“%d : %s\n”,i,strerror(i));
 7 : Argument list too long
 8 : Exec format error
 9 : Bad file descriptor
-　
-
 
 
 mkfifo（建立具名管道）
@@ -474,9 +448,15 @@ pipe，popen，open，umask
 定义函数
 int mkfifo(const char * pathname,mode_t mode);
 函数说明
-mkfifo()会依参数pathname建立特殊的FIFO文件，该文件必须不存在，而参数mode为该文件的权限（mode%~umask），因此umask值也会影响到FIFO文件的权限。Mkfifo()建立的FIFO文件其他进程都可以用读写一般文件的方式存取。当使用open()来打开FIFO文件时，O_NONBLOCK旗标会有影响
-1、当使用O_NONBLOCK 旗标时，打开FIFO 文件来读取的操作会立刻返回，但是若还没有其他进程打开FIFO 文件来读取，则写入的操作会返回ENXIO 错误代码。
-2、没有使用O_NONBLOCK 旗标时，打开FIFO 来读取的操作会等到其他进程打开FIFO文件来写入才正常返回。同样地，打开FIFO文件来写入的操作会等到其他进程打开FIFO 文件来读取后才正常返回。
+mkfifo()会依参数pathname建立特殊的FIFO文件，该文件必须不存在，
+而参数mode为该文件的权限（mode%~umask），因此umask值也会影响到FIFO文件的权限。
+Mkfifo()建立的FIFO文件其他进程都可以用读写一般文件的方式存取。
+当使用open()来打开FIFO文件时，O_NONBLOCK旗标会有影响
+1、当使用O_NONBLOCK 旗标时，打开FIFO 文件来读取的操作会立刻返回，
+但是若还没有其他进程打开FIFO 文件来读取，则写入的操作会返回ENXIO 错误代码。
+2、没有使用O_NONBLOCK 旗标时，打开FIFO 来读取的操作会等到其他进程打开FIFO文件来写入才正常返回。
+同样地，打开FIFO文件来写入的操作会等到其他进程打开FIFO 文件来读取后才正常返回。
+
 返回值
 若成功则返回0，否则返回-1，错误原因存于errno中。
 错误代码
@@ -491,29 +471,25 @@ EROFS 参数pathname指定的文件存在于只读文件系统内。
 #include<sys/types.h>
 #include<sys/stat.h>
 #include<fcntl.h>
-main()
-{
-char buffer[80];
-int fd;
-unlink(FIFO);
-mkfifo(FIFO,0666);
-if(fork()>0){
-char s[ ] = “hello!\n”;
-fd = open (FIFO,O_WRONLY);
-write(fd,s,sizeof(s));
-close(fd);
-}
-else{
-fd= open(FIFO,O_RDONLY);
-read(fd,buffer,80);
-printf(“%s”,buffer);
-close(fd);
-}
+void main() {
+    char buffer[80];
+    int fd;
+    unlink(FIFO);
+    mkfifo(FIFO,0666);
+    if (fork() > 0) {
+        char s[ ] = "hello!\n";
+        fd = open(FIFO, O_WRONLY);
+        write(fd, s, sizeof(s));
+        close(fd);
+    } else {
+        fd = open(FIFO, O_RDONLY);
+        read(fd,buffer, 80);
+        printf("%s", buffer);
+        close(fd);
+    }
 }
 执行
 hello!
-　
-
 
 
 pclose（关闭管道I/O）
@@ -524,15 +500,14 @@ popen
 定义函数
 int pclose(FILE * stream);
 函数说明
-pclose()用来关闭由popen所建立的管道及文件指针。参数stream为先前由popen()所返回的文件指针。
+pclose()用来关闭由popen所建立的管道及文件指针。
+参数stream为先前由popen()所返回的文件指针。
 返回值
 返回子进程的结束状态。如果有错误则返回-1，错误原因存于errno中。
 错误代码
 ECHILD pclose()无法取得子进程的结束状态。
 范例
 参考popen()。
-　
-
 
 
 pipe（建立管道）
@@ -543,7 +518,8 @@ mkfifo，popen，read，write，fork
 定义函数
 int pipe(int filedes[2]);
 函数说明
-pipe()会建立管道，并将文件描述词由参数filedes数组返回。filedes[0]为管道里的读取端，filedes[1]则为管道的写入端。
+pipe()会建立管道，并将文件描述词由参数filedes数组返回。
+filedes[0]为管道里的读取端，filedes[1]则为管道的写入端。
 返回值
 若成功则返回零，否则返回-1，错误原因存于errno中。
 错误代码
@@ -551,28 +527,24 @@ EMFILE 进程已用完文件描述词最大量。
 ENFILE 系统已无文件描述词可用。
 EFAULT 参数filedes数组地址不合法。
 范例
-/* 父进程借管道将字符串“hello!\n”传给子进程并显示*/
+/* 父进程借管道将字符串"hello!\n"传给子进程并显示*/
 #include <unistd.h>
-main()
-{
-int filedes[2];
-char buffer[80];
-pipe(filedes);
-if(fork()>0){
-/* 父进程*/
-char s[ ] = “hello!\n”;
-write(filedes[1],s,sizeof(s));
-}
-else{
-/*子进程*/
-read(filedes[0],buffer,80);
-printf(“%s”,buffer);
-}
+void main() {
+    int filedes[2];
+    char buffer[80];
+    pipe(filedes);
+    if (fork()>0) {
+        /* 父进程*/
+        char s[ ] = "hello!\n";
+        write(filedes[1], s, sizeof(s));
+    } else{
+        /*子进程*/
+        read(filedes[0], buffer, 80);
+        printf("%s", buffer);
+    }
 }
 执行
 hello!
-　
-
 
 
 popen（建立管道I/O）
@@ -583,29 +555,32 @@ pipe，mkfifo，pclose，fork，system，fopen
 定义函数
 FILE * popen( const char * command,const char * type);
 函数说明
-popen()会调用fork()产生子进程，然后从子进程中调用/bin/sh -c来执行参数command的指令。参数type可使用“r”代表读取，“w”代表写入。依照此type值，popen()会建立管道连到子进程的标准输出设备或标准输入设备，然后返回一个文件指针。随后进程便可利用此文件指针来读取子进程的输出设备或是写入到子进程的标准输入设备中。此外，所有使用文件指针(FILE*)操作的函数也都可以使用，除了fclose()以外。
+popen()会调用fork()产生子进程，然后从子进程中调用/bin/sh -c来执行参数command的指令。
+参数type可使用"r"代表读取，"w"代表写入。
+依照此type值，popen()会建立管道连到子进程的标准输出设备或标准输入设备，
+然后返回一个文件指针。
+随后进程便可利用此文件指针来读取子进程的输出设备或是写入到子进程的标准输入设备中。
+此外，所有使用文件指针(FILE*)操作的函数也都可以使用，除了fclose()以外。
+
 返回值
 若成功则返回文件指针，否则返回NULL，错误原因存于errno中。
 错误代码
 EINVAL参数type不合法。
 注意事项
-在编写具SUID/SGID权限的程序时请尽量避免使用popen()，popen()会继承环境变量，通过环境变量可能会造成系统安全的问题。
+在编写具SUID/SGID权限的程序时请尽量避免使用popen()，popen()会继承环境变量，
+通过环境变量可能会造成系统安全的问题。
 范例
 #include<stdio.h>
-main()
-{
-FILE * fp;
-char buffer[80];
-fp=popen(“cat /etc/passwd”,”r”);
-fgets(buffer,sizeof(buffer),fp);
-printf(“%s”,buffer);
-pclose(fp);
+void main() {
+    FILE* fp;
+    char buffer[80];
+    fp = popen("cat /etc/passwd", "r");
+    fgets(buffer, sizeof(buffer), fp);
+    printf("%s", buffer);
+    pclose(fp);
 }
 执行
 root :x:0 0: root: /root: /bin/bash
-　
-
-
 <pre />
 
 <h2>End</h2>
