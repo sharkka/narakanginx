@@ -1,327 +1,186 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>ç»ˆç«¯æ§åˆ¶ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc293></a></font> </div>
-    </td>
-  </tr>
-  <tr>
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      getopt£¨·ÖÎöÃüÁîĞĞ²ÎÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int getopt(int argc,char * const argv[ ],const 
-      char * optstring);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getopt()ÓÃÀ´·ÖÎöÃüÁîĞĞ²ÎÊı¡£²ÎÊıargcºÍargvÊÇÓÉmain()´«µİµÄ²ÎÊı¸öÊıºÍÄÚÈİ¡£²ÎÊıoptstring 
-      Ôò´ú±íÓû´¦ÀíµÄÑ¡Ïî×Ö·û´®¡£´Ëº¯Êı»á·µ»ØÔÚargv ÖĞÏÂÒ»¸öµÄÑ¡Ïî×ÖÄ¸£¬´Ë×ÖÄ¸»á¶ÔÓ¦²ÎÊıoptstring ÖĞµÄ×ÖÄ¸¡£Èç¹ûÑ¡Ïî×Ö·û´®ÀïµÄ×ÖÄ¸ºó½Ó×ÅÃ°ºÅ¡°:¡±£¬Ôò±íÊ¾»¹ÓĞÏà¹ØµÄ²ÎÊı£¬È«Óò±äÁ¿optarg 
-      ¼´»áÖ¸Ïò´Ë¶îÍâ²ÎÊı¡£Èç¹ûgetopt()ÕÒ²»µ½·ûºÏµÄ²ÎÊıÔò»áÓ¡³ö´íĞÅÏ¢£¬²¢½«È«Óò±äÁ¿optoptÉèÎª¡°?¡±×Ö·û£¬Èç¹û²»Ï£Íûgetopt()Ó¡³ö´íĞÅÏ¢£¬ÔòÖ»Òª½«È«Óò±äÁ¿opterrÉèÎª0¼´¿É¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹ûÕÒµ½·ûºÏµÄ²ÎÊıÔò·µ»Ø´Ë²ÎÊı×ÖÄ¸£¬Èç¹û²ÎÊı²»°üº¬ÔÚ²ÎÊıoptstring µÄÑ¡Ïî×ÖÄ¸Ôò·µ»Ø¡°?¡±×Ö·û£¬·ÖÎö½áÊøÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      int main(int argc,char **argv)<br>
-      {<br>
-      int ch;<br>
-      opterr = 0;<br>
-      while((ch = getopt(argc,argv,¡±a:bcde¡±))!= -1)<br>
-      switch(ch)<br>
-      {<br>
-      case ¡®a¡¯:<br>
-      printf(¡°option a:¡¯%s¡¯\n¡±,optarg);<br>
-      break;<br>
-      case ¡®b¡¯:<br>
-      printf(¡°option b :b\n¡±);<br>
-      break;<br>
-      default:<br>
-      printf(¡°other option :%c\n¡±,ch);<br>
-      }<br>
-      printf(¡°optopt +%c\n¡±,optopt);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> $./getopt ¨Cb<br>
-      option b:b<br>
-      $./getopt ¨Cc<br>
-      other option:c<br>
-      $./getopt ¨Ca<br>
-      other option :?<br>
-      $./getopt ¨Ca12345<br>
-      option a:¡¯12345¡¯<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc294></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      isatty£¨ÅĞ¶ÏÎÄ¼şÃèÊö´ÊÊÇ·ñÊÇÎªÖÕ¶Ë»ú£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ttyname<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int isatty(int desc);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹û²ÎÊıdescËù´ú±íµÄÎÄ¼şÃèÊö´ÊÎªÒ»ÖÕ¶Ë»úÔò·µ»Ø1£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹ûÎÄ¼şÎªÖÕ¶Ë»úÔò·µ»Ø1£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼ttyname()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc295></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      select£¨I/O¶à¹¤»úÖÆ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;sys/time.h&gt;<br>
-      #include&lt;sys/types.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int select(int n,fd_set * readfds,fd_set * 
-      writefds,fd_set * exceptfds,struct timeval * timeout);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> select()ÓÃÀ´µÈ´ıÎÄ¼şÃèÊö´Ê×´Ì¬µÄ¸Ä±ä¡£²ÎÊın´ú±í×î´óµÄÎÄ¼şÃèÊö´Ê¼Ó1£¬²ÎÊıreadfds¡¢writefds 
-      ºÍexceptfds ³ÆÎªÃèÊö´Ê×é£¬ÊÇÓÃÀ´»Ø´«¸ÃÃèÊö´ÊµÄ¶Á£¬Ğ´»òÀıÍâµÄ×´¿ö¡£µ×ÏÂµÄºêÌá¹©ÁË´¦ÀíÕâÈıÖÖÃèÊö´Ê×éµÄ·½Ê½:<br>
-      FD_CLR(inr fd,fd_set* set)£»ÓÃÀ´Çå³ıÃèÊö´Ê×ésetÖĞÏà¹Øfd µÄÎ»<br>
-      FD_ISSET(int fd,fd_set *set)£»ÓÃÀ´²âÊÔÃèÊö´Ê×ésetÖĞÏà¹Øfd µÄÎ»ÊÇ·ñÎªÕæ<br>
-      FD_SET£¨int fd,fd_set*set£©£»ÓÃÀ´ÉèÖÃÃèÊö´Ê×ésetÖĞÏà¹ØfdµÄÎ»<br>
-      FD_ZERO£¨fd_set *set£©£» ÓÃÀ´Çå³ıÃèÊö´Ê×ésetµÄÈ«²¿Î»<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> timeoutÎª½á¹¹timeval£¬ÓÃÀ´ÉèÖÃselect()µÄµÈ´ıÊ±¼ä£¬Æä½á¹¹¶¨ÒåÈçÏÂ<br>
-      struct timeval<br>
-      {<br>
-      time_t tv_sec;<br>
-      time_t tv_usec;<br>
-      };<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹û²ÎÊıtimeoutÉèÎªNULLÔò±íÊ¾select£¨£©Ã»ÓĞtimeout¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»ØÎÄ¼şÃèÊö´Ê×´Ì¬ÒÑ¸Ä±äµÄ¸öÊı£¬Èç¹û·µ»Ø0´ú±íÔÚÃèÊö´Ê×´Ì¬¸Ä±äÇ°ÒÑ³¬¹ıtimeoutÊ±¼ä£¬µ±ÓĞ´íÎó·¢ÉúÊ±Ôò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno£¬´ËÊ±²ÎÊıreadfds£¬writefds£¬exceptfdsºÍtimeoutµÄÖµ±ä³É²»¿ÉÔ¤²â¡£<br>
-      EBADF ÎÄ¼şÃèÊö´ÊÎªÎŞĞ§µÄ»ò¸ÃÎÄ¼şÒÑ¹Ø±Õ<br>
-      EINTR ´Ëµ÷ÓÃ±»ĞÅºÅËùÖĞ¶Ï<br>
-      EINVAL ²ÎÊın Îª¸ºÖµ¡£<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ³£¼ûµÄ³ÌĞòÆ¬¶Î:fs_set readset£»<br>
-      FD_ZERO(&readset);<br>
-      FD_SET(fd,&readset);<br>
-      select(fd+1,&readset,NULL,NULL,NULL);<br>
-      if(FD_ISSET(fd,readset){¡­¡­}<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc296></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      ttyname£¨·µ»ØÒ»ÖÕ¶Ë»úÃû³Æ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Isatty<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * ttyname(int desc);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹û²ÎÊıdescËù´ú±íµÄÎÄ¼şÃèÊö´ÊÎªÒ»ÖÕ¶Ë»ú£¬Ôò»á½«´ËÖÕ¶Ë»úÃû³ÆÓÉÒ»×Ö·û´®Ö¸Õë·µ»Ø£¬·ñÔò·µ»ØNULL¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹û³É¹¦Ôò·µ»ØÖ¸ÏòÖÕ¶Ë»úÃû³ÆµÄ×Ö·û´®Ö¸Õë£¬ÓĞ´íÎóÇé¿ö·¢ÉúÊ±Ôò·µ»ØNULL¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      #include&lt;sys/types.h&gt;<br>
-      #include &lt;sys/stat.h&gt;<br>
-      #include&lt;fcntl.h&gt;<br>
-      main()<br>
-      {<br>
-      int fd;<br>
-      char * file = ¡°/dev/tty¡±;<br>
-      fd = open (fiel,O_RDONLY);<br>
-      printf(¡°%s¡±,file);<br>
-      if(isatty(fd)){<br>
-      printf(¡°is a tty.\n¡±);<br>
-      printf(¡°ttyname = %s \n¡±,ttyname(fd));<br>
-      }<br>
-      else printf(¡° is not a tty\n¡±);<br>
-      close(fd);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> /dev/tty is a tty<br>
-      ttyname = /dev/tty<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+getoptï¼ˆåˆ†æå‘½ä»¤è¡Œå‚æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int getopt(int argc,char * const argv[ ],const char * optstring);
+å‡½æ•°è¯´æ˜
+getopt()ç”¨æ¥åˆ†æå‘½ä»¤è¡Œå‚æ•°ã€‚å‚æ•°argcå’Œargvæ˜¯ç”±main()ä¼ é€’çš„å‚æ•°ä¸ªæ•°å’Œå†…å®¹ã€‚å‚æ•°optstring åˆ™ä»£è¡¨æ¬²å¤„ç†çš„é€‰é¡¹å­—ç¬¦ä¸²ã€‚æ­¤å‡½æ•°ä¼šè¿”å›åœ¨argv ä¸­ä¸‹ä¸€ä¸ªçš„é€‰é¡¹å­—æ¯ï¼Œæ­¤å­—æ¯ä¼šå¯¹åº”å‚æ•°optstring ä¸­çš„å­—æ¯ã€‚å¦‚æœé€‰é¡¹å­—ç¬¦ä¸²é‡Œçš„å­—æ¯åæ¥ç€å†’å·â€œ:â€ï¼Œåˆ™è¡¨ç¤ºè¿˜æœ‰ç›¸å…³çš„å‚æ•°ï¼Œå…¨åŸŸå˜é‡optarg å³ä¼šæŒ‡å‘æ­¤é¢å¤–å‚æ•°ã€‚å¦‚æœgetopt()æ‰¾ä¸åˆ°ç¬¦åˆçš„å‚æ•°åˆ™ä¼šå°å‡ºé”™ä¿¡æ¯ï¼Œå¹¶å°†å…¨åŸŸå˜é‡optoptè®¾ä¸ºâ€œ?â€å­—ç¬¦ï¼Œå¦‚æœä¸å¸Œæœ›getopt()å°å‡ºé”™ä¿¡æ¯ï¼Œåˆ™åªè¦å°†å…¨åŸŸå˜é‡opterrè®¾ä¸º0å³å¯ã€‚
+è¿”å›å€¼
+å¦‚æœæ‰¾åˆ°ç¬¦åˆçš„å‚æ•°åˆ™è¿”å›æ­¤å‚æ•°å­—æ¯ï¼Œå¦‚æœå‚æ•°ä¸åŒ…å«åœ¨å‚æ•°optstring çš„é€‰é¡¹å­—æ¯åˆ™è¿”å›â€œ?â€å­—ç¬¦ï¼Œåˆ†æç»“æŸåˆ™è¿”å›-1ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+#include<unistd.h>
+int main(int argc,char **argv)
+{
+int ch;
+opterr = 0;
+while((ch = getopt(argc,argv,â€a:bcdeâ€))!= -1)
+switch(ch)
+{
+case â€˜aâ€™:
+printf(â€œoption a:â€™%sâ€™\nâ€,optarg);
+break;
+case â€˜bâ€™:
+printf(â€œoption b :b\nâ€);
+break;
+default:
+printf(â€œother option :%c\nâ€,ch);
+}
+printf(â€œoptopt +%c\nâ€,optopt);
+}
+æ‰§è¡Œ
+$./getopt â€“b
+option b:b
+$./getopt â€“c
+other option:c
+$./getopt â€“a
+other option :?
+$./getopt â€“a12345
+option a:â€™12345â€™
+ã€€
+
+
+
+isattyï¼ˆåˆ¤æ–­æ–‡ä»¶æè¿°è¯æ˜¯å¦æ˜¯ä¸ºç»ˆç«¯æœºï¼‰
+ç›¸å…³å‡½æ•°
+ttyname
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int isatty(int desc);
+å‡½æ•°è¯´æ˜
+å¦‚æœå‚æ•°descæ‰€ä»£è¡¨çš„æ–‡ä»¶æè¿°è¯ä¸ºä¸€ç»ˆç«¯æœºåˆ™è¿”å›1ï¼Œå¦åˆ™è¿”å›0ã€‚
+è¿”å›å€¼
+å¦‚æœæ–‡ä»¶ä¸ºç»ˆç«¯æœºåˆ™è¿”å›1ï¼Œå¦åˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+å‚è€ƒttyname()ã€‚
+ã€€
+
+
+
+selectï¼ˆI/Oå¤šå·¥æœºåˆ¶ï¼‰
+è¡¨å¤´æ–‡ä»¶
+#include<sys/time.h>
+#include<sys/types.h>
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int select(int n,fd_set * readfds,fd_set * writefds,fd_set * exceptfds,struct timeval * timeout);
+å‡½æ•°è¯´æ˜
+select()ç”¨æ¥ç­‰å¾…æ–‡ä»¶æè¿°è¯çŠ¶æ€çš„æ”¹å˜ã€‚å‚æ•°nä»£è¡¨æœ€å¤§çš„æ–‡ä»¶æè¿°è¯åŠ 1ï¼Œå‚æ•°readfdsã€writefds å’Œexceptfds ç§°ä¸ºæè¿°è¯ç»„ï¼Œæ˜¯ç”¨æ¥å›ä¼ è¯¥æè¿°è¯çš„è¯»ï¼Œå†™æˆ–ä¾‹å¤–çš„çŠ¶å†µã€‚åº•ä¸‹çš„å®æä¾›äº†å¤„ç†è¿™ä¸‰ç§æè¿°è¯ç»„çš„æ–¹å¼:
+FD_CLR(inr fd,fd_set* set)ï¼›ç”¨æ¥æ¸…é™¤æè¿°è¯ç»„setä¸­ç›¸å…³fd çš„ä½
+FD_ISSET(int fd,fd_set *set)ï¼›ç”¨æ¥æµ‹è¯•æè¿°è¯ç»„setä¸­ç›¸å…³fd çš„ä½æ˜¯å¦ä¸ºçœŸ
+FD_SETï¼ˆint fd,fd_set*setï¼‰ï¼›ç”¨æ¥è®¾ç½®æè¿°è¯ç»„setä¸­ç›¸å…³fdçš„ä½
+FD_ZEROï¼ˆfd_set *setï¼‰ï¼› ç”¨æ¥æ¸…é™¤æè¿°è¯ç»„setçš„å…¨éƒ¨ä½
+å‚æ•°
+timeoutä¸ºç»“æ„timevalï¼Œç”¨æ¥è®¾ç½®select()çš„ç­‰å¾…æ—¶é—´ï¼Œå…¶ç»“æ„å®šä¹‰å¦‚ä¸‹
+struct timeval
+{
+time_t tv_sec;
+time_t tv_usec;
+};
+è¿”å›å€¼
+å¦‚æœå‚æ•°timeoutè®¾ä¸ºNULLåˆ™è¡¨ç¤ºselectï¼ˆï¼‰æ²¡æœ‰timeoutã€‚
+é”™è¯¯ä»£ç 
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›æ–‡ä»¶æè¿°è¯çŠ¶æ€å·²æ”¹å˜çš„ä¸ªæ•°ï¼Œå¦‚æœè¿”å›0ä»£è¡¨åœ¨æè¿°è¯çŠ¶æ€æ”¹å˜å‰å·²è¶…è¿‡timeoutæ—¶é—´ï¼Œå½“æœ‰é”™è¯¯å‘ç”Ÿæ—¶åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoï¼Œæ­¤æ—¶å‚æ•°readfdsï¼Œwritefdsï¼Œexceptfdså’Œtimeoutçš„å€¼å˜æˆä¸å¯é¢„æµ‹ã€‚
+EBADF æ–‡ä»¶æè¿°è¯ä¸ºæ— æ•ˆçš„æˆ–è¯¥æ–‡ä»¶å·²å…³é—­
+EINTR æ­¤è°ƒç”¨è¢«ä¿¡å·æ‰€ä¸­æ–­
+EINVAL å‚æ•°n ä¸ºè´Ÿå€¼ã€‚
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+èŒƒä¾‹
+å¸¸è§çš„ç¨‹åºç‰‡æ®µ:fs_set readsetï¼›
+FD_ZERO(&readset);
+FD_SET(fd,&readset);
+select(fd+1,&readset,NULL,NULL,NULL);
+if(FD_ISSET(fd,readset){â€¦â€¦}
+ã€€
+
+
+
+ttynameï¼ˆè¿”å›ä¸€ç»ˆç«¯æœºåç§°ï¼‰
+ç›¸å…³å‡½æ•°
+Isatty
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+char * ttyname(int desc);
+å‡½æ•°è¯´æ˜
+å¦‚æœå‚æ•°descæ‰€ä»£è¡¨çš„æ–‡ä»¶æè¿°è¯ä¸ºä¸€ç»ˆç«¯æœºï¼Œåˆ™ä¼šå°†æ­¤ç»ˆç«¯æœºåç§°ç”±ä¸€å­—ç¬¦ä¸²æŒ‡é’ˆè¿”å›ï¼Œå¦åˆ™è¿”å›NULLã€‚
+è¿”å›å€¼
+å¦‚æœæˆåŠŸåˆ™è¿”å›æŒ‡å‘ç»ˆç«¯æœºåç§°çš„å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œæœ‰é”™è¯¯æƒ…å†µå‘ç”Ÿæ—¶åˆ™è¿”å›NULLã€‚
+èŒƒä¾‹
+#include<unistd.h>
+#include<sys/types.h>
+#include <sys/stat.h>
+#include<fcntl.h>
+main()
+{
+int fd;
+char * file = â€œ/dev/ttyâ€;
+fd = open (fiel,O_RDONLY);
+printf(â€œ%sâ€,file);
+if(isatty(fd)){
+printf(â€œis a tty.\nâ€);
+printf(â€œttyname = %s \nâ€,ttyname(fd));
+}
+else printf(â€œ is not a tty\nâ€);
+close(fd);
+}
+æ‰§è¡Œ
+/dev/tty is a tty
+ttyname = /dev/tty
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

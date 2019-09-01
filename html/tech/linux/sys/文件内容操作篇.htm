@@ -1,1810 +1,689 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>æ–‡ä»¶å†…å®¹æ“ä½œç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc147></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      clearerr£¨Çå³ıÎÄ¼şÁ÷µÄ´íÎóÆì±ê£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> feof<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void clearerr(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> clearerr£¨£©Çå³ı²ÎÊıstreamÖ¸¶¨µÄÎÄ¼şÁ÷ËùÊ¹ÓÃµÄ´íÎóÆì±ê¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top" height="39">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc148></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fclose£¨¹Ø±ÕÎÄ¼ş£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> close£¬fflush£¬fopen£¬setbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fclose(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fclose()ÓÃÀ´¹Ø±ÕÏÈÇ°fopen()´ò¿ªµÄÎÄ¼ş¡£´Ë¶¯×÷»áÈÃ»º³åÇøÄÚµÄÊı¾İĞ´ÈëÎÄ¼şÖĞ£¬²¢ÊÍ·ÅÏµÍ³ËùÌá¹©µÄÎÄ¼ş×ÊÔ´¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô¹ØÎÄ¼ş¶¯×÷³É¹¦Ôò·µ»Ø0£¬ÓĞ´íÎó·¢ÉúÊ±Ôò·µ»ØEOF²¢°Ñ´íÎó´úÂë´æµ½errno¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EBADF±íÊ¾²ÎÊıstream·ÇÒÑ´ò¿ªµÄÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Çë²Î¿¼fopen£¨£©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc149></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fdopen£¨½«ÎÄ¼şÃèÊö´Ê×ªÎªÎÄ¼şÖ¸Õë£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬open£¬fclose<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> FILE * fdopen(int fildes,const char * mode);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fdopen()»á½«²ÎÊıfildes µÄÎÄ¼şÃèÊö´Ê£¬×ª»»Îª¶ÔÓ¦µÄÎÄ¼şÖ¸Õëºó·µ»Ø¡£²ÎÊımode 
-      ×Ö·û´®Ôò´ú±í×ÅÎÄ¼şÖ¸ÕëµÄÁ÷ĞÎÌ¬£¬´ËĞÎÌ¬±ØĞëºÍÔ­ÏÈÎÄ¼şÃèÊö´Ê¶ÁĞ´Ä£Ê½ÏàÍ¬¡£¹ØÓÚmode ×Ö·û´®¸ñÊ½Çë²Î¿¼fopen()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ×ª»»³É¹¦Ê±·µ»ØÖ¸Ïò¸ÃÁ÷µÄÎÄ¼şÖ¸Õë¡£Ê§°ÜÔò·µ»ØNULL£¬²¢°Ñ´íÎó´úÂë´æÔÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp =fdopen(0,¡±w+¡±);<br>
-      fprintf(fp,¡±%s\n¡±,¡±hello!¡±);<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> hello!<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc150></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      feof£¨¼ì²éÎÄ¼şÁ÷ÊÇ·ñ¶Áµ½ÁËÎÄ¼şÎ²£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fgetc£¬fgets£¬fread<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int feof(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> feof()ÓÃÀ´Õì²âÊÇ·ñ¶ÁÈ¡µ½ÁËÎÄ¼şÎ²£¬Î²ÊıstreamÎªfopen£¨£©Ëù·µ»ØÖ®ÎÄ¼şÖ¸Õë¡£Èç¹ûÒÑµ½ÎÄ¼şÎ²Ôò·µ»Ø·ÇÁãÖµ£¬ÆäËûÇé¿ö·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»Ø·ÇÁãÖµ´ú±íÒÑµ½´ïÎÄ¼şÎ²¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc151></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fflush£¨¸üĞÂ»º³åÇø£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> write£¬fopen£¬fclose£¬setbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fflush(FILE* stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fflush()»áÇ¿ÆÈ½«»º³åÇøÄÚµÄÊı¾İĞ´»Ø²ÎÊıstreamÖ¸¶¨µÄÎÄ¼şÖĞ¡£Èç¹û²ÎÊıstreamÎªNULL£¬fflush()»á½«ËùÓĞ´ò¿ªµÄÎÄ¼şÊı¾İ¸üĞÂ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ³É¹¦·µ»Ø0£¬Ê§°Ü·µ»ØEOF£¬´íÎó´úÂë´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıstream Ö¸¶¨µÄÎÄ¼şÎ´±»´ò¿ª£¬»ò´ò¿ª×´Ì¬ÎªÖ»¶Á¡£ÆäËü´íÎó´úÂë²Î¿¼write£¨£©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc152></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fgetc£¨ÓÉÎÄ¼şÖĞ¶ÁÈ¡Ò»¸ö×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> open£¬fread£¬fscanf£¬getc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> nt fgetc(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fgetc()´Ó²ÎÊıstreamËùÖ¸µÄÎÄ¼şÖĞ¶ÁÈ¡Ò»¸ö×Ö·û¡£Èô¶Áµ½ÎÄ¼şÎ²¶øÎŞÊı¾İÊ±±ã·µ»ØEOF¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getc()»á·µ»Ø¶ÁÈ¡µ½µÄ×Ö·û£¬Èô·µ»ØEOFÔò±íÊ¾µ½ÁËÎÄ¼şÎ²¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE *fp;<br>
-      int c;<br>
-      fp=fopen(¡°exist¡±,¡±r¡±);<br>
-      while((c=fgetc(fp))!=EOF)<br>
-      printf(¡°%c¡±,c);<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc153></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fgets£¨ÓÉÎÄ¼şÖĞ¶ÁÈ¡Ò»×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> open£¬fread£¬fscanf£¬getc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> har * fgets(char * s,int size,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fgets()ÓÃÀ´´Ó²ÎÊıstreamËùÖ¸µÄÎÄ¼şÄÚ¶ÁÈë×Ö·û²¢´æµ½²ÎÊısËùÖ¸µÄÄÚ´æ¿Õ¼ä£¬Ö±µ½³öÏÖ»»ĞĞ×Ö·û¡¢¶Áµ½ÎÄ¼şÎ²»òÊÇÒÑ¶ÁÁËsize-1¸ö×Ö·ûÎªÖ¹£¬×îºó»á¼ÓÉÏNULL×÷Îª×Ö·û´®½áÊø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> gets()Èô³É¹¦Ôò·µ»ØsÖ¸Õë£¬·µ»ØNULLÔò±íÊ¾ÓĞ´íÎó·¢Éú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      char s[80];<br>
-      fputs(fgets(s,80,stdin),stdout);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> this is a test /*ÊäÈë*/<br>
-      this is a test /*Êä³ö*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc154></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fileno£¨·µ»ØÎÄ¼şÁ÷ËùÊ¹ÓÃµÄÎÄ¼şÃèÊö´Ê£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> open£¬fopen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fileno(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fileno()ÓÃÀ´È¡µÃ²ÎÊıstreamÖ¸¶¨µÄÎÄ¼şÁ÷ËùÊ¹ÓÃµÄÎÄ¼şÃèÊö´Ê¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÎÄ¼şÃèÊö´Ê¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      int fd;<br>
-      fp=fopen(¡°/etc/passwd¡±,¡±r¡±);<br>
-      fd=fileno(fp);<br>
-      printf(¡°fd=%d\n¡±,fd);<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fd=3<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc155></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fopen£¨´ò¿ªÎÄ¼ş£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> open£¬fclose<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> FILE * fopen(const char * path,const char * 
-      mode);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²ÎÊıpath×Ö·û´®°üº¬Óû´ò¿ªµÄÎÄ¼şÂ·¾¶¼°ÎÄ¼şÃû£¬²ÎÊımode×Ö·û´®Ôò´ú±í×ÅÁ÷ĞÎÌ¬¡£<br>
-      modeÓĞÏÂÁĞ¼¸ÖÖĞÎÌ¬×Ö·û´®:<br>
-      r ´ò¿ªÖ»¶ÁÎÄ¼ş£¬¸ÃÎÄ¼ş±ØĞë´æÔÚ¡£<br>
-      r+ ´ò¿ª¿É¶ÁĞ´µÄÎÄ¼ş£¬¸ÃÎÄ¼ş±ØĞë´æÔÚ¡£<br>
-      w ´ò¿ªÖ»Ğ´ÎÄ¼ş£¬ÈôÎÄ¼ş´æÔÚÔòÎÄ¼ş³¤¶ÈÇåÎª0£¬¼´¸ÃÎÄ¼şÄÚÈİ»áÏûÊ§¡£ÈôÎÄ¼ş²»´æÔÚÔò½¨Á¢¸ÃÎÄ¼ş¡£<br>
-      w+ ´ò¿ª¿É¶ÁĞ´ÎÄ¼ş£¬ÈôÎÄ¼ş´æÔÚÔòÎÄ¼ş³¤¶ÈÇåÎªÁã£¬¼´¸ÃÎÄ¼şÄÚÈİ»áÏûÊ§¡£ÈôÎÄ¼ş²»´æÔÚÔò½¨Á¢¸ÃÎÄ¼ş¡£<br>
-      a ÒÔ¸½¼ÓµÄ·½Ê½´ò¿ªÖ»Ğ´ÎÄ¼ş¡£ÈôÎÄ¼ş²»´æÔÚ£¬Ôò»á½¨Á¢¸ÃÎÄ¼ş£¬Èç¹ûÎÄ¼ş´æÔÚ£¬Ğ´ÈëµÄÊı¾İ»á±»¼Óµ½ÎÄ¼şÎ²£¬¼´ÎÄ¼şÔ­ÏÈµÄÄÚÈİ»á±»±£Áô¡£<br>
-      a+ ÒÔ¸½¼Ó·½Ê½´ò¿ª¿É¶ÁĞ´µÄÎÄ¼ş¡£ÈôÎÄ¼ş²»´æÔÚ£¬Ôò»á½¨Á¢¸ÃÎÄ¼ş£¬Èç¹ûÎÄ¼ş´æÔÚ£¬Ğ´ÈëµÄÊı¾İ»á±»¼Óµ½ÎÄ¼şÎ²ºó£¬¼´ÎÄ¼şÔ­ÏÈµÄÄÚÈİ»á±»±£Áô¡£<br>
-      ÉÏÊöµÄĞÎÌ¬×Ö·û´®¶¼¿ÉÒÔÔÙ¼ÓÒ»¸öb×Ö·û£¬Èçrb¡¢w+b»òab£«µÈ×éºÏ£¬¼ÓÈëb ×Ö·ûÓÃÀ´¸æËßº¯Êı¿â´ò¿ªµÄÎÄ¼şÎª¶ş½øÖÆÎÄ¼ş£¬¶ø·Ç´¿ÎÄ×ÖÎÄ¼ş¡£²»¹ıÔÚPOSIXÏµÍ³£¬°üº¬Linux¶¼»áºöÂÔ¸Ã×Ö·û¡£ÓÉfopen()Ëù½¨Á¢µÄĞÂÎÄ¼ş»á¾ßÓĞS_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH(0666)È¨ÏŞ£¬´ËÎÄ¼şÈ¨ÏŞÒ²»á²Î¿¼umaskÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÎÄ¼şË³Àû´ò¿ªºó£¬Ö¸Ïò¸ÃÁ÷µÄÎÄ¼şÖ¸Õë¾Í»á±»·µ»Ø¡£Èô¹ûÎÄ¼ş´ò¿ªÊ§°ÜÔò·µ»ØNULL£¬²¢°Ñ´íÎó´úÂë´æÔÚerrno 
-      ÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ò»°ã¶øÑÔ£¬¿ªÎÄ¼şºó»á×÷Ò»Ğ©ÎÄ¼ş¶ÁÈ¡»òĞ´ÈëµÄ¶¯×÷£¬Èô¿ªÎÄ¼şÊ§°Ü£¬½ÓÏÂÀ´µÄ¶ÁĞ´¶¯×÷Ò²ÎŞ·¨Ë³Àû½øĞĞ£¬ËùÒÔÔÚfopen()ºóÇë×÷´íÎóÅĞ¶Ï¼°´¦Àí¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      fp=fopen(¡°noexist¡±,¡±a+¡±);<br>
-      if(fp= =NULL) return;<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc156></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fputc£¨½«Ò»Ö¸¶¨×Ö·ûĞ´ÈëÎÄ¼şÁ÷ÖĞ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fwrite£¬fscanf£¬putc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fputc(int c,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fputc »á½«²ÎÊıc ×ªÎªunsigned char ºóĞ´Èë²ÎÊıstream Ö¸¶¨µÄÎÄ¼şÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fputc()»á·µ»ØĞ´Èë³É¹¦µÄ×Ö·û£¬¼´²ÎÊıc¡£Èô·µ»ØEOFÔò´ú±íĞ´ÈëÊ§°Ü¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      char a[26]=¡±abcdefghijklmnopqrstuvwxyz¡±;<br>
-      int i;<br>
-      fp= fopen(¡°noexist¡±,¡±w¡±);<br>
-      for(i=0;i&lt;26;i++)<br>
-      fputc(a[i],fp);<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc157></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fputs£¨½«Ò»Ö¸¶¨µÄ×Ö·û´®Ğ´ÈëÎÄ¼şÄÚ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fwrite£¬fscanf£¬fputc£¬putc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fputs(const char * s,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fputs()ÓÃÀ´½«²ÎÊısËùÖ¸µÄ×Ö·û´®Ğ´Èëµ½²ÎÊıstreamËùÖ¸µÄÎÄ¼şÄÚ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô³É¹¦Ôò·µ»ØĞ´³öµÄ×Ö·û¸öÊı£¬·µ»ØEOFÔò±íÊ¾ÓĞ´íÎó·¢Éú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Çë²Î¿¼fgets£¨£©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc158></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fread£¨´ÓÎÄ¼şÁ÷¶ÁÈ¡Êı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fwrite£¬fseek£¬fscanf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> size_t fread(void * ptr,size_t size,size_t 
-      nmemb,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fread()ÓÃÀ´´ÓÎÄ¼şÁ÷ÖĞ¶ÁÈ¡Êı¾İ¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë£¬²ÎÊıptr 
-      Ö¸ÏòÓû´æ·Å¶ÁÈ¡½øÀ´µÄÊı¾İ¿Õ¼ä£¬¶ÁÈ¡µÄ×Ö·ûÊıÒÔ²ÎÊısize*nmembÀ´¾ö¶¨¡£Fread()»á·µ»ØÊµ¼Ê¶ÁÈ¡µ½µÄnmembÊıÄ¿£¬Èç¹û´ËÖµ±È²ÎÊınmemb 
-      À´µÃĞ¡£¬Ôò´ú±í¿ÉÄÜ¶Áµ½ÁËÎÄ¼şÎ²»òÓĞ´íÎó·¢Éú£¬ÕâÊ±±ØĞëÓÃfeof()»òferror()À´¾ö¶¨·¢ÉúÊ²Ã´Çé¿ö¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÊµ¼Ê¶ÁÈ¡µ½µÄnmembÊıÄ¿¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      #define nmemb 3<br>
-      struct test<br>
-      {<br>
-      char name[20];<br>
-      int size;<br>
-      }s[nmemb];<br>
-      main()<br>
-      {<br>
-      FILE * stream;<br>
-      int i;<br>
-      stream = fopen(¡°/tmp/fwrite¡±,¡±r¡±);<br>
-      fread(s,sizeof(struct test),nmemb,stream);<br>
-      fclose(stream);<br>
-      for(i=0;i&lt;nmemb;i++)<br>
-      printf(¡°name[%d]=%-20s:size[%d]=%d\n¡±,i,s[i].name,i,s[i].size);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> name[0]=Linux! size[0]=6<br>
-      name[1]=FreeBSD! size[1]=8<br>
-      name[2]=Windows2000 size[2]=11<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc159></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      freopen£¨´ò¿ªÎÄ¼ş£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fclose<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> FILE * freopen(const char * path,const char 
-      * mode,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²ÎÊıpath×Ö·û´®°üº¬Óû´ò¿ªµÄÎÄ¼şÂ·¾¶¼°ÎÄ¼şÃû£¬²ÎÊımodeÇë²Î¿¼fopen()ËµÃ÷¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë¡£Freopen()»á½«Ô­streamËù´ò¿ªµÄÎÄ¼şÁ÷¹Ø±Õ£¬È»ºó´ò¿ª²ÎÊıpathµÄÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÎÄ¼şË³Àû´ò¿ªºó£¬Ö¸Ïò¸ÃÁ÷µÄÎÄ¼şÖ¸Õë¾Í»á±»·µ»Ø¡£Èç¹ûÎÄ¼ş´ò¿ªÊ§°ÜÔò·µ»ØNULL£¬²¢°Ñ´íÎó´úÂë´æÔÚerrno 
-      ÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      fp=fopen(¡°/etc/passwd¡±,¡±r¡±);<br>
-      fp=freopen(¡°/etc/group¡±,¡±r¡±,fp);<br>
-      fclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc160></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fseek£¨ÒÆ¶¯ÎÄ¼şÁ÷µÄ¶ÁĞ´Î»ÖÃ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> rewind£¬ftell£¬fgetpos£¬fsetpos£¬lseek<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int fseek(FILE * stream,long offset,int whence);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fseek()ÓÃÀ´ÒÆ¶¯ÎÄ¼şÁ÷µÄ¶ÁĞ´Î»ÖÃ¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë£¬²ÎÊıoffsetÎª¸ù¾İ²ÎÊıwhenceÀ´ÒÆ¶¯¶ÁĞ´Î»ÖÃµÄÎ»ÒÆÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> whenceÎªÏÂÁĞÆäÖĞÒ»ÖÖ:<br>
-      SEEK_SET´Ó¾àÎÄ¼ş¿ªÍ·offsetÎ»ÒÆÁ¿ÎªĞÂµÄ¶ÁĞ´Î»ÖÃ¡£SEEK_CUR ÒÔÄ¿Ç°µÄ¶ÁĞ´Î»ÖÃÍùºóÔö¼Óoffset¸öÎ»ÒÆÁ¿¡£<br>
-      SEEK_END½«¶ÁĞ´Î»ÖÃÖ¸ÏòÎÄ¼şÎ²ºóÔÙÔö¼Óoffset¸öÎ»ÒÆÁ¿¡£<br>
-      µ±whenceÖµÎªSEEK_CUR »òSEEK_ENDÊ±£¬²ÎÊıoffsetÔÊĞí¸ºÖµµÄ³öÏÖ¡£<br>
-      ÏÂÁĞÊÇ½ÏÌØ±ğµÄÊ¹ÓÃ·½Ê½:<br>
-      1) Óû½«¶ÁĞ´Î»ÖÃÒÆ¶¯µ½ÎÄ¼ş¿ªÍ·Ê±:fseek(FILE *stream,0,SEEK_SET);<br>
-      2) Óû½«¶ÁĞ´Î»ÖÃÒÆ¶¯µ½ÎÄ¼şÎ²Ê±:fseek(FILE *stream,0,0SEEK_END);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> µ±µ÷ÓÃ³É¹¦Ê±Ôò·µ»Ø0£¬ÈôÓĞ´íÎóÔò·µ»Ø-1£¬errno»á´æ·Å´íÎó´úÂë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fseek()²»Ïñlseek()»á·µ»Ø¶ÁĞ´Î»ÖÃ£¬Òò´Ë±ØĞëÊ¹ÓÃftell()À´È¡µÃÄ¿Ç°¶ÁĞ´µÄÎ»ÖÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * stream;<br>
-      long offset;<br>
-      fpos_t pos;<br>
-      stream=fopen(¡°/etc/passwd¡±,¡±r¡±);<br>
-      fseek(stream,5,SEEK_SET);<br>
-      printf(¡°offset=%d\n¡±,ftell(stream));<br>
-      rewind(stream);<br>
-      fgetpos(stream,&pos);<br>
-      printf(¡°offset=%d\n¡±,pos);<br>
-      pos=10;<br>
-      fsetpos(stream,&pos);<br>
-      printf(¡°offset = %d\n¡±,ftell(stream));<br>
-      fclose(stream);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> offset = 5<br>
-      offset =0<br>
-      offset=10<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc161></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      ftell£¨È¡µÃÎÄ¼şÁ÷µÄ¶ÁÈ¡Î»ÖÃ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fseek£¬rewind£¬fgetpos£¬fsetpos<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> long ftell(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ftell()ÓÃÀ´È¡µÃÎÄ¼şÁ÷Ä¿Ç°µÄ¶ÁĞ´Î»ÖÃ¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> µ±µ÷ÓÃ³É¹¦Ê±Ôò·µ»ØÄ¿Ç°µÄ¶ÁĞ´Î»ÖÃ£¬ÈôÓĞ´íÎóÔò·µ»Ø-1£¬errno»á´æ·Å´íÎó´úÂë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıstreamÎŞĞ§»ò¿ÉÒÆ¶¯¶ÁĞ´Î»ÖÃµÄÎÄ¼şÁ÷¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fseek()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc162></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      fwrite£¨½«Êı¾İĞ´ÖÁÎÄ¼şÁ÷£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fread£¬fseek£¬fscanf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> size_t fwrite(const void * ptr,size_t size,size_t 
-      nmemb,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fwrite()ÓÃÀ´½«Êı¾İĞ´ÈëÎÄ¼şÁ÷ÖĞ¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë£¬²ÎÊıptr 
-      Ö¸ÏòÓûĞ´ÈëµÄÊı¾İµØÖ·£¬×Ü¹²Ğ´ÈëµÄ×Ö·ûÊıÒÔ²ÎÊısize*nmembÀ´¾ö¶¨¡£Fwrite()»á·µ»ØÊµ¼ÊĞ´ÈëµÄnmembÊıÄ¿¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÊµ¼ÊĞ´ÈëµÄnmembÊıÄ¿¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      #define set_s (x,y) {strcoy(s[x].name,y);s[x].size=strlen(y);}<br>
-      #define nmemb 3<br>
-      struct test<br>
-      {<br>
-      char name[20];<br>
-      int size;<br>
-      }s[nmemb];<br>
-      main()<br>
-      {<br>
-      FILE * stream;<br>
-      set_s(0,¡±Linux!¡±);<br>
-      set_s(1,¡±FreeBSD!¡±);<br>
-      set_s(2,¡±Windows2000.¡±);<br>
-      stream=fopen(¡°/tmp/fwrite¡±,¡±w¡±);<br>
-      fwrite(s,sizeof(struct test),nmemb,stream);<br>
-      fclose(stream);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fread£¨£©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc163></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      getc£¨ÓÉÎÄ¼şÖĞ¶ÁÈ¡Ò»¸ö×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> read£¬fopen£¬fread£¬fgetc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int getc(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getc()ÓÃÀ´´Ó²ÎÊıstreamËùÖ¸µÄÎÄ¼şÖĞ¶ÁÈ¡Ò»¸ö×Ö·û¡£Èô¶Áµ½ÎÄ¼şÎ²¶øÎŞÊı¾İÊ±±ã·µ»ØEOF¡£ËäÈ»getc()Óëfgetc()×÷ÓÃÏàÍ¬£¬µ«getc()Îªºê¶¨Òå£¬·ÇÕæÕıµÄº¯Êıµ÷ÓÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getc()»á·µ»Ø¶ÁÈ¡µ½µÄ×Ö·û£¬Èô·µ»ØEOFÔò±íÊ¾µ½ÁËÎÄ¼şÎ²¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fgetc()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc164></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      getchar£¨ÓÉ±ê×¼ÊäÈëÉè±¸ÄÚ¶Á½øÒ»×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fread£¬fscanf£¬getc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int getchar(void);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getchar()ÓÃÀ´´Ó±ê×¼ÊäÈëÉè±¸ÖĞ¶ÁÈ¡Ò»¸ö×Ö·û¡£È»ºó½«¸Ã×Ö·û´Óunsigned char×ª»»³Éintºó·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getchar()»á·µ»Ø¶ÁÈ¡µ½µÄ×Ö·û£¬Èô·µ»ØEOFÔò±íÊ¾ÓĞ´íÎó·¢Éú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getchar()·ÇÕæÕıº¯Êı£¬¶øÊÇgetc(stdin)ºê¶¨Òå¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      int c,i;<br>
-      for(i=0li&lt;5;i++)<br>
-      {<br>
-      c=getchar();<br>
-      putchar(c);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> 1234 /*ÊäÈë*/<br>
-      1234 /*Êä³ö*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc165></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      gets£¨ÓÉ±ê×¼ÊäÈëÉè±¸ÄÚ¶Á½øÒ»×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fread£¬fscanf£¬fgets<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * gets(char *s);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> gets()ÓÃÀ´´Ó±ê×¼Éè±¸¶ÁÈë×Ö·û²¢´æµ½²ÎÊısËùÖ¸µÄÄÚ´æ¿Õ¼ä£¬Ö±µ½³öÏÖ»»ĞĞ×Ö·û»ò¶Áµ½ÎÄ¼şÎ²ÎªÖ¹£¬×îºó¼ÓÉÏNULL×÷Îª×Ö·û´®½áÊø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> gets()Èô³É¹¦Ôò·µ»ØsÖ¸Õë£¬·µ»ØNULLÔò±íÊ¾ÓĞ´íÎó·¢Éú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÓÉÓÚgets()ÎŞ·¨ÖªµÀ×Ö·û´®sµÄ´óĞ¡£¬±ØĞëÓöµ½»»ĞĞ×Ö·û»òÎÄ¼şÎ²²Å»á½áÊøÊäÈë£¬Òò´ËÈİÒ×Ôì³É»º³åÒç³öµÄ°²È«ĞÔÎÊÌâ¡£½¨ÒéÊ¹ÓÃfgets()È¡´ú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fgets()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc166></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      mktemp£¨²úÉúÎ¨Ò»µÄÁÙÊ±ÎÄ¼şÃû£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> tmpfile<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * mktemp(char * template);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> mktemp()ÓÃÀ´²úÉúÎ¨Ò»µÄÁÙÊ±ÎÄ¼şÃû¡£²ÎÊıtemplateËùÖ¸µÄÎÄ¼şÃû³Æ×Ö·û´®ÖĞ×îºóÁù¸ö×Ö·û±ØĞëÊÇXXXXXX¡£²úÉúºóµÄÎÄ¼şÃû»á½è×Ö·û´®Ö¸Õë·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÎÄ¼şË³Àû´ò¿ªºó£¬Ö¸Ïò¸ÃÁ÷µÄÎÄ¼şÖ¸Õë¾Í»á±»·µ»Ø¡£Èç¹ûÎÄ¼ş´ò¿ªÊ§°ÜÔò·µ»ØNULL£¬²¢°Ñ´íÎó´úÂë´æÔÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²ÎÊıtemplateËùÖ¸µÄÎÄ¼şÃû³Æ×Ö·û´®±ØĞëÉùÃ÷ÎªÊı×é£¬Èç:<br>
-      char template[ ]=¡±template-XXXXXX¡±£»<br>
-      ²»¿ÉÓÃchar * template=¡±template-XXXXXX¡±£»<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char template[ ]=¡±template-XXXXXX¡±;<br>
-      mktemp(template);<br>
-      printf(¡°template=%s\n¡±,template);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc167></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      putc£¨½«Ò»Ö¸¶¨×Ö·ûĞ´ÈëÎÄ¼şÖĞ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fwrite£¬fscanf£¬fputc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int putc(int c,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putc()»á½«²ÎÊıc×ªÎªunsigned charºóĞ´Èë²ÎÊıstreamÖ¸¶¨µÄÎÄ¼şÖĞ¡£ËäÈ»putc()Óëfputc()×÷ÓÃÏàÍ¬£¬µ«putc()Îªºê¶¨Òå£¬·ÇÕæÕıµÄº¯Êıµ÷ÓÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putc()»á·µ»ØĞ´Èë³É¹¦µÄ×Ö·û£¬¼´²ÎÊıc¡£Èô·µ»ØEOFÔò´ú±íĞ´ÈëÊ§°Ü¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fputc£¨£©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc168></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      putchar£¨½«Ö¸¶¨µÄ×Ö·ûĞ´µ½±ê×¼Êä³öÉè±¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fopen£¬fwrite£¬fscanf£¬fputc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int putchar (int c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putchar()ÓÃÀ´½«²ÎÊıc×Ö·ûĞ´µ½±ê×¼Êä³öÉè±¸¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putchar()»á·µ»ØÊä³ö³É¹¦µÄ×Ö·û£¬¼´²ÎÊıc¡£Èô·µ»ØEOFÔò´ú±íÊä³öÊ§°Ü¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putchar()·ÇÕæÕıº¯Êı£¬¶øÊÇputc(c£¬stdout)ºê¶¨Òå¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼getchar()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc169></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      rewind£¨ÖØÉèÎÄ¼şÁ÷µÄ¶ÁĞ´Î»ÖÃÎªÎÄ¼ş¿ªÍ·£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fseek£¬ftell£¬fgetpos£¬fsetpos<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void rewind(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> rewind()ÓÃÀ´°ÑÎÄ¼şÁ÷µÄ¶ÁĞ´Î»ÖÃÒÆÖÁÎÄ¼ş¿ªÍ·¡£²ÎÊıstreamÎªÒÑ´ò¿ªµÄÎÄ¼şÖ¸Õë¡£´Ëº¯ÊıÏàµ±ÓÚµ÷ÓÃfseek(stream,0,SEEK_SET)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼fseek()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc170></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      setbuf£¨ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setbuffer£¬setlinebuf£¬setvbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void setbuf(FILE * stream,char * buf);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÔÚ´ò¿ªÎÄ¼şÁ÷ºó£¬¶ÁÈ¡ÄÚÈİÖ®Ç°£¬µ÷ÓÃsetbuf()¿ÉÒÔÓÃÀ´ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø¡£²ÎÊıstreamÎªÖ¸¶¨µÄÎÄ¼şÁ÷£¬²ÎÊıbufÖ¸Ïò×Ô¶¨µÄ»º³åÇøÆğÊ¼µØÖ·¡£Èç¹û²ÎÊıbufÎªNULLÖ¸Õë£¬ÔòÎªÎŞ»º³åIO¡£Setbuf()Ïàµ±ÓÚµ÷ÓÃ:setvbuf(stream,buf,buf?_IOFBF:_IONBF,BUFSIZ) 
-      <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc171></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      setbuffer£¨ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setlinebuf£¬setbuf£¬setvbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void setbuffer(FILE * stream,char * buf,size_t 
-      size);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÔÚ´ò¿ªÎÄ¼şÁ÷ºó£¬¶ÁÈ¡ÄÚÈİÖ®Ç°£¬µ÷ÓÃsetbuffer()¿ÉÓÃÀ´ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø¡£²ÎÊıstreamÎªÖ¸¶¨µÄÎÄ¼şÁ÷£¬²ÎÊıbufÖ¸Ïò×Ô¶¨µÄ»º³åÇøÆğÊ¼µØÖ·£¬²ÎÊısizeÎª»º³åÇø´óĞ¡¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc172></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      setlinebuf£¨ÉèÖÃÎÄ¼şÁ÷ÎªÏßĞÔ»º³åÇø£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setbuffer£¬setbuf£¬setvbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void setlinebuf(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setlinebuf()ÓÃÀ´ÉèÖÃÎÄ¼şÁ÷ÒÔ»»ĞĞÎªÒÀ¾İµÄÎŞ»º³åIO¡£Ïàµ±ÓÚµ÷ÓÃ:setvbuf(stream,(char 
-      * )NULL,_IOLBF,0);Çë²Î¿¼setvbuf()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc173></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      setvbuf£¨ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setbuffer£¬setlinebuf£¬setbuf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int setvbuf(FILE * stream,char * buf,int mode,size_t 
-      size);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÔÚ´ò¿ªÎÄ¼şÁ÷ºó£¬¶ÁÈ¡ÄÚÈİÖ®Ç°£¬µ÷ÓÃsetvbuf()¿ÉÒÔÓÃÀ´ÉèÖÃÎÄ¼şÁ÷µÄ»º³åÇø¡£²ÎÊıstreamÎªÖ¸¶¨µÄÎÄ¼şÁ÷£¬²ÎÊıbufÖ¸Ïò×Ô¶¨µÄ»º³åÇøÆğÊ¼µØÖ·£¬²ÎÊısizeÎª»º³åÇø´óĞ¡£¬²ÎÊımodeÓĞÏÂÁĞ¼¸ÖÖ<br>
-      _IONBF ÎŞ»º³åIO<br>
-      _IOLBF ÒÔ»»ĞĞÎªÒÀ¾İµÄÎŞ»º³åIO<br>
-      _IOFBF ÍêÈ«ÎŞ»º³åIO¡£Èç¹û²ÎÊıbufÎªNULLÖ¸Õë£¬ÔòÎªÎŞ»º³åIO¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc174></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      ungetc£¨½«Ö¸¶¨×Ö·ûĞ´»ØÎÄ¼şÁ÷ÖĞ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> fputc£¬getchar£¬getc<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int ungetc(int c,FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ungetc()½«²ÎÊıc×Ö·ûĞ´»Ø²ÎÊıstreamËùÖ¸¶¨µÄÎÄ¼şÁ÷¡£Õâ¸öĞ´»ØµÄ×Ö·û»áÓÉÏÂÒ»¸ö¶ÁÈ¡ÎÄ¼şÁ÷µÄº¯ÊıÈ¡µÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Øc ×Ö·û£¬ÈôÓĞ´íÎóÔò·µ»ØEOF¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+clearerrï¼ˆæ¸…é™¤æ–‡ä»¶æµçš„é”™è¯¯æ——æ ‡ï¼‰
+ç›¸å…³å‡½æ•°
+feof
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void clearerr(FILE * stream);
+å‡½æ•°è¯´æ˜
+clearerrï¼ˆï¼‰æ¸…é™¤å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶æµæ‰€ä½¿ç”¨çš„é”™è¯¯æ——æ ‡ã€‚
+è¿”å›å€¼
+
+ã€€
+
+
+
+fcloseï¼ˆå…³é—­æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+closeï¼Œfflushï¼Œfopenï¼Œsetbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fclose(FILE * stream);
+å‡½æ•°è¯´æ˜
+fclose()ç”¨æ¥å…³é—­å…ˆå‰fopen()æ‰“å¼€çš„æ–‡ä»¶ã€‚æ­¤åŠ¨ä½œä¼šè®©ç¼“å†²åŒºå†…çš„æ•°æ®å†™å…¥æ–‡ä»¶ä¸­ï¼Œå¹¶é‡Šæ”¾ç³»ç»Ÿæ‰€æä¾›çš„æ–‡ä»¶èµ„æºã€‚
+è¿”å›å€¼
+è‹¥å…³æ–‡ä»¶åŠ¨ä½œæˆåŠŸåˆ™è¿”å›0ï¼Œæœ‰é”™è¯¯å‘ç”Ÿæ—¶åˆ™è¿”å›EOFå¹¶æŠŠé”™è¯¯ä»£ç å­˜åˆ°errnoã€‚
+é”™è¯¯ä»£ç 
+EBADFè¡¨ç¤ºå‚æ•°streaméå·²æ‰“å¼€çš„æ–‡ä»¶ã€‚
+èŒƒä¾‹
+è¯·å‚è€ƒfopenï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+fdopenï¼ˆå°†æ–‡ä»¶æè¿°è¯è½¬ä¸ºæ–‡ä»¶æŒ‡é’ˆï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œopenï¼Œfclose
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+FILE * fdopen(int fildes,const char * mode);
+å‡½æ•°è¯´æ˜
+fdopen()ä¼šå°†å‚æ•°fildes çš„æ–‡ä»¶æè¿°è¯ï¼Œè½¬æ¢ä¸ºå¯¹åº”çš„æ–‡ä»¶æŒ‡é’ˆåè¿”å›ã€‚å‚æ•°mode å­—ç¬¦ä¸²åˆ™ä»£è¡¨ç€æ–‡ä»¶æŒ‡é’ˆçš„æµå½¢æ€ï¼Œæ­¤å½¢æ€å¿…é¡»å’ŒåŸå…ˆæ–‡ä»¶æè¿°è¯è¯»å†™æ¨¡å¼ç›¸åŒã€‚å…³äºmode å­—ç¬¦ä¸²æ ¼å¼è¯·å‚è€ƒfopen()ã€‚
+è¿”å›å€¼
+è½¬æ¢æˆåŠŸæ—¶è¿”å›æŒ‡å‘è¯¥æµçš„æ–‡ä»¶æŒ‡é’ˆã€‚å¤±è´¥åˆ™è¿”å›NULLï¼Œå¹¶æŠŠé”™è¯¯ä»£ç å­˜åœ¨errnoä¸­ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp =fdopen(0,â€w+â€);
+fprintf(fp,â€%s\nâ€,â€hello!â€);
+fclose(fp);
+}
+æ‰§è¡Œ
+hello!
+ã€€
+
+
+
+feofï¼ˆæ£€æŸ¥æ–‡ä»¶æµæ˜¯å¦è¯»åˆ°äº†æ–‡ä»¶å°¾ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfgetcï¼Œfgetsï¼Œfread
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int feof(FILE * stream);
+å‡½æ•°è¯´æ˜
+feof()ç”¨æ¥ä¾¦æµ‹æ˜¯å¦è¯»å–åˆ°äº†æ–‡ä»¶å°¾ï¼Œå°¾æ•°streamä¸ºfopenï¼ˆï¼‰æ‰€è¿”å›ä¹‹æ–‡ä»¶æŒ‡é’ˆã€‚å¦‚æœå·²åˆ°æ–‡ä»¶å°¾åˆ™è¿”å›éé›¶å€¼ï¼Œå…¶ä»–æƒ…å†µè¿”å›0ã€‚
+è¿”å›å€¼
+è¿”å›éé›¶å€¼ä»£è¡¨å·²åˆ°è¾¾æ–‡ä»¶å°¾ã€‚
+ã€€
+
+
+
+fflushï¼ˆæ›´æ–°ç¼“å†²åŒºï¼‰
+ç›¸å…³å‡½æ•°
+writeï¼Œfopenï¼Œfcloseï¼Œsetbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fflush(FILE* stream);
+å‡½æ•°è¯´æ˜
+fflush()ä¼šå¼ºè¿«å°†ç¼“å†²åŒºå†…çš„æ•°æ®å†™å›å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶ä¸­ã€‚å¦‚æœå‚æ•°streamä¸ºNULLï¼Œfflush()ä¼šå°†æ‰€æœ‰æ‰“å¼€çš„æ–‡ä»¶æ•°æ®æ›´æ–°ã€‚
+è¿”å›å€¼
+æˆåŠŸè¿”å›0ï¼Œå¤±è´¥è¿”å›EOFï¼Œé”™è¯¯ä»£ç å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°stream æŒ‡å®šçš„æ–‡ä»¶æœªè¢«æ‰“å¼€ï¼Œæˆ–æ‰“å¼€çŠ¶æ€ä¸ºåªè¯»ã€‚å…¶å®ƒé”™è¯¯ä»£ç å‚è€ƒwriteï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+fgetcï¼ˆç”±æ–‡ä»¶ä¸­è¯»å–ä¸€ä¸ªå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+openï¼Œfreadï¼Œfscanfï¼Œgetc
+è¡¨å¤´æ–‡ä»¶
+include<stdio.h>
+å®šä¹‰å‡½æ•°
+nt fgetc(FILE * stream);
+å‡½æ•°è¯´æ˜
+fgetc()ä»å‚æ•°streamæ‰€æŒ‡çš„æ–‡ä»¶ä¸­è¯»å–ä¸€ä¸ªå­—ç¬¦ã€‚è‹¥è¯»åˆ°æ–‡ä»¶å°¾è€Œæ— æ•°æ®æ—¶ä¾¿è¿”å›EOFã€‚
+è¿”å›å€¼
+getc()ä¼šè¿”å›è¯»å–åˆ°çš„å­—ç¬¦ï¼Œè‹¥è¿”å›EOFåˆ™è¡¨ç¤ºåˆ°äº†æ–‡ä»¶å°¾ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE *fp;
+int c;
+fp=fopen(â€œexistâ€,â€râ€);
+while((c=fgetc(fp))!=EOF)
+printf(â€œ%câ€,c);
+fclose(fp);
+}
+ã€€
+
+
+
+fgetsï¼ˆç”±æ–‡ä»¶ä¸­è¯»å–ä¸€å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+openï¼Œfreadï¼Œfscanfï¼Œgetc
+è¡¨å¤´æ–‡ä»¶
+include<stdio.h>
+å®šä¹‰å‡½æ•°
+har * fgets(char * s,int size,FILE * stream);
+å‡½æ•°è¯´æ˜
+fgets()ç”¨æ¥ä»å‚æ•°streamæ‰€æŒ‡çš„æ–‡ä»¶å†…è¯»å…¥å­—ç¬¦å¹¶å­˜åˆ°å‚æ•°sæ‰€æŒ‡çš„å†…å­˜ç©ºé—´ï¼Œç›´åˆ°å‡ºç°æ¢è¡Œå­—ç¬¦ã€è¯»åˆ°æ–‡ä»¶å°¾æˆ–æ˜¯å·²è¯»äº†size-1ä¸ªå­—ç¬¦ä¸ºæ­¢ï¼Œæœ€åä¼šåŠ ä¸ŠNULLä½œä¸ºå­—ç¬¦ä¸²ç»“æŸã€‚
+è¿”å›å€¼
+gets()è‹¥æˆåŠŸåˆ™è¿”å›sæŒ‡é’ˆï¼Œè¿”å›NULLåˆ™è¡¨ç¤ºæœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+char s[80];
+fputs(fgets(s,80,stdin),stdout);
+}
+æ‰§è¡Œ
+this is a test /*è¾“å…¥*/
+this is a test /*è¾“å‡º*/
+ã€€
+
+
+
+filenoï¼ˆè¿”å›æ–‡ä»¶æµæ‰€ä½¿ç”¨çš„æ–‡ä»¶æè¿°è¯ï¼‰
+ç›¸å…³å‡½æ•°
+openï¼Œfopen
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fileno(FILE * stream);
+å‡½æ•°è¯´æ˜
+fileno()ç”¨æ¥å–å¾—å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶æµæ‰€ä½¿ç”¨çš„æ–‡ä»¶æè¿°è¯ã€‚
+è¿”å›å€¼
+è¿”å›æ–‡ä»¶æè¿°è¯ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+int fd;
+fp=fopen(â€œ/etc/passwdâ€,â€râ€);
+fd=fileno(fp);
+printf(â€œfd=%d\nâ€,fd);
+fclose(fp);
+}
+æ‰§è¡Œ
+fd=3
+ã€€
+
+
+
+fopenï¼ˆæ‰“å¼€æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+openï¼Œfclose
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+FILE * fopen(const char * path,const char * mode);
+å‡½æ•°è¯´æ˜
+å‚æ•°pathå­—ç¬¦ä¸²åŒ…å«æ¬²æ‰“å¼€çš„æ–‡ä»¶è·¯å¾„åŠæ–‡ä»¶åï¼Œå‚æ•°modeå­—ç¬¦ä¸²åˆ™ä»£è¡¨ç€æµå½¢æ€ã€‚
+modeæœ‰ä¸‹åˆ—å‡ ç§å½¢æ€å­—ç¬¦ä¸²:
+r æ‰“å¼€åªè¯»æ–‡ä»¶ï¼Œè¯¥æ–‡ä»¶å¿…é¡»å­˜åœ¨ã€‚
+r+ æ‰“å¼€å¯è¯»å†™çš„æ–‡ä»¶ï¼Œè¯¥æ–‡ä»¶å¿…é¡»å­˜åœ¨ã€‚
+w æ‰“å¼€åªå†™æ–‡ä»¶ï¼Œè‹¥æ–‡ä»¶å­˜åœ¨åˆ™æ–‡ä»¶é•¿åº¦æ¸…ä¸º0ï¼Œå³è¯¥æ–‡ä»¶å†…å®¹ä¼šæ¶ˆå¤±ã€‚è‹¥æ–‡ä»¶ä¸å­˜åœ¨åˆ™å»ºç«‹è¯¥æ–‡ä»¶ã€‚
+w+ æ‰“å¼€å¯è¯»å†™æ–‡ä»¶ï¼Œè‹¥æ–‡ä»¶å­˜åœ¨åˆ™æ–‡ä»¶é•¿åº¦æ¸…ä¸ºé›¶ï¼Œå³è¯¥æ–‡ä»¶å†…å®¹ä¼šæ¶ˆå¤±ã€‚è‹¥æ–‡ä»¶ä¸å­˜åœ¨åˆ™å»ºç«‹è¯¥æ–‡ä»¶ã€‚
+a ä»¥é™„åŠ çš„æ–¹å¼æ‰“å¼€åªå†™æ–‡ä»¶ã€‚è‹¥æ–‡ä»¶ä¸å­˜åœ¨ï¼Œåˆ™ä¼šå»ºç«‹è¯¥æ–‡ä»¶ï¼Œå¦‚æœæ–‡ä»¶å­˜åœ¨ï¼Œå†™å…¥çš„æ•°æ®ä¼šè¢«åŠ åˆ°æ–‡ä»¶å°¾ï¼Œå³æ–‡ä»¶åŸå…ˆçš„å†…å®¹ä¼šè¢«ä¿ç•™ã€‚
+a+ ä»¥é™„åŠ æ–¹å¼æ‰“å¼€å¯è¯»å†™çš„æ–‡ä»¶ã€‚è‹¥æ–‡ä»¶ä¸å­˜åœ¨ï¼Œåˆ™ä¼šå»ºç«‹è¯¥æ–‡ä»¶ï¼Œå¦‚æœæ–‡ä»¶å­˜åœ¨ï¼Œå†™å…¥çš„æ•°æ®ä¼šè¢«åŠ åˆ°æ–‡ä»¶å°¾åï¼Œå³æ–‡ä»¶åŸå…ˆçš„å†…å®¹ä¼šè¢«ä¿ç•™ã€‚
+ä¸Šè¿°çš„å½¢æ€å­—ç¬¦ä¸²éƒ½å¯ä»¥å†åŠ ä¸€ä¸ªbå­—ç¬¦ï¼Œå¦‚rbã€w+bæˆ–abï¼‹ç­‰ç»„åˆï¼ŒåŠ å…¥b å­—ç¬¦ç”¨æ¥å‘Šè¯‰å‡½æ•°åº“æ‰“å¼€çš„æ–‡ä»¶ä¸ºäºŒè¿›åˆ¶æ–‡ä»¶ï¼Œè€Œéçº¯æ–‡å­—æ–‡ä»¶ã€‚ä¸è¿‡åœ¨POSIXç³»ç»Ÿï¼ŒåŒ…å«Linuxéƒ½ä¼šå¿½ç•¥è¯¥å­—ç¬¦ã€‚ç”±fopen()æ‰€å»ºç«‹çš„æ–°æ–‡ä»¶ä¼šå…·æœ‰S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH(0666)æƒé™ï¼Œæ­¤æ–‡ä»¶æƒé™ä¹Ÿä¼šå‚è€ƒumaskå€¼ã€‚
+è¿”å›å€¼
+æ–‡ä»¶é¡ºåˆ©æ‰“å¼€åï¼ŒæŒ‡å‘è¯¥æµçš„æ–‡ä»¶æŒ‡é’ˆå°±ä¼šè¢«è¿”å›ã€‚è‹¥æœæ–‡ä»¶æ‰“å¼€å¤±è´¥åˆ™è¿”å›NULLï¼Œå¹¶æŠŠé”™è¯¯ä»£ç å­˜åœ¨errno ä¸­ã€‚
+é™„åŠ è¯´æ˜
+ä¸€èˆ¬è€Œè¨€ï¼Œå¼€æ–‡ä»¶åä¼šä½œä¸€äº›æ–‡ä»¶è¯»å–æˆ–å†™å…¥çš„åŠ¨ä½œï¼Œè‹¥å¼€æ–‡ä»¶å¤±è´¥ï¼Œæ¥ä¸‹æ¥çš„è¯»å†™åŠ¨ä½œä¹Ÿæ— æ³•é¡ºåˆ©è¿›è¡Œï¼Œæ‰€ä»¥åœ¨fopen()åè¯·ä½œé”™è¯¯åˆ¤æ–­åŠå¤„ç†ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+fp=fopen(â€œnoexistâ€,â€a+â€);
+if(fp= =NULL) return;
+fclose(fp);
+}
+ã€€
+
+
+
+fputcï¼ˆå°†ä¸€æŒ‡å®šå­—ç¬¦å†™å…¥æ–‡ä»¶æµä¸­ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfwriteï¼Œfscanfï¼Œputc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fputc(int c,FILE * stream);
+å‡½æ•°è¯´æ˜
+fputc ä¼šå°†å‚æ•°c è½¬ä¸ºunsigned char åå†™å…¥å‚æ•°stream æŒ‡å®šçš„æ–‡ä»¶ä¸­ã€‚
+è¿”å›å€¼
+fputc()ä¼šè¿”å›å†™å…¥æˆåŠŸçš„å­—ç¬¦ï¼Œå³å‚æ•°cã€‚è‹¥è¿”å›EOFåˆ™ä»£è¡¨å†™å…¥å¤±è´¥ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+char a[26]=â€abcdefghijklmnopqrstuvwxyzâ€;
+int i;
+fp= fopen(â€œnoexistâ€,â€wâ€);
+for(i=0;i<26;i++)
+fputc(a[i],fp);
+fclose(fp);
+}
+ã€€
+
+
+
+fputsï¼ˆå°†ä¸€æŒ‡å®šçš„å­—ç¬¦ä¸²å†™å…¥æ–‡ä»¶å†…ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfwriteï¼Œfscanfï¼Œfputcï¼Œputc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fputs(const char * s,FILE * stream);
+å‡½æ•°è¯´æ˜
+fputs()ç”¨æ¥å°†å‚æ•°sæ‰€æŒ‡çš„å­—ç¬¦ä¸²å†™å…¥åˆ°å‚æ•°streamæ‰€æŒ‡çš„æ–‡ä»¶å†…ã€‚
+è¿”å›å€¼
+è‹¥æˆåŠŸåˆ™è¿”å›å†™å‡ºçš„å­—ç¬¦ä¸ªæ•°ï¼Œè¿”å›EOFåˆ™è¡¨ç¤ºæœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+è¯·å‚è€ƒfgetsï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+freadï¼ˆä»æ–‡ä»¶æµè¯»å–æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfwriteï¼Œfseekï¼Œfscanf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+size_t fread(void * ptr,size_t size,size_t nmemb,FILE * stream);
+å‡½æ•°è¯´æ˜
+fread()ç”¨æ¥ä»æ–‡ä»¶æµä¸­è¯»å–æ•°æ®ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆï¼Œå‚æ•°ptr æŒ‡å‘æ¬²å­˜æ”¾è¯»å–è¿›æ¥çš„æ•°æ®ç©ºé—´ï¼Œè¯»å–çš„å­—ç¬¦æ•°ä»¥å‚æ•°size*nmembæ¥å†³å®šã€‚Fread()ä¼šè¿”å›å®é™…è¯»å–åˆ°çš„nmembæ•°ç›®ï¼Œå¦‚æœæ­¤å€¼æ¯”å‚æ•°nmemb æ¥å¾—å°ï¼Œåˆ™ä»£è¡¨å¯èƒ½è¯»åˆ°äº†æ–‡ä»¶å°¾æˆ–æœ‰é”™è¯¯å‘ç”Ÿï¼Œè¿™æ—¶å¿…é¡»ç”¨feof()æˆ–ferror()æ¥å†³å®šå‘ç”Ÿä»€ä¹ˆæƒ…å†µã€‚
+è¿”å›å€¼
+è¿”å›å®é™…è¯»å–åˆ°çš„nmembæ•°ç›®ã€‚
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+#include<stdio.h>
+#define nmemb 3
+struct test
+{
+char name[20];
+int size;
+}s[nmemb];
+main()
+{
+FILE * stream;
+int i;
+stream = fopen(â€œ/tmp/fwriteâ€,â€râ€);
+fread(s,sizeof(struct test),nmemb,stream);
+fclose(stream);
+for(i=0;i<nmemb;i++)
+printf(â€œname[%d]=%-20s:size[%d]=%d\nâ€,i,s[i].name,i,s[i].size);
+}
+æ‰§è¡Œ
+name[0]=Linux! size[0]=6
+name[1]=FreeBSD! size[1]=8
+name[2]=Windows2000 size[2]=11
+ã€€
+
+
+
+freopenï¼ˆæ‰“å¼€æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfclose
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+FILE * freopen(const char * path,const char * mode,FILE * stream);
+å‡½æ•°è¯´æ˜
+å‚æ•°pathå­—ç¬¦ä¸²åŒ…å«æ¬²æ‰“å¼€çš„æ–‡ä»¶è·¯å¾„åŠæ–‡ä»¶åï¼Œå‚æ•°modeè¯·å‚è€ƒfopen()è¯´æ˜ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆã€‚Freopen()ä¼šå°†åŸstreamæ‰€æ‰“å¼€çš„æ–‡ä»¶æµå…³é—­ï¼Œç„¶åæ‰“å¼€å‚æ•°pathçš„æ–‡ä»¶ã€‚
+è¿”å›å€¼
+æ–‡ä»¶é¡ºåˆ©æ‰“å¼€åï¼ŒæŒ‡å‘è¯¥æµçš„æ–‡ä»¶æŒ‡é’ˆå°±ä¼šè¢«è¿”å›ã€‚å¦‚æœæ–‡ä»¶æ‰“å¼€å¤±è´¥åˆ™è¿”å›NULLï¼Œå¹¶æŠŠé”™è¯¯ä»£ç å­˜åœ¨errno ä¸­ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+fp=fopen(â€œ/etc/passwdâ€,â€râ€);
+fp=freopen(â€œ/etc/groupâ€,â€râ€,fp);
+fclose(fp);
+}
+ã€€
+
+
+
+fseekï¼ˆç§»åŠ¨æ–‡ä»¶æµçš„è¯»å†™ä½ç½®ï¼‰
+ç›¸å…³å‡½æ•°
+rewindï¼Œftellï¼Œfgetposï¼Œfsetposï¼Œlseek
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int fseek(FILE * stream,long offset,int whence);
+å‡½æ•°è¯´æ˜
+fseek()ç”¨æ¥ç§»åŠ¨æ–‡ä»¶æµçš„è¯»å†™ä½ç½®ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆï¼Œå‚æ•°offsetä¸ºæ ¹æ®å‚æ•°whenceæ¥ç§»åŠ¨è¯»å†™ä½ç½®çš„ä½ç§»æ•°ã€‚
+å‚æ•°
+whenceä¸ºä¸‹åˆ—å…¶ä¸­ä¸€ç§:
+SEEK_SETä»è·æ–‡ä»¶å¼€å¤´offsetä½ç§»é‡ä¸ºæ–°çš„è¯»å†™ä½ç½®ã€‚SEEK_CUR ä»¥ç›®å‰çš„è¯»å†™ä½ç½®å¾€åå¢åŠ offsetä¸ªä½ç§»é‡ã€‚
+SEEK_ENDå°†è¯»å†™ä½ç½®æŒ‡å‘æ–‡ä»¶å°¾åå†å¢åŠ offsetä¸ªä½ç§»é‡ã€‚
+å½“whenceå€¼ä¸ºSEEK_CUR æˆ–SEEK_ENDæ—¶ï¼Œå‚æ•°offsetå…è®¸è´Ÿå€¼çš„å‡ºç°ã€‚
+ä¸‹åˆ—æ˜¯è¾ƒç‰¹åˆ«çš„ä½¿ç”¨æ–¹å¼:
+1) æ¬²å°†è¯»å†™ä½ç½®ç§»åŠ¨åˆ°æ–‡ä»¶å¼€å¤´æ—¶:fseek(FILE *stream,0,SEEK_SET);
+2) æ¬²å°†è¯»å†™ä½ç½®ç§»åŠ¨åˆ°æ–‡ä»¶å°¾æ—¶:fseek(FILE *stream,0,0SEEK_END);
+è¿”å›å€¼
+å½“è°ƒç”¨æˆåŠŸæ—¶åˆ™è¿”å›0ï¼Œè‹¥æœ‰é”™è¯¯åˆ™è¿”å›-1ï¼Œerrnoä¼šå­˜æ”¾é”™è¯¯ä»£ç ã€‚
+é™„åŠ è¯´æ˜
+fseek()ä¸åƒlseek()ä¼šè¿”å›è¯»å†™ä½ç½®ï¼Œå› æ­¤å¿…é¡»ä½¿ç”¨ftell()æ¥å–å¾—ç›®å‰è¯»å†™çš„ä½ç½®ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * stream;
+long offset;
+fpos_t pos;
+stream=fopen(â€œ/etc/passwdâ€,â€râ€);
+fseek(stream,5,SEEK_SET);
+printf(â€œoffset=%d\nâ€,ftell(stream));
+rewind(stream);
+fgetpos(stream,&pos);
+printf(â€œoffset=%d\nâ€,pos);
+pos=10;
+fsetpos(stream,&pos);
+printf(â€œoffset = %d\nâ€,ftell(stream));
+fclose(stream);
+}
+æ‰§è¡Œ
+offset = 5
+offset =0
+offset=10
+ã€€
+
+
+
+ftellï¼ˆå–å¾—æ–‡ä»¶æµçš„è¯»å–ä½ç½®ï¼‰
+ç›¸å…³å‡½æ•°
+fseekï¼Œrewindï¼Œfgetposï¼Œfsetpos
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+long ftell(FILE * stream);
+å‡½æ•°è¯´æ˜
+ftell()ç”¨æ¥å–å¾—æ–‡ä»¶æµç›®å‰çš„è¯»å†™ä½ç½®ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆã€‚
+è¿”å›å€¼
+å½“è°ƒç”¨æˆåŠŸæ—¶åˆ™è¿”å›ç›®å‰çš„è¯»å†™ä½ç½®ï¼Œè‹¥æœ‰é”™è¯¯åˆ™è¿”å›-1ï¼Œerrnoä¼šå­˜æ”¾é”™è¯¯ä»£ç ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°streamæ— æ•ˆæˆ–å¯ç§»åŠ¨è¯»å†™ä½ç½®çš„æ–‡ä»¶æµã€‚
+èŒƒä¾‹
+å‚è€ƒfseek()ã€‚
+ã€€
+
+
+
+fwriteï¼ˆå°†æ•°æ®å†™è‡³æ–‡ä»¶æµï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfreadï¼Œfseekï¼Œfscanf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+size_t fwrite(const void * ptr,size_t size,size_t nmemb,FILE * stream);
+å‡½æ•°è¯´æ˜
+fwrite()ç”¨æ¥å°†æ•°æ®å†™å…¥æ–‡ä»¶æµä¸­ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆï¼Œå‚æ•°ptr æŒ‡å‘æ¬²å†™å…¥çš„æ•°æ®åœ°å€ï¼Œæ€»å…±å†™å…¥çš„å­—ç¬¦æ•°ä»¥å‚æ•°size*nmembæ¥å†³å®šã€‚Fwrite()ä¼šè¿”å›å®é™…å†™å…¥çš„nmembæ•°ç›®ã€‚
+è¿”å›å€¼
+è¿”å›å®é™…å†™å…¥çš„nmembæ•°ç›®ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+#define set_s (x,y) {strcoy(s[x].name,y);s[x].size=strlen(y);}
+#define nmemb 3
+struct test
+{
+char name[20];
+int size;
+}s[nmemb];
+main()
+{
+FILE * stream;
+set_s(0,â€Linux!â€);
+set_s(1,â€FreeBSD!â€);
+set_s(2,â€Windows2000.â€);
+stream=fopen(â€œ/tmp/fwriteâ€,â€wâ€);
+fwrite(s,sizeof(struct test),nmemb,stream);
+fclose(stream);
+}
+æ‰§è¡Œ
+å‚è€ƒfreadï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+getcï¼ˆç”±æ–‡ä»¶ä¸­è¯»å–ä¸€ä¸ªå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+readï¼Œfopenï¼Œfreadï¼Œfgetc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int getc(FILE * stream);
+å‡½æ•°è¯´æ˜
+getc()ç”¨æ¥ä»å‚æ•°streamæ‰€æŒ‡çš„æ–‡ä»¶ä¸­è¯»å–ä¸€ä¸ªå­—ç¬¦ã€‚è‹¥è¯»åˆ°æ–‡ä»¶å°¾è€Œæ— æ•°æ®æ—¶ä¾¿è¿”å›EOFã€‚è™½ç„¶getc()ä¸fgetc()ä½œç”¨ç›¸åŒï¼Œä½†getc()ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£çš„å‡½æ•°è°ƒç”¨ã€‚
+è¿”å›å€¼
+getc()ä¼šè¿”å›è¯»å–åˆ°çš„å­—ç¬¦ï¼Œè‹¥è¿”å›EOFåˆ™è¡¨ç¤ºåˆ°äº†æ–‡ä»¶å°¾ã€‚
+èŒƒä¾‹
+å‚è€ƒfgetc()ã€‚
+ã€€
+
+
+
+getcharï¼ˆç”±æ ‡å‡†è¾“å…¥è®¾å¤‡å†…è¯»è¿›ä¸€å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfreadï¼Œfscanfï¼Œgetc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int getchar(void);
+å‡½æ•°è¯´æ˜
+getchar()ç”¨æ¥ä»æ ‡å‡†è¾“å…¥è®¾å¤‡ä¸­è¯»å–ä¸€ä¸ªå­—ç¬¦ã€‚ç„¶åå°†è¯¥å­—ç¬¦ä»unsigned charè½¬æ¢æˆintåè¿”å›ã€‚
+è¿”å›å€¼
+getchar()ä¼šè¿”å›è¯»å–åˆ°çš„å­—ç¬¦ï¼Œè‹¥è¿”å›EOFåˆ™è¡¨ç¤ºæœ‰é”™è¯¯å‘ç”Ÿã€‚
+é™„åŠ è¯´æ˜
+getchar()éçœŸæ­£å‡½æ•°ï¼Œè€Œæ˜¯getc(stdin)å®å®šä¹‰ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+int c,i;
+for(i=0li<5;i++)
+{
+c=getchar();
+putchar(c);
+}
+}
+æ‰§è¡Œ
+1234 /*è¾“å…¥*/
+1234 /*è¾“å‡º*/
+ã€€
+
+
+
+getsï¼ˆç”±æ ‡å‡†è¾“å…¥è®¾å¤‡å†…è¯»è¿›ä¸€å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfreadï¼Œfscanfï¼Œfgets
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+char * gets(char *s);
+å‡½æ•°è¯´æ˜
+gets()ç”¨æ¥ä»æ ‡å‡†è®¾å¤‡è¯»å…¥å­—ç¬¦å¹¶å­˜åˆ°å‚æ•°sæ‰€æŒ‡çš„å†…å­˜ç©ºé—´ï¼Œç›´åˆ°å‡ºç°æ¢è¡Œå­—ç¬¦æˆ–è¯»åˆ°æ–‡ä»¶å°¾ä¸ºæ­¢ï¼Œæœ€ååŠ ä¸ŠNULLä½œä¸ºå­—ç¬¦ä¸²ç»“æŸã€‚
+è¿”å›å€¼
+gets()è‹¥æˆåŠŸåˆ™è¿”å›sæŒ‡é’ˆï¼Œè¿”å›NULLåˆ™è¡¨ç¤ºæœ‰é”™è¯¯å‘ç”Ÿã€‚
+é™„åŠ è¯´æ˜
+ç”±äºgets()æ— æ³•çŸ¥é“å­—ç¬¦ä¸²sçš„å¤§å°ï¼Œå¿…é¡»é‡åˆ°æ¢è¡Œå­—ç¬¦æˆ–æ–‡ä»¶å°¾æ‰ä¼šç»“æŸè¾“å…¥ï¼Œå› æ­¤å®¹æ˜“é€ æˆç¼“å†²æº¢å‡ºçš„å®‰å…¨æ€§é—®é¢˜ã€‚å»ºè®®ä½¿ç”¨fgets()å–ä»£ã€‚
+èŒƒä¾‹
+å‚è€ƒfgets()
+ã€€
+
+
+
+mktempï¼ˆäº§ç”Ÿå”¯ä¸€çš„ä¸´æ—¶æ–‡ä»¶åï¼‰
+ç›¸å…³å‡½æ•°
+tmpfile
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+char * mktemp(char * template);
+å‡½æ•°è¯´æ˜
+mktemp()ç”¨æ¥äº§ç”Ÿå”¯ä¸€çš„ä¸´æ—¶æ–‡ä»¶åã€‚å‚æ•°templateæ‰€æŒ‡çš„æ–‡ä»¶åç§°å­—ç¬¦ä¸²ä¸­æœ€åå…­ä¸ªå­—ç¬¦å¿…é¡»æ˜¯XXXXXXã€‚äº§ç”Ÿåçš„æ–‡ä»¶åä¼šå€Ÿå­—ç¬¦ä¸²æŒ‡é’ˆè¿”å›ã€‚
+è¿”å›å€¼
+æ–‡ä»¶é¡ºåˆ©æ‰“å¼€åï¼ŒæŒ‡å‘è¯¥æµçš„æ–‡ä»¶æŒ‡é’ˆå°±ä¼šè¢«è¿”å›ã€‚å¦‚æœæ–‡ä»¶æ‰“å¼€å¤±è´¥åˆ™è¿”å›NULLï¼Œå¹¶æŠŠé”™è¯¯ä»£ç å­˜åœ¨errnoä¸­ã€‚
+é™„åŠ è¯´æ˜
+å‚æ•°templateæ‰€æŒ‡çš„æ–‡ä»¶åç§°å­—ç¬¦ä¸²å¿…é¡»å£°æ˜ä¸ºæ•°ç»„ï¼Œå¦‚:
+char template[ ]=â€template-XXXXXXâ€ï¼›
+ä¸å¯ç”¨char * template=â€template-XXXXXXâ€ï¼›
+èŒƒä¾‹
+#include<stdlib.h>
+main()
+{
+char template[ ]=â€template-XXXXXXâ€;
+mktemp(template);
+printf(â€œtemplate=%s\nâ€,template);
+}
+ã€€
+
+
+
+putcï¼ˆå°†ä¸€æŒ‡å®šå­—ç¬¦å†™å…¥æ–‡ä»¶ä¸­ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfwriteï¼Œfscanfï¼Œfputc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int putc(int c,FILE * stream);
+å‡½æ•°è¯´æ˜
+putc()ä¼šå°†å‚æ•°cè½¬ä¸ºunsigned charåå†™å…¥å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶ä¸­ã€‚è™½ç„¶putc()ä¸fputc()ä½œç”¨ç›¸åŒï¼Œä½†putc()ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£çš„å‡½æ•°è°ƒç”¨ã€‚
+è¿”å›å€¼
+putc()ä¼šè¿”å›å†™å…¥æˆåŠŸçš„å­—ç¬¦ï¼Œå³å‚æ•°cã€‚è‹¥è¿”å›EOFåˆ™ä»£è¡¨å†™å…¥å¤±è´¥ã€‚
+èŒƒä¾‹
+å‚è€ƒfputcï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+putcharï¼ˆå°†æŒ‡å®šçš„å­—ç¬¦å†™åˆ°æ ‡å‡†è¾“å‡ºè®¾å¤‡ï¼‰
+ç›¸å…³å‡½æ•°
+fopenï¼Œfwriteï¼Œfscanfï¼Œfputc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int putchar (int c);
+å‡½æ•°è¯´æ˜
+putchar()ç”¨æ¥å°†å‚æ•°cå­—ç¬¦å†™åˆ°æ ‡å‡†è¾“å‡ºè®¾å¤‡ã€‚
+è¿”å›å€¼
+putchar()ä¼šè¿”å›è¾“å‡ºæˆåŠŸçš„å­—ç¬¦ï¼Œå³å‚æ•°cã€‚è‹¥è¿”å›EOFåˆ™ä»£è¡¨è¾“å‡ºå¤±è´¥ã€‚
+é™„åŠ è¯´æ˜
+putchar()éçœŸæ­£å‡½æ•°ï¼Œè€Œæ˜¯putc(cï¼Œstdout)å®å®šä¹‰ã€‚
+èŒƒä¾‹
+å‚è€ƒgetchar()ã€‚
+ã€€
+
+
+
+rewindï¼ˆé‡è®¾æ–‡ä»¶æµçš„è¯»å†™ä½ç½®ä¸ºæ–‡ä»¶å¼€å¤´ï¼‰
+ç›¸å…³å‡½æ•°
+fseekï¼Œftellï¼Œfgetposï¼Œfsetpos
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void rewind(FILE * stream);
+å‡½æ•°è¯´æ˜
+rewind()ç”¨æ¥æŠŠæ–‡ä»¶æµçš„è¯»å†™ä½ç½®ç§»è‡³æ–‡ä»¶å¼€å¤´ã€‚å‚æ•°streamä¸ºå·²æ‰“å¼€çš„æ–‡ä»¶æŒ‡é’ˆã€‚æ­¤å‡½æ•°ç›¸å½“äºè°ƒç”¨fseek(stream,0,SEEK_SET)ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+å‚è€ƒfseek()
+ã€€
+
+
+
+setbufï¼ˆè®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºï¼‰
+ç›¸å…³å‡½æ•°
+setbufferï¼Œsetlinebufï¼Œsetvbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void setbuf(FILE * stream,char * buf);
+å‡½æ•°è¯´æ˜
+åœ¨æ‰“å¼€æ–‡ä»¶æµåï¼Œè¯»å–å†…å®¹ä¹‹å‰ï¼Œè°ƒç”¨setbuf()å¯ä»¥ç”¨æ¥è®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºã€‚å‚æ•°streamä¸ºæŒ‡å®šçš„æ–‡ä»¶æµï¼Œå‚æ•°bufæŒ‡å‘è‡ªå®šçš„ç¼“å†²åŒºèµ·å§‹åœ°å€ã€‚å¦‚æœå‚æ•°bufä¸ºNULLæŒ‡é’ˆï¼Œåˆ™ä¸ºæ— ç¼“å†²IOã€‚Setbuf()ç›¸å½“äºè°ƒç”¨:setvbuf(stream,buf,buf?_IOFBF:_IONBF,BUFSIZ) 
+è¿”å›å€¼
+
+ã€€
+
+
+
+setbufferï¼ˆè®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºï¼‰
+ç›¸å…³å‡½æ•°
+setlinebufï¼Œsetbufï¼Œsetvbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void setbuffer(FILE * stream,char * buf,size_t size);
+å‡½æ•°è¯´æ˜
+åœ¨æ‰“å¼€æ–‡ä»¶æµåï¼Œè¯»å–å†…å®¹ä¹‹å‰ï¼Œè°ƒç”¨setbuffer()å¯ç”¨æ¥è®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºã€‚å‚æ•°streamä¸ºæŒ‡å®šçš„æ–‡ä»¶æµï¼Œå‚æ•°bufæŒ‡å‘è‡ªå®šçš„ç¼“å†²åŒºèµ·å§‹åœ°å€ï¼Œå‚æ•°sizeä¸ºç¼“å†²åŒºå¤§å°ã€‚
+è¿”å›å€¼
+
+ã€€
+
+
+
+setlinebufï¼ˆè®¾ç½®æ–‡ä»¶æµä¸ºçº¿æ€§ç¼“å†²åŒºï¼‰
+ç›¸å…³å‡½æ•°
+setbufferï¼Œsetbufï¼Œsetvbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void setlinebuf(FILE * stream);
+å‡½æ•°è¯´æ˜
+setlinebuf()ç”¨æ¥è®¾ç½®æ–‡ä»¶æµä»¥æ¢è¡Œä¸ºä¾æ®çš„æ— ç¼“å†²IOã€‚ç›¸å½“äºè°ƒç”¨:setvbuf(stream,(char * )NULL,_IOLBF,0);è¯·å‚è€ƒsetvbuf()ã€‚
+è¿”å›å€¼
+
+ã€€
+
+
+
+setvbufï¼ˆè®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºï¼‰
+ç›¸å…³å‡½æ•°
+setbufferï¼Œsetlinebufï¼Œsetbuf
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int setvbuf(FILE * stream,char * buf,int mode,size_t size);
+å‡½æ•°è¯´æ˜
+åœ¨æ‰“å¼€æ–‡ä»¶æµåï¼Œè¯»å–å†…å®¹ä¹‹å‰ï¼Œè°ƒç”¨setvbuf()å¯ä»¥ç”¨æ¥è®¾ç½®æ–‡ä»¶æµçš„ç¼“å†²åŒºã€‚å‚æ•°streamä¸ºæŒ‡å®šçš„æ–‡ä»¶æµï¼Œå‚æ•°bufæŒ‡å‘è‡ªå®šçš„ç¼“å†²åŒºèµ·å§‹åœ°å€ï¼Œå‚æ•°sizeä¸ºç¼“å†²åŒºå¤§å°ï¼Œå‚æ•°modeæœ‰ä¸‹åˆ—å‡ ç§
+_IONBF æ— ç¼“å†²IO
+_IOLBF ä»¥æ¢è¡Œä¸ºä¾æ®çš„æ— ç¼“å†²IO
+_IOFBF å®Œå…¨æ— ç¼“å†²IOã€‚å¦‚æœå‚æ•°bufä¸ºNULLæŒ‡é’ˆï¼Œåˆ™ä¸ºæ— ç¼“å†²IOã€‚
+è¿”å›å€¼
+
+ã€€
+
+
+
+ungetcï¼ˆå°†æŒ‡å®šå­—ç¬¦å†™å›æ–‡ä»¶æµä¸­ï¼‰
+ç›¸å…³å‡½æ•°
+fputcï¼Œgetcharï¼Œgetc
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int ungetc(int c,FILE * stream);
+å‡½æ•°è¯´æ˜
+ungetc()å°†å‚æ•°cå­—ç¬¦å†™å›å‚æ•°streamæ‰€æŒ‡å®šçš„æ–‡ä»¶æµã€‚è¿™ä¸ªå†™å›çš„å­—ç¬¦ä¼šç”±ä¸‹ä¸€ä¸ªè¯»å–æ–‡ä»¶æµçš„å‡½æ•°å–å¾—ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›c å­—ç¬¦ï¼Œè‹¥æœ‰é”™è¯¯åˆ™è¿”å›EOFã€‚
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

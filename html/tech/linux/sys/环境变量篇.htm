@@ -1,253 +1,138 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>ç¯å¢ƒå˜é‡ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc289></a></font> </div>
-    </td>
-  </tr>
-  <tr>
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      getenv£¨È¡µÃ»·¾³±äÁ¿ÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putenv£¬setenv£¬unsetenv<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * getenv(const char *name);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getenv()ÓÃÀ´È¡µÃ²ÎÊıname»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊınameÎª»·¾³±äÁ¿µÄÃû³Æ£¬Èç¹û¸Ã±äÁ¿´æÔÚÔò»á·µ»ØÖ¸Ïò¸ÃÄÚÈİµÄÖ¸Õë¡£»·¾³±äÁ¿µÄ¸ñÊ½Îªname£½value¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»ØÖ¸Ïò¸ÃÄÚÈİµÄÖ¸Õë£¬ÕÒ²»µ½·ûºÏµÄ»·¾³±äÁ¿Ãû³ÆÔò·µ»ØNULL¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      mian()<br>
-      {<br>
-      char *p;<br>
-      if((p = getenv(¡°USER¡±)))<br>
-      printf(¡°USER=%s\n¡±,p);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> USER = root<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc290></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      putenv£¨¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getenv£¬setenv£¬unsetenv<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include4&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int putenv(const char * string);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> putenv()ÓÃÀ´¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊıstringµÄ¸ñÊ½Îªname£½value£¬Èç¹û¸Ã»·¾³±äÁ¿Ô­ÏÈ´æÔÚ£¬Ôò±äÁ¿ÄÚÈİ»áÒÀ²ÎÊıstring¸Ä±ä£¬·ñÔò´Ë²ÎÊıÄÚÈİ»á³ÉÎªĞÂµÄ»·¾³±äÁ¿¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬ÓĞ´íÎó·¢ÉúÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ENOMEM ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃĞÂµÄ»·¾³±äÁ¿¿Õ¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char *p;<br>
-      if((p = getenv(¡°USER¡±)))<br>
-      printf(¡°USER =%s\n¡±,p);<br>
-      putenv(¡°USER=test¡±);<br>
-      printf(¡°USER+5s\n¡±,getenv(¡°USER¡±));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> USER=root<br>
-      USER=root<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc291></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      setenv£¨¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getenv£¬putenv£¬unsetenv<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int setenv(const char *name,const char * value,int 
-      overwrite);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> setenv()ÓÃÀ´¸Ä±ä»òÔö¼Ó»·¾³±äÁ¿µÄÄÚÈİ¡£²ÎÊınameÎª»·¾³±äÁ¿Ãû³Æ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> valueÔòÎª±äÁ¿ÄÚÈİ£¬²ÎÊıoverwriteÓÃÀ´¾ö¶¨ÊÇ·ñÒª¸Ä±äÒÑ´æÔÚµÄ»·¾³±äÁ¿¡£Èç¹ûoverwrite²»Îª0£¬¶ø¸Ã»·¾³±äÁ¿Ô­ÒÑÓĞÄÚÈİ£¬ÔòÔ­ÄÚÈİ»á±»¸ÄÎª²ÎÊıvalueËùÖ¸µÄ±äÁ¿ÄÚÈİ¡£Èç¹ûoverwriteÎª0£¬ÇÒ¸Ã»·¾³±äÁ¿ÒÑÓĞÄÚÈİ£¬Ôò²ÎÊıvalue»á±»ºöÂÔ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬ÓĞ´íÎó·¢ÉúÊ±·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ENOMEM ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃĞÂµÄ»·¾³±äÁ¿¿Õ¼ä<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char * p;<br>
-      if((p=getenv(¡°USER¡±)))<br>
-      printf(¡°USER =%s\n¡±,p);<br>
-      setenv(¡°USER¡±,¡±test¡±,1);<br>
-      printf(¡°USER=%s\n¡±,getenv(¡°USEr¡±));<br>
-      unsetenv(¡°USER¡±);<br>
-      printf(¡°USER=%s\n¡±,getenv(¡°USER¡±));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> USER = root<br>
-      USER = test<br>
-      USER = (null)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+getenvï¼ˆå–å¾—ç¯å¢ƒå˜é‡å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+putenvï¼Œsetenvï¼Œunsetenv
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+char * getenv(const char *name);
+å‡½æ•°è¯´æ˜
+getenv()ç”¨æ¥å–å¾—å‚æ•°nameç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°nameä¸ºç¯å¢ƒå˜é‡çš„åç§°ï¼Œ
+å¦‚æœè¯¥å˜é‡å­˜åœ¨åˆ™ä¼šè¿”å›æŒ‡å‘è¯¥å†…å®¹çš„æŒ‡é’ˆã€‚ç¯å¢ƒå˜é‡çš„æ ¼å¼ä¸ºnameï¼valueã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›æŒ‡å‘è¯¥å†…å®¹çš„æŒ‡é’ˆï¼Œæ‰¾ä¸åˆ°ç¬¦åˆçš„ç¯å¢ƒå˜é‡åç§°åˆ™è¿”å›NULLã€‚
+èŒƒä¾‹
+#include<stdlib.h>
+
+void main() {
+    char *p;
+    if((p = getenv(â€œUSERâ€)))
+        printf(â€œUSER=%s\nâ€,p);
+}
+æ‰§è¡Œ
+USER = root
+
+
+putenvï¼ˆæ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡ï¼‰
+ç›¸å…³å‡½æ•°
+getenvï¼Œsetenvï¼Œunsetenv
+è¡¨å¤´æ–‡ä»¶
+#include4<stdlib.h>
+å®šä¹‰å‡½æ•°
+int putenv(const char * string);
+å‡½æ•°è¯´æ˜
+putenv()ç”¨æ¥æ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°stringçš„æ ¼å¼ä¸ºnameï¼valueï¼Œ
+å¦‚æœè¯¥ç¯å¢ƒå˜é‡åŸå…ˆå­˜åœ¨ï¼Œ
+åˆ™å˜é‡å†…å®¹ä¼šä¾å‚æ•°stringæ”¹å˜ï¼Œå¦åˆ™æ­¤å‚æ•°å†…å®¹ä¼šæˆä¸ºæ–°çš„ç¯å¢ƒå˜é‡ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œæœ‰é”™è¯¯å‘ç”Ÿåˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®æ–°çš„ç¯å¢ƒå˜é‡ç©ºé—´ã€‚
+èŒƒä¾‹
+#include<stdlib.h>
+
+void main() {
+    char *p;
+    if((p = getenv(â€œUSERâ€)))
+        printf(â€œUSER =%s\nâ€,p);
+    putenv(â€œUSER=testâ€);
+    printf(â€œUSER+5s\nâ€,getenv(â€œUSERâ€));
+}
+æ‰§è¡Œ
+USER=root
+USER=root
+
+
+setenvï¼ˆæ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡ï¼‰
+ç›¸å…³å‡½æ•°
+getenvï¼Œputenvï¼Œunsetenv
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+int setenv(const char *name,const char * value,int overwrite);
+å‡½æ•°è¯´æ˜
+setenv()ç”¨æ¥æ”¹å˜æˆ–å¢åŠ ç¯å¢ƒå˜é‡çš„å†…å®¹ã€‚å‚æ•°nameä¸ºç¯å¢ƒå˜é‡åç§°å­—ç¬¦ä¸²ã€‚
+å‚æ•°
+valueåˆ™ä¸ºå˜é‡å†…å®¹ï¼Œå‚æ•°overwriteç”¨æ¥å†³å®šæ˜¯å¦è¦æ”¹å˜å·²å­˜åœ¨çš„ç¯å¢ƒå˜é‡ã€‚
+å¦‚æœoverwriteä¸ä¸º0ï¼Œè€Œè¯¥ç¯å¢ƒå˜é‡åŸå·²æœ‰å†…å®¹ï¼Œåˆ™åŸå†…å®¹ä¼šè¢«æ”¹ä¸ºå‚æ•°valueæ‰€æŒ‡çš„å˜é‡å†…å®¹ã€‚
+å¦‚æœoverwriteä¸º0ï¼Œä¸”è¯¥ç¯å¢ƒå˜é‡å·²æœ‰å†…å®¹ï¼Œåˆ™å‚æ•°valueä¼šè¢«å¿½ç•¥ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œæœ‰é”™è¯¯å‘ç”Ÿæ—¶è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®æ–°çš„ç¯å¢ƒå˜é‡ç©ºé—´
+èŒƒä¾‹
+#include<stdlib.h>
+
+void main() {
+    char * p;
+    if((p=getenv(â€œUSERâ€)))
+        printf(â€œUSER =%s\nâ€,p);
+    setenv(â€œUSERâ€,â€testâ€,1);
+    printf(â€œUSER=%s\nâ€,getenv(â€œUSErâ€));
+    unsetenv(â€œUSERâ€);
+    printf(â€œUSER=%s\nâ€,getenv(â€œUSERâ€));
+}
+æ‰§è¡Œ
+USER = root
+USER = test
+USER = (null)
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

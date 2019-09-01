@@ -1,800 +1,350 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>å­—ç¬¦ä¸²è½¬æ¢ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc14></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      atof£¨½«×Ö·û´®×ª»»³É¸¡µãĞÍÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atoi£¬atol£¬strtod£¬strtol£¬strtoul<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> double atof(const char *nptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬¶øÔÙÓöµ½·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')²Å½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£²ÎÊınptr×Ö·û´®¿É°üº¬Õı¸ººÅ¡¢Ğ¡Êıµã»òE(e)À´±íÊ¾Ö¸Êı²¿·Ö£¬Èç123.456»ò123e-2¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ¸¡µãĞÍÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof()ÓëÊ¹ÓÃstrtod(nptr,(char**)NULL)½á¹ûÏàÍ¬¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ½«×Ö·û´®a Óë×Ö·û´®b×ª»»³ÉÊı×ÖºóÏà¼Ó*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char *a=¡±-100.23¡±;<br>
-      char *b=¡±200e-2¡±;<br>
-      float c;<br>
-      c=atof(a)+atof(b);<br>
-      printf(¡°c=%.2f\n¡±,c);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> c=-98.23<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc15></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      atoi£¨½«×Ö·û´®×ª»»³ÉÕûĞÍÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof£¬atol£¬atrtod£¬strtol£¬strtoul<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int atoi(const char *nptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atoi()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬¶øÔÙÓöµ½·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')²Å½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄÕûĞÍÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atoi()ÓëÊ¹ÓÃstrtol(nptr£¬(char**)NULL£¬10)£»½á¹ûÏàÍ¬¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ½«×Ö·û´®a Óë×Ö·û´®b×ª»»³ÉÊı×ÖºóÏà¼Ó*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      mian()<br>
-      {<br>
-      char a[]=¡±-100¡±;<br>
-      char b[]=¡±456¡±;<br>
-      int c;<br>
-      c=atoi(a)+atoi(b);<br>
-      printf(c=%d\n¡±,c);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> c=356<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc16></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      atol£¨½«×Ö·û´®×ª»»³É³¤ÕûĞÍÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof£¬atoi£¬strtod£¬strtol£¬strtoul<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> long atol(const char *nptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atol()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬¶øÔÙÓöµ½·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')²Å½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ³¤ÕûĞÍÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atol()ÓëÊ¹ÓÃstrtol(nptr,(char**)NULL,10)£»½á¹ûÏàÍ¬¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*½«×Ö·û´®aÓë×Ö·û´®b×ª»»³ÉÊı×ÖºóÏà¼Ó*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[]=¡±1000000000¡±;<br>
-      char b[]=¡± 234567890¡±;<br>
-      long c;<br>
-      c=atol(a)+atol(b);<br>
-      printf(¡°c=%d\n¡±,c);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> c=1234567890<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc17></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      gcvt£¨½«¸¡µãĞÍÊı×ª»»Îª×Ö·û´®£¬È¡ËÄÉáÎåÈë£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ecvt£¬fcvt£¬sprintf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char *gcvt(double number£¬size_t 
-      ndigits£¬char *buf);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> gcvt()ÓÃÀ´½«²ÎÊınumber×ª»»³ÉASCIIÂë×Ö·û´®£¬²ÎÊındigits±íÊ¾ÏÔÊ¾µÄÎ»Êı¡£gcvt()Óëecvt()ºÍfcvt()²»Í¬µÄµØ·½ÔÚÓÚ£¬gcvt()Ëù×ª»»ºóµÄ×Ö·û´®°üº¬Ğ¡Êıµã»òÕı¸º·ûºÅ¡£Èô×ª»»³É¹¦£¬×ª»»ºóµÄ×Ö·û´®»á·ÅÔÚ²ÎÊıbufÖ¸ÕëËùÖ¸µÄ¿Õ¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÒ»×Ö·û´®Ö¸Õë£¬´ËµØÖ·¼´ÎªbufÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      double a=123.45;<br>
-      double b=-1234.56;<br>
-      char *ptr;<br>
-      int decpt,sign;<br>
-      gcvt(a,5,ptr);<br>
-      printf(¡°a value=%s\n¡±,ptr);<br>
-      ptr=gcvt(b,6,ptr);<br>
-      printf(¡°b value=%s\n¡±,ptr);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> a value=123.45<br>
-		b value=-1234.56<br>
-      </font> </td>
-  </tr>
-  
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc18></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strtod£¨½«×Ö·û´®×ª»»³É¸¡µãÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atoi£¬atol£¬strtod£¬strtol£¬strtoul<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> double strtod(const char *nptr,char 
-      **endptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strtod()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬µ½³öÏÖ·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')²Å½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£Èôendptr²»ÎªNULL£¬Ôò»á½«Óöµ½²»ºÏÌõ¼ş¶øÖÕÖ¹µÄnptrÖĞµÄ×Ö·ûÖ¸ÕëÓÉendptr´«»Ø¡£²ÎÊınptr×Ö·û´®¿É°üº¬Õı¸ººÅ¡¢Ğ¡Êıµã»òE(e)À´±íÊ¾Ö¸Êı²¿·Ö¡£Èç123.456»ò123e-2¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ¸¡µãĞÍÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼atof()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*½«×Ö·û´®a£¬b£¬c ·Ö±ğ²ÉÓÃ10£¬2£¬16 ½øÖÆ×ª»»³ÉÊı×Ö*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      mian()<br>
-      {<br>
-      char a[]=¡±1000000000¡±;<br>
-      char b[]=¡±1000000000¡±;<br>
-      char c[]=¡±ffff¡±;<br>
-      printf(¡°a=%d\n¡±,strtod(a,NULL,10));<br>
-      printf(¡°b=%d\n¡±,strtod(b,NULL,2));<br>
-      printf(¡°c=%d\n¡±,strtod(c,NULL,16));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> a=1000000000<br>
-      b=512<br>
-      c=65535<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc19></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strtol£¨½«×Ö·û´®×ª»»³É³¤ÕûĞÍÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof£¬atoi£¬atol£¬strtod£¬strtoul<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> long int strtol(const char *nptr,char 
-      **endptr,int base);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strtol()»á½«²ÎÊınptr×Ö·û´®¸ù¾İ²ÎÊıbaseÀ´×ª»»³É³¤ÕûĞÍÊı¡£²ÎÊıbase·¶Î§´Ó2ÖÁ36£¬»ò0¡£²ÎÊıbase´ú±í²ÉÓÃµÄ½øÖÆ·½Ê½£¬ÈçbaseÖµÎª10Ôò²ÉÓÃ10½øÖÆ£¬ÈôbaseÖµÎª16Ôò²ÉÓÃ16½øÖÆµÈ¡£µ±baseÖµÎª0Ê±ÔòÊÇ²ÉÓÃ10½øÖÆ×ö×ª»»£¬µ«Óöµ½Èç'0x'Ç°ÖÃ×Ö·ûÔò»áÊ¹ÓÃ16½øÖÆ×ö×ª»»¡£Ò»¿ªÊ¼strtol()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬ÔÙÓöµ½·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£Èô²ÎÊıendptr²»ÎªNULL£¬Ôò»á½«Óöµ½²»ºÏÌõ¼ş¶øÖÕÖ¹µÄnptrÖĞµÄ×Ö·ûÖ¸ÕëÓÉendptr·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ³¤ÕûĞÍÊı£¬·ñÔò·µ»ØERANGE²¢½«´íÎó´úÂë´æÈëerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ERANGEÖ¸¶¨µÄ×ª»»×Ö·û´®³¬³öºÏ·¨·¶Î§¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ½«×Ö·û´®a£¬b£¬c ·Ö±ğ²ÉÓÃ10£¬2£¬16½øÖÆ×ª»»³ÉÊı×Ö*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[]=¡±1000000000¡±;<br>
-      char b[]=¡±1000000000¡±;<br>
-      char c[]=¡±ffff¡±;<br>
-      printf(¡°a=%d\n¡±,strtol(a,NULL,10));<br>
-      printf(¡°b=%d\n¡±,strtol(b,NULL,2));<br>
-      printf(¡°c=%d\n¡±,strtol(c,NULL,16));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> a=1000000000<br>
-      b=512<br>
-      c=65535<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc20></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strtoul£¨½«×Ö·û´®×ª»»³ÉÎŞ·ûºÅ³¤ÕûĞÍÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> atof£¬atoi£¬atol£¬strtod£¬strtol<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned long int strtoul(const 
-      char *nptr,char **endptr,int base);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strtoul()»á½«²ÎÊınptr×Ö·û´®¸ù¾İ²ÎÊıbaseÀ´×ª»»³ÉÎŞ·ûºÅµÄ³¤ÕûĞÍÊı¡£²ÎÊıbase·¶Î§´Ó2ÖÁ36£¬»ò0¡£²ÎÊıbase´ú±í²ÉÓÃµÄ½øÖÆ·½Ê½£¬ÈçbaseÖµÎª10Ôò²ÉÓÃ10½øÖÆ£¬ÈôbaseÖµÎª16Ôò²ÉÓÃ16½øÖÆÊıµÈ¡£µ±baseÖµÎª0Ê±ÔòÊÇ²ÉÓÃ10½øÖÆ×ö×ª»»£¬µ«Óöµ½Èç'0x'Ç°ÖÃ×Ö·ûÔò»áÊ¹ÓÃ16½øÖÆ×ö×ª»»¡£Ò»¿ªÊ¼strtoul()»áÉ¨Ãè²ÎÊınptr×Ö·û´®£¬Ìø¹ıÇ°ÃæµÄ¿Õ¸ñ×Ö·û´®£¬Ö±µ½ÓöÉÏÊı×Ö»òÕı¸º·ûºÅ²Å¿ªÊ¼×ö×ª»»£¬ÔÙÓöµ½·ÇÊı×Ö»ò×Ö·û´®½áÊøÊ±('\0')½áÊø×ª»»£¬²¢½«½á¹û·µ»Ø¡£Èô²ÎÊıendptr²»ÎªNULL£¬Ôò»á½«Óöµ½²»ºÏÌõ¼ş¶øÖÕÖ¹µÄnptrÖĞµÄ×Ö·ûÖ¸ÕëÓÉendptr·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ³¤ÕûĞÍÊı£¬·ñÔò·µ»ØERANGE²¢½«´íÎó´úÂë´æÈëerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ERANGEÖ¸¶¨µÄ×ª»»×Ö·û´®³¬³öºÏ·¨·¶Î§¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼strtol()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc21></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      toascii£¨½«ÕûĞÍÊı×ª»»³ÉºÏ·¨µÄASCII Âë×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isascii£¬toupper£¬tolower<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int toascii(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> toascii()»á½«²ÎÊıc×ª»»³É7Î»µÄunsigned charÖµ£¬µÚ°ËÎ»Ôò»á±»Çå³ı£¬´Ë×Ö·û¼´»á±»×ª³ÉASCIIÂë×Ö·û¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ½«×ª»»³É¹¦µÄASCIIÂë×Ö·ûÖµ·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      int a=217;<br>
-      char b;<br>
-      printf(¡°before toascii () : a value =%d(%c)\n¡±,a,a);<br>
-      b=toascii(a);<br>
-      printf(¡°after toascii() : a value =%d(%c)\n¡±,b,b);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before toascii() : a value =217()<br>
-      after toascii() : a value =89(Y)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc22></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      tolower£¨½«´óĞ´×ÖÄ¸×ª»»³ÉĞ¡Ğ´×ÖÄ¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalpha£¬toupper<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int tolower(int c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª´óĞ´×ÖÄ¸Ôò½«¸Ã¶ÔÓ¦µÄĞ¡Ğ´×ÖÄ¸·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄĞ¡Ğ´×ÖÄ¸£¬Èô²»Ğë×ª»»Ôò½«²ÎÊıcÖµ·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ½«s×Ö·û´®ÄÚµÄ´óĞ´×ÖÄ¸×ª»»³ÉĞ¡Ğ´×ÖÄ¸*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char s[]=¡±aBcDeFgH12345;!#$¡±;<br>
-      int i;<br>
-      printf(¡°before tolower() : %s\n¡±,s);<br>
-      for(i=0;I&lt;sizeof(s);i++)<br>
-      s[i]=tolower(s[i]);<br>
-      printf(¡°after tolower() : %s\n¡±,s);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before tolower() : aBcDeFgH12345;!#$<br>
-      after tolower() : abcdefgh12345;!#$<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc23></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      toupper£¨½«Ğ¡Ğ´×ÖÄ¸×ª»»³É´óĞ´×ÖÄ¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalpha£¬tolower<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int toupper(int c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎªĞ¡Ğ´×ÖÄ¸Ôò½«¸Ã¶ÔÓ³µÄ´óĞ´×ÖÄ¸·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×ª»»ºóµÄ´óĞ´×ÖÄ¸£¬Èô²»Ğë×ª»»Ôò½«²ÎÊıcÖµ·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ½«s×Ö·û´®ÄÚµÄĞ¡Ğ´×ÖÄ¸×ª»»³É´óĞ´×ÖÄ¸*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char s[]=¡±aBcDeFgH12345;!#$¡±;<br>
-      int i;<br>
-      printf(¡°before toupper() : %s\n¡±,s);<br>
-      for(i=0;I&lt;sizeof(s);i++)<br>
-      s[i]=toupper(s[i]);<br>
-      printf(¡°after toupper() : %s\n¡±,s);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before toupper() : aBcDeFgH12345;!#$<br>
-      after toupper() : ABCDEFGH12345;!#$<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+atofï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆæµ®ç‚¹å‹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atoiï¼Œatolï¼Œstrtodï¼Œstrtolï¼Œstrtoul
+è¡¨å¤´æ–‡ä»¶
+#include <stdlib.h>
+å®šä¹‰å‡½æ•°
+double atof(const char *nptr);
+å‡½æ•°è¯´æ˜
+atof()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œè€Œå†é‡åˆ°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')æ‰ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚å‚æ•°nptrå­—ç¬¦ä¸²å¯åŒ…å«æ­£è´Ÿå·ã€å°æ•°ç‚¹æˆ–E(e)æ¥è¡¨ç¤ºæŒ‡æ•°éƒ¨åˆ†ï¼Œå¦‚123.456æˆ–123e-2ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„æµ®ç‚¹å‹æ•°ã€‚
+é™„åŠ è¯´æ˜
+atof()ä¸ä½¿ç”¨strtod(nptr,(char**)NULL)ç»“æœç›¸åŒã€‚
+èŒƒä¾‹
+/* å°†å­—ç¬¦ä¸²a ä¸å­—ç¬¦ä¸²bè½¬æ¢æˆæ•°å­—åç›¸åŠ */
+#include<stdlib.h>
+main()
+{
+char *a=â€-100.23â€;
+char *b=â€200e-2â€;
+float c;
+c=atof(a)+atof(b);
+printf(â€œc=%.2f\nâ€,c);
+}
+æ‰§è¡Œ
+c=-98.23
+ã€€
+
+
+
+atoiï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆæ•´å‹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atofï¼Œatolï¼Œatrtodï¼Œstrtolï¼Œstrtoul
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+int atoi(const char *nptr);
+å‡½æ•°è¯´æ˜
+atoi()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œè€Œå†é‡åˆ°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')æ‰ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„æ•´å‹æ•°ã€‚
+é™„åŠ è¯´æ˜
+atoi()ä¸ä½¿ç”¨strtol(nptrï¼Œ(char**)NULLï¼Œ10)ï¼›ç»“æœç›¸åŒã€‚
+èŒƒä¾‹
+/* å°†å­—ç¬¦ä¸²a ä¸å­—ç¬¦ä¸²bè½¬æ¢æˆæ•°å­—åç›¸åŠ */
+#include<stdlib.h>
+mian()
+{
+char a[]=â€-100â€;
+char b[]=â€456â€;
+int c;
+c=atoi(a)+atoi(b);
+printf(c=%d\nâ€,c);
+}
+æ‰§è¡Œ
+c=356
+ã€€
+
+
+
+atolï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆé•¿æ•´å‹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atofï¼Œatoiï¼Œstrtodï¼Œstrtolï¼Œstrtoul
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+long atol(const char *nptr);
+å‡½æ•°è¯´æ˜
+atol()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œè€Œå†é‡åˆ°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')æ‰ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„é•¿æ•´å‹æ•°ã€‚
+é™„åŠ è¯´æ˜
+atol()ä¸ä½¿ç”¨strtol(nptr,(char**)NULL,10)ï¼›ç»“æœç›¸åŒã€‚
+èŒƒä¾‹
+/*å°†å­—ç¬¦ä¸²aä¸å­—ç¬¦ä¸²bè½¬æ¢æˆæ•°å­—åç›¸åŠ */
+#include<stdlib.h>
+main()
+{
+char a[]=â€1000000000â€;
+char b[]=â€ 234567890â€;
+long c;
+c=atol(a)+atol(b);
+printf(â€œc=%d\nâ€,c);
+}
+æ‰§è¡Œ
+c=1234567890
+ã€€
+
+
+
+gcvtï¼ˆå°†æµ®ç‚¹å‹æ•°è½¬æ¢ä¸ºå­—ç¬¦ä¸²ï¼Œå–å››èˆäº”å…¥ï¼‰
+ç›¸å…³å‡½æ•°
+ecvtï¼Œfcvtï¼Œsprintf
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+char *gcvt(double numberï¼Œsize_t ndigitsï¼Œchar *buf);
+å‡½æ•°è¯´æ˜
+gcvt()ç”¨æ¥å°†å‚æ•°numberè½¬æ¢æˆASCIIç å­—ç¬¦ä¸²ï¼Œå‚æ•°ndigitsè¡¨ç¤ºæ˜¾ç¤ºçš„ä½æ•°ã€‚gcvt()ä¸ecvt()å’Œfcvt()ä¸åŒçš„åœ°æ–¹åœ¨äºï¼Œgcvt()æ‰€è½¬æ¢åçš„å­—ç¬¦ä¸²åŒ…å«å°æ•°ç‚¹æˆ–æ­£è´Ÿç¬¦å·ã€‚è‹¥è½¬æ¢æˆåŠŸï¼Œè½¬æ¢åçš„å­—ç¬¦ä¸²ä¼šæ”¾åœ¨å‚æ•°bufæŒ‡é’ˆæ‰€æŒ‡çš„ç©ºé—´ã€‚
+è¿”å›å€¼
+è¿”å›ä¸€å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œæ­¤åœ°å€å³ä¸ºbufæŒ‡é’ˆã€‚
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+#include<stdlib.h>
+main()
+{
+double a=123.45;
+double b=-1234.56;
+char *ptr;
+int decpt,sign;
+gcvt(a,5,ptr);
+printf(â€œa value=%s\nâ€,ptr);
+ptr=gcvt(b,6,ptr);
+printf(â€œb value=%s\nâ€,ptr);
+}
+æ‰§è¡Œ
+a value=123.45
+b value=-1234.56
+ã€€
+
+
+
+strtodï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆæµ®ç‚¹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atoiï¼Œatolï¼Œstrtodï¼Œstrtolï¼Œstrtoul
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+double strtod(const char *nptr,char **endptr);
+å‡½æ•°è¯´æ˜
+strtod()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œåˆ°å‡ºç°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')æ‰ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚è‹¥endpträ¸ä¸ºNULLï¼Œåˆ™ä¼šå°†é‡åˆ°ä¸åˆæ¡ä»¶è€Œç»ˆæ­¢çš„npträ¸­çš„å­—ç¬¦æŒ‡é’ˆç”±endpträ¼ å›ã€‚å‚æ•°nptrå­—ç¬¦ä¸²å¯åŒ…å«æ­£è´Ÿå·ã€å°æ•°ç‚¹æˆ–E(e)æ¥è¡¨ç¤ºæŒ‡æ•°éƒ¨åˆ†ã€‚å¦‚123.456æˆ–123e-2ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„æµ®ç‚¹å‹æ•°ã€‚
+é™„åŠ è¯´æ˜
+å‚è€ƒatof()ã€‚
+èŒƒä¾‹
+/*å°†å­—ç¬¦ä¸²aï¼Œbï¼Œc åˆ†åˆ«é‡‡ç”¨10ï¼Œ2ï¼Œ16 è¿›åˆ¶è½¬æ¢æˆæ•°å­—*/
+#include<stdlib.h>
+mian()
+{
+char a[]=â€1000000000â€;
+char b[]=â€1000000000â€;
+char c[]=â€ffffâ€;
+printf(â€œa=%d\nâ€,strtod(a,NULL,10));
+printf(â€œb=%d\nâ€,strtod(b,NULL,2));
+printf(â€œc=%d\nâ€,strtod(c,NULL,16));
+}
+æ‰§è¡Œ
+a=1000000000
+b=512
+c=65535
+ã€€
+
+
+
+strtolï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆé•¿æ•´å‹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atofï¼Œatoiï¼Œatolï¼Œstrtodï¼Œstrtoul
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+long int strtol(const char *nptr,char **endptr,int base);
+å‡½æ•°è¯´æ˜
+strtol()ä¼šå°†å‚æ•°nptrå­—ç¬¦ä¸²æ ¹æ®å‚æ•°baseæ¥è½¬æ¢æˆé•¿æ•´å‹æ•°ã€‚å‚æ•°baseèŒƒå›´ä»2è‡³36ï¼Œæˆ–0ã€‚å‚æ•°baseä»£è¡¨é‡‡ç”¨çš„è¿›åˆ¶æ–¹å¼ï¼Œå¦‚baseå€¼ä¸º10åˆ™é‡‡ç”¨10è¿›åˆ¶ï¼Œè‹¥baseå€¼ä¸º16åˆ™é‡‡ç”¨16è¿›åˆ¶ç­‰ã€‚å½“baseå€¼ä¸º0æ—¶åˆ™æ˜¯é‡‡ç”¨10è¿›åˆ¶åšè½¬æ¢ï¼Œä½†é‡åˆ°å¦‚'0x'å‰ç½®å­—ç¬¦åˆ™ä¼šä½¿ç”¨16è¿›åˆ¶åšè½¬æ¢ã€‚ä¸€å¼€å§‹strtol()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œå†é‡åˆ°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚è‹¥å‚æ•°endpträ¸ä¸ºNULLï¼Œåˆ™ä¼šå°†é‡åˆ°ä¸åˆæ¡ä»¶è€Œç»ˆæ­¢çš„npträ¸­çš„å­—ç¬¦æŒ‡é’ˆç”±endptrè¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„é•¿æ•´å‹æ•°ï¼Œå¦åˆ™è¿”å›ERANGEå¹¶å°†é”™è¯¯ä»£ç å­˜å…¥errnoä¸­ã€‚
+é™„åŠ è¯´æ˜
+ERANGEæŒ‡å®šçš„è½¬æ¢å­—ç¬¦ä¸²è¶…å‡ºåˆæ³•èŒƒå›´ã€‚
+èŒƒä¾‹
+/* å°†å­—ç¬¦ä¸²aï¼Œbï¼Œc åˆ†åˆ«é‡‡ç”¨10ï¼Œ2ï¼Œ16è¿›åˆ¶è½¬æ¢æˆæ•°å­—*/
+#include<stdlib.h>
+main()
+{
+char a[]=â€1000000000â€;
+char b[]=â€1000000000â€;
+char c[]=â€ffffâ€;
+printf(â€œa=%d\nâ€,strtol(a,NULL,10));
+printf(â€œb=%d\nâ€,strtol(b,NULL,2));
+printf(â€œc=%d\nâ€,strtol(c,NULL,16));
+}
+æ‰§è¡Œ
+a=1000000000
+b=512
+c=65535
+ã€€
+
+
+
+strtoulï¼ˆå°†å­—ç¬¦ä¸²è½¬æ¢æˆæ— ç¬¦å·é•¿æ•´å‹æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+atofï¼Œatoiï¼Œatolï¼Œstrtodï¼Œstrtol
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+unsigned long int strtoul(const char *nptr,char **endptr,int base);
+å‡½æ•°è¯´æ˜
+strtoul()ä¼šå°†å‚æ•°nptrå­—ç¬¦ä¸²æ ¹æ®å‚æ•°baseæ¥è½¬æ¢æˆæ— ç¬¦å·çš„é•¿æ•´å‹æ•°ã€‚å‚æ•°baseèŒƒå›´ä»2è‡³36ï¼Œæˆ–0ã€‚å‚æ•°baseä»£è¡¨é‡‡ç”¨çš„è¿›åˆ¶æ–¹å¼ï¼Œå¦‚baseå€¼ä¸º10åˆ™é‡‡ç”¨10è¿›åˆ¶ï¼Œè‹¥baseå€¼ä¸º16åˆ™é‡‡ç”¨16è¿›åˆ¶æ•°ç­‰ã€‚å½“baseå€¼ä¸º0æ—¶åˆ™æ˜¯é‡‡ç”¨10è¿›åˆ¶åšè½¬æ¢ï¼Œä½†é‡åˆ°å¦‚'0x'å‰ç½®å­—ç¬¦åˆ™ä¼šä½¿ç”¨16è¿›åˆ¶åšè½¬æ¢ã€‚ä¸€å¼€å§‹strtoul()ä¼šæ‰«æå‚æ•°nptrå­—ç¬¦ä¸²ï¼Œè·³è¿‡å‰é¢çš„ç©ºæ ¼å­—ç¬¦ä¸²ï¼Œç›´åˆ°é‡ä¸Šæ•°å­—æˆ–æ­£è´Ÿç¬¦å·æ‰å¼€å§‹åšè½¬æ¢ï¼Œå†é‡åˆ°éæ•°å­—æˆ–å­—ç¬¦ä¸²ç»“æŸæ—¶('\0')ç»“æŸè½¬æ¢ï¼Œå¹¶å°†ç»“æœè¿”å›ã€‚è‹¥å‚æ•°endpträ¸ä¸ºNULLï¼Œåˆ™ä¼šå°†é‡åˆ°ä¸åˆæ¡ä»¶è€Œç»ˆæ­¢çš„npträ¸­çš„å­—ç¬¦æŒ‡é’ˆç”±endptrè¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„é•¿æ•´å‹æ•°ï¼Œå¦åˆ™è¿”å›ERANGEå¹¶å°†é”™è¯¯ä»£ç å­˜å…¥errnoä¸­ã€‚
+é™„åŠ è¯´æ˜
+ERANGEæŒ‡å®šçš„è½¬æ¢å­—ç¬¦ä¸²è¶…å‡ºåˆæ³•èŒƒå›´ã€‚
+èŒƒä¾‹
+å‚è€ƒstrtol()
+ã€€
+
+
+
+toasciiï¼ˆå°†æ•´å‹æ•°è½¬æ¢æˆåˆæ³•çš„ASCII ç å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+isasciiï¼Œtoupperï¼Œtolower
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int toascii(int c)
+å‡½æ•°è¯´æ˜
+toascii()ä¼šå°†å‚æ•°cè½¬æ¢æˆ7ä½çš„unsigned charå€¼ï¼Œç¬¬å…«ä½åˆ™ä¼šè¢«æ¸…é™¤ï¼Œæ­¤å­—ç¬¦å³ä¼šè¢«è½¬æˆASCIIç å­—ç¬¦ã€‚
+è¿”å›å€¼
+å°†è½¬æ¢æˆåŠŸçš„ASCIIç å­—ç¬¦å€¼è¿”å›ã€‚
+èŒƒä¾‹
+#include<stdlib.h>
+main()
+{
+int a=217;
+char b;
+printf(â€œbefore toascii () : a value =%d(%c)\nâ€,a,a);
+b=toascii(a);
+printf(â€œafter toascii() : a value =%d(%c)\nâ€,b,b);
+}
+æ‰§è¡Œ
+before toascii() : a value =217()
+after toascii() : a value =89(Y)
+ã€€
+
+
+
+tolowerï¼ˆå°†å¤§å†™å­—æ¯è½¬æ¢æˆå°å†™å­—æ¯ï¼‰
+ç›¸å…³å‡½æ•°
+isalphaï¼Œtoupper
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+int tolower(int c);
+å‡½æ•°è¯´æ˜
+è‹¥å‚æ•°cä¸ºå¤§å†™å­—æ¯åˆ™å°†è¯¥å¯¹åº”çš„å°å†™å­—æ¯è¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„å°å†™å­—æ¯ï¼Œè‹¥ä¸é¡»è½¬æ¢åˆ™å°†å‚æ•°cå€¼è¿”å›ã€‚
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+/* å°†så­—ç¬¦ä¸²å†…çš„å¤§å†™å­—æ¯è½¬æ¢æˆå°å†™å­—æ¯*/
+#include<ctype.h>
+main()
+{
+char s[]=â€aBcDeFgH12345;!#$â€;
+int i;
+printf(â€œbefore tolower() : %s\nâ€,s);
+for(i=0;I<sizeof(s);i++)
+s[i]=tolower(s[i]);
+printf(â€œafter tolower() : %s\nâ€,s);
+}
+æ‰§è¡Œ
+before tolower() : aBcDeFgH12345;!#$
+after tolower() : abcdefgh12345;!#$
+ã€€
+
+
+
+toupperï¼ˆå°†å°å†™å­—æ¯è½¬æ¢æˆå¤§å†™å­—æ¯ï¼‰
+ç›¸å…³å‡½æ•°
+isalphaï¼Œtolower
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int toupper(int c);
+å‡½æ•°è¯´æ˜
+è‹¥å‚æ•°cä¸ºå°å†™å­—æ¯åˆ™å°†è¯¥å¯¹æ˜ çš„å¤§å†™å­—æ¯è¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›è½¬æ¢åçš„å¤§å†™å­—æ¯ï¼Œè‹¥ä¸é¡»è½¬æ¢åˆ™å°†å‚æ•°cå€¼è¿”å›ã€‚
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+/* å°†så­—ç¬¦ä¸²å†…çš„å°å†™å­—æ¯è½¬æ¢æˆå¤§å†™å­—æ¯*/
+#include<ctype.h>
+main()
+{
+char s[]=â€aBcDeFgH12345;!#$â€;
+int i;
+printf(â€œbefore toupper() : %s\nâ€,s);
+for(i=0;I<sizeof(s);i++)
+s[i]=toupper(s[i]);
+printf(â€œafter toupper() : %s\nâ€,s);
+}
+æ‰§è¡Œ
+before toupper() : aBcDeFgH12345;!#$
+after toupper() : ABCDEFGH12345;!#$
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

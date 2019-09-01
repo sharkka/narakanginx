@@ -1,619 +1,328 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>æ•°æ®ç»“æ„åŠç®—æ³•ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc125></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      crypt£¨½«ÃÜÂë»òÊı¾İ±àÂë£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> getpass<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #define _XOPEN_SOURCE<br>
-      #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * crypt (const char *key,const char * 
-      salt);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> crypt()½«Ê¹ÓÃData Encryption Standard(DES)ÑİËã·¨½«²ÎÊıkeyËùÖ¸µÄ×Ö·û´®¼ÓÒÔ±àÂë£¬key×Ö·û´®³¤¶È½öÈ¡Ç°8¸ö×Ö·û£¬³¬¹ı´Ë³¤¶ÈµÄ×Ö·ûÃ»ÓĞÒâÒå¡£²ÎÊısaltÎªÁ½¸ö×Ö·û×é³ÉµÄ×Ö·û´®£¬ÓÉa-z¡¢A-Z¡¢0-9£¬¡°.¡±ºÍ¡°/¡±Ëù×é³É£¬ÓÃÀ´¾ö¶¨Ê¹ÓÃ4096 
-      ÖÖ²»Í¬ÄÚ½¨±í¸ñµÄÄÄÒ»¸ö¡£º¯ÊıÖ´ĞĞ³É¹¦ºó»á·µ»ØÖ¸Ïò±àÂë¹ıµÄ×Ö·û´®Ö¸Õë£¬²ÎÊıkey ËùÖ¸µÄ×Ö·û´®²»»áÓĞËù¸ü¶¯¡£±àÂë¹ıµÄ×Ö·û´®³¤¶ÈÎª13 ¸ö×Ö·û£¬Ç°Á½¸ö×Ö·ûÎª²ÎÊısalt´ú±íµÄ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÒ»¸öÖ¸ÏòÒÔNULL½áÎ²µÄÃÜÂë×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ê¹ÓÃGCC±àÒëÊ±Ğè¼Ó-lcrypt¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      main()<br>
-      {<br>
-      char passwd[13];<br>
-      char *key;<br>
-      char slat[2];<br>
-      key= getpass(¡°Input First Password:¡±);<br>
-      slat[0]=key[0];<br>
-      slat[1]=key[1];<br>
-      strcpy(passwd,crypt(key slat));<br>
-      key=getpass(¡°Input Second Password:¡±);<br>
-      slat[0]=passwd[0];<br>
-      slat[1]=passwd[1];<br>
-      printf(¡°After crypt(),1st passwd :%s\n¡±,passwd);<br>
-      printf(¡°After crypt(),2nd passwd:%s \n¡±,crypt(key slat));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Input First Password: /* ÊäÈëtest£¬±àÂëºó´æÓÚpasswd[ 
-      ] */<br>
-      Input Second Password /*ÊäÈëtest£¬ÃÜÂëÏàÍ¬±àÂëºóÒ²»áÏàÍ¬*/<br>
-      After crypt () 1st Passwd : teH0wLIpW0gyQ<br>
-      After crypt () 2nd Passwd : teH0wLIpW0gyQ<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc126></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      bsearch£¨¶şÔªËÑË÷£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> qsort<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void *bsearch(const void *key,const void *base,size_t 
-      nmemb,size_tsize,int (*compar) (const void*,const void*));<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> bsearch()ÀûÓÃ¶şÔªËÑË÷´ÓÅÅĞòºÃµÄÊı×éÖĞ²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb 
-      ´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcompar ÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÖ®¼äµÄ´óĞ¡¹ØÏµ£¬Èô´«¸øcompar 
-      µÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İ´óÓÚµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÔò±ØĞë»Ø´«´óÓÚ0 µÄÖµ£¬Á½¸öÔªËØÊı¾İÏàµÈÔò»Ø´«0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄµØÖ·£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò·µ»ØNULL¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      #include&lt;stdlib.h&gt;<br>
-      #define NMEMB 5<br>
-      #define SIZE 10<br>
-      int compar(const void *a,const void *b)<br>
-      {<br>
-      return (strcmp((char *)a,(char *)b));<br>
-      }<br>
-      main()<br>
-      {<br>
-      char data[50][size]={¡°linux¡±,¡±freebsd¡±,¡±solaris¡±,¡±sunos¡±,¡±windows¡±};<br>
-      char key[80],*base ,*offset;<br>
-      int i, nmemb=NMEMB,size=SIZE;<br>
-      while(1){<br>
-      printf(¡°&gt;¡±);<br>
-      fgets(key,sizeof(key),stdin);<br>
-      key[strlen(key)-1]=¡¯\0¡¯;<br>
-      if(!strcmp(key,¡±exit¡±))break;<br>
-      if(!strcmp(key,¡±list¡±)){<br>
-      for(i=0;i&lt;nmemb;i++)<br>
-      printf(¡°%s\n¡±,data[i]);<br>
-      continue;<br>
-      }<br>
-      base = data[0];<br>
-      qsort(base,nmemb,size,compar);<br>
-      offset = (char *) bsearch(key,base,nmemb,size,compar);<br>
-      if( offset = =NULL){<br>
-      printf(¡°%s not found!\n¡±,key);<br>
-      strcpy(data[nmemb++],key);<br>
-      printf(¡°Add %s to data array\n¡±,key);<br>
-      }else{<br>
-      printf(¡°found: %s \n¡±,offset);<br>
-      }<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> &gt;hello /*ÊäÈëhello×Ö·û´®*/<br>
-      hello not found! /*ÕÒ²»µ½hello ×Ö·û´®*/<br>
-      add hello to data array /*½«hello×Ö·û´®¼ÓÈë*/<br>
-      &gt;.list /*ÁĞ³öËùÓĞÊı¾İ*/<br>
-      freebsd<br>
-      linux<br>
-      solaris<br>
-      sunos<br>
-      windows<br>
-      hello<br>
-      &gt;hello<br>
-      found: hello<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc127></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      lfind£¨ÏßĞÔËÑË÷£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> lsearch<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void *lfind (const void *key,const void *base,size_t 
-      *nmemb,size_t<br>
-      size,int(* compar) (const void * ,const void *));<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> lfind()ÀûÓÃÏßĞÔËÑË÷ÔÚÊı×éÖĞ´ÓÍ·ÖÁÎ²Ò»ÏîÏî²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcomparÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÊÇ·ñÏàÍ¬£¬Èô´«¸øcompar 
-      µÄÒìµØ¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İºÍµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÏàÍ¬Ê±Ôò·µ»Ø0£¬Á½¸öÔªËØÊı¾İ²»ÏàÍ¬Ôò·µ»Ø·Ç0Öµ¡£Lfind()Óëlsearch()²»Í¬µãÔÚÓÚ£¬µ±ÕÒ²»µ½¹Ø¼üÊı¾İÊ±lfind()½ö»á·µ»ØNULL£¬¶ø²»»áÖ÷¶¯°Ñ¸Ã±ÊÊı¾İ¼ÓÈëÊı×éÎ²¶Ë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄ¸Ã±ÊÔªËØµÄµØÖ·£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò·µ»Ø¿ÕÖ¸Õë(NULL)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼lsearch()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc128></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      lsearch£¨ÏßĞÔËÑË÷£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> lfind<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void *lsearch(const void * key ,const void 
-      * base ,size_t * nmemb,size_t size, int ( * compar) (const void * ,const 
-      void *));<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> lsearch()ÀûÓÃÏßĞÔËÑË÷ÔÚÊı×éÖĞ´ÓÍ·ÖÁÎ²Ò»ÏîÏî²éÕÒÊı¾İ¡£²ÎÊıkeyÖ¸ÏòÓû²éÕÒµÄ¹Ø¼üÊı¾İ£¬²ÎÊıbaseÖ¸ÏòÒª±»ËÑË÷µÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb 
-      ´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize ¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcompar ÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØÊÇ·ñÏàÍ¬£¬Èô´«¸øcompar 
-      µÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İºÍµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÏàÍ¬Ê±Ôò·µ»Ø0£¬Á½¸öÔªËØÊı¾İ²»ÏàÍ¬Ôò·µ»Ø·Ç0 Öµ¡£Èç¹ûlsearch£¨£©ÕÒ²»µ½¹Ø¼üÊı¾İÊ±»áÖ÷¶¯°Ñ¸ÃÏîÊı¾İ¼ÓÈëÊı×éÀï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÕÒµ½¹Ø¼üÊı¾İÔò·µ»ØÕÒµ½µÄ¸Ã±ÊÔªËØµÄËÄÖ«£¬Èç¹ûÔÚÊı×éÖĞÕÒ²»µ½¹Ø¼üÊı¾İÔò½«´Ë¹Ø¼üÊı¾İ¼ÓÈëÊı×é£¬ÔÙ°Ñ¼ÓÈëÊı×éºóµÄµØÖ··µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      #include&lt;stdlib.h&gt;<br>
-      #define NMEMB 50<br>
-      #define SIZE 10<br>
-      int compar (comst void *a,const void *b)<br>
-      {<br>
-      return (strcmp((char *) a, (char *) b));<br>
-      }<br>
-      main()<br>
-      {<br>
-      char data[NMEMB][SIZE]={¡°Linux¡±,¡±freebsd¡±,¡±solzris¡±,¡±sunos¡±,¡±windows¡±};<br>
-      char key[80],*base,*offset;<br>
-      int i, nmemb=NMEMB,size=SIZE;<br>
-      for(i=1;i&lt;5;i++){<br>
-      fgets(key,sizeof9key),stdin);<br>
-      key[strlen(key)-1]=¡¯\0¡¯;<br>
-      base = data[0];<br>
-      offset = (char *)lfind(key,base,&nmemb,size,compar);<br>
-      if(offset ==NULL){<br>
-      printf(¡°%s not found!\n¡±,key);<br>
-      offset=(char *) lsearch(key,base,&nmemb,size,compar);<br>
-      printf(¡°Add %s to data array\n¡±,offset);<br>
-      }else{<br>
-      printf(¡°found : %s \n¡±,offset);<br>
-      }<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> linux<br>
-      found:linux<br>
-      os/2<br>
-      os/2 not found!<br>
-      add os/2 to data array<br>
-      os/2<br>
-      found:os/2<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc129></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      qsort£¨ÀûÓÃ¿ìËÙÅÅĞò·¨ÅÅÁĞÊı×é£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> bsearch<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void qsort(void * base,size_t nmemb,size_t 
-      size,int ( * compar)(const void *, const void *));<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²ÎÊıbaseÖ¸ÏòÓûÅÅĞòµÄÊı×é¿ªÍ·µØÖ·£¬²ÎÊınmemb´ú±íÊı×éÖĞµÄÔªËØÊıÁ¿£¬Ã¿Ò»ÔªËØµÄ´óĞ¡ÔòÓÉ²ÎÊısize¾ö¶¨£¬×îºóÒ»Ïî²ÎÊıcomparÎªÒ»º¯ÊıÖ¸Õë£¬Õâ¸öº¯ÊıÓÃÀ´ÅĞ¶ÏÁ½¸öÔªËØ¼äµÄ´óĞ¡¹ØÏµ£¬Èô´«¸øcomparµÄµÚÒ»¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İ´óÓÚµÚ¶ş¸ö²ÎÊıËùÖ¸µÄÔªËØÊı¾İÔò±ØĞë»Ø´«´óÓÚÁãµÄÖµ£¬Á½¸öÔªËØÊı¾İÏàµÈÔò»Ø´«0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #define nmemb 7<br>
-      #include &lt;stdlib.h&gt;<br>
-      int compar (const void *a ,const void *b)<br>
-      {<br>
-      int *aa=(int * ) a,*bb = (int * )b;<br>
-      if( * aa &gt;* bb)return 1;<br>
-      if( * aa == * bb) return 0;<br>
-      if( * aa &lt; *bb) return -1;<br>
-      }<br>
-      main( )<br>
-      {<br>
-      int base[nmemb]={ 3,102,5,-2,98,52,18};<br>
-      int i;<br>
-      for ( i=0; i&lt;nmemb;i++)<br>
-      printf(¡°%d ¡°,base[i]);<br>
-      printf(¡°\n¡±);<br>
-      qsort(base,nmemb,sizeof(int),compar);<br>
-      for(i=0;i&lt;nmemb;i++)<br>
-      printf(¡°%d¡±base[i]);<br>
-      printf(¡°\n¡±);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> 3 102 5 -2 98 52 18<br>
-      -2 3 5 18 52 98 102<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc130></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      rand£¨²úÉúËæ»úÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> srand£¬random£¬srandom<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int rand(void)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> rand()»á·µ»ØÒ»Ëæ»úÊıÖµ£¬·¶Î§ÔÚ0ÖÁRAND_MAX ¼ä¡£ÔÚµ÷ÓÃ´Ëº¯Êı²úÉúËæ»úÊıÇ°£¬±ØĞëÏÈÀûÓÃsrand()ÉèºÃËæ»úÊıÖÖ×Ó£¬Èç¹ûÎ´ÉèËæ»úÊıÖÖ×Ó£¬rand()ÔÚµ÷ÓÃÊ±»á×Ô¶¯ÉèËæ»úÊıÖÖ×ÓÎª1¡£¹ØÓÚËæ»úÊıÖÖ×ÓÇë²Î¿¼srand()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»Ø0ÖÁRAND_MAXÖ®¼äµÄËæ»úÊıÖµ£¬RAND_MAX¶¨ÒåÔÚstdlib.h£¬ÆäÖµÎª2147483647¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> /* ²úÉú½éÓÚ1 µ½10 ¼äµÄËæ»úÊıÖµ£¬´Ë·¶ÀıÎ´ÉèËæ»úÊıÖÖ×Ó£¬ÍêÕûµÄËæ»úÊı²úÉúÇë²Î¿¼<br>
-      srand£¨£©*/<br>
-      #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      int i,j;<br>
-      for(i=0;i&lt;10;i++)<br>
-      {<br>
-      j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<br>
-      printf(¡°%d ¡°,j);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> 9 4 8 8 10 2 4 8 3 6<br>
-      9 4 8 8 10 2 4 8 3 6<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc131></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      srand£¨ÉèÖÃËæ»úÊıÖÖ×Ó£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> rand£¬random srandom<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdlib.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void srand (unsigned int seed);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> srand()ÓÃÀ´ÉèÖÃrand()²úÉúËæ»úÊıÊ±µÄËæ»úÊıÖÖ×Ó¡£²ÎÊıseed±ØĞëÊÇ¸öÕûÊı£¬Í¨³£¿ÉÒÔÀûÓÃgeypid()»òtime(0)µÄ·µ»ØÖµÀ´µ±×öseed¡£Èç¹ûÃ¿´Îseed¶¼ÉèÏàÍ¬Öµ£¬rand()Ëù²úÉúµÄËæ»úÊıÖµÃ¿´Î¾Í»áÒ»Ñù¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> /* ²úÉú½éÓÚ1 µ½10 ¼äµÄËæ»úÊıÖµ£¬´Ë·¶ÀıÓëÖ´ĞĞ½á¹û¿ÉÓërand£¨£©²ÎÕÕ*/<br>
-      #include&lt;time.h&gt;<br>
-      #include&lt;stdlib.h&gt;<br>
-      main()<br>
-      {<br>
-      int i,j;<br>
-      srand((int)time(0));<br>
-      for(i=0;i&lt;10;i++)<br>
-      {<br>
-      j=1+(int)(10.0*rand()/(RAND_MAX+1.0));<br>
-      printf(¡° %d ¡°,j);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> 5 8 8 8 10 2 10 8 9 9<br>
-      2 9 7 4 10 3 2 10 8 7<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+cryptï¼ˆå°†å¯†ç æˆ–æ•°æ®ç¼–ç ï¼‰
+ç›¸å…³å‡½æ•°
+getpass
+è¡¨å¤´æ–‡ä»¶
+#define _XOPEN_SOURCE
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+char * crypt (const char *key,const char * salt);
+å‡½æ•°è¯´æ˜
+crypt()å°†ä½¿ç”¨Data Encryption Standard(DES)æ¼”ç®—æ³•å°†å‚æ•°keyæ‰€æŒ‡çš„å­—ç¬¦ä¸²åŠ ä»¥ç¼–ç ï¼Œkeyå­—ç¬¦ä¸²é•¿åº¦ä»…å–å‰8ä¸ªå­—ç¬¦ï¼Œè¶…è¿‡æ­¤é•¿åº¦çš„å­—ç¬¦æ²¡æœ‰æ„ä¹‰ã€‚å‚æ•°saltä¸ºä¸¤ä¸ªå­—ç¬¦ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œç”±a-zã€A-Zã€0-9ï¼Œâ€œ.â€å’Œâ€œ/â€æ‰€ç»„æˆï¼Œç”¨æ¥å†³å®šä½¿ç”¨4096 ç§ä¸åŒå†…å»ºè¡¨æ ¼çš„å“ªä¸€ä¸ªã€‚å‡½æ•°æ‰§è¡ŒæˆåŠŸåä¼šè¿”å›æŒ‡å‘ç¼–ç è¿‡çš„å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œå‚æ•°key æ‰€æŒ‡çš„å­—ç¬¦ä¸²ä¸ä¼šæœ‰æ‰€æ›´åŠ¨ã€‚ç¼–ç è¿‡çš„å­—ç¬¦ä¸²é•¿åº¦ä¸º13 ä¸ªå­—ç¬¦ï¼Œå‰ä¸¤ä¸ªå­—ç¬¦ä¸ºå‚æ•°saltä»£è¡¨çš„å­—ç¬¦ä¸²ã€‚
+è¿”å›å€¼
+è¿”å›ä¸€ä¸ªæŒ‡å‘ä»¥NULLç»“å°¾çš„å¯†ç å­—ç¬¦ä¸²ã€‚
+é™„åŠ è¯´æ˜
+ä½¿ç”¨GCCç¼–è¯‘æ—¶éœ€åŠ -lcryptã€‚
+èŒƒä¾‹
+#include<unistd.h>
+main()
+{
+char passwd[13];
+char *key;
+char slat[2];
+key= getpass(â€œInput First Password:â€);
+slat[0]=key[0];
+slat[1]=key[1];
+strcpy(passwd,crypt(key slat));
+key=getpass(â€œInput Second Password:â€);
+slat[0]=passwd[0];
+slat[1]=passwd[1];
+printf(â€œAfter crypt(),1st passwd :%s\nâ€,passwd);
+printf(â€œAfter crypt(),2nd passwd:%s \nâ€,crypt(key slat));
+}
+æ‰§è¡Œ
+Input First Password: /* è¾“å…¥testï¼Œç¼–ç åå­˜äºpasswd[ ] */
+Input Second Password /*è¾“å…¥testï¼Œå¯†ç ç›¸åŒç¼–ç åä¹Ÿä¼šç›¸åŒ*/
+After crypt () 1st Passwd : teH0wLIpW0gyQ
+After crypt () 2nd Passwd : teH0wLIpW0gyQ
+ã€€
+
+
+
+bsearchï¼ˆäºŒå…ƒæœç´¢ï¼‰
+ç›¸å…³å‡½æ•°
+qsort
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+void *bsearch(const void *key,const void *base,size_t nmemb,size_tsize,int (*compar) (const void*,const void*));
+å‡½æ•°è¯´æ˜
+bsearch()åˆ©ç”¨äºŒå…ƒæœç´¢ä»æ’åºå¥½çš„æ•°ç»„ä¸­æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmemb ä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°compar ä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ ä¹‹é—´çš„å¤§å°å…³ç³»ï¼Œè‹¥ä¼ ç»™compar çš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å¤§äºç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®åˆ™å¿…é¡»å›ä¼ å¤§äº0 çš„å€¼ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ç›¸ç­‰åˆ™å›ä¼ 0ã€‚
+é™„åŠ è¯´æ˜
+æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„åœ°å€ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™è¿”å›NULLã€‚
+èŒƒä¾‹
+#include<stdio.h>
+#include<stdlib.h>
+#define NMEMB 5
+#define SIZE 10
+int compar(const void *a,const void *b)
+{
+return (strcmp((char *)a,(char *)b));
+}
+main()
+{
+char data[50][size]={â€œlinuxâ€,â€freebsdâ€,â€solarisâ€,â€sunosâ€,â€windowsâ€};
+char key[80],*base ,*offset;
+int i, nmemb=NMEMB,size=SIZE;
+while(1){
+printf(â€œ>â€);
+fgets(key,sizeof(key),stdin);
+key[strlen(key)-1]=â€™\0â€™;
+if(!strcmp(key,â€exitâ€))break;
+if(!strcmp(key,â€listâ€)){
+for(i=0;i<nmemb;i++)
+printf(â€œ%s\nâ€,data[i]);
+continue;
+}
+base = data[0];
+qsort(base,nmemb,size,compar);
+offset = (char *) bsearch(key,base,nmemb,size,compar);
+if( offset = =NULL){
+printf(â€œ%s not found!\nâ€,key);
+strcpy(data[nmemb++],key);
+printf(â€œAdd %s to data array\nâ€,key);
+}else{
+printf(â€œfound: %s \nâ€,offset);
+}
+}
+}
+æ‰§è¡Œ
+>hello /*è¾“å…¥helloå­—ç¬¦ä¸²*/
+hello not found! /*æ‰¾ä¸åˆ°hello å­—ç¬¦ä¸²*/
+add hello to data array /*å°†helloå­—ç¬¦ä¸²åŠ å…¥*/
+>.list /*åˆ—å‡ºæ‰€æœ‰æ•°æ®*/
+freebsd
+linux
+solaris
+sunos
+windows
+hello
+>hello
+found: hello
+ã€€
+
+
+
+lfindï¼ˆçº¿æ€§æœç´¢ï¼‰
+ç›¸å…³å‡½æ•°
+lsearch
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+void *lfind (const void *key,const void *base,size_t *nmemb,size_t
+size,int(* compar) (const void * ,const void *));
+å‡½æ•°è¯´æ˜
+lfind()åˆ©ç”¨çº¿æ€§æœç´¢åœ¨æ•°ç»„ä¸­ä»å¤´è‡³å°¾ä¸€é¡¹é¡¹æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmembä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°comparä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ æ˜¯å¦ç›¸åŒï¼Œè‹¥ä¼ ç»™compar çš„å¼‚åœ°ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å’Œç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®ç›¸åŒæ—¶åˆ™è¿”å›0ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ä¸ç›¸åŒåˆ™è¿”å›é0å€¼ã€‚Lfind()ä¸lsearch()ä¸åŒç‚¹åœ¨äºï¼Œå½“æ‰¾ä¸åˆ°å…³é”®æ•°æ®æ—¶lfind()ä»…ä¼šè¿”å›NULLï¼Œè€Œä¸ä¼šä¸»åŠ¨æŠŠè¯¥ç¬”æ•°æ®åŠ å…¥æ•°ç»„å°¾ç«¯ã€‚
+è¿”å›å€¼
+æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„è¯¥ç¬”å…ƒç´ çš„åœ°å€ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™è¿”å›ç©ºæŒ‡é’ˆ(NULL)ã€‚
+èŒƒä¾‹
+å‚è€ƒlsearch()ã€‚
+ã€€
+
+
+
+lsearchï¼ˆçº¿æ€§æœç´¢ï¼‰
+ç›¸å…³å‡½æ•°
+lfind
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+void *lsearch(const void * key ,const void * base ,size_t * nmemb,size_t size, int ( * compar) (const void * ,const void *));
+å‡½æ•°è¯´æ˜
+lsearch()åˆ©ç”¨çº¿æ€§æœç´¢åœ¨æ•°ç»„ä¸­ä»å¤´è‡³å°¾ä¸€é¡¹é¡¹æŸ¥æ‰¾æ•°æ®ã€‚å‚æ•°keyæŒ‡å‘æ¬²æŸ¥æ‰¾çš„å…³é”®æ•°æ®ï¼Œå‚æ•°baseæŒ‡å‘è¦è¢«æœç´¢çš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmemb ä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°size å†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°compar ä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ æ˜¯å¦ç›¸åŒï¼Œè‹¥ä¼ ç»™compar çš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å’Œç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®ç›¸åŒæ—¶åˆ™è¿”å›0ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ä¸ç›¸åŒåˆ™è¿”å›é0 å€¼ã€‚å¦‚æœlsearchï¼ˆï¼‰æ‰¾ä¸åˆ°å…³é”®æ•°æ®æ—¶ä¼šä¸»åŠ¨æŠŠè¯¥é¡¹æ•°æ®åŠ å…¥æ•°ç»„é‡Œã€‚
+è¿”å›å€¼
+æ‰¾åˆ°å…³é”®æ•°æ®åˆ™è¿”å›æ‰¾åˆ°çš„è¯¥ç¬”å…ƒç´ çš„å››è‚¢ï¼Œå¦‚æœåœ¨æ•°ç»„ä¸­æ‰¾ä¸åˆ°å…³é”®æ•°æ®åˆ™å°†æ­¤å…³é”®æ•°æ®åŠ å…¥æ•°ç»„ï¼Œå†æŠŠåŠ å…¥æ•°ç»„åçš„åœ°å€è¿”å›ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+#include<stdlib.h>
+#define NMEMB 50
+#define SIZE 10
+int compar (comst void *a,const void *b)
+{
+return (strcmp((char *) a, (char *) b));
+}
+main()
+{
+char data[NMEMB][SIZE]={â€œLinuxâ€,â€freebsdâ€,â€solzrisâ€,â€sunosâ€,â€windowsâ€};
+char key[80],*base,*offset;
+int i, nmemb=NMEMB,size=SIZE;
+for(i=1;i<5;i++){
+fgets(key,sizeof9key),stdin);
+key[strlen(key)-1]=â€™\0â€™;
+base = data[0];
+offset = (char *)lfind(key,base,&nmemb,size,compar);
+if(offset ==NULL){
+printf(â€œ%s not found!\nâ€,key);
+offset=(char *) lsearch(key,base,&nmemb,size,compar);
+printf(â€œAdd %s to data array\nâ€,offset);
+}else{
+printf(â€œfound : %s \nâ€,offset);
+}
+}
+}
+æ‰§è¡Œ
+linux
+found:linux
+os/2
+os/2 not found!
+add os/2 to data array
+os/2
+found:os/2
+ã€€
+
+
+
+qsortï¼ˆåˆ©ç”¨å¿«é€Ÿæ’åºæ³•æ’åˆ—æ•°ç»„ï¼‰
+ç›¸å…³å‡½æ•°
+bsearch
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+void qsort(void * base,size_t nmemb,size_t size,int ( * compar)(const void *, const void *));
+å‡½æ•°è¯´æ˜
+å‚æ•°baseæŒ‡å‘æ¬²æ’åºçš„æ•°ç»„å¼€å¤´åœ°å€ï¼Œå‚æ•°nmembä»£è¡¨æ•°ç»„ä¸­çš„å…ƒç´ æ•°é‡ï¼Œæ¯ä¸€å…ƒç´ çš„å¤§å°åˆ™ç”±å‚æ•°sizeå†³å®šï¼Œæœ€åä¸€é¡¹å‚æ•°comparä¸ºä¸€å‡½æ•°æŒ‡é’ˆï¼Œè¿™ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ é—´çš„å¤§å°å…³ç³»ï¼Œè‹¥ä¼ ç»™comparçš„ç¬¬ä¸€ä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®å¤§äºç¬¬äºŒä¸ªå‚æ•°æ‰€æŒ‡çš„å…ƒç´ æ•°æ®åˆ™å¿…é¡»å›ä¼ å¤§äºé›¶çš„å€¼ï¼Œä¸¤ä¸ªå…ƒç´ æ•°æ®ç›¸ç­‰åˆ™å›ä¼ 0ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+#define nmemb 7
+#include <stdlib.h>
+int compar (const void *a ,const void *b)
+{
+int *aa=(int * ) a,*bb = (int * )b;
+if( * aa >* bb)return 1;
+if( * aa == * bb) return 0;
+if( * aa < *bb) return -1;
+}
+main( )
+{
+int base[nmemb]={ 3,102,5,-2,98,52,18};
+int i;
+for ( i=0; i<nmemb;i++)
+printf(â€œ%d â€œ,base[i]);
+printf(â€œ\nâ€);
+qsort(base,nmemb,sizeof(int),compar);
+for(i=0;i<nmemb;i++)
+printf(â€œ%dâ€base[i]);
+printf(â€œ\nâ€);
+}
+æ‰§è¡Œ
+3 102 5 -2 98 52 18
+-2 3 5 18 52 98 102
+ã€€
+
+
+
+randï¼ˆäº§ç”Ÿéšæœºæ•°ï¼‰
+ç›¸å…³å‡½æ•°
+srandï¼Œrandomï¼Œsrandom
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+int rand(void)
+å‡½æ•°è¯´æ˜
+rand()ä¼šè¿”å›ä¸€éšæœºæ•°å€¼ï¼ŒèŒƒå›´åœ¨0è‡³RAND_MAX é—´ã€‚åœ¨è°ƒç”¨æ­¤å‡½æ•°äº§ç”Ÿéšæœºæ•°å‰ï¼Œå¿…é¡»å…ˆåˆ©ç”¨srand()è®¾å¥½éšæœºæ•°ç§å­ï¼Œå¦‚æœæœªè®¾éšæœºæ•°ç§å­ï¼Œrand()åœ¨è°ƒç”¨æ—¶ä¼šè‡ªåŠ¨è®¾éšæœºæ•°ç§å­ä¸º1ã€‚å…³äºéšæœºæ•°ç§å­è¯·å‚è€ƒsrand()ã€‚
+è¿”å›å€¼
+è¿”å›0è‡³RAND_MAXä¹‹é—´çš„éšæœºæ•°å€¼ï¼ŒRAND_MAXå®šä¹‰åœ¨stdlib.hï¼Œå…¶å€¼ä¸º2147483647ã€‚
+èŒƒä¾‹
+/* äº§ç”Ÿä»‹äº1 åˆ°10 é—´çš„éšæœºæ•°å€¼ï¼Œæ­¤èŒƒä¾‹æœªè®¾éšæœºæ•°ç§å­ï¼Œå®Œæ•´çš„éšæœºæ•°äº§ç”Ÿè¯·å‚è€ƒ
+srandï¼ˆï¼‰*/
+#include<stdlib.h>
+main()
+{
+int i,j;
+for(i=0;i<10;i++)
+{
+j=1+(int)(10.0*rand()/(RAND_MAX+1.0));
+printf(â€œ%d â€œ,j);
+}
+}
+æ‰§è¡Œ
+9 4 8 8 10 2 4 8 3 6
+9 4 8 8 10 2 4 8 3 6
+ã€€
+
+
+
+srandï¼ˆè®¾ç½®éšæœºæ•°ç§å­ï¼‰
+ç›¸å…³å‡½æ•°
+randï¼Œrandom srandom
+è¡¨å¤´æ–‡ä»¶
+#include<stdlib.h>
+å®šä¹‰å‡½æ•°
+void srand (unsigned int seed);
+å‡½æ•°è¯´æ˜
+srand()ç”¨æ¥è®¾ç½®rand()äº§ç”Ÿéšæœºæ•°æ—¶çš„éšæœºæ•°ç§å­ã€‚å‚æ•°seedå¿…é¡»æ˜¯ä¸ªæ•´æ•°ï¼Œé€šå¸¸å¯ä»¥åˆ©ç”¨geypid()æˆ–time(0)çš„è¿”å›å€¼æ¥å½“åšseedã€‚å¦‚æœæ¯æ¬¡seedéƒ½è®¾ç›¸åŒå€¼ï¼Œrand()æ‰€äº§ç”Ÿçš„éšæœºæ•°å€¼æ¯æ¬¡å°±ä¼šä¸€æ ·ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+/* äº§ç”Ÿä»‹äº1 åˆ°10 é—´çš„éšæœºæ•°å€¼ï¼Œæ­¤èŒƒä¾‹ä¸æ‰§è¡Œç»“æœå¯ä¸randï¼ˆï¼‰å‚ç…§*/
+#include<time.h>
+#include<stdlib.h>
+main()
+{
+int i,j;
+srand((int)time(0));
+for(i=0;i<10;i++)
+{
+j=1+(int)(10.0*rand()/(RAND_MAX+1.0));
+printf(â€œ %d â€œ,j);
+}
+}
+æ‰§è¡Œ
+5 8 8 8 10 2 10 8 9 9
+2 9 7 4 10 3 2 10 8 7
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

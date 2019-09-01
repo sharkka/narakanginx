@@ -1,1435 +1,614 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>ä¿¡å·å¤„ç†ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc242></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      alarm£¨ÉèÖÃĞÅºÅ´«ËÍÄÖÖÓ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal£¬sleep<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> unsigned int alarm(unsigned int seconds);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> alarm()ÓÃÀ´ÉèÖÃĞÅºÅSIGALRMÔÚ¾­¹ı²ÎÊısecondsÖ¸¶¨µÄÃëÊıºó´«ËÍ¸øÄ¿Ç°µÄ½ø³Ì¡£Èç¹û²ÎÊıseconds 
-      Îª0£¬ÔòÖ®Ç°ÉèÖÃµÄÄÖÖÓ»á±»È¡Ïû£¬²¢½«Ê£ÏÂµÄÊ±¼ä·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÖ®Ç°ÄÖÖÓµÄÊ£ÓàÃëÊı£¬Èç¹ûÖ®Ç°Î´ÉèÄÖÖÓÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      #include&lt;signal.h&gt;<br>
-      void handler() {<br>
-      printf(¡°hello\n¡±);<br>
-      }<br>
-      main()<br>
-      {<br>
-      int i;<br>
-      signal(SIGALRM,handler);<br>
-      alarm(5);<br>
-      for(i=1;i&lt;7;i++){<br>
-      printf(¡°sleep %d ...\n¡±,i);<br>
-      sleep(1);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sleep 1 ...<br>
-      sleep 2 ...<br>
-      sleep 3 ...<br>
-      sleep 4 ...<br>
-      sleep 5 ...<br>
-      hello<br>
-      sleep 6 ...<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc243></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      kill£¨´«ËÍĞÅºÅ¸øÖ¸¶¨µÄ½ø³Ì£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> raise£¬signal<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int kill(pid_t pid,int sig);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> kill()¿ÉÒÔÓÃÀ´ËÍ²ÎÊısigÖ¸¶¨µÄĞÅºÅ¸ø²ÎÊıpidÖ¸¶¨µÄ½ø³Ì¡£²ÎÊıpidÓĞ¼¸ÖÖÇé¿ö:<br>
-      pid&gt;0 ½«ĞÅºÅ´«¸ø½ø³ÌÊ¶±ğÂëÎªpid µÄ½ø³Ì¡£<br>
-      pid=0 ½«ĞÅºÅ´«¸øºÍÄ¿Ç°½ø³ÌÏàÍ¬½ø³Ì×éµÄËùÓĞ½ø³Ì<br>
-      pid=-1 ½«ĞÅºÅ¹ã²¥´«ËÍ¸øÏµÍ³ÄÚËùÓĞµÄ½ø³Ì<br>
-      pid&lt;0 ½«ĞÅºÅ´«¸ø½ø³Ì×éÊ¶±ğÂëÎªpid¾ø¶ÔÖµµÄËùÓĞ½ø³Ì<br>
-      ²ÎÊısig´ú±íµÄĞÅºÅ±àºÅ¿É²Î¿¼¸½Â¼D<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EINVAL ²ÎÊısig ²»ºÏ·¨<br>
-      ESRCH ²ÎÊıpid ËùÖ¸¶¨µÄ½ø³Ì»ò½ø³Ì×é²»´æÔÚ<br>
-      EPERM È¨ÏŞ²»¹»ÎŞ·¨´«ËÍĞÅºÅ¸øÖ¸¶¨½ø³Ì<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      #include&lt;signal.h&gt;<br>
-      #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/wait.h&gt;<br>
-      main()<br>
-      {<br>
-      pid_t pid;<br>
-      int status;<br>
-      if(!(pid= fork())){<br>
-      printf(¡°Hi I am child process!\n¡±);<br>
-      sleep(10);<br>
-      return;<br>
-      }<br>
-      else{<br>
-      printf(¡°send signal to child process (%d) \n¡±,pid);<br>
-      sleep(1);<br>
-      kill(pid ,SIGABRT);<br>
-      wait(&status);<br>
-      if(WIFSIGNALED(status))<br>
-      printf(¡°chile process receive signal %d\n¡±,WTERMSIG(status));<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sen signal to child process(3170)<br>
-      Hi I am child process!<br>
-      child process receive signal 6<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc244></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      pause£¨ÈÃ½ø³ÌÔİÍ£Ö±µ½ĞÅºÅ³öÏÖ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> kill£¬signal£¬sleep<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int pause(void);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> pause()»áÁîÄ¿Ç°µÄ½ø³ÌÔİÍ££¨½øÈëË¯Ãß×´Ì¬£©£¬Ö±µ½±»ĞÅºÅ(signal)ËùÖĞ¶Ï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö»·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EINTR ÓĞĞÅºÅµ½´ïÖĞ¶ÏÁË´Ëº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc245></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigaction£¨²éÑ¯»òÉèÖÃĞÅºÅ´¦Àí·½Ê½£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal£¬sigprocmask£¬sigpending£¬sigsuspend<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigaction(int signum,const struct sigaction 
-      *act ,struct sigaction *oldact);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigaction()»áÒÀ²ÎÊısignumÖ¸¶¨µÄĞÅºÅ±àºÅÀ´ÉèÖÃ¸ÃĞÅºÅµÄ´¦Àíº¯Êı¡£²ÎÊısignum¿ÉÒÔÖ¸¶¨SIGKILLºÍSIGSTOPÒÔÍâµÄËùÓĞĞÅºÅ¡£<br>
-      Èç²ÎÊı½á¹¹sigaction¶¨ÒåÈçÏÂ<br>
-      struct sigaction<br>
-      {<br>
-      void (*sa_handler) (int);<br>
-      sigset_t sa_mask;<br>
-      int sa_flags;<br>
-      void (*sa_restorer) (void);<br>
-      }<br>
-      sa_handler´Ë²ÎÊıºÍsignal()µÄ²ÎÊıhandlerÏàÍ¬£¬´ú±íĞÂµÄĞÅºÅ´¦Àíº¯Êı£¬ÆäËûÒâÒåÇë²Î¿¼signal()¡£<br>
-      sa_mask ÓÃÀ´ÉèÖÃÔÚ´¦Àí¸ÃĞÅºÅÊ±ÔİÊ±½«sa_mask Ö¸¶¨µÄĞÅºÅ¸éÖÃ¡£<br>
-      sa_restorer ´Ë²ÎÊıÃ»ÓĞÊ¹ÓÃ¡£<br>
-      sa_flags ÓÃÀ´ÉèÖÃĞÅºÅ´¦ÀíµÄÆäËûÏà¹Ø²Ù×÷£¬ÏÂÁĞµÄÊıÖµ¿ÉÓÃ¡£<br>
-      OR ÔËËã£¨|£©×éºÏ<br>
-      A_NOCLDSTOP : Èç¹û²ÎÊısignumÎªSIGCHLD£¬Ôòµ±×Ó½ø³ÌÔİÍ£Ê±²¢²»»áÍ¨Öª¸¸½ø³Ì<br>
-      SA_ONESHOT/SA_RESETHAND:µ±µ÷ÓÃĞÂµÄĞÅºÅ´¦Àíº¯ÊıÇ°£¬½«´ËĞÅºÅ´¦Àí·½Ê½¸ÄÎªÏµÍ³Ô¤ÉèµÄ·½Ê½¡£<br>
-      SA_RESTART:±»ĞÅºÅÖĞ¶ÏµÄÏµÍ³µ÷ÓÃ»á×ÔĞĞÖØÆô<br>
-      SA_NOMASK/SA_NODEFER:ÔÚ´¦Àí´ËĞÅºÅÎ´½áÊøÇ°²»Àí»á´ËĞÅºÅµÄÔÙ´Îµ½À´¡£<br>
-      Èç¹û²ÎÊıoldact²»ÊÇNULLÖ¸Õë£¬ÔòÔ­À´µÄĞÅºÅ´¦Àí·½Ê½»áÓÉ´Ë½á¹¹sigaction ·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EINVAL ²ÎÊısignum ²»ºÏ·¨£¬ »òÊÇÆóÍ¼À¹½ØSIGKILL/SIGSTOPSIGKILLĞÅºÅ<br>
-      EFAULT ²ÎÊıact£¬oldactÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡¡£<br>
-      EINTR ´Ëµ÷ÓÃ±»ÖĞ¶Ï<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      #include&lt;signal.h&gt;<br>
-      void show_handler(struct sigaction * act)<br>
-      {<br>
-      switch (act-&gt;sa_flags)<br>
-      {<br>
-      case SIG_DFL:printf(¡°Default action\n¡±);break;<br>
-      case SIG_IGN:printf(¡°Ignore the signal\n¡±);break;<br>
-      default: printf(¡°0x%x\n¡±,act-&gt;sa_handler);<br>
-      }<br>
-      }<br>
-      main()<br>
-      {<br>
-      int i;<br>
-      struct sigaction act,oldact;<br>
-      act.sa_handler = show_handler;<br>
-      act.sa_flags = SA_ONESHOT|SA_NOMASK;<br>
-      sigaction(SIGUSR1,&act,&oldact);<br>
-      for(i=5;i&lt;15;i++)<br>
-      {<br>
-      printf(¡°sa_handler of signal %2d =¡±.i);<br>
-      sigaction(i,NULL,&oldact);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sa_handler of signal 5 = Default action<br>
-      sa_handler of signal 6= Default action<br>
-      sa_handler of signal 7 = Default action<br>
-      sa_handler of signal 8 = Default action<br>
-      sa_handler of signal 9 = Default action<br>
-      sa_handler of signal 10 = 0x8048400<br>
-      sa_handler of signal 11 = Default action<br>
-      sa_handler of signal 12 = Default action<br>
-      sa_handler of signal 13 = Default action<br>
-      sa_handler of signal 14 = Default action<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc246></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigaddset£¨Ôö¼ÓÒ»¸öĞÅºÅÖÁĞÅºÅ¼¯£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigemptyset£¬sigfillset£¬sigdelset£¬sigismember<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigaddset(sigset_t *set,int signum);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigaddset()ÓÃÀ´½«²ÎÊısignum ´ú±íµÄĞÅºÅ¼ÓÈëÖÁ²ÎÊıset ĞÅºÅ¼¯Àï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      EINVAL ²ÎÊısignum·ÇºÏ·¨µÄĞÅºÅ±àºÅ<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc247></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigdelset£¨´ÓĞÅºÅ¼¯ÀïÉ¾³ıÒ»¸öĞÅºÅ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigemptyset£¬sigfillset£¬sigaddset£¬sigismember<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigdelset(sigset_t * set,int signum);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigdelset()ÓÃÀ´½«²ÎÊısignum´ú±íµÄĞÅºÅ´Ó²ÎÊısetĞÅºÅ¼¯ÀïÉ¾³ı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      EINVAL ²ÎÊısignum·ÇºÏ·¨µÄĞÅºÅ±àºÅ<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc248></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigemptyset£¨³õÊ¼»¯ĞÅºÅ¼¯£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigaddset£¬sigfillset£¬sigdelset£¬sigismember<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigemptyset(sigset_t *set);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigemptyset()ÓÃÀ´½«²ÎÊısetĞÅºÅ¼¯³õÊ¼»¯²¢Çå¿Õ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc249></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigfillset£¨½«ËùÓĞĞÅºÅ¼ÓÈëÖÁĞÅºÅ¼¯£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigempty£¬sigaddset£¬sigdelset£¬sigismember<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigfillset(sigset_t * set);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigfillset()ÓÃÀ´½«²ÎÊısetĞÅºÅ¼¯³õÊ¼»¯£¬È»ºó°ÑËùÓĞµÄĞÅºÅ¼ÓÈëµ½´ËĞÅºÅ¼¯Àï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc250></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigismember£¨²âÊÔÄ³¸öĞÅºÅÊÇ·ñÒÑ¼ÓÈëÖÁĞÅºÅ¼¯Àï£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigemptyset£¬sigfillset£¬sigaddset£¬sigdelset<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigismember(const sigset_t *set,int signum);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigismember()ÓÃÀ´²âÊÔ²ÎÊısignum ´ú±íµÄĞÅºÅÊÇ·ñÒÑ¼ÓÈëÖÁ²ÎÊısetĞÅºÅ¼¯Àï¡£Èç¹ûĞÅºÅ¼¯ÀïÒÑÓĞ¸ÃĞÅºÅÔò·µ»Ø1£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ĞÅºÅ¼¯ÒÑÓĞ¸ÃĞÅºÅÔò·µ»Ø1£¬Ã»ÓĞÔò·µ»Ø0¡£Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      EINVAL ²ÎÊısignum ·ÇºÏ·¨µÄĞÅºÅ±àºÅ<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc251></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      signal£¨ÉèÖÃĞÅºÅ´¦Àí·½Ê½£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigaction£¬kill£¬raise<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void (*signal(int signum,void(* handler)(int)))(int);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal()»áÒÀ²ÎÊısignum Ö¸¶¨µÄĞÅºÅ±àºÅÀ´ÉèÖÃ¸ÃĞÅºÅµÄ´¦Àíº¯Êı¡£µ±Ö¸¶¨µÄĞÅºÅµ½´ïÊ±¾Í»áÌø×ªµ½²ÎÊıhandlerÖ¸¶¨µÄº¯ÊıÖ´ĞĞ¡£Èç¹û²ÎÊıhandler²»ÊÇº¯ÊıÖ¸Õë£¬Ôò±ØĞëÊÇÏÂÁĞÁ½¸ö³£ÊıÖ®Ò»:<br>
-      SIG_IGN ºöÂÔ²ÎÊısignumÖ¸¶¨µÄĞÅºÅ¡£<br>
-      SIG_DFL ½«²ÎÊısignum Ö¸¶¨µÄĞÅºÅÖØÉèÎªºËĞÄÔ¤ÉèµÄĞÅºÅ´¦Àí·½Ê½¡£<br>
-      ¹ØÓÚĞÅºÅµÄ±àºÅºÍËµÃ÷£¬Çë²Î¿¼¸½Â¼D<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÏÈÇ°µÄĞÅºÅ´¦Àíº¯ÊıÖ¸Õë£¬Èç¹ûÓĞ´íÎóÔò·µ»ØSIG_ERR(-1)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÔÚĞÅºÅ·¢ÉúÌø×ªµ½×Ô¶¨µÄhandler´¦Àíº¯ÊıÖ´ĞĞºó£¬ÏµÍ³»á×Ô¶¯½«´Ë´¦Àíº¯Êı»»»ØÔ­À´ÏµÍ³Ô¤ÉèµÄ´¦Àí·½Ê½£¬Èç¹ûÒª¸Ä±ä´Ë²Ù×÷Çë¸ÄÓÃsigaction()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼alarm()»òraise()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc252></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigpending£¨²éÑ¯±»¸éÖÃµÄĞÅºÅ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal£¬sigaction£¬sigprocmask£¬sigsuspend<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigpending(sigset_t *set);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigpending()»á½«±»¸éÖÃµÄĞÅºÅ¼¯ºÏÓÉ²ÎÊısetÖ¸Õë·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµÖ´ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊısetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡<br>
-      EINTR ´Ëµ÷ÓÃ±»ÖĞ¶Ï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc253></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sigprocmask£¨²éÑ¯»òÉèÖÃĞÅºÅÕÚÕÖ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal£¬sigaction£¬sigpending£¬sigsuspend<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;signal.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int sigprocmask(int how,const sigset_t *set,sigset_t 
-      * oldset);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sigprocmask()¿ÉÒÔÓÃÀ´¸Ä±äÄ¿Ç°µÄĞÅºÅÕÚÕÖ£¬Æä²Ù×÷ÒÀ²ÎÊıhowÀ´¾ö¶¨<br>
-      SIG_BLOCK ĞÂµÄĞÅºÅÕÚÕÖÓÉÄ¿Ç°µÄĞÅºÅÕÚÕÖºÍ²ÎÊıset Ö¸¶¨µÄĞÅºÅÕÚÕÖ×÷Áª¼¯<br>
-      SIG_UNBLOCK ½«Ä¿Ç°µÄĞÅºÅÕÚÕÖÉ¾³ıµô²ÎÊısetÖ¸¶¨µÄĞÅºÅÕÚÕÖ<br>
-      SIG_SETMASK ½«Ä¿Ç°µÄĞÅºÅÕÚÕÖÉè³É²ÎÊısetÖ¸¶¨µÄĞÅºÅÕÚÕÖ¡£<br>
-      Èç¹û²ÎÊıoldset²»ÊÇNULLÖ¸Õë£¬ÄÇÃ´Ä¿Ç°µÄĞÅºÅÕÚÕÖ»áÓÉ´ËÖ¸Õë·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Èç¹ûÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EFAULT ²ÎÊıset£¬oldsetÖ¸ÕëµØÖ·ÎŞ·¨´æÈ¡¡£<br>
-      EINTR ´Ëµ÷ÓÃ±»ÖĞ¶Ï<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc254></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      sleep£¨ÈÃ½ø³ÌÔİÍ£Ö´ĞĞÒ»¶ÎÊ±¼ä£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> signal£¬alarm<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> unsigned int sleep(unsigned int seconds);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> sleep()»áÁîÄ¿Ç°µÄ½ø³ÌÔİÍ££¬Ö±µ½´ïµ½²ÎÊıseconds ËùÖ¸¶¨µÄÊ±¼ä£¬»òÊÇ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô½ø³ÌÔİÍ£µ½²ÎÊıseconds ËùÖ¸¶¨µÄÊ±¼äÔò·µ»Ø0£¬ÈôÓĞĞÅºÅÖĞ¶ÏÔò·µ»ØÊ£ÓàÃëÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc255></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      ferror£¨¼ì²éÎÄ¼şÁ÷ÊÇ·ñÓĞ´íÎó·¢Éú£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> clearerr£¬perror<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int ferror(FILE *stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ferror()ÓÃÀ´¼ì²é²ÎÊıstreamËùÖ¸¶¨µÄÎÄ¼şÁ÷ÊÇ·ñ·¢ÉúÁË´íÎóÇé¿ö£¬ÈçÓĞ´íÎó·¢ÉúÔò·µ»Ø·Ç0Öµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èç¹ûÎÄ¼şÁ÷ÓĞ´íÎó·¢ÉúÔò·µ»Ø·Ç0Öµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc256></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      perror£¨´òÓ¡³ö´íÎóÔ­ÒòĞÅÏ¢×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> strerror<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> void perror(const char *s);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> perror()ÓÃÀ´½«ÉÏÒ»¸öº¯Êı·¢Éú´íÎóµÄÔ­ÒòÊä³öµ½±ê×¼´íÎó(stderr)¡£²ÎÊısËùÖ¸µÄ×Ö·û´®»áÏÈ´òÓ¡³ö£¬ºóÃæÔÙ¼ÓÉÏ´íÎóÔ­Òò×Ö·û´®¡£´Ë´íÎóÔ­ÒòÒÀÕÕÈ«¾Ö±äÁ¿errnoµÄÖµÀ´¾ö¶¨ÒªÊä³öµÄ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE *fp;<br>
-      fp = fopen(¡°/tmp/noexist¡±,¡±r+¡±);<br>
-      if(fp = =NULL) perror(¡°fopen¡±);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> $ ./perror<br>
-      fopen : No such file or diretory<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc257></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      strerror£¨·µ»Ø´íÎóÔ­ÒòµÄÃèÊö×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> perror<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> char * strerror(int errnum);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> strerror()ÓÃÀ´ÒÀ²ÎÊıerrnumµÄ´íÎó´úÂëÀ´²éÑ¯Æä´íÎóÔ­ÒòµÄÃèÊö×Ö·û´®£¬È»ºó½«¸Ã×Ö·û´®Ö¸Õë·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»ØÃèÊö´íÎóÔ­ÒòµÄ×Ö·û´®Ö¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> /* ÏÔÊ¾´íÎó´úÂë0 ÖÁ9 µÄ´íÎóÔ­ÒòÃèÊö*/<br>
-      #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      int i;<br>
-      for(i=0;i&lt;10;i++)<br>
-      printf(¡°%d : %s\n¡±,i,strerror(i));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> 0 : Success<br>
-      1 : Operation not permitted<br>
-      2 : No such file or directory<br>
-      3 : No such process<br>
-      4 : Interrupted system call<br>
-      5 : Input/output error<br>
-      6 : Device not configured<br>
-      7 : Argument list too long<br>
-      8 : Exec format error<br>
-      9 : Bad file descriptor<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc258></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      mkfifo£¨½¨Á¢¾ßÃû¹ÜµÀ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> pipe£¬popen£¬open£¬umask<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/stat.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int mkfifo(const char * pathname,mode_t mode);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> mkfifo()»áÒÀ²ÎÊıpathname½¨Á¢ÌØÊâµÄFIFOÎÄ¼ş£¬¸ÃÎÄ¼ş±ØĞë²»´æÔÚ£¬¶ø²ÎÊımodeÎª¸ÃÎÄ¼şµÄÈ¨ÏŞ£¨mode%~umask£©£¬Òò´ËumaskÖµÒ²»áÓ°Ïìµ½FIFOÎÄ¼şµÄÈ¨ÏŞ¡£Mkfifo()½¨Á¢µÄFIFOÎÄ¼şÆäËû½ø³Ì¶¼¿ÉÒÔÓÃ¶ÁĞ´Ò»°ãÎÄ¼şµÄ·½Ê½´æÈ¡¡£µ±Ê¹ÓÃopen()À´´ò¿ªFIFOÎÄ¼şÊ±£¬O_NONBLOCKÆì±ê»áÓĞÓ°Ïì<br>
-      1¡¢µ±Ê¹ÓÃO_NONBLOCK Æì±êÊ±£¬´ò¿ªFIFO ÎÄ¼şÀ´¶ÁÈ¡µÄ²Ù×÷»áÁ¢¿Ì·µ»Ø£¬µ«ÊÇÈô»¹Ã»ÓĞÆäËû½ø³Ì´ò¿ªFIFO ÎÄ¼şÀ´¶ÁÈ¡£¬ÔòĞ´ÈëµÄ²Ù×÷»á·µ»ØENXIO 
-      ´íÎó´úÂë¡£<br>
-      2¡¢Ã»ÓĞÊ¹ÓÃO_NONBLOCK Æì±êÊ±£¬´ò¿ªFIFO À´¶ÁÈ¡µÄ²Ù×÷»áµÈµ½ÆäËû½ø³Ì´ò¿ªFIFOÎÄ¼şÀ´Ğ´Èë²ÅÕı³£·µ»Ø¡£Í¬ÑùµØ£¬´ò¿ªFIFOÎÄ¼şÀ´Ğ´ÈëµÄ²Ù×÷»áµÈµ½ÆäËû½ø³Ì´ò¿ªFIFO 
-      ÎÄ¼şÀ´¶ÁÈ¡ºó²ÅÕı³£·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô³É¹¦Ôò·µ»Ø0£¬·ñÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EACCESS ²ÎÊıpathnameËùÖ¸¶¨µÄÄ¿Â¼Â·¾¶ÎŞ¿ÉÖ´ĞĞµÄÈ¨ÏŞ<br>
-      EEXIST ²ÎÊıpathnameËùÖ¸¶¨µÄÎÄ¼şÒÑ´æÔÚ¡£<br>
-      ENAMETOOLONG ²ÎÊıpathnameµÄÂ·¾¶Ãû³ÆÌ«³¤¡£<br>
-      ENOENT ²ÎÊıpathname°üº¬µÄÄ¿Â¼²»´æÔÚ<br>
-      ENOSPC ÎÄ¼şÏµÍ³µÄÊ£Óà¿Õ¼ä²»×ã<br>
-      ENOTDIR ²ÎÊıpathnameÂ·¾¶ÖĞµÄÄ¿Â¼´æÔÚµ«È´·ÇÕæÕıµÄÄ¿Â¼¡£<br>
-      EROFS ²ÎÊıpathnameÖ¸¶¨µÄÎÄ¼ş´æÔÚÓÚÖ»¶ÁÎÄ¼şÏµÍ³ÄÚ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/stat.h&gt;<br>
-      #include&lt;fcntl.h&gt;<br>
-      main()<br>
-      {<br>
-      char buffer[80];<br>
-      int fd;<br>
-      unlink(FIFO);<br>
-      mkfifo(FIFO,0666);<br>
-      if(fork()&gt;0){<br>
-      char s[ ] = ¡°hello!\n¡±;<br>
-      fd = open (FIFO,O_WRONLY);<br>
-      write(fd,s,sizeof(s));<br>
-      close(fd);<br>
-      }<br>
-      else{<br>
-      fd= open(FIFO,O_RDONLY);<br>
-      read(fd,buffer,80);<br>
-      printf(¡°%s¡±,buffer);<br>
-      close(fd);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> hello!<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc259></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      pclose£¨¹Ø±Õ¹ÜµÀI/O£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> popen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int pclose(FILE * stream);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> pclose()ÓÃÀ´¹Ø±ÕÓÉpopenËù½¨Á¢µÄ¹ÜµÀ¼°ÎÄ¼şÖ¸Õë¡£²ÎÊıstreamÎªÏÈÇ°ÓÉpopen()Ëù·µ»ØµÄÎÄ¼şÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ·µ»Ø×Ó½ø³ÌµÄ½áÊø×´Ì¬¡£Èç¹ûÓĞ´íÎóÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ECHILD pclose()ÎŞ·¨È¡µÃ×Ó½ø³ÌµÄ½áÊø×´Ì¬¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ²Î¿¼popen()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc260></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      pipe£¨½¨Á¢¹ÜµÀ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> mkfifo£¬popen£¬read£¬write£¬fork<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> int pipe(int filedes[2]);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> pipe()»á½¨Á¢¹ÜµÀ£¬²¢½«ÎÄ¼şÃèÊö´ÊÓÉ²ÎÊıfiledesÊı×é·µ»Ø¡£filedes[0]Îª¹ÜµÀÀïµÄ¶ÁÈ¡¶Ë£¬filedes[1]ÔòÎª¹ÜµÀµÄĞ´Èë¶Ë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô³É¹¦Ôò·µ»ØÁã£¬·ñÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EMFILE ½ø³ÌÒÑÓÃÍêÎÄ¼şÃèÊö´Ê×î´óÁ¿¡£<br>
-      ENFILE ÏµÍ³ÒÑÎŞÎÄ¼şÃèÊö´Ê¿ÉÓÃ¡£<br>
-      EFAULT ²ÎÊıfiledesÊı×éµØÖ·²»ºÏ·¨¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> /* ¸¸½ø³Ì½è¹ÜµÀ½«×Ö·û´®¡°hello!\n¡±´«¸ø×Ó½ø³Ì²¢ÏÔÊ¾*/<br>
-      #include &lt;unistd.h&gt;<br>
-      main()<br>
-      {<br>
-      int filedes[2];<br>
-      char buffer[80];<br>
-      pipe(filedes);<br>
-      if(fork()&gt;0){<br>
-      /* ¸¸½ø³Ì*/<br>
-      char s[ ] = ¡°hello!\n¡±;<br>
-      write(filedes[1],s,sizeof(s));<br>
-      }<br>
-      else{<br>
-      /*×Ó½ø³Ì*/<br>
-      read(filedes[0],buffer,80);<br>
-      printf(¡°%s¡±,buffer);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> hello!<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc261></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> <br>
-      popen£¨½¨Á¢¹ÜµÀI/O£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> pipe£¬mkfifo£¬pclose£¬fork£¬system£¬fopen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> FILE * popen( const char * command,const char 
-      * type);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> popen()»áµ÷ÓÃfork()²úÉú×Ó½ø³Ì£¬È»ºó´Ó×Ó½ø³ÌÖĞµ÷ÓÃ/bin/sh -cÀ´Ö´ĞĞ²ÎÊıcommandµÄÖ¸Áî¡£²ÎÊıtype¿ÉÊ¹ÓÃ¡°r¡±´ú±í¶ÁÈ¡£¬¡°w¡±´ú±íĞ´Èë¡£ÒÀÕÕ´ËtypeÖµ£¬popen()»á½¨Á¢¹ÜµÀÁ¬µ½×Ó½ø³ÌµÄ±ê×¼Êä³öÉè±¸»ò±ê×¼ÊäÈëÉè±¸£¬È»ºó·µ»ØÒ»¸öÎÄ¼şÖ¸Õë¡£Ëæºó½ø³Ì±ã¿ÉÀûÓÃ´ËÎÄ¼şÖ¸ÕëÀ´¶ÁÈ¡×Ó½ø³ÌµÄÊä³öÉè±¸»òÊÇĞ´Èëµ½×Ó½ø³ÌµÄ±ê×¼ÊäÈëÉè±¸ÖĞ¡£´ËÍâ£¬ËùÓĞÊ¹ÓÃÎÄ¼şÖ¸Õë(FILE*)²Ù×÷µÄº¯ÊıÒ²¶¼¿ÉÒÔÊ¹ÓÃ£¬³ıÁËfclose()ÒÔÍâ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> Èô³É¹¦Ôò·µ»ØÎÄ¼şÖ¸Õë£¬·ñÔò·µ»ØNULL£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> EINVAL²ÎÊıtype²»ºÏ·¨¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ×¢ÒâÊÂÏî </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> ÔÚ±àĞ´¾ßSUID/SGIDÈ¨ÏŞµÄ³ÌĞòÊ±Çë¾¡Á¿±ÜÃâÊ¹ÓÃpopen()£¬popen()»á¼Ì³Ğ»·¾³±äÁ¿£¬Í¨¹ı»·¾³±äÁ¿¿ÉÄÜ»áÔì³ÉÏµÍ³°²È«µÄÎÊÌâ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> #include&lt;stdio.h&gt;<br>
-      main()<br>
-      {<br>
-      FILE * fp;<br>
-      char buffer[80];<br>
-      fp=popen(¡°cat /etc/passwd¡±,¡±r¡±);<br>
-      fgets(buffer,sizeof(buffer),fp);<br>
-      printf(¡°%s¡±,buffer);<br>
-      pclose(fp);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> <font face='ËÎÌå' size='2'> root :x:0 0: root: /root: /bin/bash<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+alarmï¼ˆè®¾ç½®ä¿¡å·ä¼ é€é—¹é’Ÿï¼‰
+ç›¸å…³å‡½æ•°
+signalï¼Œsleep
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+unsigned int alarm(unsigned int seconds);
+å‡½æ•°è¯´æ˜
+alarm()ç”¨æ¥è®¾ç½®ä¿¡å·SIGALRMåœ¨ç»è¿‡å‚æ•°secondsæŒ‡å®šçš„ç§’æ•°åä¼ é€ç»™ç›®å‰çš„è¿›ç¨‹ã€‚å¦‚æœå‚æ•°seconds ä¸º0ï¼Œåˆ™ä¹‹å‰è®¾ç½®çš„é—¹é’Ÿä¼šè¢«å–æ¶ˆï¼Œå¹¶å°†å‰©ä¸‹çš„æ—¶é—´è¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›ä¹‹å‰é—¹é’Ÿçš„å‰©ä½™ç§’æ•°ï¼Œå¦‚æœä¹‹å‰æœªè®¾é—¹é’Ÿåˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+#include<unistd.h>
+#include<signal.h>
+void handler() {
+printf(â€œhello\nâ€);
+}
+main()
+{
+int i;
+signal(SIGALRM,handler);
+alarm(5);
+for(i=1;i<7;i++){
+printf(â€œsleep %d ...\nâ€,i);
+sleep(1);
+}
+}
+æ‰§è¡Œ
+sleep 1 ...
+sleep 2 ...
+sleep 3 ...
+sleep 4 ...
+sleep 5 ...
+hello
+sleep 6 ...
+ã€€
+
+
+
+killï¼ˆä¼ é€ä¿¡å·ç»™æŒ‡å®šçš„è¿›ç¨‹ï¼‰
+ç›¸å…³å‡½æ•°
+raiseï¼Œsignal
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int kill(pid_t pid,int sig);
+å‡½æ•°è¯´æ˜
+kill()å¯ä»¥ç”¨æ¥é€å‚æ•°sigæŒ‡å®šçš„ä¿¡å·ç»™å‚æ•°pidæŒ‡å®šçš„è¿›ç¨‹ã€‚å‚æ•°pidæœ‰å‡ ç§æƒ…å†µ:
+pid>0 å°†ä¿¡å·ä¼ ç»™è¿›ç¨‹è¯†åˆ«ç ä¸ºpid çš„è¿›ç¨‹ã€‚
+pid=0 å°†ä¿¡å·ä¼ ç»™å’Œç›®å‰è¿›ç¨‹ç›¸åŒè¿›ç¨‹ç»„çš„æ‰€æœ‰è¿›ç¨‹
+pid=-1 å°†ä¿¡å·å¹¿æ’­ä¼ é€ç»™ç³»ç»Ÿå†…æ‰€æœ‰çš„è¿›ç¨‹
+pid<0 å°†ä¿¡å·ä¼ ç»™è¿›ç¨‹ç»„è¯†åˆ«ç ä¸ºpidç»å¯¹å€¼çš„æ‰€æœ‰è¿›ç¨‹
+å‚æ•°sigä»£è¡¨çš„ä¿¡å·ç¼–å·å¯å‚è€ƒé™„å½•D
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EINVAL å‚æ•°sig ä¸åˆæ³•
+ESRCH å‚æ•°pid æ‰€æŒ‡å®šçš„è¿›ç¨‹æˆ–è¿›ç¨‹ç»„ä¸å­˜åœ¨
+EPERM æƒé™ä¸å¤Ÿæ— æ³•ä¼ é€ä¿¡å·ç»™æŒ‡å®šè¿›ç¨‹
+èŒƒä¾‹
+#include<unistd.h>
+#include<signal.h>
+#include<sys/types.h>
+#include<sys/wait.h>
+main()
+{
+pid_t pid;
+int status;
+if(!(pid= fork())){
+printf(â€œHi I am child process!\nâ€);
+sleep(10);
+return;
+}
+else{
+printf(â€œsend signal to child process (%d) \nâ€,pid);
+sleep(1);
+kill(pid ,SIGABRT);
+wait(&status);
+if(WIFSIGNALED(status))
+printf(â€œchile process receive signal %d\nâ€,WTERMSIG(status));
+}
+}
+æ‰§è¡Œ
+sen signal to child process(3170)
+Hi I am child process!
+child process receive signal 6
+ã€€
+
+
+
+pauseï¼ˆè®©è¿›ç¨‹æš‚åœç›´åˆ°ä¿¡å·å‡ºç°ï¼‰
+ç›¸å…³å‡½æ•°
+killï¼Œsignalï¼Œsleep
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int pause(void);
+å‡½æ•°è¯´æ˜
+pause()ä¼šä»¤ç›®å‰çš„è¿›ç¨‹æš‚åœï¼ˆè¿›å…¥ç¡çœ çŠ¶æ€ï¼‰ï¼Œç›´åˆ°è¢«ä¿¡å·(signal)æ‰€ä¸­æ–­ã€‚
+è¿”å›å€¼
+åªè¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EINTR æœ‰ä¿¡å·åˆ°è¾¾ä¸­æ–­äº†æ­¤å‡½æ•°ã€‚
+ã€€
+
+
+
+sigactionï¼ˆæŸ¥è¯¢æˆ–è®¾ç½®ä¿¡å·å¤„ç†æ–¹å¼ï¼‰
+ç›¸å…³å‡½æ•°
+signalï¼Œsigprocmaskï¼Œsigpendingï¼Œsigsuspend
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigaction(int signum,const struct sigaction *act ,struct sigaction *oldact);
+å‡½æ•°è¯´æ˜
+sigaction()ä¼šä¾å‚æ•°signumæŒ‡å®šçš„ä¿¡å·ç¼–å·æ¥è®¾ç½®è¯¥ä¿¡å·çš„å¤„ç†å‡½æ•°ã€‚å‚æ•°signumå¯ä»¥æŒ‡å®šSIGKILLå’ŒSIGSTOPä»¥å¤–çš„æ‰€æœ‰ä¿¡å·ã€‚
+å¦‚å‚æ•°ç»“æ„sigactionå®šä¹‰å¦‚ä¸‹
+struct sigaction
+{
+void (*sa_handler) (int);
+sigset_t sa_mask;
+int sa_flags;
+void (*sa_restorer) (void);
+}
+sa_handleræ­¤å‚æ•°å’Œsignal()çš„å‚æ•°handlerç›¸åŒï¼Œä»£è¡¨æ–°çš„ä¿¡å·å¤„ç†å‡½æ•°ï¼Œå…¶ä»–æ„ä¹‰è¯·å‚è€ƒsignal()ã€‚
+sa_mask ç”¨æ¥è®¾ç½®åœ¨å¤„ç†è¯¥ä¿¡å·æ—¶æš‚æ—¶å°†sa_mask æŒ‡å®šçš„ä¿¡å·æç½®ã€‚
+sa_restorer æ­¤å‚æ•°æ²¡æœ‰ä½¿ç”¨ã€‚
+sa_flags ç”¨æ¥è®¾ç½®ä¿¡å·å¤„ç†çš„å…¶ä»–ç›¸å…³æ“ä½œï¼Œä¸‹åˆ—çš„æ•°å€¼å¯ç”¨ã€‚
+OR è¿ç®—ï¼ˆ|ï¼‰ç»„åˆ
+A_NOCLDSTOP : å¦‚æœå‚æ•°signumä¸ºSIGCHLDï¼Œåˆ™å½“å­è¿›ç¨‹æš‚åœæ—¶å¹¶ä¸ä¼šé€šçŸ¥çˆ¶è¿›ç¨‹
+SA_ONESHOT/SA_RESETHAND:å½“è°ƒç”¨æ–°çš„ä¿¡å·å¤„ç†å‡½æ•°å‰ï¼Œå°†æ­¤ä¿¡å·å¤„ç†æ–¹å¼æ”¹ä¸ºç³»ç»Ÿé¢„è®¾çš„æ–¹å¼ã€‚
+SA_RESTART:è¢«ä¿¡å·ä¸­æ–­çš„ç³»ç»Ÿè°ƒç”¨ä¼šè‡ªè¡Œé‡å¯
+SA_NOMASK/SA_NODEFER:åœ¨å¤„ç†æ­¤ä¿¡å·æœªç»“æŸå‰ä¸ç†ä¼šæ­¤ä¿¡å·çš„å†æ¬¡åˆ°æ¥ã€‚
+å¦‚æœå‚æ•°oldactä¸æ˜¯NULLæŒ‡é’ˆï¼Œåˆ™åŸæ¥çš„ä¿¡å·å¤„ç†æ–¹å¼ä¼šç”±æ­¤ç»“æ„sigaction è¿”å›ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EINVAL å‚æ•°signum ä¸åˆæ³•ï¼Œ æˆ–æ˜¯ä¼å›¾æ‹¦æˆªSIGKILL/SIGSTOPSIGKILLä¿¡å·
+EFAULT å‚æ•°actï¼ŒoldactæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–ã€‚
+EINTR æ­¤è°ƒç”¨è¢«ä¸­æ–­
+èŒƒä¾‹
+#include<unistd.h>
+#include<signal.h>
+void show_handler(struct sigaction * act)
+{
+switch (act->sa_flags)
+{
+case SIG_DFL:printf(â€œDefault action\nâ€);break;
+case SIG_IGN:printf(â€œIgnore the signal\nâ€);break;
+default: printf(â€œ0x%x\nâ€,act->sa_handler);
+}
+}
+main()
+{
+int i;
+struct sigaction act,oldact;
+act.sa_handler = show_handler;
+act.sa_flags = SA_ONESHOT|SA_NOMASK;
+sigaction(SIGUSR1,&act,&oldact);
+for(i=5;i<15;i++)
+{
+printf(â€œsa_handler of signal %2d =â€.i);
+sigaction(i,NULL,&oldact);
+}
+}
+æ‰§è¡Œ
+sa_handler of signal 5 = Default action
+sa_handler of signal 6= Default action
+sa_handler of signal 7 = Default action
+sa_handler of signal 8 = Default action
+sa_handler of signal 9 = Default action
+sa_handler of signal 10 = 0x8048400
+sa_handler of signal 11 = Default action
+sa_handler of signal 12 = Default action
+sa_handler of signal 13 = Default action
+sa_handler of signal 14 = Default action
+ã€€
+
+
+
+sigaddsetï¼ˆå¢åŠ ä¸€ä¸ªä¿¡å·è‡³ä¿¡å·é›†ï¼‰
+ç›¸å…³å‡½æ•°
+sigemptysetï¼Œsigfillsetï¼Œsigdelsetï¼Œsigismember
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigaddset(sigset_t *set,int signum);
+å‡½æ•°è¯´æ˜
+sigaddset()ç”¨æ¥å°†å‚æ•°signum ä»£è¡¨çš„ä¿¡å·åŠ å…¥è‡³å‚æ•°set ä¿¡å·é›†é‡Œã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+EINVAL å‚æ•°signuméåˆæ³•çš„ä¿¡å·ç¼–å·
+ã€€
+
+
+
+sigdelsetï¼ˆä»ä¿¡å·é›†é‡Œåˆ é™¤ä¸€ä¸ªä¿¡å·ï¼‰
+ç›¸å…³å‡½æ•°
+sigemptysetï¼Œsigfillsetï¼Œsigaddsetï¼Œsigismember
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigdelset(sigset_t * set,int signum);
+å‡½æ•°è¯´æ˜
+sigdelset()ç”¨æ¥å°†å‚æ•°signumä»£è¡¨çš„ä¿¡å·ä»å‚æ•°setä¿¡å·é›†é‡Œåˆ é™¤ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+EINVAL å‚æ•°signuméåˆæ³•çš„ä¿¡å·ç¼–å·
+ã€€
+
+
+
+sigemptysetï¼ˆåˆå§‹åŒ–ä¿¡å·é›†ï¼‰
+ç›¸å…³å‡½æ•°
+sigaddsetï¼Œsigfillsetï¼Œsigdelsetï¼Œsigismember
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigemptyset(sigset_t *set);
+å‡½æ•°è¯´æ˜
+sigemptyset()ç”¨æ¥å°†å‚æ•°setä¿¡å·é›†åˆå§‹åŒ–å¹¶æ¸…ç©ºã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+ã€€
+
+
+
+sigfillsetï¼ˆå°†æ‰€æœ‰ä¿¡å·åŠ å…¥è‡³ä¿¡å·é›†ï¼‰
+ç›¸å…³å‡½æ•°
+sigemptyï¼Œsigaddsetï¼Œsigdelsetï¼Œsigismember
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigfillset(sigset_t * set);
+å‡½æ•°è¯´æ˜
+sigfillset()ç”¨æ¥å°†å‚æ•°setä¿¡å·é›†åˆå§‹åŒ–ï¼Œç„¶åæŠŠæ‰€æœ‰çš„ä¿¡å·åŠ å…¥åˆ°æ­¤ä¿¡å·é›†é‡Œã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é™„åŠ è¯´æ˜
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+ã€€
+
+
+
+sigismemberï¼ˆæµ‹è¯•æŸä¸ªä¿¡å·æ˜¯å¦å·²åŠ å…¥è‡³ä¿¡å·é›†é‡Œï¼‰
+ç›¸å…³å‡½æ•°
+sigemptysetï¼Œsigfillsetï¼Œsigaddsetï¼Œsigdelset
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigismember(const sigset_t *set,int signum);
+å‡½æ•°è¯´æ˜
+sigismember()ç”¨æ¥æµ‹è¯•å‚æ•°signum ä»£è¡¨çš„ä¿¡å·æ˜¯å¦å·²åŠ å…¥è‡³å‚æ•°setä¿¡å·é›†é‡Œã€‚å¦‚æœä¿¡å·é›†é‡Œå·²æœ‰è¯¥ä¿¡å·åˆ™è¿”å›1ï¼Œå¦åˆ™è¿”å›0ã€‚
+è¿”å›å€¼
+ä¿¡å·é›†å·²æœ‰è¯¥ä¿¡å·åˆ™è¿”å›1ï¼Œæ²¡æœ‰åˆ™è¿”å›0ã€‚å¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+EINVAL å‚æ•°signum éåˆæ³•çš„ä¿¡å·ç¼–å·
+ã€€
+
+
+
+signalï¼ˆè®¾ç½®ä¿¡å·å¤„ç†æ–¹å¼ï¼‰
+ç›¸å…³å‡½æ•°
+sigactionï¼Œkillï¼Œraise
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+void (*signal(int signum,void(* handler)(int)))(int);
+å‡½æ•°è¯´æ˜
+signal()ä¼šä¾å‚æ•°signum æŒ‡å®šçš„ä¿¡å·ç¼–å·æ¥è®¾ç½®è¯¥ä¿¡å·çš„å¤„ç†å‡½æ•°ã€‚å½“æŒ‡å®šçš„ä¿¡å·åˆ°è¾¾æ—¶å°±ä¼šè·³è½¬åˆ°å‚æ•°handleræŒ‡å®šçš„å‡½æ•°æ‰§è¡Œã€‚å¦‚æœå‚æ•°handlerä¸æ˜¯å‡½æ•°æŒ‡é’ˆï¼Œåˆ™å¿…é¡»æ˜¯ä¸‹åˆ—ä¸¤ä¸ªå¸¸æ•°ä¹‹ä¸€:
+SIG_IGN å¿½ç•¥å‚æ•°signumæŒ‡å®šçš„ä¿¡å·ã€‚
+SIG_DFL å°†å‚æ•°signum æŒ‡å®šçš„ä¿¡å·é‡è®¾ä¸ºæ ¸å¿ƒé¢„è®¾çš„ä¿¡å·å¤„ç†æ–¹å¼ã€‚
+å…³äºä¿¡å·çš„ç¼–å·å’Œè¯´æ˜ï¼Œè¯·å‚è€ƒé™„å½•D
+è¿”å›å€¼
+è¿”å›å…ˆå‰çš„ä¿¡å·å¤„ç†å‡½æ•°æŒ‡é’ˆï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›SIG_ERR(-1)ã€‚
+é™„åŠ è¯´æ˜
+åœ¨ä¿¡å·å‘ç”Ÿè·³è½¬åˆ°è‡ªå®šçš„handlerå¤„ç†å‡½æ•°æ‰§è¡Œåï¼Œç³»ç»Ÿä¼šè‡ªåŠ¨å°†æ­¤å¤„ç†å‡½æ•°æ¢å›åŸæ¥ç³»ç»Ÿé¢„è®¾çš„å¤„ç†æ–¹å¼ï¼Œå¦‚æœè¦æ”¹å˜æ­¤æ“ä½œè¯·æ”¹ç”¨sigaction()ã€‚
+èŒƒä¾‹
+å‚è€ƒalarm()æˆ–raise()ã€‚
+ã€€
+
+
+
+sigpendingï¼ˆæŸ¥è¯¢è¢«æç½®çš„ä¿¡å·ï¼‰
+ç›¸å…³å‡½æ•°
+signalï¼Œsigactionï¼Œsigprocmaskï¼Œsigsuspend
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigpending(sigset_t *set);
+å‡½æ•°è¯´æ˜
+sigpending()ä¼šå°†è¢«æç½®çš„ä¿¡å·é›†åˆç”±å‚æ•°setæŒ‡é’ˆè¿”å›ã€‚
+è¿”å›å€¼æ‰§
+è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–
+EINTR æ­¤è°ƒç”¨è¢«ä¸­æ–­ã€‚
+ã€€
+
+
+
+sigprocmaskï¼ˆæŸ¥è¯¢æˆ–è®¾ç½®ä¿¡å·é®ç½©ï¼‰
+ç›¸å…³å‡½æ•°
+signalï¼Œsigactionï¼Œsigpendingï¼Œsigsuspend
+è¡¨å¤´æ–‡ä»¶
+#include<signal.h>
+å®šä¹‰å‡½æ•°
+int sigprocmask(int how,const sigset_t *set,sigset_t * oldset);
+å‡½æ•°è¯´æ˜
+sigprocmask()å¯ä»¥ç”¨æ¥æ”¹å˜ç›®å‰çš„ä¿¡å·é®ç½©ï¼Œå…¶æ“ä½œä¾å‚æ•°howæ¥å†³å®š
+SIG_BLOCK æ–°çš„ä¿¡å·é®ç½©ç”±ç›®å‰çš„ä¿¡å·é®ç½©å’Œå‚æ•°set æŒ‡å®šçš„ä¿¡å·é®ç½©ä½œè”é›†
+SIG_UNBLOCK å°†ç›®å‰çš„ä¿¡å·é®ç½©åˆ é™¤æ‰å‚æ•°setæŒ‡å®šçš„ä¿¡å·é®ç½©
+SIG_SETMASK å°†ç›®å‰çš„ä¿¡å·é®ç½©è®¾æˆå‚æ•°setæŒ‡å®šçš„ä¿¡å·é®ç½©ã€‚
+å¦‚æœå‚æ•°oldsetä¸æ˜¯NULLæŒ‡é’ˆï¼Œé‚£ä¹ˆç›®å‰çš„ä¿¡å·é®ç½©ä¼šç”±æ­¤æŒ‡é’ˆè¿”å›ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°setï¼ŒoldsetæŒ‡é’ˆåœ°å€æ— æ³•å­˜å–ã€‚
+EINTR æ­¤è°ƒç”¨è¢«ä¸­æ–­
+ã€€
+
+
+
+sleepï¼ˆè®©è¿›ç¨‹æš‚åœæ‰§è¡Œä¸€æ®µæ—¶é—´ï¼‰
+ç›¸å…³å‡½æ•°
+signalï¼Œalarm
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+unsigned int sleep(unsigned int seconds);
+å‡½æ•°è¯´æ˜
+sleep()ä¼šä»¤ç›®å‰çš„è¿›ç¨‹æš‚åœï¼Œç›´åˆ°è¾¾åˆ°å‚æ•°seconds æ‰€æŒ‡å®šçš„æ—¶é—´ï¼Œæˆ–æ˜¯è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+è¿”å›å€¼
+è‹¥è¿›ç¨‹æš‚åœåˆ°å‚æ•°seconds æ‰€æŒ‡å®šçš„æ—¶é—´åˆ™è¿”å›0ï¼Œè‹¥æœ‰ä¿¡å·ä¸­æ–­åˆ™è¿”å›å‰©ä½™ç§’æ•°ã€‚
+ã€€
+
+
+
+ferrorï¼ˆæ£€æŸ¥æ–‡ä»¶æµæ˜¯å¦æœ‰é”™è¯¯å‘ç”Ÿï¼‰
+ç›¸å…³å‡½æ•°
+clearerrï¼Œperror
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int ferror(FILE *stream);
+å‡½æ•°è¯´æ˜
+ferror()ç”¨æ¥æ£€æŸ¥å‚æ•°streamæ‰€æŒ‡å®šçš„æ–‡ä»¶æµæ˜¯å¦å‘ç”Ÿäº†é”™è¯¯æƒ…å†µï¼Œå¦‚æœ‰é”™è¯¯å‘ç”Ÿåˆ™è¿”å›é0å€¼ã€‚
+è¿”å›å€¼
+å¦‚æœæ–‡ä»¶æµæœ‰é”™è¯¯å‘ç”Ÿåˆ™è¿”å›é0å€¼ã€‚
+ã€€
+
+
+
+perrorï¼ˆæ‰“å°å‡ºé”™è¯¯åŸå› ä¿¡æ¯å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+strerror
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+void perror(const char *s);
+å‡½æ•°è¯´æ˜
+perror()ç”¨æ¥å°†ä¸Šä¸€ä¸ªå‡½æ•°å‘ç”Ÿé”™è¯¯çš„åŸå› è¾“å‡ºåˆ°æ ‡å‡†é”™è¯¯(stderr)ã€‚å‚æ•°sæ‰€æŒ‡çš„å­—ç¬¦ä¸²ä¼šå…ˆæ‰“å°å‡ºï¼Œåé¢å†åŠ ä¸Šé”™è¯¯åŸå› å­—ç¬¦ä¸²ã€‚æ­¤é”™è¯¯åŸå› ä¾ç…§å…¨å±€å˜é‡errnoçš„å€¼æ¥å†³å®šè¦è¾“å‡ºçš„å­—ç¬¦ä¸²ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE *fp;
+fp = fopen(â€œ/tmp/noexistâ€,â€r+â€);
+if(fp = =NULL) perror(â€œfopenâ€);
+}
+æ‰§è¡Œ
+$ ./perror
+fopen : No such file or diretory
+ã€€
+
+
+
+strerrorï¼ˆè¿”å›é”™è¯¯åŸå› çš„æè¿°å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+perror
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char * strerror(int errnum);
+å‡½æ•°è¯´æ˜
+strerror()ç”¨æ¥ä¾å‚æ•°errnumçš„é”™è¯¯ä»£ç æ¥æŸ¥è¯¢å…¶é”™è¯¯åŸå› çš„æè¿°å­—ç¬¦ä¸²ï¼Œç„¶åå°†è¯¥å­—ç¬¦ä¸²æŒ‡é’ˆè¿”å›ã€‚
+è¿”å›å€¼
+è¿”å›æè¿°é”™è¯¯åŸå› çš„å­—ç¬¦ä¸²æŒ‡é’ˆã€‚
+èŒƒä¾‹
+/* æ˜¾ç¤ºé”™è¯¯ä»£ç 0 è‡³9 çš„é”™è¯¯åŸå› æè¿°*/
+#include<string.h>
+main()
+{
+int i;
+for(i=0;i<10;i++)
+printf(â€œ%d : %s\nâ€,i,strerror(i));
+}
+æ‰§è¡Œ
+0 : Success
+1 : Operation not permitted
+2 : No such file or directory
+3 : No such process
+4 : Interrupted system call
+5 : Input/output error
+6 : Device not configured
+7 : Argument list too long
+8 : Exec format error
+9 : Bad file descriptor
+ã€€
+
+
+
+mkfifoï¼ˆå»ºç«‹å…·åç®¡é“ï¼‰
+ç›¸å…³å‡½æ•°
+pipeï¼Œpopenï¼Œopenï¼Œumask
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/stat.h>
+å®šä¹‰å‡½æ•°
+int mkfifo(const char * pathname,mode_t mode);
+å‡½æ•°è¯´æ˜
+mkfifo()ä¼šä¾å‚æ•°pathnameå»ºç«‹ç‰¹æ®Šçš„FIFOæ–‡ä»¶ï¼Œè¯¥æ–‡ä»¶å¿…é¡»ä¸å­˜åœ¨ï¼Œè€Œå‚æ•°modeä¸ºè¯¥æ–‡ä»¶çš„æƒé™ï¼ˆmode%~umaskï¼‰ï¼Œå› æ­¤umaskå€¼ä¹Ÿä¼šå½±å“åˆ°FIFOæ–‡ä»¶çš„æƒé™ã€‚Mkfifo()å»ºç«‹çš„FIFOæ–‡ä»¶å…¶ä»–è¿›ç¨‹éƒ½å¯ä»¥ç”¨è¯»å†™ä¸€èˆ¬æ–‡ä»¶çš„æ–¹å¼å­˜å–ã€‚å½“ä½¿ç”¨open()æ¥æ‰“å¼€FIFOæ–‡ä»¶æ—¶ï¼ŒO_NONBLOCKæ——æ ‡ä¼šæœ‰å½±å“
+1ã€å½“ä½¿ç”¨O_NONBLOCK æ——æ ‡æ—¶ï¼Œæ‰“å¼€FIFO æ–‡ä»¶æ¥è¯»å–çš„æ“ä½œä¼šç«‹åˆ»è¿”å›ï¼Œä½†æ˜¯è‹¥è¿˜æ²¡æœ‰å…¶ä»–è¿›ç¨‹æ‰“å¼€FIFO æ–‡ä»¶æ¥è¯»å–ï¼Œåˆ™å†™å…¥çš„æ“ä½œä¼šè¿”å›ENXIO é”™è¯¯ä»£ç ã€‚
+2ã€æ²¡æœ‰ä½¿ç”¨O_NONBLOCK æ——æ ‡æ—¶ï¼Œæ‰“å¼€FIFO æ¥è¯»å–çš„æ“ä½œä¼šç­‰åˆ°å…¶ä»–è¿›ç¨‹æ‰“å¼€FIFOæ–‡ä»¶æ¥å†™å…¥æ‰æ­£å¸¸è¿”å›ã€‚åŒæ ·åœ°ï¼Œæ‰“å¼€FIFOæ–‡ä»¶æ¥å†™å…¥çš„æ“ä½œä¼šç­‰åˆ°å…¶ä»–è¿›ç¨‹æ‰“å¼€FIFO æ–‡ä»¶æ¥è¯»å–åæ‰æ­£å¸¸è¿”å›ã€‚
+è¿”å›å€¼
+è‹¥æˆåŠŸåˆ™è¿”å›0ï¼Œå¦åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EACCESS å‚æ•°pathnameæ‰€æŒ‡å®šçš„ç›®å½•è·¯å¾„æ— å¯æ‰§è¡Œçš„æƒé™
+EEXIST å‚æ•°pathnameæ‰€æŒ‡å®šçš„æ–‡ä»¶å·²å­˜åœ¨ã€‚
+ENAMETOOLONG å‚æ•°pathnameçš„è·¯å¾„åç§°å¤ªé•¿ã€‚
+ENOENT å‚æ•°pathnameåŒ…å«çš„ç›®å½•ä¸å­˜åœ¨
+ENOSPC æ–‡ä»¶ç³»ç»Ÿçš„å‰©ä½™ç©ºé—´ä¸è¶³
+ENOTDIR å‚æ•°pathnameè·¯å¾„ä¸­çš„ç›®å½•å­˜åœ¨ä½†å´éçœŸæ­£çš„ç›®å½•ã€‚
+EROFS å‚æ•°pathnameæŒ‡å®šçš„æ–‡ä»¶å­˜åœ¨äºåªè¯»æ–‡ä»¶ç³»ç»Ÿå†…ã€‚
+èŒƒä¾‹
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+main()
+{
+char buffer[80];
+int fd;
+unlink(FIFO);
+mkfifo(FIFO,0666);
+if(fork()>0){
+char s[ ] = â€œhello!\nâ€;
+fd = open (FIFO,O_WRONLY);
+write(fd,s,sizeof(s));
+close(fd);
+}
+else{
+fd= open(FIFO,O_RDONLY);
+read(fd,buffer,80);
+printf(â€œ%sâ€,buffer);
+close(fd);
+}
+}
+æ‰§è¡Œ
+hello!
+ã€€
+
+
+
+pcloseï¼ˆå…³é—­ç®¡é“I/Oï¼‰
+ç›¸å…³å‡½æ•°
+popen
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+int pclose(FILE * stream);
+å‡½æ•°è¯´æ˜
+pclose()ç”¨æ¥å…³é—­ç”±popenæ‰€å»ºç«‹çš„ç®¡é“åŠæ–‡ä»¶æŒ‡é’ˆã€‚å‚æ•°streamä¸ºå…ˆå‰ç”±popen()æ‰€è¿”å›çš„æ–‡ä»¶æŒ‡é’ˆã€‚
+è¿”å›å€¼
+è¿”å›å­è¿›ç¨‹çš„ç»“æŸçŠ¶æ€ã€‚å¦‚æœæœ‰é”™è¯¯åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+ECHILD pclose()æ— æ³•å–å¾—å­è¿›ç¨‹çš„ç»“æŸçŠ¶æ€ã€‚
+èŒƒä¾‹
+å‚è€ƒpopen()ã€‚
+ã€€
+
+
+
+pipeï¼ˆå»ºç«‹ç®¡é“ï¼‰
+ç›¸å…³å‡½æ•°
+mkfifoï¼Œpopenï¼Œreadï¼Œwriteï¼Œfork
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int pipe(int filedes[2]);
+å‡½æ•°è¯´æ˜
+pipe()ä¼šå»ºç«‹ç®¡é“ï¼Œå¹¶å°†æ–‡ä»¶æè¿°è¯ç”±å‚æ•°filedesæ•°ç»„è¿”å›ã€‚filedes[0]ä¸ºç®¡é“é‡Œçš„è¯»å–ç«¯ï¼Œfiledes[1]åˆ™ä¸ºç®¡é“çš„å†™å…¥ç«¯ã€‚
+è¿”å›å€¼
+è‹¥æˆåŠŸåˆ™è¿”å›é›¶ï¼Œå¦åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EMFILE è¿›ç¨‹å·²ç”¨å®Œæ–‡ä»¶æè¿°è¯æœ€å¤§é‡ã€‚
+ENFILE ç³»ç»Ÿå·²æ— æ–‡ä»¶æè¿°è¯å¯ç”¨ã€‚
+EFAULT å‚æ•°filedesæ•°ç»„åœ°å€ä¸åˆæ³•ã€‚
+èŒƒä¾‹
+/* çˆ¶è¿›ç¨‹å€Ÿç®¡é“å°†å­—ç¬¦ä¸²â€œhello!\nâ€ä¼ ç»™å­è¿›ç¨‹å¹¶æ˜¾ç¤º*/
+#include <unistd.h>
+main()
+{
+int filedes[2];
+char buffer[80];
+pipe(filedes);
+if(fork()>0){
+/* çˆ¶è¿›ç¨‹*/
+char s[ ] = â€œhello!\nâ€;
+write(filedes[1],s,sizeof(s));
+}
+else{
+/*å­è¿›ç¨‹*/
+read(filedes[0],buffer,80);
+printf(â€œ%sâ€,buffer);
+}
+}
+æ‰§è¡Œ
+hello!
+ã€€
+
+
+
+popenï¼ˆå»ºç«‹ç®¡é“I/Oï¼‰
+ç›¸å…³å‡½æ•°
+pipeï¼Œmkfifoï¼Œpcloseï¼Œforkï¼Œsystemï¼Œfopen
+è¡¨å¤´æ–‡ä»¶
+#include<stdio.h>
+å®šä¹‰å‡½æ•°
+FILE * popen( const char * command,const char * type);
+å‡½æ•°è¯´æ˜
+popen()ä¼šè°ƒç”¨fork()äº§ç”Ÿå­è¿›ç¨‹ï¼Œç„¶åä»å­è¿›ç¨‹ä¸­è°ƒç”¨/bin/sh -cæ¥æ‰§è¡Œå‚æ•°commandçš„æŒ‡ä»¤ã€‚å‚æ•°typeå¯ä½¿ç”¨â€œrâ€ä»£è¡¨è¯»å–ï¼Œâ€œwâ€ä»£è¡¨å†™å…¥ã€‚ä¾ç…§æ­¤typeå€¼ï¼Œpopen()ä¼šå»ºç«‹ç®¡é“è¿åˆ°å­è¿›ç¨‹çš„æ ‡å‡†è¾“å‡ºè®¾å¤‡æˆ–æ ‡å‡†è¾“å…¥è®¾å¤‡ï¼Œç„¶åè¿”å›ä¸€ä¸ªæ–‡ä»¶æŒ‡é’ˆã€‚éšåè¿›ç¨‹ä¾¿å¯åˆ©ç”¨æ­¤æ–‡ä»¶æŒ‡é’ˆæ¥è¯»å–å­è¿›ç¨‹çš„è¾“å‡ºè®¾å¤‡æˆ–æ˜¯å†™å…¥åˆ°å­è¿›ç¨‹çš„æ ‡å‡†è¾“å…¥è®¾å¤‡ä¸­ã€‚æ­¤å¤–ï¼Œæ‰€æœ‰ä½¿ç”¨æ–‡ä»¶æŒ‡é’ˆ(FILE*)æ“ä½œçš„å‡½æ•°ä¹Ÿéƒ½å¯ä»¥ä½¿ç”¨ï¼Œé™¤äº†fclose()ä»¥å¤–ã€‚
+è¿”å›å€¼
+è‹¥æˆåŠŸåˆ™è¿”å›æ–‡ä»¶æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›NULLï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EINVALå‚æ•°typeä¸åˆæ³•ã€‚
+æ³¨æ„äº‹é¡¹
+åœ¨ç¼–å†™å…·SUID/SGIDæƒé™çš„ç¨‹åºæ—¶è¯·å°½é‡é¿å…ä½¿ç”¨popen()ï¼Œpopen()ä¼šç»§æ‰¿ç¯å¢ƒå˜é‡ï¼Œé€šè¿‡ç¯å¢ƒå˜é‡å¯èƒ½ä¼šé€ æˆç³»ç»Ÿå®‰å…¨çš„é—®é¢˜ã€‚
+èŒƒä¾‹
+#include<stdio.h>
+main()
+{
+FILE * fp;
+char buffer[80];
+fp=popen(â€œcat /etc/passwdâ€,â€râ€);
+fgets(buffer,sizeof(buffer),fp);
+printf(â€œ%sâ€,buffer);
+pclose(fp);
+}
+æ‰§è¡Œ
+root :x:0 0: root: /root: /bin/bash
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

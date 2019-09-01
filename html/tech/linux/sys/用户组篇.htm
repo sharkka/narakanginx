@@ -1,3007 +1,1022 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>ç”¨æˆ·ç»„ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
-
 <body>
-<table width="100%">
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc90></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        endgrent£¨¹Ø±Õ×éÎÄ¼ş£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrent£¬setgrent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void endgrent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> endgrent()ÓÃÀ´¹Ø±ÕÓÉgetgrent()Ëù´ò¿ªµÄÃÜÂëÎÄ¼ş¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼getgrent()Óësetgrent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc91></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        endpwent£¨¹Ø±ÕÃÜÂëÎÄ¼ş£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwent£¬setpwent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void endpwent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> endpwent()ÓÃÀ´¹Ø±ÕÓÉgetpwent()Ëù´ò¿ªµÄÃÜÂëÎÄ¼ş¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼getpwent()Óësetpwent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc92></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        endutent£¨¹Ø±Õutmp ÎÄ¼ş£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬setutent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void endutent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> endutent()ÓÃÀ´¹Ø±ÕÓÉgetutentËù´ò¿ªµÄutmpÎÄ¼ş¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼getutent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc93></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        fgetgrent£¨´ÓÖ¸¶¨µÄÎÄ¼şÀ´¶ÁÈ¡×é¸ñÊ½£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetpwent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;stdio.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct group * getgrent(FILE 
-        * stream);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetgrent()»á´Ó²ÎÊıstreamÖ¸¶¨µÄÎÄ¼ş¶ÁÈ¡Ò»ĞĞÊı¾İ£¬È»ºóÒÔgroup½á¹¹½«¸ÃÊı¾İ·µ»Ø¡£²ÎÊıstreamËùÖ¸¶¨µÄÎÄ¼ş±ØĞëºÍ¡¢etc/groupÏàÍ¬µÄ¸ñÊ½¡£group½á¹¹¶¨ÒåÇë²Î¿¼getgrent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øgroup½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULLÔò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include &lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        #include&lt;stdio.h&gt;<br>
-        main()<br>
-        {<br>
-        struct group *data;<br>
-        FILE *stream;<br>
-        int i;<br>
-        stream = fopen("/etc/group", "r");<br>
-        while((data = fgetgrent(stream))!=0){<br>
-        i=0;<br>
-        printf("%s :%s:%d :", data-&gt;gr_name,data-&gt;gr_passwd,data-&gt;gr_gid);<br>
-        while (data-&gt;gr_mem[i])printf("%s,",data-&gt;gr_mem[i++]);<br>
-        printf("\n");<br>
-        }<br>
-        fclose(stream);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:x:0:root,<br>
-        bin:x:1:root,bin,daemon<br>
-        daemon:x:2:root,bin,daemon<br>
-        sys:x:3:root,bin,adm<br>
-        adm:x:4:root,adm,daemon<br>
-        tty:x:5<br>
-        disk:x:6:root<br>
-        lp:x:7:daemon,lp<br>
-        mem:x:8<br>
-        kmem:x:9<br>
-        wheel:x:10:root<br>
-        mail:x:12:mail<br>
-        news:x:13:news<br>
-        uucp:x:14:uucp<br>
-        man:x:15<br>
-        games:x:20<br>
-        gopher:x:30<br>
-        dip:x:40:<br>
-        ftp:x:50<br>
-        nobody:x:99:<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc94></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        fgetpwent£¨´ÓÖ¸¶¨µÄÎÄ¼şÀ´¶ÁÈ¡ÃÜÂë¸ñÊ½£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetgrent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;stdio.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct passwd * fgetpwent(FILE 
-        *stream);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetpwent()»á´Ó²ÎÊıstreamÖ¸¶¨µÄÎÄ¼ş¶ÁÈ¡Ò»ĞĞÊı¾İ£¬È»ºóÒÔpasswd½á¹¹½«¸ÃÊı¾İ·µ»Ø¡£²ÎÊıstreamËùÖ¸¶¨µÄÎÄ¼ş±ØĞëºÍ/etc/passwdÏàÍ¬µÄ¸ñÊ½¡£passwd½á¹¹¶¨ÒåÇë²Î¿¼getpwent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øpasswd½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULLÔò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct passwd *user;<br>
-        FILE *stream;<br>
-        stream = fopen("/etc/passwd", "r");<br>
-        while((user = fgetpwent(stream))!=0){<br>
-        printf("%s:%d:%d:%s:%s:%s\n",user-&gt;pw_name,user-&gt;pw_uid,user-&gt;pw_gid,user-&gt;pw_gecos,user-&gt;pw_dir,user-&gt;pw_shell);<br>
-        }<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:0:0:root:/root:/bin/bash<br>
-        bin:1:1:bin:/bin:<br>
-        daemon:2:2:daemon:/sbin:<br>
-        adm:3:4:adm:/var/adm:<br>
-        lp:4:7:lp:/var/spool/lpd:<br>
-        sync:5:0:sync:/sbin:/bin/sync<br>
-        shutdown:6:0:shutdown:/sbin:/sbin/shutdown<br>
-        halt:7:0:halt:/sbin:/sbin/halt<br>
-        mail:8:12:mail:/var/spool/mail:<br>
-        news:9:13:news:var/spool/news<br>
-        uucp:10:14:uucp:/var/spool/uucp:<br>
-        operator:11:0:operator :/root:<br>
-        games:12:100:games:/usr/games:<br>
-        gopher:13:30:gopher:/usr/lib/gopher-data:<br>
-        ftp:14:50:FTP User:/home/ftp:<br>
-        nobody:99:99:Nobody:/:<br>
-        xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false<br>
-        gdm:42:42:/home/gdm:/bin/bash<br>
-        kids:500:500: : /home/kids:/bin/bash<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc95></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getegid£¨È¡µÃÓĞĞ§µÄ×éÊ¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgid£¬setgid£¬setregid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> gid_t getegid(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getegid()ÓÃÀ´È¡µÃÖ´ĞĞÄ¿Ç°½ø³ÌÓĞĞ§×éÊ¶±ğÂë¡£ÓĞĞ§µÄ×éÊ¶±ğÂëÓÃÀ´¾ö¶¨½ø³ÌÖ´ĞĞÊ±×éµÄÈ¨ÏŞ¡£·µ»ØÖµ·µ»ØÓĞĞ§µÄ×éÊ¶±ğÂë¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> main()<br>
-        { <br>
-        printf("egid is %d\n",getegid());<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> egid is 0 /*µ±Ê¹ÓÃrootÉí·İÖ´ĞĞ·¶Àı³ÌĞòÊ±*/<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc96></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        geteuid£¨È¡µÃÓĞĞ§µÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getuid£¬setreuid£¬setuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> uid_t geteuid(void)<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> geteuid()ÓÃÀ´È¡µÃÖ´ĞĞÄ¿Ç°½ø³ÌÓĞĞ§µÄÓÃ»§Ê¶±ğÂë¡£ÓĞĞ§µÄÓÃ»§Ê¶±ğÂëÓÃÀ´¾ö¶¨½ø³ÌÖ´ĞĞµÄÈ¨ÏŞ£¬½èÓÉ´Ë¸Ä±ä´ËÖµ£¬½ø³Ì¿ÉÒÔ»ñµÃ¶îÍâµÄÈ¨ÏŞ¡£ÌÈÈôÖ´ĞĞÎÄ¼şµÄsetIDÎ»ÒÑ±»ÉèÖÃ£¬¸ÃÎÄ¼şÖ´ĞĞÊ±£¬Æä½ø³ÌµÄeuidÖµ±ã»áÉè³É¸ÃÎÄ¼şËùÓĞÕßµÄuid¡£ÀıÈç£¬Ö´ĞĞÎÄ¼ş/usr/bin/passwdµÄÈ¨ÏŞÎª-r-s--x--x£¬Æäs 
-        Î»¼´ÎªsetID(SUID)Î»£¬¶øµ±ÈÎºÎÓÃ»§ÔÚÖ´ĞĞpasswd Ê±ÆäÓĞĞ§µÄÓÃ»§Ê¶±ğÂë»á±»Éè³Épasswd ËùÓĞÕßµÄuid Öµ£¬¼´rootµÄuid 
-        Öµ(0)¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»ØÓĞĞ§µÄÓÃ»§Ê¶±ğÂë¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> main()<br>
-        { <br>
-        printf ("euid is %d \n",geteuid());<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> euid is 0 /*µ±Ê¹ÓÃrootÉí·İÖ´ĞĞ·¶Àı³ÌĞòÊ±*/<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc97></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getgid£¨È¡µÃÕæÊµµÄ×éÊ¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getegid£¬setregid£¬setgid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> gid_t getgid(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgid()ÓÃÀ´È¡µÃÖ´ĞĞÄ¿Ç°½ø³ÌµÄ×éÊ¶±ğÂë¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Ø×éÊ¶±ğÂë<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> main()<br>
-        {<br>
-        printf(¡°gid is %d\n¡±,getgid());<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> gid is 0 /*µ±Ê¹ÓÃrootÉí·İÖ´ĞĞ·¶Àı³ÌĞòÊ±*/<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc98></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getgrent£¨´Ó×éÎÄ¼şÖĞÈ¡µÃÕËºÅµÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgrent£¬endgrent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include &lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct group *getgrent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrent()ÓÃÀ´´Ó×éÎÄ¼ş(/etc/group)ÖĞ¶ÁÈ¡Ò»Ïî×éÊı¾İ£¬¸ÃÊı¾İÒÔgroup 
-        ½á¹¹·µ»Ø¡£µÚÒ»´Îµ÷ÓÃÊ±»áÈ¡µÃµÚÒ»Ïî×éÊı¾İ£¬Ö®ºóÃ¿µ÷ÓÃÒ»´Î¾Í»á·µ»ØÏÂÒ»ÏîÊı¾İ£¬Ö±µ½ÒÑÎŞÈÎºÎÊı¾İÊ±·µ»ØNULL¡£<br>
-        struct group{<br>
-        char *gr_name; /*×éÃû³Æ*/<br>
-        char *gr_passwd; /* ×éÃÜÂë*/<br>
-        gid_t gr_gid; /*×éÊ¶±ğÂë*/<br>
-        char **gr_mem; /*×é³ÉÔ±ÕËºÅ*/<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øgroup½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULLÔò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrent()ÔÚµÚÒ»´Îµ÷ÓÃÊ±»á´ò¿ª×éÎÄ¼ş£¬¶ÁÈ¡Êı¾İÍê±Ïºó¿ÉÊ¹ÓÃendgrent()À´¹Ø±Õ¸Ã×éÎÄ¼ş¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ENOMEM ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃgroup½á¹¹¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct group *data;<br>
-        int i;<br>
-        while((data= getgrent())!=0){<br>
-        i=0;<br>
-        printf(¡°%s:%s:%d:¡±,data-&gt;gr_name,data-&gt;gr_passwd,data-&gt;gr_gid);<br>
-        while(data-&gt;gr_mem[i])printf(¡°%s,¡±,data-&gt;gr_mem[i++]);<br>
-        printf(¡°\n¡±);<br>
-        }<br>
-        endgrent();<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:x:0:root,<br>
-        bin:x:1:root,bin,daemon,<br>
-        daemon:x:2:root,bin,daemon,<br>
-        sys:x:3:root,bin,adm,<br>
-        adm:x:4:root,adm,daemon<br>
-        tty:x:5<br>
-        disk:x:6:root<br>
-        lp:x:7:daemon,lp<br>
-        mem:x:8<br>
-        kmem:x:9:<br>
-        wheel:x:10:root<br>
-        mail:x:12:mail<br>
-        news:x:13:news<br>
-        uucp:x:14:uucp<br>
-        man:x:15:<br>
-        games:x:20<br>
-        gopher:x:30<br>
-        dip:x:40<br>
-        ftp:x:50<br>
-        nobody:x:99<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc99></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getgrgid£¨´Ó×éÎÄ¼şÖĞÈ¡µÃÖ¸¶¨gid µÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetgrent£¬getgrent£¬getgrnam<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> strcut group * getgrgid(gid_t 
-        gid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrgid£¨£©ÓÃÀ´ÒÀ²ÎÊıgidÖ¸¶¨µÄ×éÊ¶±ğÂëÖğÒ»ËÑË÷×éÎÄ¼ş£¬ÕÒµ½Ê±±ã½«¸Ã×éµÄÊı¾İÒÔgroup½á¹¹·µ»Ø¡£group½á¹¹Çë²Î¿¼getgrent£¨£©¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øgroup½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULLÔò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> /* È¡µÃgid£½3µÄ×éÊı¾İ*/<br>
-        #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        strcut group *data;<br>
-        int i=0;<br>
-        data = getgrgid(3);<br>
-        printf(¡°%s:%s:%d:¡±,data-&gt;gr_name,data-&gt;gr_passwd,data-&gt;gr_gid);<br>
-        while(data-&gt;gr_mem[i])printf(¡°%s ,¡±,data-&gt;mem[i++]);<br>
-        printf(¡°\n¡±);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> sys:x:3:root,bin,adm<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc100></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getgrnam£¨´Ó×éÎÄ¼şÖĞÈ¡µÃÖ¸¶¨×éµÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> fgetgrent£¬getrent£¬getgruid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> strcut group * getgrnam(const 
-        char * name);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrnam£¨£©ÓÃÀ´ÖğÒ»ËÑË÷²ÎÊıÄÇÃ´Ö¸¶¨µÄ×éÃû³Æ£¬ÕÒµ½Ê±±ã½«¸Ã×éµÄÊı¾İÒÔgroup½á¹¹·µ»Ø¡£group 
-        ½á¹¹Çë²Î¿¼getgrent£¨£©¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øgroup½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULLÔò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> /* È¡µÃadmµÄ×éÊı¾İ*/<br>
-        #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        strcut group * data;<br>
-        int i=0;<br>
-        data = getgrnam(¡°adm¡±);<br>
-        printf(¡°%s:%s:%d:¡±,data-&gt;gr_name,data-&gt;gr_passwd,data-&gt;gr_gid);<br>
-        while(data-&gt;gr_mem[i])printf(¡°%s,¡±,data-&gt;gr_mem[i++]);<br>
-        printf(¡°\n¡±);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> adm:x:4:root,adm,daemon<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc101></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getgroups£¨È¡µÃ×é´úÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> initgroups£¬setgroup£¬getgid£¬setgid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int getgroups(int size,gid_t 
-        list[]);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgroup£¨£©ÓÃÀ´È¡µÃÄ¿Ç°ÓÃ»§ËùÊôµÄ×é´úÂë¡£²ÎÊısizeÎªlist¡²¡³ËùÄÜÈİÄÉµÄgid_t 
-        ÊıÄ¿¡£Èç¹û²ÎÊısize ÖµÎªÁã£¬´Ëº¯Êı½ö»á·µ»ØÓÃ»§ËùÊôµÄ×éÊı¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Ø×éÊ¶±ğÂë£¬ÈçÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> EFAULT ²ÎÊılistÊı×éµØÖ·²»ºÏ·¨¡£EINVAL 
-        ²ÎÊısizeÖµ²»×ãÒÔÈİÄÉËùÓĞµÄ×é¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        gid_t list[500];<br>
-        int x,i;<br>
-        x = getgroups(0.list);<br>
-        getgroups(x,list);<br>
-        for(i=0;i&lt;x;i++)<br>
-        printf(¡°%d:%d\n¡±,i,list[i]);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> 0:00<br>
-        1:01<br>
-        2:02<br>
-        3:03<br>
-        4:04<br>
-        5:06<br>
-        6:10<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc102></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getpw£¨È¡µÃÖ¸¶¨ÓÃ»§µÄÃÜÂëÎÄ¼şÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int getpw(uid_t uid,char *buf);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpw()»á´Ó/etc/passwdÖĞ²éÕÒ·ûºÏ²ÎÊıuidËùÖ¸¶¨µÄÓÃ»§ÕËºÅÊı¾İ£¬ÕÒ²»µ½Ïà¹ØÊı¾İ¾Í·µ»Ø-1¡£Ëù·µ»ØµÄbuf×Ö·û´®¸ñÊ½ÈçÏÂ:ÕËºÅ:ÃÜÂë:ÓÃ»§Ê¶±ğÂë(uid):×éÊ¶±ğÂë(gid):È«Ãû:¸ùÄ¿Â¼:shell<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Ø0±íÊ¾³É¹¦£¬ÓĞ´íÎó·¢ÉúÊ±·µ»Ø-1¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> 1. getpw()»áÓĞÇ±ÔÚµÄ°²È«ĞÔÎÊÌâ£¬Çë¾¡Á¿Ê¹ÓÃ±ğµÄº¯ÊıÈ¡´ú¡£<br>
-        2. Ê¹ÓÃshadowµÄÏµÍ³ÒÑ°ÑÓÃ»§ÃÜÂë³é³ö/etc/passwd£¬Òò´ËÊ¹ÓÃgetpw()È¡µÃµÄÃÜÂë½«Îª¡°x¡±¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        char buffer[80];<br>
-        getpw(0,buffer);<br>
-        printf(¡°%s\n¡±,buffer);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:x:0:0:root:/root:/bin/bash<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc103></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getpwent£¨´ÓÃÜÂëÎÄ¼şÖĞÈ¡µÃÕËºÅµÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpw£¬fgetpwent£¬getpwnam£¬getpwuid£¬setpwent£¬endpwent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> strcut passwd * getpwent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwent£¨£©ÓÃÀ´´ÓÃÜÂëÎÄ¼ş£¨/etc/passwd£©ÖĞ¶ÁÈ¡Ò»ÏîÓÃ»§Êı¾İ£¬¸ÃÓÃ»§µÄÊı¾İÒÔpasswd 
-        ½á¹¹·µ»Ø¡£µÚÒ»´Îµ÷ÓÃÊ±»áÈ¡µÃµÚÒ»Î»ÓÃ»§Êı¾İ£¬Ö®ºóÃ¿µ÷ÓÃÒ»´Î¾Í»á·µ»ØÏÂÒ»ÏîÊı¾İ£¬Ö±µ½ÒÑÎŞÈÎºÎÊı¾İÊ±·µ»ØNULL¡£<br>
-        passwd ½á¹¹¶¨ÒåÈçÏÂ<br>
-        struct passwd{<br>
-        char * pw_name; /*ÓÃ»§ÕËºÅ*/<br>
-        char * pw_passwd; /*ÓÃ»§ÃÜÂë*/<br>
-        uid_t pw_uid; /*ÓÃ»§Ê¶±ğÂë*/<br>
-        gid_t pw_gid; /*×éÊ¶±ğÂë*/<br>
-        char * pw_gecos; /*ÓÃ»§È«Ãû*/<br>
-        char * pw_dir; /*¼ÒÄ¿Â¼*/<br>
-        char * pw_shell; /* ËùÊ¹ÓÃµÄshellÂ·¾¶*/<br>
-        };<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øpasswd ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwent()ÔÚµÚÒ»´Îµ÷ÓÃÊ±»á´ò¿ªÃÜÂëÎÄ¼ş£¬¶ÁÈ¡Êı¾İÍê±Ïºó¿ÉÊ¹ÓÃendpwent()À´¹Ø±Õ¸ÃÃÜÂëÎÄ¼ş¡£´íÎó´úÂëENOMEM 
-        ÄÚ´æ²»×ã£¬ÎŞ·¨ÅäÖÃpasswd½á¹¹¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct passwd *user;<br>
-        while((user = getpwent())!=0){<br>
-        printf(¡°%s:%d:%d:%s:%s:%s\n¡±,user-&gt;pw_name,user-&gt;pw_uid,user-&gt;pw_gid,<br>
-        user-&gt;pw_gecos,user-&gt;pw_dir,user-&gt;pw_shell);<br>
-        }<br>
-        endpwent();<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:0:0:root:/root:/bin/bash<br>
-        bin:1:1:bin:/bin:<br>
-        daemon:2:2:daemon:/sbin:<br>
-        adm:3:4:adm:/var/adm:<br>
-        lp:4:7:lp:/var/spool/lpd:<br>
-        sync:5:0:sync:/sbin:/bin/sync<br>
-        shutdown:6:0:shutdown:/sbin:/sbin/shutdown<br>
-        halt:7:0:halt:/sbin:/sbin/halt<br>
-        mail:8:12:mail:/var/spool/mail:<br>
-        news:9:13:news:var/spool/news<br>
-        uucp:10:14:uucp:/var/spool/uucp:<br>
-        operator:11:0:operator :/root:<br>
-        games:12:100:games:/usr/games:<br>
-        gopher:13:30:gopher:/usr/lib/gopher-data:<br>
-        ftp:14:50:FTP User:/home/ftp:<br>
-        nobody:99:99:Nobody:/:<br>
-        xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false<br>
-        gdm:42:42:/home/gdm:/bin/bash<br>
-        kids:500:500: : /home/kids:/bin/bash<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc104></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getpwnam£¨´ÓÃÜÂëÎÄ¼şÖĞÈ¡µÃÖ¸¶¨ÕËºÅµÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpw£¬fgetpwent£¬getpwent£¬getpwuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct passwd * getpwnam(const 
-        char * name);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwnam()ÓÃÀ´ÖğÒ»ËÑË÷²ÎÊıname Ö¸¶¨µÄÕËºÅÃû³Æ£¬ÕÒµ½Ê±±ã½«¸ÃÓÃ»§µÄÊı¾İÒÔpasswd½á¹¹·µ»Ø¡£passwd½á¹¹Çë²Î¿¼getpwent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øpasswd ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> /*È¡µÃrootÕËºÅµÄÊ¶±ğÂëºÍ¸ùÄ¿Â¼*/<br>
-        #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct passwd *user;<br>
-        user = getpwnam(¡°root¡±);<br>
-        printf(¡°name:%s\n¡±,user-&gt;pw_name);<br>
-        printf(¡°uid:%d\n¡±,user-&gt;pw_uid);<br>
-        printf(¡°home:%s\n¡±,user-&gt;pw_dir);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> name:root<br>
-        uid:0<br>
-        home:/root<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc105></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getpwuid£¨´ÓÃÜÂëÎÄ¼şÖĞÈ¡µÃÖ¸¶¨uid µÄÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpw£¬fgetpwent£¬getpwent£¬getpwnam<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct passwd * getpwuid(uid_t 
-        uid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwuid()ÓÃÀ´ÖğÒ»ËÑË÷²ÎÊıuid Ö¸¶¨µÄÓÃ»§Ê¶±ğÂë£¬ÕÒµ½Ê±±ã½«¸ÃÓÃ»§µÄÊı¾İÒÔ½á¹¹·µ»Ø½á¹¹Çë²Î¿¼½«¸ÃÓÃ»§µÄÊı¾İÒÔpasswd 
-        ½á¹¹·µ»Ø¡£passwd ½á¹¹Çë²Î¿¼getpwent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øpasswd ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÕßÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct passwd *user;<br>
-        user= getpwuid(6);<br>
-        printf(¡°name:%s\n¡±,user-&gt;pw_name);<br>
-        printf(¡°uid:%d\n¡±,user-&gt;pw_uid);<br>
-        printf(¡°home:%s\n¡±,user-&gt;pw_dir);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> name:shutdown<br>
-        uid:6<br>
-        home:/sbin<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc106></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getuid£¨È¡µÃÕæÊµµÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> geteuid£¬setreuid£¬setuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> uid_t getuid(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getuid()ÓÃÀ´È¡µÃÖ´ĞĞÄ¿Ç°½ø³ÌµÄÓÃ»§Ê¶±ğÂë¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ÓÃ»§Ê¶±ğÂë<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> main()<br>
-        { <br>
-        printf(¡°uid is %d\n¡±,getuid());<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> uid is 0 /*µ±Ê¹ÓÃrootÉí·İÖ´ĞĞ·¶Àı³ÌĞòÊ±*/<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc107></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getutent£¨´Óutmp ÎÄ¼şÖĞÈ¡µÃÕËºÅµÇÂ¼Êı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬getutid£¬getutline£¬setutent£¬endutent£¬pututline£¬utmpname<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct utmp *getutent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent()ÓÃÀ´´Óutmp ÎÄ¼ş(/var/run/utmp)ÖĞ¶ÁÈ¡Ò»ÏîµÇÂ¼Êı¾İ£¬¸ÃÊı¾İÒÔutmp 
-        ½á¹¹·µ»Ø¡£µÚÒ»´Îµ÷ÓÃÊ±»áÈ¡µÃµÚÒ»Î»ÓÃ»§Êı¾İ£¬Ö®ºóÃ¿µ÷ÓÃÒ»´Î¾Í»á·µ»ØÏÂÒ»ÏîÊı¾İ£¬Ö±µ½ÒÑÎŞÈÎºÎÊı¾İÊ±·µ»ØNULL¡£<br>
-        utmp½á¹¹¶¨ÒåÈçÏÂ<br>
-        struct utmp<br>
-        {<br>
-        short int ut_type; /*µÇÂ¼ÀàĞÍ*/<br>
-        pid_t ut_pid; /*login½ø³ÌµÄpid*/<br>
-        char ut_line[UT_LINESIZE];/*µÇÂ¼×°ÖÃÃû£¬Ê¡ÂÔÁË¡°/dev/¡±*/<br>
-        char ut_id[4]; /* Inittab ID*/<br>
-        char ut_user[UT_NAMESIZE];/*µÇÂ¼ÕËºÅ*/<br>
-        char ut_host[UT_HOSTSIZE];/*µÇÂ¼ÕËºÅµÄÔ¶³ÌÖ÷»úÃû³Æ*/<br>
-        struxt exit_status ut_exit;/* µ±ÀàĞÍÎªDEAD_PROCESSÊ±½ø³ÌµÄ½á<br>
-        Êø×´Ì¬*/<br>
-        long int ut_session; /*Sessioc ID*/<br>
-        struct timeval ut_tv; /*Ê±¼ä¼ÇÂ¼*/<br>
-        int32_t ut_addr_v6[4]; /*Ô¶³ÌÖ÷»úµÄÍøÂçµØÖ·*/<br>
-        char __unused[20]; /* ±£ÁôÎ´Ê¹ÓÃ*/<br>
-        };<br>
-        ut_typeÓĞÒÔÏÂ¼¸ÖÖÀàĞÍ:<br>
-        EMPTY ´ËÎª¿ÕµÄ¼ÇÂ¼¡£<br>
-        RUN_LVL ¼ÇÂ¼ÏµÍ³run£­levelµÄ¸Ä±ä<br>
-        BOOT_TIME ¼ÇÂ¼ÏµÍ³¿ª»úÊ±¼ä<br>
-        NEW_TIME ¼ÇÂ¼ÏµÍ³Ê±¼ä¸Ä±äºóµÄÊ±¼ä<br>
-        OLD_TINE ¼ÇÂ¼µ±¸Ä±äÏµÍ³Ê±¼äÊ±µÄÊ±¼ä¡£<br>
-        INIT_PROCESS ¼ÇÂ¼Ò»¸öÓÉinitÑÜÉú³öÀ´µÄ½ø³Ì¡£<br>
-        LOGIN_PROCESS ¼ÇÂ¼login½ø³Ì¡£<br>
-        USER_PROCESS ¼ÇÂ¼Ò»°ã½ø³Ì¡£<br>
-        DEAD_PROCESS ¼ÇÂ¼Ò»½áÊøµÄ½ø³Ì¡£<br>
-        ACCOUNTING Ä¿Ç°ÉĞÎ´Ê¹ÓÃ¡£<br>
-        exit_status½á¹¹¶¨Òå<br>
-        struct exit_status<br>
-        {<br>
-        short int e_termination; /*½ø³Ì½áÊø×´Ì¬*/<br>
-        short int e_exit; /*½ø³ÌÍË³ö×´Ì¬*/<br>
-        };<br>
-        timevalµÄ½á¹¹¶¨ÒåÇë²Î¿¼gettimeofday£¨£©¡£<br>
-        Ïà¹Ø³£Êı¶¨ÒåÈçÏÂ:<br>
-        UT_LINESIZE 32<br>
-        UT_NAMESIZE 32<br>
-        UT_HOSTSIZE 256<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øutmp ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent()ÔÚµÚÒ»´Îµ÷ÓÃÊ±»á´ò¿ªutmp ÎÄ¼ş£¬¶ÁÈ¡Êı¾İÍê±Ïºó¿ÉÊ¹ÓÃendutent()À´¹Ø±Õ¸ÃutmpÎÄ¼ş¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        main()<br>
-        {<br>
-        struct utmp *u;<br>
-        while((u=getutent())){<br>
-        if(u-&gt;ut_type = = USER_PROCESS)<br>
-        printf(¡°%d %s %s %s \n¡±,u-&gt;ut_type,u-&gt;ut_user,u-&gt;ut_line,u-&gt;ut_host);<br>
-        }<br>
-        endutent();<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> /* ±íÊ¾ÓĞÈı¸örootÕËºÅ·Ö±ğµÇÂ¼/dev/pts/0£¬/dev/pts/1£¬/dev/pts/2 
-        */<br>
-        7 root pts/0<br>
-        7 root pts/1<br>
-        7 root pts/2<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc108></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getutid£¨´Óutmp ÎÄ¼şÖĞ²éÕÒÌØ¶¨µÄ¼ÇÂ¼£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬getutline<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> strcut utmp *getutid(strcut 
-        utmp *ut);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutid()ÓÃÀ´´ÓÄ¿Ç°utmp ÎÄ¼şµÄ¶ÁĞ´Î»ÖÃÖğÒ»ÍùºóËÑË÷²ÎÊıutÖ¸¶¨µÄ¼ÇÂ¼£¬Èç¹ûut-&gt;ut_type 
-        ÎªRUN_LVL£¬BOOT_TIME£¬NEW_TIME£¬OLD_TIME ÆäÖĞÖ®Ò»Ôò²éÕÒÓëut-&gt;ut_type Ïà·ûµÄ¼ÇÂ¼£»Èôut-&gt;ut_type 
-        ÎªINIT_PROCESS£¬LOGIN_PROCESS£¬USER_PROCESS»òDEAD_PROCESSÆäÖĞÖ®Ò»£¬Ôò²éÕÒÓëut-&gt;ut_idÏà·ûµÄ¼ÇÂ¼¡£ÕÒµ½Ïà·ûµÄ¼ÇÂ¼±ã½«¸ÃÊı¾İÒÔutmp 
-        ½á¹¹·µ»Ø¡£utmp½á¹¹Çë²Î¿¼getutent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øutmp ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        main()<br>
-        {<br>
-        struct utmp ut,*u;<br>
-        ut.ut_type=RUN_LVL;<br>
-        while((u= getutid(&ut))){<br>
-        printf(¡°%d %s %s %s\n¡±,u-&gt;ut_type,u-&gt;ut_user,u-&gt;ut_line,u-&gt;ut_host);<br>
-        }<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> 1 runlevel -<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc109></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        getutline£¨´Óutmp ÎÄ¼şÖĞ²éÕÒÌØ¶¨µÄ¼ÇÂ¼£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬getutid£¬pututline<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> struct utmp * getutline (struct 
-        utmp *ut);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutline()ÓÃÀ´´ÓÄ¿Ç°utmpÎÄ¼şµÄ¶ÁĞ´Î»ÖÃÖğÒ»ÍùºóËÑË÷ut_typeÎªUSER_PROCESS 
-        »òLOGIN_PROCESS µÄ¼ÇÂ¼£¬¶øÇÒut_line ºÍut-&gt;ut_line Ïà·û¡£ÕÒµ½Ïà·ûµÄ¼ÇÂ¼±ã½«¸ÃÊı¾İÒÔutmp ½á¹¹·µ»Ø£¬utmp½á¹¹Çë²Î¿¼getutent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ·µ»Øutmp ½á¹¹Êı¾İ£¬Èç¹û·µ»ØNULL Ôò±íÊ¾ÒÑÎŞÊı¾İ£¬»òÓĞ´íÎó·¢Éú¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        main()<br>
-        {<br>
-        struct utmp ut,*u;<br>
-        strcpy (ut.ut_line,¡±pts/1¡±);<br>
-        while ((u=getutline(&ut))){<br>
-        printf(¡°%d %s %s %s \n¡±,u-&gt;ut_type,u-&gt;ut_user,u-&gt;ut_line,u-&gt;ut_host);<br>
-        }<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> 7 root pts/1<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc110></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        initgroups£¨³õÊ¼»¯×éÇåµ¥£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgrent£¬endgrent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int initgroups(const char *user,gid_t 
-        group);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> initgroups£¨£©ÓÃÀ´´Ó×éÎÄ¼ş£¨/etc/group£©ÖĞ¶ÁÈ¡Ò»Ïî×éÊı¾İ£¬Èô¸Ã×éÊı¾İµÄ³ÉÔ±ÖĞÓĞ²ÎÊıuserÊ±£¬±ã½«²ÎÊıgroup×éÊ¶±ğÂë¼ÓÈëµ½´ËÊı¾İÖĞ¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎóÂë´æÓÚerrno¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc111></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        pututline£¨½«utmp ¼ÇÂ¼Ğ´ÈëÎÄ¼ş£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬getutid£¬getutline<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void pututline(struct utmp *ut);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> pututline()ÓÃÀ´½«²ÎÊıutµÄutmp½á¹¹¼ÇÂ¼µ½utmpÎÄ¼şÖĞ¡£´Ëº¯Êı»áÏÈÓÃgetutid()À´È¡µÃÕıÈ·µÄĞ´ÈëÎ»ÖÃ£¬Èç¹ûÃ»ÓĞÕÒµ½Ïà·ûµÄ¼ÇÂ¼Ôò»á¼ÓÈëµ½utmpÎÄ¼şÎ²£¬utmp½á¹¹Çë²Î¿¼getutent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ĞèÒªÓĞĞ´Èë/var/run/utmp µÄÈ¨ÏŞ<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        main()<br>
-        {<br>
-        struct utmp ut;<br>
-        ut.ut_type =USER_PROCESS;<br>
-        ut.ut_pid=getpid();<br>
-        strcpy(ut.ut_user,¡±kids¡±);<br>
-        strcpy(ut.ut_line,¡±pts/1¡±);<br>
-        strcpy(ut.ut_host,¡±www.gnu.org¡±);<br>
-        pututline(&ut);<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> /*Ö´ĞĞ·¶ÀıºóÓÃÖ¸Áîwho -l ¹Û²ì*/<br>
-        root pts/0 dec9 19:20<br>
-        kids pts/1 dec12 10:31(www.gnu.org)<br>
-        root pts/2 dec12 13:33<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc112></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        seteuid£¨ÉèÖÃÓĞĞ§µÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setuid£¬setreuid£¬setfsuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int seteuid(uid_t euid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> seteuid()ÓÃÀ´ÖØĞÂÉèÖÃÖ´ĞĞÄ¿Ç°½ø³ÌµÄÓĞĞ§ÓÃ»§Ê¶±ğÂë¡£ÔÚLinuxÏÂ£¬seteuid(euid)Ïàµ±ÓÚsetreuid(-1,euid)¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼setuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc113></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setfsgid£¨ÉèÖÃÎÄ¼şÏµÍ³µÄ×éÊ¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setuid£¬setreuid£¬seteuid£¬setfsuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setfsgid(uid_t fsgid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setfsgid()ÓÃÀ´ÖØĞÂÉèÖÃÄ¿Ç°½ø³ÌµÄÎÄ¼şÏµÍ³µÄ×éÊ¶±ğÂë¡£Ò»°ãÇé¿öÏÂ£¬ÎÄ¼şÏµÍ³µÄ×éÊ¶±ğÂë(fsgid)ÓëÓĞĞ§µÄ×éÊ¶±ğÂë(egid)ÊÇÏàÍ¬µÄ¡£Èç¹ûÊÇ³¬¼¶ÓÃ»§µ÷ÓÃ´Ëº¯Êı£¬²ÎÊıfsgid 
-        ¿ÉÒÔÎªÈÎºÎÖµ£¬·ñÔò²ÎÊıfsgid±ØĞëÎªreal/effective/savedµÄ×éÊ¶±ğÂëÖ®Ò»¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ´Ëº¯ÊıÎªLinuxÌØÓĞ¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> EPERM È¨ÏŞ²»¹»£¬ÎŞ·¨Íê³ÉÉèÖÃ¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc114></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setfsuid£¨ÉèÖÃÎÄ¼şÏµÍ³µÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setuid£¬setreuid£¬seteuid£¬setfsgid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setfsuid(uid_t fsuid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setfsuid()ÓÃÀ´ÖØĞÂÉèÖÃÄ¿Ç°½ø³ÌµÄÎÄ¼şÏµÍ³µÄÓÃ»§Ê¶±ğÂë¡£Ò»°ãÇé¿öÏÂ£¬ÎÄ¼şÏµÍ³µÄÓÃ»§Ê¶±ğÂë(fsuid)ÓëÓĞĞ§µÄÓÃ»§Ê¶±ğÂë(euid)ÊÇÏàÍ¬µÄ¡£Èç¹ûÊÇ³¬¼¶ÓÃ»§µ÷ÓÃ´Ëº¯Êı£¬²ÎÊıfsuid¿ÉÒÔÎªÈÎºÎÖµ£¬·ñÔò²ÎÊıfsuid±ØĞëÎªreal/effective/savedµÄÓÃ»§Ê¶±ğÂëÖ®Ò»¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ´Ëº¯ÊıÎªLinuxÌØÓĞ<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> EPERM È¨ÏŞ²»¹»£¬ÎŞ·¨Íê³ÉÉèÖÃ¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc115></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setgid£¨ÉèÖÃÕæÊµµÄ×éÊ¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgid£¬setregid£¬getegid£¬setegid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setgid(gid_t gid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgid()ÓÃÀ´½«Ä¿Ç°½ø³ÌµÄÕæÊµ×éÊ¶±ğÂë(real 
-        gid)Éè³É²ÎÊıgidÖµ¡£Èç¹ûÊÇÒÔ³¬¼¶ÓÃ»§Éí·İÖ´ĞĞ´Ëµ÷ÓÃ£¬Ôòreal¡¢effectiveÓësavedgid¶¼»áÉè³É²ÎÊıgid¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ÉèÖÃ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrnoÖĞ¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> EPERM ²¢·ÇÒÔ³¬¼¶ÓÃ»§Éí·İµ÷ÓÃ£¬¶øÇÒ²ÎÊıgid ²¢·Ç½ø³ÌµÄeffective 
-        gid»òsaved gidÖµÖ®Ò»¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc116></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setgrent£¨´ÓÍ·¶ÁÈ¡×éÎÄ¼şÖĞµÄ×éÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getgrent£¬endgrent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void setgrent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgrent()ÓÃÀ´½«getgrent()µÄ¶ÁĞ´µØÖ·Ö¸»Ø×éÎÄ¼ş¿ªÍ·¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼setpwent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc117></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setgroups£¨ÉèÖÃ×é´úÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> initgroups£¬getgroup£¬getgid£¬setgid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;grp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setgroups(size_t size,const 
-        gid_t * list);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgroups()ÓÃÀ´½«list Êı×éÖĞËù±êÃ÷µÄ×é¼ÓÈëµ½Ä¿Ç°½ø³ÌµÄ×éÉèÖÃÖĞ¡£²ÎÊısizeÎªlist()µÄgid_tÊıÄ¿£¬×î´óÖµÎªNGROUP(32)¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> ÉèÖÃ³É¹¦Ôò·µ»Ø0£¬ÈçÓĞ´íÎóÔò·µ»Ø-1¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> EFAULT ²ÎÊılistÊı×éµØÖ·²»ºÏ·¨¡£<br>
-        EPERM È¨ÏŞ²»×ã£¬±ØĞëÊÇrootÈ¨ÏŞ<br>
-        EINVAL ²ÎÊısizeÖµ´óÓÚNGROUP(32)¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc118></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setpwent£¨´ÓÍ·¶ÁÈ¡ÃÜÂëÎÄ¼şÖĞµÄÕËºÅÊı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getpwent£¬endpwent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void setpwent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setpwent()ÓÃÀ´½«getpwent()µÄ¶ÁĞ´µØÖ·Ö¸»ØÃÜÂëÎÄ¼ş¿ªÍ·¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;pwd.h&gt;<br>
-        #include&lt;sys/types.h&gt;<br>
-        main()<br>
-        {<br>
-        struct passwd *user;<br>
-        int i;<br>
-        for(i=0;i&lt;4;i++){<br>
-        user=getpwent();<br>
-        printf(¡°%s :%d :%d :%s:%s:%s\n¡±,user-&gt;pw_name,user-&gt;pw_uid,user-&gt;pw_gid,<br>
-        user-&gt;pw_gecos,user-&gt;pw_dir,user-&gt;pw_shell);<br>
-        }<br>
-        setpwent();<br>
-        user=getpwent();<br>
-        printf(¡°%s :%d :%d :%s:%s:%s\n¡±,user-&gt;pw_name,user-&gt;pw_uid,user-&gt;pw_gid,<br>
-        user-&gt;pw_gecos,user-&gt;pw_dir,user-&gt;pw_shell);<br>
-        endpwent();<br>
-        }<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> root:0:0:root:/root:/bin/bash<br>
-        bin:1:1:bin:/bin<br>
-        daemon:2:2:daemon:/sbin<br>
-        adm:3:4:adm:/var/adm<br>
-        root:0:0:root:/root:/bin/bash<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc119></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setregid£¨ÉèÖÃÕæÊµ¼°ÓĞĞ§µÄ×éÊ¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setgid£¬setegid£¬setfsgid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setregid(gid_t rgid,gid_t 
-        egid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setregid()ÓÃÀ´½«²ÎÊırgidÉèÎªÄ¿Ç°½ø³ÌµÄÕæÊµ×éÊ¶±ğÂë£¬½«²ÎÊıegidÉèÖÃÎªÄ¿Ç°½ø³ÌµÄÓĞĞ§×éÊ¶±ğÂë¡£Èç¹û²ÎÊırgid»òegidÖµÎª-1£¬Ôò¶ÔÓ¦µÄÊ¶±ğÂë²»»á¸Ä±ä¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc120></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setreuid£¨ÉèÖÃÕæÊµ¼°ÓĞĞ§µÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setuid£¬seteuid£¬setfsuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setreuid(uid_t ruid,uid_t 
-        euid);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setreuid()ÓÃÀ´½«²ÎÊıruid ÉèÎªÄ¿Ç°½ø³ÌµÄÕæÊµÓÃ»§Ê¶±ğÂë£¬½«²ÎÊıeuid 
-        ÉèÖÃÎªÄ¿Ç°½ø³ÌµÄÓĞĞ§ÓÃ»§Ê¶±ğÂë¡£Èç¹û²ÎÊıruid »òeuidÖµÎª-1£¬Ôò¶ÔÓ¦µÄÊ¶±ğÂë²»»á¸Ä±ä¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼setuid£¨£©¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc121></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setuid£¨ÉèÖÃÕæÊµµÄÓÃ»§Ê¶±ğÂë£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getuid£¬setreuid£¬seteuid£¬setfsuid<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;unistd.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> int setuid(uid_t uid)<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setuid()ÓÃÀ´ÖØĞÂÉèÖÃÖ´ĞĞÄ¿Ç°½ø³ÌµÄÓÃ»§Ê¶±ğÂë¡£²»¹ı£¬ÒªÈÃ´Ëº¯ÊıÓĞ×÷ÓÃ£¬ÆäÓĞĞ§µÄÓÃ»§Ê¶±ğÂë±ØĞëÎª0(root)¡£ÔÚLinuxÏÂ£¬µ±rootÊ¹ÓÃsetuid()À´±ä»»³ÉÆäËûÓÃ»§Ê¶±ğÂëÊ±£¬rootÈ¨ÏŞ»á±»Å×Æú£¬ÍêÈ«×ª»»³É¸ÃÓÃ»§Éí·İ£¬Ò²¾ÍÊÇËµ£¬¸Ã½ø³ÌÍùºó½«²»ÔÙ¾ßÓĞ¿Ésetuid()µÄÈ¨Àû£¬Èç¹ûÖ»ÊÇÏòÔİÊ±Å×Æúroot 
-        È¨ÏŞ£¬ÉÔºóÏëÖØĞÂÈ¡»ØÈ¨ÏŞ£¬Ôò±ØĞëÊ¹ÓÃseteuid()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ö´ĞĞ³É¹¦Ôò·µ»Ø0£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎó´úÂë´æÓÚerrno¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Ò»°ãÔÚ±àĞ´¾ßsetuid rootµÄ³ÌĞòÊ±£¬Îª¼õÉÙ´ËÀà³ÌĞò´øÀ´µÄÏµÍ³°²È«·çÏÕ£¬ÔÚÊ¹ÓÃÍêrootÈ¨ÏŞºó½¨ÒéÂíÉÏÖ´ĞĞsetuid(getuid());À´Å×ÆúrootÈ¨ÏŞ¡£´ËÍâ£¬½ø³ÌuidºÍeuid²»Ò»ÖÂÊ±LinuxÏµÍ³½«²»»á²úÉúcore 
-        dump¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc122></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        setutent£¨´ÓÍ·¶ÁÈ¡utmp ÎÄ¼şÖĞµÄµÇÂ¼Êı¾İ£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬endutent<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void setutent(void);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> setutent()ÓÃÀ´½«getutent()µÄ¶ÁĞ´µØÖ·Ö¸»ØutmpÎÄ¼ş¿ªÍ·¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> Çë²Î¿¼setpwent()»òsetgrent()¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc123></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        utmpname£¨ÉèÖÃutmp ÎÄ¼şÂ·¾¶£© </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> getutent£¬getutid£¬getutline£¬setutent£¬endutent£¬pututline<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> #include&lt;utmp.h&gt;<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> void utmpname(const char * file);<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> utmpname()ÓÃÀ´ÉèÖÃutmpÎÄ¼şµÄÂ·¾¶£¬ÒÔÌá¹©utmpÏà¹Øº¯ÊıµÄ´æÈ¡Â·¾¶¡£Èç¹ûÃ»ÓĞÊ¹ÓÃutmpname()ÔòÄ¬ÈÏutmpÎÄ¼şÂ·¾¶Îª/var/run/utmp¡£<br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td> 
-      <div align="left"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td valign="top" width="80">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+endgrentï¼ˆå…³é—­ç»„æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getgrentï¼Œsetgrent
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+void endgrent(void);
+å‡½æ•°è¯´æ˜
+endgrent()ç”¨æ¥å…³é—­ç”±getgrent()æ‰€æ‰“å¼€çš„å¯†ç æ–‡ä»¶ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+è¯·å‚è€ƒgetgrent()ä¸setgrent()ã€‚
+ã€€
+
+
+
+endpwentï¼ˆå…³é—­å¯†ç æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getpwentï¼Œsetpwent
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+void endpwent(void);
+å‡½æ•°è¯´æ˜
+endpwent()ç”¨æ¥å…³é—­ç”±getpwent()æ‰€æ‰“å¼€çš„å¯†ç æ–‡ä»¶ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+è¯·å‚è€ƒgetpwent()ä¸setpwent()ã€‚
+ã€€
+
+
+
+endutentï¼ˆå…³é—­utmp æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œsetutent
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+void endutent(void);
+å‡½æ•°è¯´æ˜
+endutent()ç”¨æ¥å…³é—­ç”±getutentæ‰€æ‰“å¼€çš„utmpæ–‡ä»¶ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+
+èŒƒä¾‹
+è¯·å‚è€ƒgetutent()ã€‚
+ã€€
+
+
+
+fgetgrentï¼ˆä»æŒ‡å®šçš„æ–‡ä»¶æ¥è¯»å–ç»„æ ¼å¼ï¼‰
+ç›¸å…³å‡½æ•°
+fgetpwent
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<stdio.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+struct group * getgrent(FILE * stream);
+å‡½æ•°è¯´æ˜
+fgetgrent()ä¼šä»å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶è¯»å–ä¸€è¡Œæ•°æ®ï¼Œç„¶åä»¥groupç»“æ„å°†è¯¥æ•°æ®è¿”å›ã€‚å‚æ•°streamæ‰€æŒ‡å®šçš„æ–‡ä»¶å¿…é¡»å’Œã€etc/groupç›¸åŒçš„æ ¼å¼ã€‚groupç»“æ„å®šä¹‰è¯·å‚è€ƒgetgrent()ã€‚
+è¿”å›å€¼
+è¿”å›groupç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULLåˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include <grp.h>
+#include<sys/types.h>
+#include<stdio.h>
+main()
+{
+struct group *data;
+FILE *stream;
+int i;
+stream = fopen("/etc/group", "r");
+while((data = fgetgrent(stream))!=0){
+i=0;
+printf("%s :%s:%d :", data->gr_name,data->gr_passwd,data->gr_gid);
+while (data->gr_mem[i])printf("%s,",data->gr_mem[i++]);
+printf("\n");
+}
+fclose(stream);
+}
+æ‰§è¡Œ
+root:x:0:root,
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8
+kmem:x:9
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15
+games:x:20
+gopher:x:30
+dip:x:40:
+ftp:x:50
+nobody:x:99:
+ã€€
+
+
+
+fgetpwentï¼ˆä»æŒ‡å®šçš„æ–‡ä»¶æ¥è¯»å–å¯†ç æ ¼å¼ï¼‰
+ç›¸å…³å‡½æ•°
+fgetgrent
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<stdio.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+struct passwd * fgetpwent(FILE *stream);
+å‡½æ•°è¯´æ˜
+fgetpwent()ä¼šä»å‚æ•°streamæŒ‡å®šçš„æ–‡ä»¶è¯»å–ä¸€è¡Œæ•°æ®ï¼Œç„¶åä»¥passwdç»“æ„å°†è¯¥æ•°æ®è¿”å›ã€‚å‚æ•°streamæ‰€æŒ‡å®šçš„æ–‡ä»¶å¿…é¡»å’Œ/etc/passwdç›¸åŒçš„æ ¼å¼ã€‚passwdç»“æ„å®šä¹‰è¯·å‚è€ƒgetpwent()ã€‚
+è¿”å›å€¼
+è¿”å›passwdç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULLåˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+struct passwd *user;
+FILE *stream;
+stream = fopen("/etc/passwd", "r");
+while((user = fgetpwent(stream))!=0){
+printf("%s:%d:%d:%s:%s:%s\n",user->pw_name,user->pw_uid,user->pw_gid,user->pw_gecos,user->pw_dir,user->pw_shell);
+}
+}
+æ‰§è¡Œ
+root:0:0:root:/root:/bin/bash
+bin:1:1:bin:/bin:
+daemon:2:2:daemon:/sbin:
+adm:3:4:adm:/var/adm:
+lp:4:7:lp:/var/spool/lpd:
+sync:5:0:sync:/sbin:/bin/sync
+shutdown:6:0:shutdown:/sbin:/sbin/shutdown
+halt:7:0:halt:/sbin:/sbin/halt
+mail:8:12:mail:/var/spool/mail:
+news:9:13:news:var/spool/news
+uucp:10:14:uucp:/var/spool/uucp:
+operator:11:0:operator :/root:
+games:12:100:games:/usr/games:
+gopher:13:30:gopher:/usr/lib/gopher-data:
+ftp:14:50:FTP User:/home/ftp:
+nobody:99:99:Nobody:/:
+xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false
+gdm:42:42:/home/gdm:/bin/bash
+kids:500:500: : /home/kids:/bin/bash
+ã€€
+
+
+
+getegidï¼ˆå–å¾—æœ‰æ•ˆçš„ç»„è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+getgidï¼Œsetgidï¼Œsetregid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+gid_t getegid(void);
+å‡½æ•°è¯´æ˜
+getegid()ç”¨æ¥å–å¾—æ‰§è¡Œç›®å‰è¿›ç¨‹æœ‰æ•ˆç»„è¯†åˆ«ç ã€‚æœ‰æ•ˆçš„ç»„è¯†åˆ«ç ç”¨æ¥å†³å®šè¿›ç¨‹æ‰§è¡Œæ—¶ç»„çš„æƒé™ã€‚è¿”å›å€¼è¿”å›æœ‰æ•ˆçš„ç»„è¯†åˆ«ç ã€‚
+èŒƒä¾‹
+main()
+{ 
+printf("egid is %d\n",getegid());
+}
+æ‰§è¡Œ
+egid is 0 /*å½“ä½¿ç”¨rootèº«ä»½æ‰§è¡ŒèŒƒä¾‹ç¨‹åºæ—¶*/
+ã€€
+
+
+
+geteuidï¼ˆå–å¾—æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+getuidï¼Œsetreuidï¼Œsetuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+uid_t geteuid(void)
+å‡½æ•°è¯´æ˜
+geteuid()ç”¨æ¥å–å¾—æ‰§è¡Œç›®å‰è¿›ç¨‹æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ã€‚æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ç”¨æ¥å†³å®šè¿›ç¨‹æ‰§è¡Œçš„æƒé™ï¼Œå€Ÿç”±æ­¤æ”¹å˜æ­¤å€¼ï¼Œè¿›ç¨‹å¯ä»¥è·å¾—é¢å¤–çš„æƒé™ã€‚å€˜è‹¥æ‰§è¡Œæ–‡ä»¶çš„setIDä½å·²è¢«è®¾ç½®ï¼Œè¯¥æ–‡ä»¶æ‰§è¡Œæ—¶ï¼Œå…¶è¿›ç¨‹çš„euidå€¼ä¾¿ä¼šè®¾æˆè¯¥æ–‡ä»¶æ‰€æœ‰è€…çš„uidã€‚ä¾‹å¦‚ï¼Œæ‰§è¡Œæ–‡ä»¶/usr/bin/passwdçš„æƒé™ä¸º-r-s--x--xï¼Œå…¶s ä½å³ä¸ºsetID(SUID)ä½ï¼Œè€Œå½“ä»»ä½•ç”¨æˆ·åœ¨æ‰§è¡Œpasswd æ—¶å…¶æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ä¼šè¢«è®¾æˆpasswd æ‰€æœ‰è€…çš„uid å€¼ï¼Œå³rootçš„uid å€¼(0)ã€‚
+è¿”å›å€¼
+è¿”å›æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ã€‚
+èŒƒä¾‹
+main()
+{ 
+printf ("euid is %d \n",geteuid());
+}
+æ‰§è¡Œ
+euid is 0 /*å½“ä½¿ç”¨rootèº«ä»½æ‰§è¡ŒèŒƒä¾‹ç¨‹åºæ—¶*/
+ã€€
+
+
+
+getgidï¼ˆå–å¾—çœŸå®çš„ç»„è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+getegidï¼Œsetregidï¼Œsetgid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+gid_t getgid(void);
+å‡½æ•°è¯´æ˜
+getgid()ç”¨æ¥å–å¾—æ‰§è¡Œç›®å‰è¿›ç¨‹çš„ç»„è¯†åˆ«ç ã€‚
+è¿”å›å€¼
+è¿”å›ç»„è¯†åˆ«ç 
+èŒƒä¾‹
+main()
+{
+printf(â€œgid is %d\nâ€,getgid());
+}
+æ‰§è¡Œ
+gid is 0 /*å½“ä½¿ç”¨rootèº«ä»½æ‰§è¡ŒèŒƒä¾‹ç¨‹åºæ—¶*/
+ã€€
+
+
+
+getgrentï¼ˆä»ç»„æ–‡ä»¶ä¸­å–å¾—è´¦å·çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+setgrentï¼Œendgrent
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include <sys/types.h>
+å®šä¹‰å‡½æ•°
+struct group *getgrent(void);
+å‡½æ•°è¯´æ˜
+getgrent()ç”¨æ¥ä»ç»„æ–‡ä»¶(/etc/group)ä¸­è¯»å–ä¸€é¡¹ç»„æ•°æ®ï¼Œè¯¥æ•°æ®ä»¥group ç»“æ„è¿”å›ã€‚ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šå–å¾—ç¬¬ä¸€é¡¹ç»„æ•°æ®ï¼Œä¹‹åæ¯è°ƒç”¨ä¸€æ¬¡å°±ä¼šè¿”å›ä¸‹ä¸€é¡¹æ•°æ®ï¼Œç›´åˆ°å·²æ— ä»»ä½•æ•°æ®æ—¶è¿”å›NULLã€‚
+struct group{
+char *gr_name; /*ç»„åç§°*/
+char *gr_passwd; /* ç»„å¯†ç */
+gid_t gr_gid; /*ç»„è¯†åˆ«ç */
+char **gr_mem; /*ç»„æˆå‘˜è´¦å·*/
+}
+è¿”å›å€¼
+è¿”å›groupç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULLåˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+é™„åŠ è¯´æ˜
+getgrent()åœ¨ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šæ‰“å¼€ç»„æ–‡ä»¶ï¼Œè¯»å–æ•°æ®å®Œæ¯•åå¯ä½¿ç”¨endgrent()æ¥å…³é—­è¯¥ç»„æ–‡ä»¶ã€‚
+é”™è¯¯ä»£ç 
+ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®groupç»“æ„ã€‚
+èŒƒä¾‹
+#include<grp.h>
+#include<sys/types.h>
+main()
+{
+struct group *data;
+int i;
+while((data= getgrent())!=0){
+i=0;
+printf(â€œ%s:%s:%d:â€,data->gr_name,data->gr_passwd,data->gr_gid);
+while(data->gr_mem[i])printf(â€œ%s,â€,data->gr_mem[i++]);
+printf(â€œ\nâ€);
+}
+endgrent();
+}
+æ‰§è¡Œ
+root:x:0:root,
+bin:x:1:root,bin,daemon,
+daemon:x:2:root,bin,daemon,
+sys:x:3:root,bin,adm,
+adm:x:4:root,adm,daemon
+tty:x:5
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20
+gopher:x:30
+dip:x:40
+ftp:x:50
+nobody:x:99
+ã€€
+
+
+
+getgrgidï¼ˆä»ç»„æ–‡ä»¶ä¸­å–å¾—æŒ‡å®šgid çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+fgetgrentï¼Œgetgrentï¼Œgetgrnam
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+strcut group * getgrgid(gid_t gid);
+å‡½æ•°è¯´æ˜
+getgrgidï¼ˆï¼‰ç”¨æ¥ä¾å‚æ•°gidæŒ‡å®šçš„ç»„è¯†åˆ«ç é€ä¸€æœç´¢ç»„æ–‡ä»¶ï¼Œæ‰¾åˆ°æ—¶ä¾¿å°†è¯¥ç»„çš„æ•°æ®ä»¥groupç»“æ„è¿”å›ã€‚groupç»“æ„è¯·å‚è€ƒgetgrentï¼ˆï¼‰ã€‚
+è¿”å›å€¼
+è¿”å›groupç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULLåˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+/* å–å¾—gidï¼3çš„ç»„æ•°æ®*/
+#include<grp.h>
+#include<sys/types.h>
+main()
+{
+strcut group *data;
+int i=0;
+data = getgrgid(3);
+printf(â€œ%s:%s:%d:â€,data->gr_name,data->gr_passwd,data->gr_gid);
+while(data->gr_mem[i])printf(â€œ%s ,â€,data->mem[i++]);
+printf(â€œ\nâ€);
+}
+æ‰§è¡Œ
+sys:x:3:root,bin,adm
+ã€€
+
+
+
+getgrnamï¼ˆä»ç»„æ–‡ä»¶ä¸­å–å¾—æŒ‡å®šç»„çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+fgetgrentï¼Œgetrentï¼Œgetgruid
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+strcut group * getgrnam(const char * name);
+å‡½æ•°è¯´æ˜
+getgrnamï¼ˆï¼‰ç”¨æ¥é€ä¸€æœç´¢å‚æ•°é‚£ä¹ˆæŒ‡å®šçš„ç»„åç§°ï¼Œæ‰¾åˆ°æ—¶ä¾¿å°†è¯¥ç»„çš„æ•°æ®ä»¥groupç»“æ„è¿”å›ã€‚group ç»“æ„è¯·å‚è€ƒgetgrentï¼ˆï¼‰ã€‚
+è¿”å›å€¼
+è¿”å›groupç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULLåˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+/* å–å¾—admçš„ç»„æ•°æ®*/
+#include<grp.h>
+#include<sys/types.h>
+main()
+{
+strcut group * data;
+int i=0;
+data = getgrnam(â€œadmâ€);
+printf(â€œ%s:%s:%d:â€,data->gr_name,data->gr_passwd,data->gr_gid);
+while(data->gr_mem[i])printf(â€œ%s,â€,data->gr_mem[i++]);
+printf(â€œ\nâ€);
+}
+æ‰§è¡Œ
+adm:x:4:root,adm,daemon
+ã€€
+
+
+
+getgroupsï¼ˆå–å¾—ç»„ä»£ç ï¼‰
+ç›¸å…³å‡½æ•°
+initgroupsï¼Œsetgroupï¼Œgetgidï¼Œsetgid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+int getgroups(int size,gid_t list[]);
+å‡½æ•°è¯´æ˜
+getgroupï¼ˆï¼‰ç”¨æ¥å–å¾—ç›®å‰ç”¨æˆ·æ‰€å±çš„ç»„ä»£ç ã€‚å‚æ•°sizeä¸ºlistã€”ã€•æ‰€èƒ½å®¹çº³çš„gid_t æ•°ç›®ã€‚å¦‚æœå‚æ•°size å€¼ä¸ºé›¶ï¼Œæ­¤å‡½æ•°ä»…ä¼šè¿”å›ç”¨æˆ·æ‰€å±çš„ç»„æ•°ã€‚
+è¿”å›å€¼
+è¿”å›ç»„è¯†åˆ«ç ï¼Œå¦‚æœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°listæ•°ç»„åœ°å€ä¸åˆæ³•ã€‚EINVAL å‚æ•°sizeå€¼ä¸è¶³ä»¥å®¹çº³æ‰€æœ‰çš„ç»„ã€‚
+èŒƒä¾‹
+#include<unistd.h>
+#include<sys/types.h>
+main()
+{
+gid_t list[500];
+int x,i;
+x = getgroups(0.list);
+getgroups(x,list);
+for(i=0;i<x;i++)
+printf(â€œ%d:%d\nâ€,i,list[i]);
+}
+æ‰§è¡Œ
+0:00
+1:01
+2:02
+3:03
+4:04
+5:06
+6:10
+ã€€
+
+
+
+getpwï¼ˆå–å¾—æŒ‡å®šç”¨æˆ·çš„å¯†ç æ–‡ä»¶æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getpwent
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+int getpw(uid_t uid,char *buf);
+å‡½æ•°è¯´æ˜
+getpw()ä¼šä»/etc/passwdä¸­æŸ¥æ‰¾ç¬¦åˆå‚æ•°uidæ‰€æŒ‡å®šçš„ç”¨æˆ·è´¦å·æ•°æ®ï¼Œæ‰¾ä¸åˆ°ç›¸å…³æ•°æ®å°±è¿”å›-1ã€‚æ‰€è¿”å›çš„bufå­—ç¬¦ä¸²æ ¼å¼å¦‚ä¸‹:è´¦å·:å¯†ç :ç”¨æˆ·è¯†åˆ«ç (uid):ç»„è¯†åˆ«ç (gid):å…¨å:æ ¹ç›®å½•:shell
+è¿”å›å€¼
+è¿”å›0è¡¨ç¤ºæˆåŠŸï¼Œæœ‰é”™è¯¯å‘ç”Ÿæ—¶è¿”å›-1ã€‚
+é™„åŠ è¯´æ˜
+1. getpw()ä¼šæœ‰æ½œåœ¨çš„å®‰å…¨æ€§é—®é¢˜ï¼Œè¯·å°½é‡ä½¿ç”¨åˆ«çš„å‡½æ•°å–ä»£ã€‚
+2. ä½¿ç”¨shadowçš„ç³»ç»Ÿå·²æŠŠç”¨æˆ·å¯†ç æŠ½å‡º/etc/passwdï¼Œå› æ­¤ä½¿ç”¨getpw()å–å¾—çš„å¯†ç å°†ä¸ºâ€œxâ€ã€‚
+èŒƒä¾‹
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+char buffer[80];
+getpw(0,buffer);
+printf(â€œ%s\nâ€,buffer);
+}
+æ‰§è¡Œ
+root:x:0:0:root:/root:/bin/bash
+ã€€
+
+
+
+getpwentï¼ˆä»å¯†ç æ–‡ä»¶ä¸­å–å¾—è´¦å·çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getpwï¼Œfgetpwentï¼Œgetpwnamï¼Œgetpwuidï¼Œsetpwentï¼Œendpwent
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+strcut passwd * getpwent(void);
+å‡½æ•°è¯´æ˜
+getpwentï¼ˆï¼‰ç”¨æ¥ä»å¯†ç æ–‡ä»¶ï¼ˆ/etc/passwdï¼‰ä¸­è¯»å–ä¸€é¡¹ç”¨æˆ·æ•°æ®ï¼Œè¯¥ç”¨æˆ·çš„æ•°æ®ä»¥passwd ç»“æ„è¿”å›ã€‚ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šå–å¾—ç¬¬ä¸€ä½ç”¨æˆ·æ•°æ®ï¼Œä¹‹åæ¯è°ƒç”¨ä¸€æ¬¡å°±ä¼šè¿”å›ä¸‹ä¸€é¡¹æ•°æ®ï¼Œç›´åˆ°å·²æ— ä»»ä½•æ•°æ®æ—¶è¿”å›NULLã€‚
+passwd ç»“æ„å®šä¹‰å¦‚ä¸‹
+struct passwd{
+char * pw_name; /*ç”¨æˆ·è´¦å·*/
+char * pw_passwd; /*ç”¨æˆ·å¯†ç */
+uid_t pw_uid; /*ç”¨æˆ·è¯†åˆ«ç */
+gid_t pw_gid; /*ç»„è¯†åˆ«ç */
+char * pw_gecos; /*ç”¨æˆ·å…¨å*/
+char * pw_dir; /*å®¶ç›®å½•*/
+char * pw_shell; /* æ‰€ä½¿ç”¨çš„shellè·¯å¾„*/
+};
+è¿”å›å€¼
+è¿”å›passwd ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+é™„åŠ è¯´æ˜
+getpwent()åœ¨ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šæ‰“å¼€å¯†ç æ–‡ä»¶ï¼Œè¯»å–æ•°æ®å®Œæ¯•åå¯ä½¿ç”¨endpwent()æ¥å…³é—­è¯¥å¯†ç æ–‡ä»¶ã€‚é”™è¯¯ä»£ç ENOMEM å†…å­˜ä¸è¶³ï¼Œæ— æ³•é…ç½®passwdç»“æ„ã€‚
+èŒƒä¾‹
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+struct passwd *user;
+while((user = getpwent())!=0){
+printf(â€œ%s:%d:%d:%s:%s:%s\nâ€,user->pw_name,user->pw_uid,user->pw_gid,
+user->pw_gecos,user->pw_dir,user->pw_shell);
+}
+endpwent();
+}
+æ‰§è¡Œ
+root:0:0:root:/root:/bin/bash
+bin:1:1:bin:/bin:
+daemon:2:2:daemon:/sbin:
+adm:3:4:adm:/var/adm:
+lp:4:7:lp:/var/spool/lpd:
+sync:5:0:sync:/sbin:/bin/sync
+shutdown:6:0:shutdown:/sbin:/sbin/shutdown
+halt:7:0:halt:/sbin:/sbin/halt
+mail:8:12:mail:/var/spool/mail:
+news:9:13:news:var/spool/news
+uucp:10:14:uucp:/var/spool/uucp:
+operator:11:0:operator :/root:
+games:12:100:games:/usr/games:
+gopher:13:30:gopher:/usr/lib/gopher-data:
+ftp:14:50:FTP User:/home/ftp:
+nobody:99:99:Nobody:/:
+xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false
+gdm:42:42:/home/gdm:/bin/bash
+kids:500:500: : /home/kids:/bin/bash
+ã€€
+
+
+
+getpwnamï¼ˆä»å¯†ç æ–‡ä»¶ä¸­å–å¾—æŒ‡å®šè´¦å·çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getpwï¼Œfgetpwentï¼Œgetpwentï¼Œgetpwuid
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+struct passwd * getpwnam(const char * name);
+å‡½æ•°è¯´æ˜
+getpwnam()ç”¨æ¥é€ä¸€æœç´¢å‚æ•°name æŒ‡å®šçš„è´¦å·åç§°ï¼Œæ‰¾åˆ°æ—¶ä¾¿å°†è¯¥ç”¨æˆ·çš„æ•°æ®ä»¥passwdç»“æ„è¿”å›ã€‚passwdç»“æ„è¯·å‚è€ƒgetpwent()ã€‚
+è¿”å›å€¼
+è¿”å›passwd ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+/*å–å¾—rootè´¦å·çš„è¯†åˆ«ç å’Œæ ¹ç›®å½•*/
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+struct passwd *user;
+user = getpwnam(â€œrootâ€);
+printf(â€œname:%s\nâ€,user->pw_name);
+printf(â€œuid:%d\nâ€,user->pw_uid);
+printf(â€œhome:%s\nâ€,user->pw_dir);
+}
+æ‰§è¡Œ
+name:root
+uid:0
+home:/root
+ã€€
+
+
+
+getpwuidï¼ˆä»å¯†ç æ–‡ä»¶ä¸­å–å¾—æŒ‡å®šuid çš„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getpwï¼Œfgetpwentï¼Œgetpwentï¼Œgetpwnam
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+struct passwd * getpwuid(uid_t uid);
+å‡½æ•°è¯´æ˜
+getpwuid()ç”¨æ¥é€ä¸€æœç´¢å‚æ•°uid æŒ‡å®šçš„ç”¨æˆ·è¯†åˆ«ç ï¼Œæ‰¾åˆ°æ—¶ä¾¿å°†è¯¥ç”¨æˆ·çš„æ•°æ®ä»¥ç»“æ„è¿”å›ç»“æ„è¯·å‚è€ƒå°†è¯¥ç”¨æˆ·çš„æ•°æ®ä»¥passwd ç»“æ„è¿”å›ã€‚passwd ç»“æ„è¯·å‚è€ƒgetpwent()ã€‚
+è¿”å›å€¼
+è¿”å›passwd ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–è€…æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+struct passwd *user;
+user= getpwuid(6);
+printf(â€œname:%s\nâ€,user->pw_name);
+printf(â€œuid:%d\nâ€,user->pw_uid);
+printf(â€œhome:%s\nâ€,user->pw_dir);
+}
+æ‰§è¡Œ
+name:shutdown
+uid:6
+home:/sbin
+ã€€
+
+
+
+getuidï¼ˆå–å¾—çœŸå®çš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+geteuidï¼Œsetreuidï¼Œsetuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+uid_t getuid(void);
+å‡½æ•°è¯´æ˜
+getuid()ç”¨æ¥å–å¾—æ‰§è¡Œç›®å‰è¿›ç¨‹çš„ç”¨æˆ·è¯†åˆ«ç ã€‚
+è¿”å›å€¼
+ç”¨æˆ·è¯†åˆ«ç 
+èŒƒä¾‹
+main()
+{ 
+printf(â€œuid is %d\nâ€,getuid());
+}
+æ‰§è¡Œ
+uid is 0 /*å½“ä½¿ç”¨rootèº«ä»½æ‰§è¡ŒèŒƒä¾‹ç¨‹åºæ—¶*/
+ã€€
+
+
+
+getutentï¼ˆä»utmp æ–‡ä»¶ä¸­å–å¾—è´¦å·ç™»å½•æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œgetutidï¼Œgetutlineï¼Œsetutentï¼Œendutentï¼Œpututlineï¼Œutmpname
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+struct utmp *getutent(void);
+å‡½æ•°è¯´æ˜
+getutent()ç”¨æ¥ä»utmp æ–‡ä»¶(/var/run/utmp)ä¸­è¯»å–ä¸€é¡¹ç™»å½•æ•°æ®ï¼Œè¯¥æ•°æ®ä»¥utmp ç»“æ„è¿”å›ã€‚ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šå–å¾—ç¬¬ä¸€ä½ç”¨æˆ·æ•°æ®ï¼Œä¹‹åæ¯è°ƒç”¨ä¸€æ¬¡å°±ä¼šè¿”å›ä¸‹ä¸€é¡¹æ•°æ®ï¼Œç›´åˆ°å·²æ— ä»»ä½•æ•°æ®æ—¶è¿”å›NULLã€‚
+utmpç»“æ„å®šä¹‰å¦‚ä¸‹
+struct utmp
+{
+short int ut_type; /*ç™»å½•ç±»å‹*/
+pid_t ut_pid; /*loginè¿›ç¨‹çš„pid*/
+char ut_line[UT_LINESIZE];/*ç™»å½•è£…ç½®åï¼Œçœç•¥äº†â€œ/dev/â€*/
+char ut_id[4]; /* Inittab ID*/
+char ut_user[UT_NAMESIZE];/*ç™»å½•è´¦å·*/
+char ut_host[UT_HOSTSIZE];/*ç™»å½•è´¦å·çš„è¿œç¨‹ä¸»æœºåç§°*/
+struxt exit_status ut_exit;/* å½“ç±»å‹ä¸ºDEAD_PROCESSæ—¶è¿›ç¨‹çš„ç»“
+æŸçŠ¶æ€*/
+long int ut_session; /*Sessioc ID*/
+struct timeval ut_tv; /*æ—¶é—´è®°å½•*/
+int32_t ut_addr_v6[4]; /*è¿œç¨‹ä¸»æœºçš„ç½‘ç»œåœ°å€*/
+char __unused[20]; /* ä¿ç•™æœªä½¿ç”¨*/
+};
+ut_typeæœ‰ä»¥ä¸‹å‡ ç§ç±»å‹:
+EMPTY æ­¤ä¸ºç©ºçš„è®°å½•ã€‚
+RUN_LVL è®°å½•ç³»ç»Ÿrunï¼levelçš„æ”¹å˜
+BOOT_TIME è®°å½•ç³»ç»Ÿå¼€æœºæ—¶é—´
+NEW_TIME è®°å½•ç³»ç»Ÿæ—¶é—´æ”¹å˜åçš„æ—¶é—´
+OLD_TINE è®°å½•å½“æ”¹å˜ç³»ç»Ÿæ—¶é—´æ—¶çš„æ—¶é—´ã€‚
+INIT_PROCESS è®°å½•ä¸€ä¸ªç”±initè¡ç”Ÿå‡ºæ¥çš„è¿›ç¨‹ã€‚
+LOGIN_PROCESS è®°å½•loginè¿›ç¨‹ã€‚
+USER_PROCESS è®°å½•ä¸€èˆ¬è¿›ç¨‹ã€‚
+DEAD_PROCESS è®°å½•ä¸€ç»“æŸçš„è¿›ç¨‹ã€‚
+ACCOUNTING ç›®å‰å°šæœªä½¿ç”¨ã€‚
+exit_statusç»“æ„å®šä¹‰
+struct exit_status
+{
+short int e_termination; /*è¿›ç¨‹ç»“æŸçŠ¶æ€*/
+short int e_exit; /*è¿›ç¨‹é€€å‡ºçŠ¶æ€*/
+};
+timevalçš„ç»“æ„å®šä¹‰è¯·å‚è€ƒgettimeofdayï¼ˆï¼‰ã€‚
+ç›¸å…³å¸¸æ•°å®šä¹‰å¦‚ä¸‹:
+UT_LINESIZE 32
+UT_NAMESIZE 32
+UT_HOSTSIZE 256
+è¿”å›å€¼
+è¿”å›utmp ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+é™„åŠ è¯´æ˜
+getutent()åœ¨ç¬¬ä¸€æ¬¡è°ƒç”¨æ—¶ä¼šæ‰“å¼€utmp æ–‡ä»¶ï¼Œè¯»å–æ•°æ®å®Œæ¯•åå¯ä½¿ç”¨endutent()æ¥å…³é—­è¯¥utmpæ–‡ä»¶ã€‚
+èŒƒä¾‹
+#include<utmp.h>
+main()
+{
+struct utmp *u;
+while((u=getutent())){
+if(u->ut_type = = USER_PROCESS)
+printf(â€œ%d %s %s %s \nâ€,u->ut_type,u->ut_user,u->ut_line,u->ut_host);
+}
+endutent();
+}
+æ‰§è¡Œ
+/* è¡¨ç¤ºæœ‰ä¸‰ä¸ªrootè´¦å·åˆ†åˆ«ç™»å½•/dev/pts/0ï¼Œ/dev/pts/1ï¼Œ/dev/pts/2 */
+7 root pts/0
+7 root pts/1
+7 root pts/2
+ã€€
+
+
+
+getutidï¼ˆä»utmp æ–‡ä»¶ä¸­æŸ¥æ‰¾ç‰¹å®šçš„è®°å½•ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œgetutline
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+strcut utmp *getutid(strcut utmp *ut);
+å‡½æ•°è¯´æ˜
+getutid()ç”¨æ¥ä»ç›®å‰utmp æ–‡ä»¶çš„è¯»å†™ä½ç½®é€ä¸€å¾€åæœç´¢å‚æ•°utæŒ‡å®šçš„è®°å½•ï¼Œå¦‚æœut->ut_type ä¸ºRUN_LVLï¼ŒBOOT_TIMEï¼ŒNEW_TIMEï¼ŒOLD_TIME å…¶ä¸­ä¹‹ä¸€åˆ™æŸ¥æ‰¾ä¸ut->ut_type ç›¸ç¬¦çš„è®°å½•ï¼›è‹¥ut->ut_type ä¸ºINIT_PROCESSï¼ŒLOGIN_PROCESSï¼ŒUSER_PROCESSæˆ–DEAD_PROCESSå…¶ä¸­ä¹‹ä¸€ï¼Œåˆ™æŸ¥æ‰¾ä¸ut->ut_idç›¸ç¬¦çš„è®°å½•ã€‚æ‰¾åˆ°ç›¸ç¬¦çš„è®°å½•ä¾¿å°†è¯¥æ•°æ®ä»¥utmp ç»“æ„è¿”å›ã€‚utmpç»“æ„è¯·å‚è€ƒgetutent()ã€‚
+è¿”å›å€¼
+è¿”å›utmp ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include<utmp.h>
+main()
+{
+struct utmp ut,*u;
+ut.ut_type=RUN_LVL;
+while((u= getutid(&ut))){
+printf(â€œ%d %s %s %s\nâ€,u->ut_type,u->ut_user,u->ut_line,u->ut_host);
+}
+}
+æ‰§è¡Œ
+1 runlevel -
+ã€€
+
+
+
+getutlineï¼ˆä»utmp æ–‡ä»¶ä¸­æŸ¥æ‰¾ç‰¹å®šçš„è®°å½•ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œgetutidï¼Œpututline
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+struct utmp * getutline (struct utmp *ut);
+å‡½æ•°è¯´æ˜
+getutline()ç”¨æ¥ä»ç›®å‰utmpæ–‡ä»¶çš„è¯»å†™ä½ç½®é€ä¸€å¾€åæœç´¢ut_typeä¸ºUSER_PROCESS æˆ–LOGIN_PROCESS çš„è®°å½•ï¼Œè€Œä¸”ut_line å’Œut->ut_line ç›¸ç¬¦ã€‚æ‰¾åˆ°ç›¸ç¬¦çš„è®°å½•ä¾¿å°†è¯¥æ•°æ®ä»¥utmp ç»“æ„è¿”å›ï¼Œutmpç»“æ„è¯·å‚è€ƒgetutent()ã€‚
+è¿”å›å€¼
+è¿”å›utmp ç»“æ„æ•°æ®ï¼Œå¦‚æœè¿”å›NULL åˆ™è¡¨ç¤ºå·²æ— æ•°æ®ï¼Œæˆ–æœ‰é”™è¯¯å‘ç”Ÿã€‚
+èŒƒä¾‹
+#include<utmp.h>
+main()
+{
+struct utmp ut,*u;
+strcpy (ut.ut_line,â€pts/1â€);
+while ((u=getutline(&ut))){
+printf(â€œ%d %s %s %s \nâ€,u->ut_type,u->ut_user,u->ut_line,u->ut_host);
+}
+}
+æ‰§è¡Œ
+7 root pts/1
+ã€€
+
+
+
+initgroupsï¼ˆåˆå§‹åŒ–ç»„æ¸…å•ï¼‰
+ç›¸å…³å‡½æ•°
+setgrentï¼Œendgrent
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+int initgroups(const char *user,gid_t group);
+å‡½æ•°è¯´æ˜
+initgroupsï¼ˆï¼‰ç”¨æ¥ä»ç»„æ–‡ä»¶ï¼ˆ/etc/groupï¼‰ä¸­è¯»å–ä¸€é¡¹ç»„æ•°æ®ï¼Œè‹¥è¯¥ç»„æ•°æ®çš„æˆå‘˜ä¸­æœ‰å‚æ•°useræ—¶ï¼Œä¾¿å°†å‚æ•°groupç»„è¯†åˆ«ç åŠ å…¥åˆ°æ­¤æ•°æ®ä¸­ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ç å­˜äºerrnoã€‚
+ã€€
+
+
+
+pututlineï¼ˆå°†utmp è®°å½•å†™å…¥æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œgetutidï¼Œgetutline
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+void pututline(struct utmp *ut);
+å‡½æ•°è¯´æ˜
+pututline()ç”¨æ¥å°†å‚æ•°utçš„utmpç»“æ„è®°å½•åˆ°utmpæ–‡ä»¶ä¸­ã€‚æ­¤å‡½æ•°ä¼šå…ˆç”¨getutid()æ¥å–å¾—æ­£ç¡®çš„å†™å…¥ä½ç½®ï¼Œå¦‚æœæ²¡æœ‰æ‰¾åˆ°ç›¸ç¬¦çš„è®°å½•åˆ™ä¼šåŠ å…¥åˆ°utmpæ–‡ä»¶å°¾ï¼Œutmpç»“æ„è¯·å‚è€ƒgetutent()ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+éœ€è¦æœ‰å†™å…¥/var/run/utmp çš„æƒé™
+èŒƒä¾‹
+#include<utmp.h>
+main()
+{
+struct utmp ut;
+ut.ut_type =USER_PROCESS;
+ut.ut_pid=getpid();
+strcpy(ut.ut_user,â€kidsâ€);
+strcpy(ut.ut_line,â€pts/1â€);
+strcpy(ut.ut_host,â€www.gnu.orgâ€);
+pututline(&ut);
+}
+æ‰§è¡Œ
+/*æ‰§è¡ŒèŒƒä¾‹åç”¨æŒ‡ä»¤who -l è§‚å¯Ÿ*/
+root pts/0 dec9 19:20
+kids pts/1 dec12 10:31(www.gnu.org)
+root pts/2 dec12 13:33
+ã€€
+
+
+
+seteuidï¼ˆè®¾ç½®æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+setuidï¼Œsetreuidï¼Œsetfsuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int seteuid(uid_t euid);
+å‡½æ•°è¯´æ˜
+seteuid()ç”¨æ¥é‡æ–°è®¾ç½®æ‰§è¡Œç›®å‰è¿›ç¨‹çš„æœ‰æ•ˆç”¨æˆ·è¯†åˆ«ç ã€‚åœ¨Linuxä¸‹ï¼Œseteuid(euid)ç›¸å½“äºsetreuid(-1,euid)ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrno
+é™„åŠ è¯´æ˜
+è¯·å‚è€ƒsetuid
+ã€€
+
+
+
+setfsgidï¼ˆè®¾ç½®æ–‡ä»¶ç³»ç»Ÿçš„ç»„è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+setuidï¼Œsetreuidï¼Œseteuidï¼Œsetfsuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setfsgid(uid_t fsgid);
+å‡½æ•°è¯´æ˜
+setfsgid()ç”¨æ¥é‡æ–°è®¾ç½®ç›®å‰è¿›ç¨‹çš„æ–‡ä»¶ç³»ç»Ÿçš„ç»„è¯†åˆ«ç ã€‚ä¸€èˆ¬æƒ…å†µä¸‹ï¼Œæ–‡ä»¶ç³»ç»Ÿçš„ç»„è¯†åˆ«ç (fsgid)ä¸æœ‰æ•ˆçš„ç»„è¯†åˆ«ç (egid)æ˜¯ç›¸åŒçš„ã€‚å¦‚æœæ˜¯è¶…çº§ç”¨æˆ·è°ƒç”¨æ­¤å‡½æ•°ï¼Œå‚æ•°fsgid å¯ä»¥ä¸ºä»»ä½•å€¼ï¼Œå¦åˆ™å‚æ•°fsgidå¿…é¡»ä¸ºreal/effective/savedçš„ç»„è¯†åˆ«ç ä¹‹ä¸€ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚
+é™„åŠ è¯´æ˜
+æ­¤å‡½æ•°ä¸ºLinuxç‰¹æœ‰ã€‚
+é”™è¯¯ä»£ç 
+EPERM æƒé™ä¸å¤Ÿï¼Œæ— æ³•å®Œæˆè®¾ç½®ã€‚
+ã€€
+
+
+
+setfsuidï¼ˆè®¾ç½®æ–‡ä»¶ç³»ç»Ÿçš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+setuidï¼Œsetreuidï¼Œseteuidï¼Œsetfsgid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setfsuid(uid_t fsuid);
+å‡½æ•°è¯´æ˜
+setfsuid()ç”¨æ¥é‡æ–°è®¾ç½®ç›®å‰è¿›ç¨‹çš„æ–‡ä»¶ç³»ç»Ÿçš„ç”¨æˆ·è¯†åˆ«ç ã€‚ä¸€èˆ¬æƒ…å†µä¸‹ï¼Œæ–‡ä»¶ç³»ç»Ÿçš„ç”¨æˆ·è¯†åˆ«ç (fsuid)ä¸æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç (euid)æ˜¯ç›¸åŒçš„ã€‚å¦‚æœæ˜¯è¶…çº§ç”¨æˆ·è°ƒç”¨æ­¤å‡½æ•°ï¼Œå‚æ•°fsuidå¯ä»¥ä¸ºä»»ä½•å€¼ï¼Œå¦åˆ™å‚æ•°fsuidå¿…é¡»ä¸ºreal/effective/savedçš„ç”¨æˆ·è¯†åˆ«ç ä¹‹ä¸€ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrno
+é™„åŠ è¯´æ˜
+æ­¤å‡½æ•°ä¸ºLinuxç‰¹æœ‰
+é”™è¯¯ä»£ç 
+EPERM æƒé™ä¸å¤Ÿï¼Œæ— æ³•å®Œæˆè®¾ç½®ã€‚
+ã€€
+
+
+
+setgidï¼ˆè®¾ç½®çœŸå®çš„ç»„è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+getgidï¼Œsetregidï¼Œgetegidï¼Œsetegid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setgid(gid_t gid);
+å‡½æ•°è¯´æ˜
+setgid()ç”¨æ¥å°†ç›®å‰è¿›ç¨‹çš„çœŸå®ç»„è¯†åˆ«ç (real gid)è®¾æˆå‚æ•°gidå€¼ã€‚å¦‚æœæ˜¯ä»¥è¶…çº§ç”¨æˆ·èº«ä»½æ‰§è¡Œæ­¤è°ƒç”¨ï¼Œåˆ™realã€effectiveä¸savedgidéƒ½ä¼šè®¾æˆå‚æ•°gidã€‚
+è¿”å›å€¼
+è®¾ç½®æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EPERM å¹¶éä»¥è¶…çº§ç”¨æˆ·èº«ä»½è°ƒç”¨ï¼Œè€Œä¸”å‚æ•°gid å¹¶éè¿›ç¨‹çš„effective gidæˆ–saved gidå€¼ä¹‹ä¸€ã€‚
+ã€€
+
+
+
+setgrentï¼ˆä»å¤´è¯»å–ç»„æ–‡ä»¶ä¸­çš„ç»„æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getgrentï¼Œendgrent
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+void setgrent(void);
+å‡½æ•°è¯´æ˜
+setgrent()ç”¨æ¥å°†getgrent()çš„è¯»å†™åœ°å€æŒ‡å›ç»„æ–‡ä»¶å¼€å¤´ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+è¯·å‚è€ƒsetpwent()ã€‚
+ã€€
+
+
+
+setgroupsï¼ˆè®¾ç½®ç»„ä»£ç ï¼‰
+ç›¸å…³å‡½æ•°
+initgroupsï¼Œgetgroupï¼Œgetgidï¼Œsetgid
+è¡¨å¤´æ–‡ä»¶
+#include<grp.h>
+å®šä¹‰å‡½æ•°
+int setgroups(size_t size,const gid_t * list);
+å‡½æ•°è¯´æ˜
+setgroups()ç”¨æ¥å°†list æ•°ç»„ä¸­æ‰€æ ‡æ˜çš„ç»„åŠ å…¥åˆ°ç›®å‰è¿›ç¨‹çš„ç»„è®¾ç½®ä¸­ã€‚å‚æ•°sizeä¸ºlist()çš„gid_tæ•°ç›®ï¼Œæœ€å¤§å€¼ä¸ºNGROUP(32)ã€‚
+è¿”å›å€¼
+è®¾ç½®æˆåŠŸåˆ™è¿”å›0ï¼Œå¦‚æœ‰é”™è¯¯åˆ™è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EFAULT å‚æ•°listæ•°ç»„åœ°å€ä¸åˆæ³•ã€‚
+EPERM æƒé™ä¸è¶³ï¼Œå¿…é¡»æ˜¯rootæƒé™
+EINVAL å‚æ•°sizeå€¼å¤§äºNGROUP(32)ã€‚
+ã€€
+
+
+
+setpwentï¼ˆä»å¤´è¯»å–å¯†ç æ–‡ä»¶ä¸­çš„è´¦å·æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getpwentï¼Œendpwent
+è¡¨å¤´æ–‡ä»¶
+#include<pwd.h>
+#include<sys/types.h>
+å®šä¹‰å‡½æ•°
+void setpwent(void);
+å‡½æ•°è¯´æ˜
+setpwent()ç”¨æ¥å°†getpwent()çš„è¯»å†™åœ°å€æŒ‡å›å¯†ç æ–‡ä»¶å¼€å¤´ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+#include<pwd.h>
+#include<sys/types.h>
+main()
+{
+struct passwd *user;
+int i;
+for(i=0;i<4;i++){
+user=getpwent();
+printf(â€œ%s :%d :%d :%s:%s:%s\nâ€,user->pw_name,user->pw_uid,user->pw_gid,
+user->pw_gecos,user->pw_dir,user->pw_shell);
+}
+setpwent();
+user=getpwent();
+printf(â€œ%s :%d :%d :%s:%s:%s\nâ€,user->pw_name,user->pw_uid,user->pw_gid,
+user->pw_gecos,user->pw_dir,user->pw_shell);
+endpwent();
+}
+æ‰§è¡Œ
+root:0:0:root:/root:/bin/bash
+bin:1:1:bin:/bin
+daemon:2:2:daemon:/sbin
+adm:3:4:adm:/var/adm
+root:0:0:root:/root:/bin/bash
+ã€€
+
+
+
+setregidï¼ˆè®¾ç½®çœŸå®åŠæœ‰æ•ˆçš„ç»„è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+setgidï¼Œsetegidï¼Œsetfsgid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setregid(gid_t rgid,gid_t egid);
+å‡½æ•°è¯´æ˜
+setregid()ç”¨æ¥å°†å‚æ•°rgidè®¾ä¸ºç›®å‰è¿›ç¨‹çš„çœŸå®ç»„è¯†åˆ«ç ï¼Œå°†å‚æ•°egidè®¾ç½®ä¸ºç›®å‰è¿›ç¨‹çš„æœ‰æ•ˆç»„è¯†åˆ«ç ã€‚å¦‚æœå‚æ•°rgidæˆ–egidå€¼ä¸º-1ï¼Œåˆ™å¯¹åº”çš„è¯†åˆ«ç ä¸ä¼šæ”¹å˜ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚
+ã€€
+
+
+
+setreuidï¼ˆè®¾ç½®çœŸå®åŠæœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+setuidï¼Œseteuidï¼Œsetfsuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setreuid(uid_t ruid,uid_t euid);
+å‡½æ•°è¯´æ˜
+setreuid()ç”¨æ¥å°†å‚æ•°ruid è®¾ä¸ºç›®å‰è¿›ç¨‹çš„çœŸå®ç”¨æˆ·è¯†åˆ«ç ï¼Œå°†å‚æ•°euid è®¾ç½®ä¸ºç›®å‰è¿›ç¨‹çš„æœ‰æ•ˆç”¨æˆ·è¯†åˆ«ç ã€‚å¦‚æœå‚æ•°ruid æˆ–euidå€¼ä¸º-1ï¼Œåˆ™å¯¹åº”çš„è¯†åˆ«ç ä¸ä¼šæ”¹å˜ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚
+é™„åŠ è¯´æ˜
+è¯·å‚è€ƒsetuidï¼ˆï¼‰ã€‚
+ã€€
+
+
+
+setuidï¼ˆè®¾ç½®çœŸå®çš„ç”¨æˆ·è¯†åˆ«ç ï¼‰
+ç›¸å…³å‡½æ•°
+getuidï¼Œsetreuidï¼Œseteuidï¼Œsetfsuid
+è¡¨å¤´æ–‡ä»¶
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int setuid(uid_t uid)
+å‡½æ•°è¯´æ˜
+setuid()ç”¨æ¥é‡æ–°è®¾ç½®æ‰§è¡Œç›®å‰è¿›ç¨‹çš„ç”¨æˆ·è¯†åˆ«ç ã€‚ä¸è¿‡ï¼Œè¦è®©æ­¤å‡½æ•°æœ‰ä½œç”¨ï¼Œå…¶æœ‰æ•ˆçš„ç”¨æˆ·è¯†åˆ«ç å¿…é¡»ä¸º0(root)ã€‚åœ¨Linuxä¸‹ï¼Œå½“rootä½¿ç”¨setuid()æ¥å˜æ¢æˆå…¶ä»–ç”¨æˆ·è¯†åˆ«ç æ—¶ï¼Œrootæƒé™ä¼šè¢«æŠ›å¼ƒï¼Œå®Œå…¨è½¬æ¢æˆè¯¥ç”¨æˆ·èº«ä»½ï¼Œä¹Ÿå°±æ˜¯è¯´ï¼Œè¯¥è¿›ç¨‹å¾€åå°†ä¸å†å…·æœ‰å¯setuid()çš„æƒåˆ©ï¼Œå¦‚æœåªæ˜¯å‘æš‚æ—¶æŠ›å¼ƒroot æƒé™ï¼Œç¨åæƒ³é‡æ–°å–å›æƒé™ï¼Œåˆ™å¿…é¡»ä½¿ç”¨seteuid()ã€‚
+è¿”å›å€¼
+æ‰§è¡ŒæˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚
+é™„åŠ è¯´æ˜
+ä¸€èˆ¬åœ¨ç¼–å†™å…·setuid rootçš„ç¨‹åºæ—¶ï¼Œä¸ºå‡å°‘æ­¤ç±»ç¨‹åºå¸¦æ¥çš„ç³»ç»Ÿå®‰å…¨é£é™©ï¼Œåœ¨ä½¿ç”¨å®Œrootæƒé™åå»ºè®®é©¬ä¸Šæ‰§è¡Œsetuid(getuid());æ¥æŠ›å¼ƒrootæƒé™ã€‚æ­¤å¤–ï¼Œè¿›ç¨‹uidå’Œeuidä¸ä¸€è‡´æ—¶Linuxç³»ç»Ÿå°†ä¸ä¼šäº§ç”Ÿcore dumpã€‚
+ã€€
+
+
+
+setutentï¼ˆä»å¤´è¯»å–utmp æ–‡ä»¶ä¸­çš„ç™»å½•æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œendutent
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+void setutent(void);
+å‡½æ•°è¯´æ˜
+setutent()ç”¨æ¥å°†getutent()çš„è¯»å†™åœ°å€æŒ‡å›utmpæ–‡ä»¶å¼€å¤´ã€‚
+é™„åŠ è¯´æ˜
+è¯·å‚è€ƒsetpwent()æˆ–setgrent()ã€‚
+ã€€
+
+
+
+utmpnameï¼ˆè®¾ç½®utmp æ–‡ä»¶è·¯å¾„ï¼‰
+ç›¸å…³å‡½æ•°
+getutentï¼Œgetutidï¼Œgetutlineï¼Œsetutentï¼Œendutentï¼Œpututline
+è¡¨å¤´æ–‡ä»¶
+#include<utmp.h>
+å®šä¹‰å‡½æ•°
+void utmpname(const char * file);
+å‡½æ•°è¯´æ˜
+utmpname()ç”¨æ¥è®¾ç½®utmpæ–‡ä»¶çš„è·¯å¾„ï¼Œä»¥æä¾›utmpç›¸å…³å‡½æ•°çš„å­˜å–è·¯å¾„ã€‚å¦‚æœæ²¡æœ‰ä½¿ç”¨utmpname()åˆ™é»˜è®¤utmpæ–‡ä»¶è·¯å¾„ä¸º/var/run/utmpã€‚
+è¿”å›å€¼
+
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

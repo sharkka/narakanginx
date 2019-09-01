@@ -1,1615 +1,632 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>å†…å­˜åŠå­—ç¬¦ä¸²æ“ä½œç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc41></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      bcmp£¨±È½ÏÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp£¬strcasecmp£¬strcmp£¬strcoll£¬strncmp£¬strncasecmp<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int bcmp ( const void *s1,const 
-      void * s2,int n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp()ÓÃÀ´±È½Ïs1ºÍs2ËùÖ¸µÄÄÚ´æÇø¼äÇ°n¸ö×Ö½Ú£¬Èô²ÎÊınÎª0£¬Ôò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1 ºÍs2 ËùÖ¸µÄÄÚ´æÄÚÈİ¶¼ÍêÈ«ÏàÍ¬Ôò·µ»Ø0 Öµ£¬·ñÔò·µ»Ø·ÇÁãÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ½¨ÒéÊ¹ÓÃmemcmp()È¡´ú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼memcmp()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc42></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      bcopy£¨¿½±´ÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memccpy£¬memcpy£¬memmove£¬strcpy£¬ctrncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void bcopy ( const void *src,void 
-      *dest ,int n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy()Óëmemcpy()Ò»Ñù¶¼ÊÇÓÃÀ´¿½±´srcËùÖ¸µÄÄÚ´æÄÚÈİÇ°n¸ö×Ö½Úµ½destËùÖ¸µÄµØÖ·£¬²»¹ı²ÎÊısrcÓëdestÔÚ´«¸øº¯ÊıÊ±ÊÇÏà·´µÄÎ»ÖÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ½¨ÒéÊ¹ÓÃmemcpy()È¡´ú<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char dest[30]=¡±string(a)¡±;<br>
-      char src[30]=¡±string\0string¡±;<br>
-      int i;<br>
-      bcopy(src,dest,30);/* srcÖ¸Õë·ÅÔÚÇ°*/<br>
-      printf(bcopy(): ¡°)<br>
-      for(i=0;i&lt;30;i++)<br>
-      printf(¡°%c¡±,dest[i]);<br>
-      memcpy(dest src,30); /*destÖ¸Õë·ÅÔÚÇ®*/<br>
-      printf(¡®\nmemcpy() : ¡°);<br>
-      for(i=0;i&lt;30;i++)<br>
-      printf(¡°%c¡±,dest[i]);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy() : string string<br>
-      memcpy() :string sring<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc43></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      bzero£¨½«Ò»¶ÎÄÚ´æÄÚÈİÈ«ÇåÎªÁã£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memset£¬swab<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void bzero(void *s,int n)£»<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bzero()»á½«²ÎÊısËùÖ¸µÄÄÚ´æÇøÓòÇ°n¸ö×Ö½Ú£¬È«²¿ÉèÎªÁãÖµ¡£Ïàµ±ÓÚµ÷ÓÃmemset((void*)s,0,size_tn);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ½¨ÒéÊ¹ÓÃmemsetÈ¡´ú<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼memset()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc44></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      index£¨²éÕÒ×Ö·û´®ÖĞµÚÒ»¸ö³öÏÖµÄÖ¸¶¨×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> rindex£¬srechr£¬strrchr<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * index( const char *s, int 
-      c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> index()ÓÃÀ´ÕÒ³ö²ÎÊıs×Ö·û´®ÖĞµÚÒ»¸ö³öÏÖµÄ²ÎÊıcµØÖ·£¬È»ºó½«¸Ã×Ö·û³öÏÖµÄµØÖ··µ»Ø¡£×Ö·û´®½áÊø×Ö·û(NULL)Ò²ÊÓÎª×Ö·û´®Ò»²¿·Ö¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èç¹ûÕÒµ½Ö¸¶¨µÄ×Ö·ûÔò·µ»Ø¸Ã×Ö·ûËùÔÚµØÖ·£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *s =¡±0123456789012345678901234567890¡±;<br>
-      char *p;<br>
-      p =index(s,¡¯5¡¯);<br>
-      printf(%s\n¡±,p);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 5.68E+25<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc45></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memccpy£¨¿½±´ÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memcpy£¬memmove£¬strcpy£¬strncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void * memccpy(void *dest, const 
-      void * src, int c,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memccpy()ÓÃÀ´¿½±´srcËùÖ¸µÄÄÚ´æÄÚÈİÇ°n¸ö×Ö½Úµ½destËùÖ¸µÄµØÖ·ÉÏ¡£Óëmemcpy()²»Í¬µÄÊÇ£¬memccpy()»áÔÚ¸´ÖÆÊ±¼ì²é²ÎÊıcÊÇ·ñ³öÏÖ£¬ÈôÊÇÔò·µ»ØdestÖĞÖµÎªcµÄÏÂÒ»¸ö×Ö½ÚµØÖ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÖ¸ÏòdestÖĞÖµÎªcµÄÏÂÒ»¸ö×Ö½ÚÖ¸Õë¡£·µ»ØÖµÎª0±íÊ¾ÔÚsrcËùÖ¸ÄÚ´æÇ°n¸ö×Ö½ÚÖĞÃ»ÓĞÖµÎªcµÄ×Ö½Ú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[]="string[a]";<br>
-      char b[]="string(b)";<br>
-      memccpy(a,b,'B',sizeof(b));<br>
-      printf("memccpy():%s\n",a);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memccpy():string(b)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc46></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memchr£¨ÔÚÄ³Ò»ÄÚ´æ·¶Î§ÖĞ²éÕÒÒ»ÌØ¶¨×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> index£¬rindex£¬strchr£¬strpbrk£¬strrchr£¬strsep£¬strspn£¬strstr<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void * memchr(const void *s,int 
-      c,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memchr()´ÓÍ·¿ªÊ¼ËÑÑ°sËùÖ¸µÄÄÚ´æÄÚÈİÇ°n¸ö×Ö½Ú£¬Ö±µ½·¢ÏÖµÚÒ»¸öÖµÎªcµÄ×Ö½Ú£¬Ôò·µ»ØÖ¸Ïò¸Ã×Ö½ÚµÄÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èç¹ûÕÒµ½Ö¸¶¨µÄ×Ö½ÚÔò·µ»Ø¸Ã×Ö½ÚµÄÖ¸Õë£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *s="0123456789012345678901234567890";<br>
-      char *p;<br>
-      p=memchr(s,'5',10);<br>
-      printf("%s\n",p);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 5.68E+25<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc47></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memcmp£¨±È½ÏÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp£¬strcasecmp£¬strcmp£¬strcoll£¬strncmp£¬strncasecmp<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int memcmp (const void *s1,const 
-      void *s2,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memcmp()ÓÃÀ´±È½Ïs1ºÍs2ËùÖ¸µÄÄÚ´æÇø¼äÇ°n¸ö×Ö·û¡£×Ö·û´®´óĞ¡µÄ±È½ÏÊÇÒÔASCIIÂë±íÉÏµÄË³ĞòÀ´¾ö¶¨£¬´ÎË³ĞòÒàÎª×Ö·ûµÄÖµ¡£memcmp()Ê×ÏÈ½«s1µÚÒ»¸ö×Ö·ûÖµ¼õÈ¥s2µÚÒ»¸ö×Ö·ûµÄÖµ£¬Èô²îÎª0ÔòÔÙ¼ÌĞø±È½ÏÏÂ¸ö×Ö·û£¬Èô²îÖµ²»Îª0Ôò½«²îÖµ·µ»Ø¡£ÀıÈç£¬×Ö·û´®"Ac"ºÍ"ba"±È½ÏÔò»á·µ»Ø×Ö·û'A'(65)ºÍ'b'(98)µÄ²îÖµ(£­33)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1ºÍs2ËùÖ¸µÄÄÚ´æÄÚÈİ¶¼ÍêÈ«ÏàÍ¬Ôò·µ»Ø0Öµ¡£s1Èô´óÓÚs2Ôò·µ»Ø´óÓÚ0µÄÖµ¡£s1ÈôĞ¡ÓÚs2Ôò·µ»ØĞ¡ÓÚ0µÄÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *a ="aBcDeF";<br>
-      char *b="AbCdEf";<br>
-      char *c="aacdef";<br>
-      char *d="aBcDeF";<br>
-      printf("memcmp(a,b):%d\n",memcmp((void*)a,(void*) b,6));<br>
-      printf("memcmp(a,c):%d\n",memcmp((void*)a,(void*) c,6));<br>
-      printf("memcmp(a,d):%d\n",memcmp((void*)a,(void*) d,6));<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memcmp(a,b):1 /*×Ö·û´®a&gt;×Ö·û´®b£¬·µ»Ø1*/<br>
-      memcmp(a,c):-1 /* ×Ö·û´®a&lt;×Ö·û´®c,·µ»Ø£­1*/<br>
-      memcmp(a,d):0 /*×Ö·û´®a£½×Ö·û´®d£¬·µ»Ø0*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc48></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memcpy£¨¿½±´ÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memccpy£¬memcpy£¬memmove£¬strcpy£¬strncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void * memcpy (void * dest ,const 
-      void *src, size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memcpy()ÓÃÀ´¿½±´srcËùÖ¸µÄÄÚ´æÄÚÈİÇ°n¸ö×Ö½Úµ½destËùÖ¸µÄÄÚ´æµØÖ·ÉÏ¡£Óëstrcpy()²»Í¬µÄÊÇ£¬memcpy()»áÍêÕûµÄ¸´ÖÆn¸ö×Ö½Ú£¬²»»áÒòÎªÓöµ½×Ö·û´®½áÊø'\0'¶ø½áÊø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÖ¸ÏòdestµÄÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Ö¸ÕësrcºÍdestËùÖ¸µÄÄÚ´æÇøÓò²»¿ÉÖØµş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[30]="string (a)";<br>
-      char b[30]="string\0string";<br>
-      int i;<br>
-      strcpy(a,b);<br>
-      printf("strcpy():");<br>
-      for(i=0;i&lt;30;i++)<br>
-      printf("%c",a[i]);<br>
-      memcpy(a,b,30);<br>
-      printf("\nmemcpy() :");<br>
-      for(i=0;i&lt;30;i++)<br>
-      printf("%c",a[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcpy() : string a )<br>
-      memcpy() : string string<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc49></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memmove£¨¿½±´ÄÚ´æÄÚÈİ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memccpy£¬memcpy£¬strcpy£¬strncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void * memmove(void *dest,const 
-      void *src,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memmove()Óëmemcpy()Ò»Ñù¶¼ÊÇÓÃÀ´¿½±´srcËùÖ¸µÄÄÚ´æÄÚÈİÇ°n¸ö×Ö½Úµ½destËùÖ¸µÄµØÖ·ÉÏ¡£²»Í¬µÄÊÇ£¬µ±srcºÍdestËùÖ¸µÄÄÚ´æÇøÓòÖØµşÊ±£¬memmove()ÈÔÈ»¿ÉÒÔÕıÈ·µÄ´¦Àí£¬²»¹ıÖ´ĞĞĞ§ÂÊÉÏ»á±ÈÊ¹ÓÃmemcpy()ÂÔÂıĞ©¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÖ¸ÏòdestµÄÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Ö¸ÕësrcºÍdestËùÖ¸µÄÄÚ´æÇøÓò¿ÉÒÔÖØµş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼memcpy()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc50></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      memset£¨½«Ò»¶ÎÄÚ´æ¿Õ¼äÌîÈëÄ³Öµ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bzero£¬swab<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void * memset (void *s ,int c, 
-      size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> memset()»á½«²ÎÊısËùÖ¸µÄÄÚ´æÇøÓòÇ°n¸ö×Ö½ÚÒÔ²ÎÊıcÌîÈë£¬È»ºó·µ»ØÖ¸ÏòsµÄÖ¸Õë¡£ÔÚ±àĞ´³ÌĞòÊ±£¬ÈôĞèÒª½«Ä³Ò»Êı×é×÷³õÊ¼»¯£¬memset()»áÏàµ±·½±ã¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÖ¸ÏòsµÄÖ¸Õë¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²ÎÊıcËäÉùÃ÷Îªint£¬ µ«±ØĞëÊÇunsigned char 
-      £¬ËùÒÔ·¶Î§ÔÚ0µ½255Ö®¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char s[30];<br>
-      memset (s,'A',sizeof(s));<br>
-      s[30]='\0';<br>
-      printf("%s\n",s);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc51></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      rindex£¨²éÕÒ×Ö·û´®ÖĞ×îºóÒ»¸ö³öÏÖµÄÖ¸¶¨×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> index£¬memchr£¬strchr£¬strrchr<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * rindex( const char *s,int 
-      c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> rindex()ÓÃÀ´ÕÒ³ö²ÎÊıs×Ö·û´®ÖĞ×îºóÒ»¸ö³öÏÖµÄ²ÎÊıcµØÖ·£¬È»ºó½«¸Ã×Ö·û³öÏÖµÄµØÖ··µ»Ø¡£×Ö·û´®½áÊø×Ö·û(NULL)Ò²ÊÓÎª×Ö·û´®Ò»²¿·Ö¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èç¹ûÕÒµ½Ö¸¶¨µÄ×Ö·ûÔò·µ»Ø¸Ã×Ö·ûËùÔÚµÄµØÖ·£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      mian()<br>
-      {<br>
-      char *s ="0123456789012345678901234567890";<br>
-      char *p;<br>
-      p=rindex(s,'5');<br>
-      printf("%s\n",p);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 567890<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc52></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcasecmp£¨ºöÂÔ´óĞ¡Ğ´±È½Ï×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp£¬memcmp£¬strcmp£¬strcoll£¬strncmp<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int strcasecmp (const char *s1, 
-      const char *s2);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcasecmp()ÓÃÀ´±È½Ï²ÎÊıs1ºÍs2×Ö·û´®£¬±È½ÏÊ±»á×Ô¶¯ºöÂÔ´óĞ¡Ğ´µÄ²îÒì¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1ºÍs2×Ö·û´®ÏàÍ¬Ôò·µ»Ø0¡£s1³¤¶È´óÓÚs2³¤¶ÈÔò·µ»Ø´óÓÚ0 
-      µÄÖµ£¬s1 ³¤¶ÈÈôĞ¡ÓÚs2 ³¤¶ÈÔò·µ»ØĞ¡ÓÚ0µÄÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *a="aBcDeF";<br>
-      char *b="AbCdEf";<br>
-      if(!strcasecmp(a,b))<br>
-      printf("%s=%s\n",a,b);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> aBcDeF=AbCdEf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc53></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcat£¨Á¬½ÓÁ½×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memccpy£¬memcpy£¬strcpy£¬strncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char *strcat (char *dest,const 
-      char *src);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcat()»á½«²ÎÊısrc×Ö·û´®¿½±´µ½²ÎÊıdestËùÖ¸µÄ×Ö·û´®Î²¡£µÚÒ»¸ö²ÎÊıdestÒªÓĞ×ã¹»µÄ¿Õ¼äÀ´ÈİÄÉÒª¿½±´µÄ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø²ÎÊıdestµÄ×Ö·û´®ÆğÊ¼µØÖ·<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h.&gt;<br>
-      main()<br>
-      {<br>
-      char a[30]="string(1)";<br>
-      char b[]="string(2)";<br>
-      printf("before strcat() : %s\n",a);<br>
-      printf("after strcat() : %s\n",strcat(a,b));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before strcat () : string(1)<br>
-      after strcat () : string(1)string(2)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc54></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strchr£¨²éÕÒ×Ö·û´®ÖĞµÚÒ»¸ö³öÏÖµÄÖ¸¶¨×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> index£¬memchr£¬rinex£¬strbrk£¬strsep£¬strspn£¬strstr£¬strtok<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * strchr (const char *s,int 
-      c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strchr()ÓÃÀ´ÕÒ³ö²ÎÊıs×Ö·û´®ÖĞµÚÒ»¸ö³öÏÖµÄ²ÎÊıcµØÖ·£¬È»ºó½«¸Ã×Ö·û³öÏÖµÄµØÖ··µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èç¹ûÕÒµ½Ö¸¶¨µÄ×Ö·ûÔò·µ»Ø¸Ã×Ö·ûËùÔÚµØÖ·£¬·ñÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *s=0123456789012345678901234567890¡±;<br>
-      char *p;<br>
-      p=strchr(s,'5');<br>
-      printf("%s\n",p);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 5.68E+25<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc55></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcmp£¨±È½Ï×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp£¬memcmp£¬strcasecmp£¬strncasecmp£¬strcoll<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int strcmp(const char *s1,const 
-      char *s2);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcmp()ÓÃÀ´±È½Ï²ÎÊıs1ºÍs2×Ö·û´®¡£×Ö·û´®´óĞ¡µÄ±È½ÏÊÇÒÔASCII 
-      Âë±íÉÏµÄË³ĞòÀ´¾ö¶¨£¬´ËË³ĞòÒàÎª×Ö·ûµÄÖµ¡£strcmp()Ê×ÏÈ½«s1µÚÒ»¸ö×Ö·ûÖµ¼õÈ¥s2µÚÒ»¸ö×Ö·ûÖµ£¬Èô²îÖµÎª0ÔòÔÙ¼ÌĞø±È½ÏÏÂ¸ö×Ö·û£¬Èô²îÖµ²»Îª0Ôò½«²îÖµ·µ»Ø¡£ÀıÈç×Ö·û´®"Ac"ºÍ"ba"±È½ÏÔò»á·µ»Ø×Ö·û"A"(65)ºÍ'b'(98)µÄ²îÖµ(£­33)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1ºÍs2×Ö·û´®ÏàÍ¬Ôò·µ»Ø0¡£s1Èô´óÓÚs2Ôò·µ»Ø´óÓÚ0µÄÖµ¡£s1ÈôĞ¡ÓÚs2Ôò·µ»ØĞ¡ÓÚ0 
-      µÄÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *a="aBcDeF";<br>
-      char *b="AbCdEf";<br>
-      char *c="aacdef";<br>
-      char *d="aBcDeF";<br>
-      printf("strcmp(a,b) : %d\n",strcmp(a,b));<br>
-      printf("strcmp(a,c) : %d\n",strcmp(a,c));<br>
-      printf("strcmp(a,d) : %d\n",strcmp(a,d));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcmp(a,b) : 32<br>
-      strcmp(a,c) :-31<br>
-      strcmp(a,d) : 0<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc56></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcoll£¨²ÉÓÃÄ¿Ç°ÇøÓòµÄ×Ö·ûÅÅÁĞ´ÎĞòÀ´±È½Ï×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcmp£¬bcmp£¬memcmp£¬strcasecmp£¬strncasecmp<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int strcoll( const char *s1, const 
-      char *s2);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcoll()»áÒÀ»·¾³±äÁ¿LC_COLLATEËùÖ¸¶¨µÄÎÄ×ÖÅÅÁĞ´ÎĞòÀ´±È½Ïs1ºÍs2 
-      ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1ºÍs2×Ö·û´®ÏàÍ¬Ôò·µ»Ø0¡£s1Èô´óÓÚs2Ôò·µ»Ø´óÓÚ0µÄÖµ¡£s1ÈôĞ¡ÓÚs2Ôò·µ»ØĞ¡ÓÚ0 
-      µÄÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ÈôLC_COLLATEÎª"POSIX"»ò"C"£¬Ôòstrcoll()Óëstrcmp()×÷ÓÃÍêÈ«ÏàÍ¬¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼strcmp()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc57></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcpy£¨¿½±´×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memcpy£¬memccpy£¬memmove<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char *strcpy(char *dest,const 
-      char *src);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcpy()»á½«²ÎÊısrc×Ö·û´®¿½±´ÖÁ²ÎÊıdestËùÖ¸µÄµØÖ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø²ÎÊıdestµÄ×Ö·û´®ÆğÊ¼µØÖ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èç¹û²ÎÊıdestËùÖ¸µÄÄÚ´æ¿Õ¼ä²»¹»´ó£¬¿ÉÄÜ»áÔì³É»º³åÒç³ö(buffer 
-      Overflow)µÄ´íÎóÇé¿ö£¬ÔÚ±àĞ´³ÌĞòÊ±ÇëÌØ±ğÁôÒâ£¬»òÕßÓÃstrncpy()À´È¡´ú¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[30]="string(1)";<br>
-      char b[]="string(2)";<br>
-      printf("before strcpy() :%s\n",a);<br>
-      printf("after strcpy() :%s\n",strcpy(a,b));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before strcpy() :string(1)<br>
-      after strcpy() :string(2)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc58></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strcspn£¨·µ»Ø×Ö·û´®ÖĞÁ¬Ğø²»º¬Ö¸¶¨×Ö·û´®ÄÚÈİµÄ×Ö·ûÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strspn<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #inclued&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> size_t strcspn ( const char *s,const 
-      char * reject);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strcspn()´Ó²ÎÊıs×Ö·û´®µÄ¿ªÍ·¼ÆËãÁ¬ĞøµÄ×Ö·û£¬¶øÕâĞ©×Ö·û¶¼ÍêÈ«²»ÔÚ²ÎÊıreject 
-      ËùÖ¸µÄ×Ö·û´®ÖĞ¡£¼òµ¥µØËµ£¬Èôstrcspn()·µ»ØµÄÊıÖµÎªn£¬Ôò´ú±í×Ö·û´®s¿ªÍ·Á¬ĞøÓĞn¸ö×Ö·û¶¼²»º¬×Ö·û´®rejectÄÚµÄ×Ö·û¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×Ö·û´®s¿ªÍ·Á¬Ğø²»º¬×Ö·û´®rejectÄÚµÄ×Ö·ûÊıÄ¿¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *str="Linux was first developed for 386/486-based pcs.";<br>
-      printf("%d\n",strcspn(str," "));<br>
-      printf("%d\n",strcspn(str,"/-"));<br>
-      printf("%d\n",strcspn(str,"1234567890"));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 5 /*Ö»¼ÆËãµ½¡° ¡±µÄ³öÏÖ£¬ËùÒÔ·µ»Ø¡°Linux¡±µÄ³¤¶È*/<br>
-      33 /*¼ÆËãµ½³öÏÖ¡°/¡±»ò¡°£­¡±£¬ËùÒÔ·µ»Øµ½¡°6¡±µÄ³¤¶È*/<br>
-      30 /* ¼ÆËãµ½³öÏÖÊı×Ö×Ö·ûÎªÖ¹£¬ËùÒÔ·µ»Ø¡°3¡±³öÏÖÇ°µÄ³¤¶È*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc59></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strdup£¨¸´ÖÆ×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> calloc£¬malloc£¬realloc£¬free<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * strdup( const char *s);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strdup()»áÏÈÓÃmaolloc()ÅäÖÃÓë²ÎÊıs×Ö·û´®ÏàÍ¬µÄ¿Õ¼ä´óĞ¡£¬È»ºó½«²ÎÊıs×Ö·û´®µÄÄÚÈİ¸´ÖÆµ½¸ÃÄÚ´æµØÖ·£¬È»ºó°Ñ¸ÃµØÖ··µ»Ø¡£¸ÃµØÖ·×îºó¿ÉÒÔÀûÓÃfree()À´ÊÍ·Å¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÒ»×Ö·û´®Ö¸Õë£¬¸ÃÖ¸ÕëÖ¸Ïò¸´ÖÆºóµÄĞÂ×Ö·û´®µØÖ·¡£Èô·µ»ØNULL±íÊ¾ÄÚ´æ²»×ã¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[]="strdup";<br>
-      char *b;<br>
-      b=strdup(a);<br>
-      printf("b[ ]=\"%s\"\n",b);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> b[ ]="strdup"<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc60></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strlen£¨·µ»Ø×Ö·û´®³¤¶È£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> size_t strlen (const char *s);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strlen()ÓÃÀ´¼ÆËãÖ¸¶¨µÄ×Ö·û´®sµÄ³¤¶È£¬²»°üÀ¨½áÊø×Ö·û"\0"¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø×Ö·û´®sµÄ×Ö·ûÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*È¡µÃ×Ö·û´®strµÄ³¤¶È*/<br>
-      #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *str = "12345678";<br>
-      printf("str length = %d\n", strlen(str));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> str length = 8<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc61></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strncasecmp£¨ºöÂÔ´óĞ¡Ğ´±È½Ï×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcmp£¬memcmp£¬strcmp£¬strcoll£¬strncmp<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int strncasecmp(const char *s1,const 
-      char *s2,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strncasecmp()ÓÃÀ´±È½Ï²ÎÊıs1ºÍs2×Ö·û´®Ç°n¸ö×Ö·û£¬±È½ÏÊ±»á×Ô¶¯ºöÂÔ´óĞ¡Ğ´µÄ²îÒì¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıs1ºÍs2 ×Ö·û´®ÏàÍ¬Ôò·µ»Ø0¡£s1 Èô´óÓÚs2Ôò·µ»Ø´óÓÚ0µÄÖµ£¬s1ÈôĞ¡ÓÚs2Ôò·µ»ØĞ¡ÓÚ0 
-      µÄÖµ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char *a="aBcDeF";<br>
-      char *b="AbCdEf";<br>
-      if(!strncasecmp(a,b))<br>
-      printf("%s =%s\n",a,b);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> aBcDef=AbCdEf<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc62></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strncat£¨Á¬½ÓÁ½×Ö·û´®£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bcopy£¬memccpy£¬memecpy£¬strcpy£¬strncpy<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #inclue &lt;string.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * strncat(char *dest,const 
-      char *src,size_t n);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> strncat()»á½«²ÎÊısrc×Ö·û´®¿½±´n¸ö×Ö·ûµ½²ÎÊıdestËùÖ¸µÄ×Ö·û´®Î²¡£µÚÒ»¸ö²ÎÊıdestÒªÓĞ×ã¹»µÄ¿Õ¼äÀ´ÈİÄÉÒª¿½±´µÄ×Ö·û´®¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø²ÎÊıdestµÄ×Ö·û´®ÆğÊ¼µØÖ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;string.h&gt;<br>
-      main()<br>
-      {<br>
-      char a[30]="string(1)";<br>
-      char b[]="string(2)";<br>
-      printf("before strnact() :%s\n", a);<br>
-      printf("after strncat() :%s\n", strncat(a,b,6));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> before strnact() : string(1)<br>
-      after strncat() : string(1) string<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc63></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      strncpy£¨¿½±´×
+<br /><br /><br />
+
+<pre>
+bcmpï¼ˆæ¯”è¾ƒå†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+bcmpï¼Œstrcasecmpï¼Œstrcmpï¼Œstrcollï¼Œstrncmpï¼Œstrncasecmp
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int bcmp ( const void *s1,const void * s2,int n);
+å‡½æ•°è¯´æ˜
+bcmp()ç”¨æ¥æ¯”è¾ƒs1å’Œs2æ‰€æŒ‡çš„å†…å­˜åŒºé—´å‰nä¸ªå­—èŠ‚ï¼Œè‹¥å‚æ•°nä¸º0ï¼Œåˆ™è¿”å›0ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1 å’Œs2 æ‰€æŒ‡çš„å†…å­˜å†…å®¹éƒ½å®Œå…¨ç›¸åŒåˆ™è¿”å›0 å€¼ï¼Œå¦åˆ™è¿”å›éé›¶å€¼ã€‚
+é™„åŠ è¯´æ˜
+å»ºè®®ä½¿ç”¨memcmp()å–ä»£ã€‚
+èŒƒä¾‹
+å‚è€ƒmemcmp()ã€‚
+ã€€
+
+
+
+bcopyï¼ˆæ‹·è´å†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+memccpyï¼Œmemcpyï¼Œmemmoveï¼Œstrcpyï¼Œctrncpy
+è¡¨å¤´æ–‡ä»¶
+#include <string.h>
+å®šä¹‰å‡½æ•°
+void bcopy ( const void *src,void *dest ,int n);
+å‡½æ•°è¯´æ˜
+bcopy()ä¸memcpy()ä¸€æ ·éƒ½æ˜¯ç”¨æ¥æ‹·è´srcæ‰€æŒ‡çš„å†…å­˜å†…å®¹å‰nä¸ªå­—èŠ‚åˆ°destæ‰€æŒ‡çš„åœ°å€ï¼Œä¸è¿‡å‚æ•°srcä¸deståœ¨ä¼ ç»™å‡½æ•°æ—¶æ˜¯ç›¸åçš„ä½ç½®ã€‚
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+å»ºè®®ä½¿ç”¨memcpy()å–ä»£
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char dest[30]=â€string(a)â€;
+char src[30]=â€string\0stringâ€;
+int i;
+bcopy(src,dest,30);/* srcæŒ‡é’ˆæ”¾åœ¨å‰*/
+printf(bcopy(): â€œ)
+for(i=0;i<30;i++)
+printf(â€œ%câ€,dest[i]);
+memcpy(dest src,30); /*destæŒ‡é’ˆæ”¾åœ¨é’±*/
+printf(â€˜\nmemcpy() : â€œ);
+for(i=0;i<30;i++)
+printf(â€œ%câ€,dest[i]);
+æ‰§è¡Œ
+bcopy() : string string
+memcpy() :string sring
+ã€€
+
+
+
+bzeroï¼ˆå°†ä¸€æ®µå†…å­˜å†…å®¹å…¨æ¸…ä¸ºé›¶ï¼‰
+ç›¸å…³å‡½æ•°
+memsetï¼Œswab
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void bzero(void *s,int n)ï¼›
+å‡½æ•°è¯´æ˜
+bzero()ä¼šå°†å‚æ•°sæ‰€æŒ‡çš„å†…å­˜åŒºåŸŸå‰nä¸ªå­—èŠ‚ï¼Œå…¨éƒ¨è®¾ä¸ºé›¶å€¼ã€‚ç›¸å½“äºè°ƒç”¨memset((void*)s,0,size_tn);
+è¿”å›å€¼
+
+é™„åŠ è¯´æ˜
+å»ºè®®ä½¿ç”¨memsetå–ä»£
+èŒƒä¾‹
+å‚è€ƒmemset()ã€‚
+ã€€
+
+
+
+indexï¼ˆæŸ¥æ‰¾å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€ä¸ªå‡ºç°çš„æŒ‡å®šå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+rindexï¼Œsrechrï¼Œstrrchr
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char * index( const char *s, int c);
+å‡½æ•°è¯´æ˜
+index()ç”¨æ¥æ‰¾å‡ºå‚æ•°så­—ç¬¦ä¸²ä¸­ç¬¬ä¸€ä¸ªå‡ºç°çš„å‚æ•°cåœ°å€ï¼Œç„¶åå°†è¯¥å­—ç¬¦å‡ºç°çš„åœ°å€è¿”å›ã€‚å­—ç¬¦ä¸²ç»“æŸå­—ç¬¦(NULL)ä¹Ÿè§†ä¸ºå­—ç¬¦ä¸²ä¸€éƒ¨åˆ†ã€‚
+è¿”å›å€¼
+å¦‚æœæ‰¾åˆ°æŒ‡å®šçš„å­—ç¬¦åˆ™è¿”å›è¯¥å­—ç¬¦æ‰€åœ¨åœ°å€ï¼Œå¦åˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char *s =â€0123456789012345678901234567890â€;
+char *p;
+p =index(s,â€™5â€™);
+printf(%s\nâ€,p);
+}
+æ‰§è¡Œ
+5.68E+25
+ã€€
+
+
+
+memccpyï¼ˆæ‹·è´å†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemcpyï¼Œmemmoveï¼Œstrcpyï¼Œstrncpy
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void * memccpy(void *dest, const void * src, int c,size_t n);
+å‡½æ•°è¯´æ˜
+memccpy()ç”¨æ¥æ‹·è´srcæ‰€æŒ‡çš„å†…å­˜å†…å®¹å‰nä¸ªå­—èŠ‚åˆ°destæ‰€æŒ‡çš„åœ°å€ä¸Šã€‚ä¸memcpy()ä¸åŒçš„æ˜¯ï¼Œmemccpy()ä¼šåœ¨å¤åˆ¶æ—¶æ£€æŸ¥å‚æ•°cæ˜¯å¦å‡ºç°ï¼Œè‹¥æ˜¯åˆ™è¿”å›destä¸­å€¼ä¸ºcçš„ä¸‹ä¸€ä¸ªå­—èŠ‚åœ°å€ã€‚
+è¿”å›å€¼
+è¿”å›æŒ‡å‘destä¸­å€¼ä¸ºcçš„ä¸‹ä¸€ä¸ªå­—èŠ‚æŒ‡é’ˆã€‚è¿”å›å€¼ä¸º0è¡¨ç¤ºåœ¨srcæ‰€æŒ‡å†…å­˜å‰nä¸ªå­—èŠ‚ä¸­æ²¡æœ‰å€¼ä¸ºcçš„å­—èŠ‚ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char a[]="string[a]";
+char b[]="string(b)";
+memccpy(a,b,'B',sizeof(b));
+printf("memccpy():%s\n",a);
+}
+æ‰§è¡Œ
+memccpy():string(b)
+ã€€
+
+
+
+memchrï¼ˆåœ¨æŸä¸€å†…å­˜èŒƒå›´ä¸­æŸ¥æ‰¾ä¸€ç‰¹å®šå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+indexï¼Œrindexï¼Œstrchrï¼Œstrpbrkï¼Œstrrchrï¼Œstrsepï¼Œstrspnï¼Œstrstr
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void * memchr(const void *s,int c,size_t n);
+å‡½æ•°è¯´æ˜
+memchr()ä»å¤´å¼€å§‹æœå¯»sæ‰€æŒ‡çš„å†…å­˜å†…å®¹å‰nä¸ªå­—èŠ‚ï¼Œç›´åˆ°å‘ç°ç¬¬ä¸€ä¸ªå€¼ä¸ºcçš„å­—èŠ‚ï¼Œåˆ™è¿”å›æŒ‡å‘è¯¥å­—èŠ‚çš„æŒ‡é’ˆã€‚
+è¿”å›å€¼
+å¦‚æœæ‰¾åˆ°æŒ‡å®šçš„å­—èŠ‚åˆ™è¿”å›è¯¥å­—èŠ‚çš„æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+#include <string.h>
+main()
+{
+char *s="0123456789012345678901234567890";
+char *p;
+p=memchr(s,'5',10);
+printf("%s\n",p);
+}
+æ‰§è¡Œ
+5.68E+25
+ã€€
+
+
+
+memcmpï¼ˆæ¯”è¾ƒå†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+bcmpï¼Œstrcasecmpï¼Œstrcmpï¼Œstrcollï¼Œstrncmpï¼Œstrncasecmp
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int memcmp (const void *s1,const void *s2,size_t n);
+å‡½æ•°è¯´æ˜
+memcmp()ç”¨æ¥æ¯”è¾ƒs1å’Œs2æ‰€æŒ‡çš„å†…å­˜åŒºé—´å‰nä¸ªå­—ç¬¦ã€‚å­—ç¬¦ä¸²å¤§å°çš„æ¯”è¾ƒæ˜¯ä»¥ASCIIç è¡¨ä¸Šçš„é¡ºåºæ¥å†³å®šï¼Œæ¬¡é¡ºåºäº¦ä¸ºå­—ç¬¦çš„å€¼ã€‚memcmp()é¦–å…ˆå°†s1ç¬¬ä¸€ä¸ªå­—ç¬¦å€¼å‡å»s2ç¬¬ä¸€ä¸ªå­—ç¬¦çš„å€¼ï¼Œè‹¥å·®ä¸º0åˆ™å†ç»§ç»­æ¯”è¾ƒä¸‹ä¸ªå­—ç¬¦ï¼Œè‹¥å·®å€¼ä¸ä¸º0åˆ™å°†å·®å€¼è¿”å›ã€‚ä¾‹å¦‚ï¼Œå­—ç¬¦ä¸²"Ac"å’Œ"ba"æ¯”è¾ƒåˆ™ä¼šè¿”å›å­—ç¬¦'A'(65)å’Œ'b'(98)çš„å·®å€¼(ï¼33)ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1å’Œs2æ‰€æŒ‡çš„å†…å­˜å†…å®¹éƒ½å®Œå…¨ç›¸åŒåˆ™è¿”å›0å€¼ã€‚s1è‹¥å¤§äºs2åˆ™è¿”å›å¤§äº0çš„å€¼ã€‚s1è‹¥å°äºs2åˆ™è¿”å›å°äº0çš„å€¼ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char *a ="aBcDeF";
+char *b="AbCdEf";
+char *c="aacdef";
+char *d="aBcDeF";
+printf("memcmp(a,b):%d\n",memcmp((void*)a,(void*) b,6));
+printf("memcmp(a,c):%d\n",memcmp((void*)a,(void*) c,6));
+printf("memcmp(a,d):%d\n",memcmp((void*)a,(void*) d,6));
+æ‰§è¡Œ
+memcmp(a,b):1 /*å­—ç¬¦ä¸²a>å­—ç¬¦ä¸²bï¼Œè¿”å›1*/
+memcmp(a,c):-1 /* å­—ç¬¦ä¸²a<å­—ç¬¦ä¸²c,è¿”å›ï¼1*/
+memcmp(a,d):0 /*å­—ç¬¦ä¸²aï¼å­—ç¬¦ä¸²dï¼Œè¿”å›0*/
+ã€€
+
+
+
+memcpyï¼ˆæ‹·è´å†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemccpyï¼Œmemcpyï¼Œmemmoveï¼Œstrcpyï¼Œstrncpy
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void * memcpy (void * dest ,const void *src, size_t n);
+å‡½æ•°è¯´æ˜
+memcpy()ç”¨æ¥æ‹·è´srcæ‰€æŒ‡çš„å†…å­˜å†…å®¹å‰nä¸ªå­—èŠ‚åˆ°destæ‰€æŒ‡çš„å†…å­˜åœ°å€ä¸Šã€‚ä¸strcpy()ä¸åŒçš„æ˜¯ï¼Œmemcpy()ä¼šå®Œæ•´çš„å¤åˆ¶nä¸ªå­—èŠ‚ï¼Œä¸ä¼šå› ä¸ºé‡åˆ°å­—ç¬¦ä¸²ç»“æŸ'\0'è€Œç»“æŸã€‚
+è¿”å›å€¼
+è¿”å›æŒ‡å‘destçš„æŒ‡é’ˆã€‚
+é™„åŠ è¯´æ˜
+æŒ‡é’ˆsrcå’Œdestæ‰€æŒ‡çš„å†…å­˜åŒºåŸŸä¸å¯é‡å ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char a[30]="string (a)";
+char b[30]="string\0string";
+int i;
+strcpy(a,b);
+printf("strcpy():");
+for(i=0;i<30;i++)
+printf("%c",a[i]);
+memcpy(a,b,30);
+printf("\nmemcpy() :");
+for(i=0;i<30;i++)
+printf("%c",a[i]);
+}
+æ‰§è¡Œ
+strcpy() : string a )
+memcpy() : string string
+ã€€
+
+
+
+memmoveï¼ˆæ‹·è´å†…å­˜å†…å®¹ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemccpyï¼Œmemcpyï¼Œstrcpyï¼Œstrncpy
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void * memmove(void *dest,const void *src,size_t n);
+å‡½æ•°è¯´æ˜
+memmove()ä¸memcpy()ä¸€æ ·éƒ½æ˜¯ç”¨æ¥æ‹·è´srcæ‰€æŒ‡çš„å†…å­˜å†…å®¹å‰nä¸ªå­—èŠ‚åˆ°destæ‰€æŒ‡çš„åœ°å€ä¸Šã€‚ä¸åŒçš„æ˜¯ï¼Œå½“srcå’Œdestæ‰€æŒ‡çš„å†…å­˜åŒºåŸŸé‡å æ—¶ï¼Œmemmove()ä»ç„¶å¯ä»¥æ­£ç¡®çš„å¤„ç†ï¼Œä¸è¿‡æ‰§è¡Œæ•ˆç‡ä¸Šä¼šæ¯”ä½¿ç”¨memcpy()ç•¥æ…¢äº›ã€‚
+è¿”å›å€¼
+è¿”å›æŒ‡å‘destçš„æŒ‡é’ˆã€‚
+é™„åŠ è¯´æ˜
+æŒ‡é’ˆsrcå’Œdestæ‰€æŒ‡çš„å†…å­˜åŒºåŸŸå¯ä»¥é‡å ã€‚
+èŒƒä¾‹
+å‚è€ƒmemcpy()ã€‚
+ã€€
+
+
+
+memsetï¼ˆå°†ä¸€æ®µå†…å­˜ç©ºé—´å¡«å…¥æŸå€¼ï¼‰
+ç›¸å…³å‡½æ•°
+bzeroï¼Œswab
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+void * memset (void *s ,int c, size_t n);
+å‡½æ•°è¯´æ˜
+memset()ä¼šå°†å‚æ•°sæ‰€æŒ‡çš„å†…å­˜åŒºåŸŸå‰nä¸ªå­—èŠ‚ä»¥å‚æ•°cå¡«å…¥ï¼Œç„¶åè¿”å›æŒ‡å‘sçš„æŒ‡é’ˆã€‚åœ¨ç¼–å†™ç¨‹åºæ—¶ï¼Œè‹¥éœ€è¦å°†æŸä¸€æ•°ç»„ä½œåˆå§‹åŒ–ï¼Œmemset()ä¼šç›¸å½“æ–¹ä¾¿ã€‚
+è¿”å›å€¼
+è¿”å›æŒ‡å‘sçš„æŒ‡é’ˆã€‚
+é™„åŠ è¯´æ˜
+å‚æ•°cè™½å£°æ˜ä¸ºintï¼Œ ä½†å¿…é¡»æ˜¯unsigned char ï¼Œæ‰€ä»¥èŒƒå›´åœ¨0åˆ°255ä¹‹é—´ã€‚
+èŒƒä¾‹
+#include <string.h>
+main()
+{
+char s[30];
+memset (s,'A',sizeof(s));
+s[30]='\0';
+printf("%s\n",s);
+}
+æ‰§è¡Œ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ã€€
+
+
+
+rindexï¼ˆæŸ¥æ‰¾å­—ç¬¦ä¸²ä¸­æœ€åä¸€ä¸ªå‡ºç°çš„æŒ‡å®šå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+indexï¼Œmemchrï¼Œstrchrï¼Œstrrchr
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char * rindex( const char *s,int c);
+å‡½æ•°è¯´æ˜
+rindex()ç”¨æ¥æ‰¾å‡ºå‚æ•°så­—ç¬¦ä¸²ä¸­æœ€åä¸€ä¸ªå‡ºç°çš„å‚æ•°cåœ°å€ï¼Œç„¶åå°†è¯¥å­—ç¬¦å‡ºç°çš„åœ°å€è¿”å›ã€‚å­—ç¬¦ä¸²ç»“æŸå­—ç¬¦(NULL)ä¹Ÿè§†ä¸ºå­—ç¬¦ä¸²ä¸€éƒ¨åˆ†ã€‚
+è¿”å›å€¼
+å¦‚æœæ‰¾åˆ°æŒ‡å®šçš„å­—ç¬¦åˆ™è¿”å›è¯¥å­—ç¬¦æ‰€åœ¨çš„åœ°å€ï¼Œå¦åˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+#include <string.h>
+mian()
+{
+char *s ="0123456789012345678901234567890";
+char *p;
+p=rindex(s,'5');
+printf("%s\n",p);
+}
+æ‰§è¡Œ
+567890
+ã€€
+
+
+
+strcasecmpï¼ˆå¿½ç•¥å¤§å°å†™æ¯”è¾ƒå­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcmpï¼Œmemcmpï¼Œstrcmpï¼Œstrcollï¼Œstrncmp
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int strcasecmp (const char *s1, const char *s2);
+å‡½æ•°è¯´æ˜
+strcasecmp()ç”¨æ¥æ¯”è¾ƒå‚æ•°s1å’Œs2å­—ç¬¦ä¸²ï¼Œæ¯”è¾ƒæ—¶ä¼šè‡ªåŠ¨å¿½ç•¥å¤§å°å†™çš„å·®å¼‚ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1å’Œs2å­—ç¬¦ä¸²ç›¸åŒåˆ™è¿”å›0ã€‚s1é•¿åº¦å¤§äºs2é•¿åº¦åˆ™è¿”å›å¤§äº0 çš„å€¼ï¼Œs1 é•¿åº¦è‹¥å°äºs2 é•¿åº¦åˆ™è¿”å›å°äº0çš„å€¼ã€‚
+èŒƒä¾‹
+#include <string.h>
+main()
+{
+char *a="aBcDeF";
+char *b="AbCdEf";
+if(!strcasecmp(a,b))
+printf("%s=%s\n",a,b);
+}
+æ‰§è¡Œ
+aBcDeF=AbCdEf
+ã€€
+
+
+
+strcatï¼ˆè¿æ¥ä¸¤å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemccpyï¼Œmemcpyï¼Œstrcpyï¼Œstrncpy
+è¡¨å¤´æ–‡ä»¶
+#include <string.h>
+å®šä¹‰å‡½æ•°
+char *strcat (char *dest,const char *src);
+å‡½æ•°è¯´æ˜
+strcat()ä¼šå°†å‚æ•°srcå­—ç¬¦ä¸²æ‹·è´åˆ°å‚æ•°destæ‰€æŒ‡çš„å­—ç¬¦ä¸²å°¾ã€‚ç¬¬ä¸€ä¸ªå‚æ•°destè¦æœ‰è¶³å¤Ÿçš„ç©ºé—´æ¥å®¹çº³è¦æ‹·è´çš„å­—ç¬¦ä¸²ã€‚
+è¿”å›å€¼
+è¿”å›å‚æ•°destçš„å­—ç¬¦ä¸²èµ·å§‹åœ°å€
+èŒƒä¾‹
+#include <string.h.>
+main()
+{
+char a[30]="string(1)";
+char b[]="string(2)";
+printf("before strcat() : %s\n",a);
+printf("after strcat() : %s\n",strcat(a,b));
+}
+æ‰§è¡Œ
+before strcat () : string(1)
+after strcat () : string(1)string(2)
+ã€€
+
+
+
+strchrï¼ˆæŸ¥æ‰¾å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€ä¸ªå‡ºç°çš„æŒ‡å®šå­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+indexï¼Œmemchrï¼Œrinexï¼Œstrbrkï¼Œstrsepï¼Œstrspnï¼Œstrstrï¼Œstrtok
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char * strchr (const char *s,int c);
+å‡½æ•°è¯´æ˜
+strchr()ç”¨æ¥æ‰¾å‡ºå‚æ•°så­—ç¬¦ä¸²ä¸­ç¬¬ä¸€ä¸ªå‡ºç°çš„å‚æ•°cåœ°å€ï¼Œç„¶åå°†è¯¥å­—ç¬¦å‡ºç°çš„åœ°å€è¿”å›ã€‚
+è¿”å›å€¼
+å¦‚æœæ‰¾åˆ°æŒ‡å®šçš„å­—ç¬¦åˆ™è¿”å›è¯¥å­—ç¬¦æ‰€åœ¨åœ°å€ï¼Œå¦åˆ™è¿”å›0ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char *s=0123456789012345678901234567890â€;
+char *p;
+p=strchr(s,'5');
+printf("%s\n",p);
+}
+æ‰§è¡Œ
+5.68E+25
+ã€€
+
+
+
+strcmpï¼ˆæ¯”è¾ƒå­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcmpï¼Œmemcmpï¼Œstrcasecmpï¼Œstrncasecmpï¼Œstrcoll
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int strcmp(const char *s1,const char *s2);
+å‡½æ•°è¯´æ˜
+strcmp()ç”¨æ¥æ¯”è¾ƒå‚æ•°s1å’Œs2å­—ç¬¦ä¸²ã€‚å­—ç¬¦ä¸²å¤§å°çš„æ¯”è¾ƒæ˜¯ä»¥ASCII ç è¡¨ä¸Šçš„é¡ºåºæ¥å†³å®šï¼Œæ­¤é¡ºåºäº¦ä¸ºå­—ç¬¦çš„å€¼ã€‚strcmp()é¦–å…ˆå°†s1ç¬¬ä¸€ä¸ªå­—ç¬¦å€¼å‡å»s2ç¬¬ä¸€ä¸ªå­—ç¬¦å€¼ï¼Œè‹¥å·®å€¼ä¸º0åˆ™å†ç»§ç»­æ¯”è¾ƒä¸‹ä¸ªå­—ç¬¦ï¼Œè‹¥å·®å€¼ä¸ä¸º0åˆ™å°†å·®å€¼è¿”å›ã€‚ä¾‹å¦‚å­—ç¬¦ä¸²"Ac"å’Œ"ba"æ¯”è¾ƒåˆ™ä¼šè¿”å›å­—ç¬¦"A"(65)å’Œ'b'(98)çš„å·®å€¼(ï¼33)ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1å’Œs2å­—ç¬¦ä¸²ç›¸åŒåˆ™è¿”å›0ã€‚s1è‹¥å¤§äºs2åˆ™è¿”å›å¤§äº0çš„å€¼ã€‚s1è‹¥å°äºs2åˆ™è¿”å›å°äº0 çš„å€¼ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char *a="aBcDeF";
+char *b="AbCdEf";
+char *c="aacdef";
+char *d="aBcDeF";
+printf("strcmp(a,b) : %d\n",strcmp(a,b));
+printf("strcmp(a,c) : %d\n",strcmp(a,c));
+printf("strcmp(a,d) : %d\n",strcmp(a,d));
+}
+æ‰§è¡Œ
+strcmp(a,b) : 32
+strcmp(a,c) :-31
+strcmp(a,d) : 0
+ã€€
+
+
+
+strcollï¼ˆé‡‡ç”¨ç›®å‰åŒºåŸŸçš„å­—ç¬¦æ’åˆ—æ¬¡åºæ¥æ¯”è¾ƒå­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+strcmpï¼Œbcmpï¼Œmemcmpï¼Œstrcasecmpï¼Œstrncasecmp
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int strcoll( const char *s1, const char *s2);
+å‡½æ•°è¯´æ˜
+strcoll()ä¼šä¾ç¯å¢ƒå˜é‡LC_COLLATEæ‰€æŒ‡å®šçš„æ–‡å­—æ’åˆ—æ¬¡åºæ¥æ¯”è¾ƒs1å’Œs2 å­—ç¬¦ä¸²ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1å’Œs2å­—ç¬¦ä¸²ç›¸åŒåˆ™è¿”å›0ã€‚s1è‹¥å¤§äºs2åˆ™è¿”å›å¤§äº0çš„å€¼ã€‚s1è‹¥å°äºs2åˆ™è¿”å›å°äº0 çš„å€¼ã€‚
+é™„åŠ è¯´æ˜
+è‹¥LC_COLLATEä¸º"POSIX"æˆ–"C"ï¼Œåˆ™strcoll()ä¸strcmp()ä½œç”¨å®Œå…¨ç›¸åŒã€‚
+èŒƒä¾‹
+å‚è€ƒstrcmp()ã€‚
+ã€€
+
+
+
+strcpyï¼ˆæ‹·è´å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemcpyï¼Œmemccpyï¼Œmemmove
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char *strcpy(char *dest,const char *src);
+å‡½æ•°è¯´æ˜
+strcpy()ä¼šå°†å‚æ•°srcå­—ç¬¦ä¸²æ‹·è´è‡³å‚æ•°destæ‰€æŒ‡çš„åœ°å€ã€‚
+è¿”å›å€¼
+è¿”å›å‚æ•°destçš„å­—ç¬¦ä¸²èµ·å§‹åœ°å€ã€‚
+é™„åŠ è¯´æ˜
+å¦‚æœå‚æ•°destæ‰€æŒ‡çš„å†…å­˜ç©ºé—´ä¸å¤Ÿå¤§ï¼Œå¯èƒ½ä¼šé€ æˆç¼“å†²æº¢å‡º(buffer Overflow)çš„é”™è¯¯æƒ…å†µï¼Œåœ¨ç¼–å†™ç¨‹åºæ—¶è¯·ç‰¹åˆ«ç•™æ„ï¼Œæˆ–è€…ç”¨strncpy()æ¥å–ä»£ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char a[30]="string(1)";
+char b[]="string(2)";
+printf("before strcpy() :%s\n",a);
+printf("after strcpy() :%s\n",strcpy(a,b));
+}
+æ‰§è¡Œ
+before strcpy() :string(1)
+after strcpy() :string(2)
+ã€€
+
+
+
+strcspnï¼ˆè¿”å›å­—ç¬¦ä¸²ä¸­è¿ç»­ä¸å«æŒ‡å®šå­—ç¬¦ä¸²å†…å®¹çš„å­—ç¬¦æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+strspn
+è¡¨å¤´æ–‡ä»¶
+#inclued<string.h>
+å®šä¹‰å‡½æ•°
+size_t strcspn ( const char *s,const char * reject);
+å‡½æ•°è¯´æ˜
+strcspn()ä»å‚æ•°så­—ç¬¦ä¸²çš„å¼€å¤´è®¡ç®—è¿ç»­çš„å­—ç¬¦ï¼Œè€Œè¿™äº›å­—ç¬¦éƒ½å®Œå…¨ä¸åœ¨å‚æ•°reject æ‰€æŒ‡çš„å­—ç¬¦ä¸²ä¸­ã€‚ç®€å•åœ°è¯´ï¼Œè‹¥strcspn()è¿”å›çš„æ•°å€¼ä¸ºnï¼Œåˆ™ä»£è¡¨å­—ç¬¦ä¸²så¼€å¤´è¿ç»­æœ‰nä¸ªå­—ç¬¦éƒ½ä¸å«å­—ç¬¦ä¸²rejectå†…çš„å­—ç¬¦ã€‚
+è¿”å›å€¼
+è¿”å›å­—ç¬¦ä¸²så¼€å¤´è¿ç»­ä¸å«å­—ç¬¦ä¸²rejectå†…çš„å­—ç¬¦æ•°ç›®ã€‚
+èŒƒä¾‹
+#include <string.h>
+main()
+{
+char *str="Linux was first developed for 386/486-based pcs.";
+printf("%d\n",strcspn(str," "));
+printf("%d\n",strcspn(str,"/-"));
+printf("%d\n",strcspn(str,"1234567890"));
+}
+æ‰§è¡Œ
+5 /*åªè®¡ç®—åˆ°â€œ â€çš„å‡ºç°ï¼Œæ‰€ä»¥è¿”å›â€œLinuxâ€çš„é•¿åº¦*/
+33 /*è®¡ç®—åˆ°å‡ºç°â€œ/â€æˆ–â€œï¼â€ï¼Œæ‰€ä»¥è¿”å›åˆ°â€œ6â€çš„é•¿åº¦*/
+30 /* è®¡ç®—åˆ°å‡ºç°æ•°å­—å­—ç¬¦ä¸ºæ­¢ï¼Œæ‰€ä»¥è¿”å›â€œ3â€å‡ºç°å‰çš„é•¿åº¦*/
+ã€€
+
+
+
+strdupï¼ˆå¤åˆ¶å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+callocï¼Œmallocï¼Œreallocï¼Œfree
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+char * strdup( const char *s);
+å‡½æ•°è¯´æ˜
+strdup()ä¼šå…ˆç”¨maolloc()é…ç½®ä¸å‚æ•°så­—ç¬¦ä¸²ç›¸åŒçš„ç©ºé—´å¤§å°ï¼Œç„¶åå°†å‚æ•°så­—ç¬¦ä¸²çš„å†…å®¹å¤åˆ¶åˆ°è¯¥å†…å­˜åœ°å€ï¼Œç„¶åæŠŠè¯¥åœ°å€è¿”å›ã€‚è¯¥åœ°å€æœ€åå¯ä»¥åˆ©ç”¨free()æ¥é‡Šæ”¾ã€‚
+è¿”å›å€¼
+è¿”å›ä¸€å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œè¯¥æŒ‡é’ˆæŒ‡å‘å¤åˆ¶åçš„æ–°å­—ç¬¦ä¸²åœ°å€ã€‚è‹¥è¿”å›NULLè¡¨ç¤ºå†…å­˜ä¸è¶³ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char a[]="strdup";
+char *b;
+b=strdup(a);
+printf("b[ ]=\"%s\"\n",b);
+}
+æ‰§è¡Œ
+b[ ]="strdup"
+ã€€
+
+
+
+strlenï¼ˆè¿”å›å­—ç¬¦ä¸²é•¿åº¦ï¼‰
+ç›¸å…³å‡½æ•°
+
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+size_t strlen (const char *s);
+å‡½æ•°è¯´æ˜
+strlen()ç”¨æ¥è®¡ç®—æŒ‡å®šçš„å­—ç¬¦ä¸²sçš„é•¿åº¦ï¼Œä¸åŒ…æ‹¬ç»“æŸå­—ç¬¦"\0"ã€‚
+è¿”å›å€¼
+è¿”å›å­—ç¬¦ä¸²sçš„å­—ç¬¦æ•°ã€‚
+èŒƒä¾‹
+/*å–å¾—å­—ç¬¦ä¸²strçš„é•¿åº¦*/
+#include<string.h>
+main()
+{
+char *str = "12345678";
+printf("str length = %d\n", strlen(str));
+}
+æ‰§è¡Œ
+str length = 8
+ã€€
+
+
+
+strncasecmpï¼ˆå¿½ç•¥å¤§å°å†™æ¯”è¾ƒå­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcmpï¼Œmemcmpï¼Œstrcmpï¼Œstrcollï¼Œstrncmp
+è¡¨å¤´æ–‡ä»¶
+#include<string.h>
+å®šä¹‰å‡½æ•°
+int strncasecmp(const char *s1,const char *s2,size_t n);
+å‡½æ•°è¯´æ˜
+strncasecmp()ç”¨æ¥æ¯”è¾ƒå‚æ•°s1å’Œs2å­—ç¬¦ä¸²å‰nä¸ªå­—ç¬¦ï¼Œæ¯”è¾ƒæ—¶ä¼šè‡ªåŠ¨å¿½ç•¥å¤§å°å†™çš„å·®å¼‚ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°s1å’Œs2 å­—ç¬¦ä¸²ç›¸åŒåˆ™è¿”å›0ã€‚s1 è‹¥å¤§äºs2åˆ™è¿”å›å¤§äº0çš„å€¼ï¼Œs1è‹¥å°äºs2åˆ™è¿”å›å°äº0 çš„å€¼ã€‚
+èŒƒä¾‹
+#include<string.h>
+main()
+{
+char *a="aBcDeF";
+char *b="AbCdEf";
+if(!strncasecmp(a,b))
+printf("%s =%s\n",a,b);
+}
+æ‰§è¡Œ
+aBcDef=AbCdEf
+ã€€
+
+
+
+strncatï¼ˆè¿æ¥ä¸¤å­—ç¬¦ä¸²ï¼‰
+ç›¸å…³å‡½æ•°
+bcopyï¼Œmemccpyï¼Œmemecpyï¼Œstrcpyï¼Œstrncpy
+è¡¨å¤´æ–‡ä»¶
+#inclue <string.h>
+å®šä¹‰å‡½æ•°
+char * strncat(char *dest,const char *src,size_t n);
+å‡½æ•°è¯´æ˜
+strncat()ä¼šå°†å‚æ•°srcå­—ç¬¦ä¸²æ‹·è´nä¸ªå­—ç¬¦åˆ°å‚æ•°destæ‰€æŒ‡çš„å­—ç¬¦ä¸²å°¾ã€‚ç¬¬ä¸€ä¸ªå‚æ•°destè¦æœ‰è¶³å¤Ÿçš„ç©ºé—´æ¥å®¹çº³è¦æ‹·è´çš„å­—ç¬¦ä¸²ã€‚
+è¿”å›å€¼
+è¿”å›å‚æ•°destçš„å­—ç¬¦ä¸²èµ·å§‹åœ°å€ã€‚
+èŒƒä¾‹
+#include <string.h>
+main()
+{
+char a[30]="string(1)";
+char b[]="string(2)";
+printf("before strnact() :%s\n", a);
+printf("after strncat() :%s\n", strncat(a,b,6));
+}
+æ‰§è¡Œ
+before strnact() : string(1)
+after strncat() : string(1) string
+ã€€
+
+
+
+strncpyï¼ˆæ‹·è´ï¿½
+<pre />
+
+<h2>End</h2>
+
+</body>
+</html>

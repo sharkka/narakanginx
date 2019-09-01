@@ -1,972 +1,428 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>å­—ç¬¦æµ‹è¯•ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-<tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc1></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isalnum£¨²âÊÔ×Ö·ûÊÇ·ñÎªÓ¢ÎÄ»òÊı×Ö£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalpha£¬isdigit£¬islower£¬isupper<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isalnum (int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎªÓ¢ÎÄ×ÖÄ¸»ò°¢À­²®Êı×Ö£¬ÔÚ±ê×¼cÖĞÏàµ±ÓÚÊ¹ÓÃ¡°isalpha(c) 
-      || isdigit(c)¡±×ö²âÊÔ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª×ÖÄ¸»òÊı×Ö£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÕÒ³östr ×Ö·û´®ÖĞÎªÓ¢ÎÄ×ÖÄ¸»òÊı×ÖµÄ×Ö·û*/<br>
-      #include &lt; ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]=¡±123c@#FDsP[e?¡±;<br>
-      int i;<br>
-      for (i=0;str[i]!=0;i++ )<br>
-      if ( isalnum(str[i])) printf(¡°%c is an alphanumeric character\n¡±,str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 1 is an apphabetic character<br>
-      2 is an apphabetic character<br>
-      3 is an apphabetic character<br>
-      c is an apphabetic character<br>
-      F is an apphabetic character<br>
-      D is an apphabetic character<br>
-      s is an apphabetic character<br>
-      P is an apphabetic character<br>
-      e is an apphabetic character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc2></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isalpha £¨²âÊÔ×Ö·ûÊÇ·ñÎªÓ¢ÎÄ×ÖÄ¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalnum£¬islower£¬isupper<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isalpha (int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎªÓ¢ÎÄ×ÖÄ¸£¬ÔÚ±ê×¼cÖĞÏàµ±ÓÚÊ¹ÓÃ¡°isupper(c)||islower(c)¡±×ö²âÊÔ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎªÓ¢ÎÄ×ÖÄ¸£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÕÒ³östr ×Ö·û´®ÖĞÎªÓ¢ÎÄ×ÖÄ¸µÄ×Ö·û*/<br>
-      #include &lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]=¡±123c@#FDsP[e?¡±;<br>
-      int i;<br>
-      for (i=0;str[i]!=0;i++)<br>
-      if(isalpha(str[i])) printf(¡°%c is an alphanumeric character\n¡±,str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> c is an apphabetic character<br>
-      F is an apphabetic character<br>
-      D is an apphabetic character<br>
-      s is an apphabetic character<br>
-      P is an apphabetic character<br>
-      e is an apphabetic character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc3></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isascii£¨²âÊÔ×Ö·ûÊÇ·ñÎªASCII Âë×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> iscntrl<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isascii(int c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎªASCIIÂë×Ö·û£¬Ò²¾ÍÊÇÅĞ¶ÏcµÄ·¶Î§ÊÇ·ñÔÚ0µ½127Ö®¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎªASCIIÂë×Ö·û£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÅĞ¶Ïint iÊÇ·ñ¾ßÓĞ¶ÔÓ³µÄASCIIÂë×Ö·û*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      int i;<br>
-      for(i=125;i&lt;130;i++)<br>
-      if(isascii(i))<br>
-      printf("%d is an ascii character:%c\n",i,i);<br>
-      else<br>
-      printf("%d is not an ascii character\n",i);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 125 is an ascii character:}<br>
-      126 is an ascii character:~<br>
-      127 is an ascii character:<br>
-      128 is not an ascii character<br>
-      129 is not an ascii character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc4></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      iscntrl£¨²âÊÔ×Ö·ûÊÇ·ñÎªASCII ÂëµÄ¿ØÖÆ×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isascii<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int iscntrl(int c)£»<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎªASCII¿ØÖÆÂë£¬Ò²¾ÍÊÇÅĞ¶ÏcµÄ·¶Î§ÊÇ·ñÔÚ0µ½30Ö®¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎªASCII¿ØÖÆÂë£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc5></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isdigit£¨²âÊÔ×Ö·ûÊÇ·ñÎª°¢À­²®Êı×Ö£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isxdigit<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isdigit(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª°¢À­²®Êı×Ö0µ½9¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª°¢À­²®Êı×Ö£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÕÒ³östr×Ö·û´®ÖĞÎª°¢À­²®Êı×ÖµÄ×Ö·û*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="123@#FDsP[e?";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isdigit(str[i])) printf("%c is an digit character\n",str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 1 is an digit character<br>
-      2 is an digit character<br>
-      3 is an digit character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc6></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isgraphis£¨²âÊÔ×Ö·ûÊÇ·ñÎª¿É´òÓ¡×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isprint<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isgraph (int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª¿É´òÓ¡×Ö·û£¬ÈôcËù¶ÔÓ³µÄASCIIÂë¿É´òÓ¡£¬ÇÒ·Ç¿Õ¸ñ×Ö·ûÔò·µ»ØTRUE¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª¿É´òÓ¡×Ö·û£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÅĞ¶Ïstr×Ö·û´®ÖĞÄÄĞ©Îª¿É´òÓ¡×Ö·û*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="a5 @;";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isgraph(str[i])) printf("str[%d] is printable character:%d\n",i,str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> str[0] is printable character:a<br>
-      str[1] is printable character:5<br>
-      str[3] is printable character:@<br>
-      str[4] is printable character:;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc7></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      islower£¨²âÊÔ×Ö·ûÊÇ·ñÎªĞ¡Ğ´×ÖÄ¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalpha£¬isupper<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int islower(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎªĞ¡Ğ´Ó¢ÎÄ×ÖÄ¸¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎªĞ¡Ğ´Ó¢ÎÄ×ÖÄ¸£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="123@#FDsP[e?";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(islower(str[i])) printf("%c is a lower-case character\n",str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> c is a lower-case character<br>
-      s is a lower-case character<br>
-      e is a lower-case character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc8></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isprint£¨²âÊÔ×Ö·ûÊÇ£¨·ñÎª¿É´òÓ¡×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isgraph<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isprint(int c);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª¿É´òÓ¡×Ö·û£¬ÈôcËù¶ÔÓ³µÄASCIIÂë¿É´òÓ¡£¬ÆäÖĞ°üº¬¿Õ¸ñ×Ö·û£¬Ôò·µ»ØTRUE¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª¿É´òÓ¡×Ö·û£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÅĞ¶Ïstr×Ö·û´®ÖĞÄÄĞ©Îª¿É´òÓ¡×Ö·û°üº¬¿Õ¸ñ×Ö·û*/<br>
-      #include&lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="a5 @;";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isprint(str[i])) printf("str[%d] is printable character:%d\n",i,str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> str[0] is printable character:a<br>
-      str[1] is printable character:5<br>
-      str[2] is printable character:<br>
-      str[3] is printable character:@<br>
-      str[4] is printable character:;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc9></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isspace£¨²âÊÔ×Ö·ûÊÇ·ñÎª¿Õ¸ñ×Ö·û£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isgraph<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isspace(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª¿Õ¸ñ×Ö·û£¬Ò²¾ÍÊÇÅĞ¶ÏÊÇ·ñÎª¿Õ¸ñ('')¡¢¶¨Î»×Ö·û('\t')¡¢CR('\r')¡¢»»ĞĞ('\n')¡¢´¹Ö±¶¨Î»×Ö·û('\v')»ò·­Ò³('\f')µÄÇé¿ö¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª¿Õ¸ñ×Ö·û£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*½«×Ö·û´®str[]ÖĞÄÚº¬µÄ¿Õ¸ñ×Ö·ûÕÒ³ö£¬²¢ÏÔÊ¾¿Õ¸ñ×Ö·ûµÄASCIIÂë*/<br>
-      #include &lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str="123c @# FD\tsP[e?\n";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isspace(str[i]))<br>
-      printf("str[%d] is a white-space character:%d\n",i,str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> str[4] is a white-space character:32<br>
-      str[7] is a white-space character:32<br>
-      str[10] is a white-space character:9 /* \t */<br>
-      str[16] is a white-space character:10 /* \t */<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc10></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      ispunct£¨²âÊÔ×Ö·ûÊÇ·ñÎª±êµã·ûºÅ»òÌØÊâ·ûºÅ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isspace£¬isdigit£¬isalpha<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #inlude&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int ispunct(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª±êµã·ûºÅ»òÌØÊâ·ûºÅ¡£·µ»ØTRUEÒ²¾ÍÊÇ´ú±í²ÎÊıcÎª·Ç¿Õ¸ñ¡¢·ÇÊı×ÖºÍ·ÇÓ¢ÎÄ×ÖÄ¸¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> vÈô²ÎÊıcÎª±êµã·ûºÅ»òÌØÊâ·ûºÅ£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*ÁĞ³ö×Ö·û´®strÖĞµÄ±êµã·ûºÅ»òÌØÊâ·ûºÅ*/<br>
-      #include &lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="123c@ #FDsP[e?";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(ispunct(str[i])) printf("%c\n",str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> v<br>
-      @#[?<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc11></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isupper£¨²âÊÔ×Ö·ûÊÇ·ñÎª´óĞ´Ó¢ÎÄ×ÖÄ¸£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalpha£¬islower<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isupper(int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª´óĞ´Ó¢ÎÄ×ÖÄ¸¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª´óĞ´Ó¢ÎÄ×ÖÄ¸£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*ÕÒ³ö×Ö·û´®strÖĞÎª´óĞ´Ó¢ÎÄ×ÖÄ¸µÄ×Ö·û*/<br>
-      #include &lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="123c@#FDsP[e?";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isupper(str[i])) printf("%c is an uppercase character\n",str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> F is an uppercase character<br>
-      D is an uppercase character<br>
-      P is an uppercase character<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc12></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      isxdigit£¨²âÊÔ×Ö·ûÊÇ·ñÎª16½øÖÆÊı×Ö£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> isalnum£¬isdigit<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;ctype.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int isxdigit (int c)<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ¼ì²é²ÎÊıcÊÇ·ñÎª16½øÖÆÊı×Ö£¬Ö»ÒªcÎªÏÂÁĞÆäÖĞÒ»¸öÇé¿öÔò·µ»ØTRUE¡£16½øÖÆÊı×Ö:0123456789ABCDEF¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Èô²ÎÊıcÎª16½øÖÆÊı×Ö£¬Ôò·µ»ØTRUE£¬·ñÔò·µ»ØNULL(0)¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´ËÎªºê¶¨Òå£¬·ÇÕæÕıº¯Êı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*ÕÒ³ö×Ö·û´®strÖĞÎªÊ®Áù½øÖÆÊı×ÖµÄ×Ö·û*/<br>
-      #include &lt;ctype.h&gt;<br>
-      main()<br>
-      {<br>
-      char str[]="123c@#FDsP[e?";<br>
-      int i;<br>
-      for(i=0;str[i]!=0;i++)<br>
-      if(isxdigit(str[i])) printf("%c is a hexadecimal digits\n",str[i]);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 1 is a hexadecimal digits<br>
-      2 is a hexadecimal digits<br>
-      3 is a hexadecimal digits<br>
-      c is a hexadecimal digits<br>
-      F is a hexadecimal digits<br>
-      D is a hexadecimal digits<br>
-      e is a hexadecimal digits<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+isalnumï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºè‹±æ–‡æˆ–æ•°å­—ï¼‰
+ç›¸å…³å‡½æ•°
+isalphaï¼Œisdigitï¼Œislowerï¼Œisupper
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isalnum (int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºè‹±æ–‡å­—æ¯æˆ–é˜¿æ‹‰ä¼¯æ•°å­—ï¼Œåœ¨æ ‡å‡†cä¸­ç›¸å½“äºä½¿ç”¨â€œisalpha(c) || isdigit(c)â€åšæµ‹è¯•ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºå­—æ¯æˆ–æ•°å­—ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* æ‰¾å‡ºstr å­—ç¬¦ä¸²ä¸­ä¸ºè‹±æ–‡å­—æ¯æˆ–æ•°å­—çš„å­—ç¬¦*/
+#include < ctype.h>
+main()
+{
+char str[]=â€123c@#FDsP[e?â€;
+int i;
+for (i=0;str[i]!=0;i++ )
+if ( isalnum(str[i])) printf(â€œ%c is an alphanumeric character\nâ€,str[i]);
+}
+æ‰§è¡Œ
+1 is an apphabetic character
+2 is an apphabetic character
+3 is an apphabetic character
+c is an apphabetic character
+F is an apphabetic character
+D is an apphabetic character
+s is an apphabetic character
+P is an apphabetic character
+e is an apphabetic character
+ã€€
+
+
+
+isalpha ï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºè‹±æ–‡å­—æ¯ï¼‰
+ç›¸å…³å‡½æ•°
+isalnumï¼Œislowerï¼Œisupper
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isalpha (int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºè‹±æ–‡å­—æ¯ï¼Œåœ¨æ ‡å‡†cä¸­ç›¸å½“äºä½¿ç”¨â€œisupper(c)||islower(c)â€åšæµ‹è¯•ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºè‹±æ–‡å­—æ¯ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* æ‰¾å‡ºstr å­—ç¬¦ä¸²ä¸­ä¸ºè‹±æ–‡å­—æ¯çš„å­—ç¬¦*/
+#include <ctype.h>
+main()
+{
+char str[]=â€123c@#FDsP[e?â€;
+int i;
+for (i=0;str[i]!=0;i++)
+if(isalpha(str[i])) printf(â€œ%c is an alphanumeric character\nâ€,str[i]);
+}
+æ‰§è¡Œ
+c is an apphabetic character
+F is an apphabetic character
+D is an apphabetic character
+s is an apphabetic character
+P is an apphabetic character
+e is an apphabetic character
+ã€€
+
+
+
+isasciiï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºASCII ç å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+iscntrl
+è¡¨å¤´æ–‡ä»¶
+#include <ctype.h>
+å®šä¹‰å‡½æ•°
+int isascii(int c);
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºASCIIç å­—ç¬¦ï¼Œä¹Ÿå°±æ˜¯åˆ¤æ–­cçš„èŒƒå›´æ˜¯å¦åœ¨0åˆ°127ä¹‹é—´ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºASCIIç å­—ç¬¦ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* åˆ¤æ–­int iæ˜¯å¦å…·æœ‰å¯¹æ˜ çš„ASCIIç å­—ç¬¦*/
+#include<ctype.h>
+main()
+{
+int i;
+for(i=125;i<130;i++)
+if(isascii(i))
+printf("%d is an ascii character:%c\n",i,i);
+else
+printf("%d is not an ascii character\n",i);
+}
+æ‰§è¡Œ
+125 is an ascii character:}
+126 is an ascii character:~
+127 is an ascii character:
+128 is not an ascii character
+129 is not an ascii character
+ã€€
+
+
+
+iscntrlï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºASCII ç çš„æ§åˆ¶å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+isascii
+è¡¨å¤´æ–‡ä»¶
+#include <ctype.h>
+å®šä¹‰å‡½æ•°
+int iscntrl(int c)ï¼›
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºASCIIæ§åˆ¶ç ï¼Œä¹Ÿå°±æ˜¯åˆ¤æ–­cçš„èŒƒå›´æ˜¯å¦åœ¨0åˆ°30ä¹‹é—´ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºASCIIæ§åˆ¶ç ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+ã€€
+
+
+
+isdigitï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºé˜¿æ‹‰ä¼¯æ•°å­—ï¼‰
+ç›¸å…³å‡½æ•°
+isxdigit
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isdigit(int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºé˜¿æ‹‰ä¼¯æ•°å­—0åˆ°9ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºé˜¿æ‹‰ä¼¯æ•°å­—ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* æ‰¾å‡ºstrå­—ç¬¦ä¸²ä¸­ä¸ºé˜¿æ‹‰ä¼¯æ•°å­—çš„å­—ç¬¦*/
+#include<ctype.h>
+main()
+{
+char str[]="123@#FDsP[e?";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isdigit(str[i])) printf("%c is an digit character\n",str[i]);
+}
+æ‰§è¡Œ
+1 is an digit character
+2 is an digit character
+3 is an digit character
+ã€€
+
+
+
+isgraphisï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºå¯æ‰“å°å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+isprint
+è¡¨å¤´æ–‡ä»¶
+#include <ctype.h>
+å®šä¹‰å‡½æ•°
+int isgraph (int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºå¯æ‰“å°å­—ç¬¦ï¼Œè‹¥cæ‰€å¯¹æ˜ çš„ASCIIç å¯æ‰“å°ï¼Œä¸”éç©ºæ ¼å­—ç¬¦åˆ™è¿”å›TRUEã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºå¯æ‰“å°å­—ç¬¦ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* åˆ¤æ–­strå­—ç¬¦ä¸²ä¸­å“ªäº›ä¸ºå¯æ‰“å°å­—ç¬¦*/
+#include<ctype.h>
+main()
+{
+char str[]="a5 @;";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isgraph(str[i])) printf("str[%d] is printable character:%d\n",i,str[i]);
+}
+æ‰§è¡Œ
+str[0] is printable character:a
+str[1] is printable character:5
+str[3] is printable character:@
+str[4] is printable character:;
+ã€€
+
+
+
+islowerï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºå°å†™å­—æ¯ï¼‰
+ç›¸å…³å‡½æ•°
+isalphaï¼Œisupper
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int islower(int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºå°å†™è‹±æ–‡å­—æ¯ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºå°å†™è‹±æ–‡å­—æ¯ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+#include<ctype.h>
+main()
+{
+char str[]="123@#FDsP[e?";
+int i;
+for(i=0;str[i]!=0;i++)
+if(islower(str[i])) printf("%c is a lower-case character\n",str[i]);
+}
+æ‰§è¡Œ
+c is a lower-case character
+s is a lower-case character
+e is a lower-case character
+ã€€
+
+
+
+isprintï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯ï¼ˆå¦ä¸ºå¯æ‰“å°å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+isgraph
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isprint(int c);
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºå¯æ‰“å°å­—ç¬¦ï¼Œè‹¥cæ‰€å¯¹æ˜ çš„ASCIIç å¯æ‰“å°ï¼Œå…¶ä¸­åŒ…å«ç©ºæ ¼å­—ç¬¦ï¼Œåˆ™è¿”å›TRUEã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºå¯æ‰“å°å­—ç¬¦ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/* åˆ¤æ–­strå­—ç¬¦ä¸²ä¸­å“ªäº›ä¸ºå¯æ‰“å°å­—ç¬¦åŒ…å«ç©ºæ ¼å­—ç¬¦*/
+#include<ctype.h>
+main()
+{
+char str[]="a5 @;";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isprint(str[i])) printf("str[%d] is printable character:%d\n",i,str[i]);
+}
+æ‰§è¡Œ
+str[0] is printable character:a
+str[1] is printable character:5
+str[2] is printable character:
+str[3] is printable character:@
+str[4] is printable character:;
+ã€€
+
+
+
+isspaceï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºç©ºæ ¼å­—ç¬¦ï¼‰
+ç›¸å…³å‡½æ•°
+isgraph
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isspace(int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºç©ºæ ¼å­—ç¬¦ï¼Œä¹Ÿå°±æ˜¯åˆ¤æ–­æ˜¯å¦ä¸ºç©ºæ ¼('')ã€å®šä½å­—ç¬¦('\t')ã€CR('\r')ã€æ¢è¡Œ('\n')ã€å‚ç›´å®šä½å­—ç¬¦('\v')æˆ–ç¿»é¡µ('\f')çš„æƒ…å†µã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºç©ºæ ¼å­—ç¬¦ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/*å°†å­—ç¬¦ä¸²str[]ä¸­å†…å«çš„ç©ºæ ¼å­—ç¬¦æ‰¾å‡ºï¼Œå¹¶æ˜¾ç¤ºç©ºæ ¼å­—ç¬¦çš„ASCIIç */
+#include <ctype.h>
+main()
+{
+char str="123c @# FD\tsP[e?\n";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isspace(str[i]))
+printf("str[%d] is a white-space character:%d\n",i,str[i]);
+}
+æ‰§è¡Œ
+str[4] is a white-space character:32
+str[7] is a white-space character:32
+str[10] is a white-space character:9 /* \t */
+str[16] is a white-space character:10 /* \t */
+ã€€
+
+
+
+ispunctï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºæ ‡ç‚¹ç¬¦å·æˆ–ç‰¹æ®Šç¬¦å·ï¼‰
+ç›¸å…³å‡½æ•°
+isspaceï¼Œisdigitï¼Œisalpha
+è¡¨å¤´æ–‡ä»¶
+#inlude<ctype.h>
+å®šä¹‰å‡½æ•°
+int ispunct(int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºæ ‡ç‚¹ç¬¦å·æˆ–ç‰¹æ®Šç¬¦å·ã€‚è¿”å›TRUEä¹Ÿå°±æ˜¯ä»£è¡¨å‚æ•°cä¸ºéç©ºæ ¼ã€éæ•°å­—å’Œéè‹±æ–‡å­—æ¯ã€‚
+è¿”å›å€¼
+vè‹¥å‚æ•°cä¸ºæ ‡ç‚¹ç¬¦å·æˆ–ç‰¹æ®Šç¬¦å·ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/*åˆ—å‡ºå­—ç¬¦ä¸²strä¸­çš„æ ‡ç‚¹ç¬¦å·æˆ–ç‰¹æ®Šç¬¦å·*/
+#include <ctype.h>
+main()
+{
+char str[]="123c@ #FDsP[e?";
+int i;
+for(i=0;str[i]!=0;i++)
+if(ispunct(str[i])) printf("%c\n",str[i]);
+}
+æ‰§è¡Œ
+v
+@#[?
+ã€€
+
+
+
+isupperï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸ºå¤§å†™è‹±æ–‡å­—æ¯ï¼‰
+ç›¸å…³å‡½æ•°
+isalphaï¼Œislower
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isupper(int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸ºå¤§å†™è‹±æ–‡å­—æ¯ã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸ºå¤§å†™è‹±æ–‡å­—æ¯ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/*æ‰¾å‡ºå­—ç¬¦ä¸²strä¸­ä¸ºå¤§å†™è‹±æ–‡å­—æ¯çš„å­—ç¬¦*/
+#include <ctype.h>
+main()
+{
+char str[]="123c@#FDsP[e?";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isupper(str[i])) printf("%c is an uppercase character\n",str[i]);
+}
+æ‰§è¡Œ
+F is an uppercase character
+D is an uppercase character
+P is an uppercase character
+ã€€
+
+
+
+isxdigitï¼ˆæµ‹è¯•å­—ç¬¦æ˜¯å¦ä¸º16è¿›åˆ¶æ•°å­—ï¼‰
+ç›¸å…³å‡½æ•°
+isalnumï¼Œisdigit
+è¡¨å¤´æ–‡ä»¶
+#include<ctype.h>
+å®šä¹‰å‡½æ•°
+int isxdigit (int c)
+å‡½æ•°è¯´æ˜
+æ£€æŸ¥å‚æ•°cæ˜¯å¦ä¸º16è¿›åˆ¶æ•°å­—ï¼Œåªè¦cä¸ºä¸‹åˆ—å…¶ä¸­ä¸€ä¸ªæƒ…å†µåˆ™è¿”å›TRUEã€‚16è¿›åˆ¶æ•°å­—:0123456789ABCDEFã€‚
+è¿”å›å€¼
+è‹¥å‚æ•°cä¸º16è¿›åˆ¶æ•°å­—ï¼Œåˆ™è¿”å›TRUEï¼Œå¦åˆ™è¿”å›NULL(0)ã€‚
+é™„åŠ è¯´æ˜
+æ­¤ä¸ºå®å®šä¹‰ï¼ŒéçœŸæ­£å‡½æ•°ã€‚
+èŒƒä¾‹
+/*æ‰¾å‡ºå­—ç¬¦ä¸²strä¸­ä¸ºåå…­è¿›åˆ¶æ•°å­—çš„å­—ç¬¦*/
+#include <ctype.h>
+main()
+{
+char str[]="123c@#FDsP[e?";
+int i;
+for(i=0;str[i]!=0;i++)
+if(isxdigit(str[i])) printf("%c is a hexadecimal digits\n",str[i]);
+}
+æ‰§è¡Œ
+1 is a hexadecimal digits
+2 is a hexadecimal digits
+3 is a hexadecimal digits
+c is a hexadecimal digits
+F is a hexadecimal digits
+D is a hexadecimal digits
+e is a hexadecimal digits
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

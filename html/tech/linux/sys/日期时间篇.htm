@@ -1,639 +1,311 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>æ—¥æœŸæ—¶é—´ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc32></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      asctime£¨½«Ê±¼äºÍÈÕÆÚÒÔ×Ö·û´®¸ñÊ½±íÊ¾£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time£¬ctime£¬gmtime£¬localtime<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * asctime(const struct tm 
-      * timeptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> asctime()½«²ÎÊıtimeptrËùÖ¸µÄtm½á¹¹ÖĞµÄĞÅÏ¢×ª»»³ÉÕæÊµÊÀ½çËùÊ¹ÓÃµÄÊ±¼äÈÕÆÚ±íÊ¾·½·¨£¬È»ºó½«½á¹ûÒÔ×Ö·û´®ĞÎÌ¬·µ»Ø¡£´Ëº¯ÊıÒÑ¾­ÓÉÊ±Çø×ª»»³Éµ±µØÊ±¼ä£¬×Ö·û´®¸ñÊ½Îª:¡°Wed 
-      Jun 30 21:49:08 1993\n¡±<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ÈôÔÙµ÷ÓÃÏà¹ØµÄÊ±¼äÈÕÆÚº¯Êı£¬´Ë×Ö·û´®¿ÉÄÜ»á±»ÆÆ»µ¡£´Ëº¯ÊıÓëctime²»Í¬´¦ÔÚÓÚ´«ÈëµÄ²ÎÊıÊÇ²»Í¬µÄ½á¹¹¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÒ»×Ö·û´®±íÊ¾Ä¿Ç°µ±µØµÄÊ±¼äÈÕÆÚ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;time.h&gt;<br>
-      main()<br>
-      {<br>
-      time_t timep;<br>
-      time (&timep);<br>
-      printf(¡°%s¡±,asctime(gmtime(&timep)));<br>
-	  }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Sat Oct 28 02:10:06 2000<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc33></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      ctime£¨½«Ê±¼äºÍÈÕÆÚÒÔ×Ö·û´®¸ñÊ½±íÊ¾£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time£¬asctime£¬gmtime£¬localtime<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char *ctime(const time_t *timep);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ctime()½«²ÎÊıtimepËùÖ¸µÄtime_t½á¹¹ÖĞµÄĞÅÏ¢×ª»»³ÉÕæÊµÊÀ½çËùÊ¹ÓÃµÄÊ±¼äÈÕÆÚ±íÊ¾·½·¨£¬È»ºó½«½á¹ûÒÔ×Ö·û´®ĞÎÌ¬·µ»Ø¡£´Ëº¯ÊıÒÑ¾­ÓÉÊ±Çø×ª»»³Éµ±µØÊ±¼ä£¬×Ö·û´®¸ñÊ½Îª¡°Wed 
-      Jun 30 21 :49 :08 1993\n¡±¡£ÈôÔÙµ÷ÓÃÏà¹ØµÄÊ±¼äÈÕÆÚº¯Êı£¬´Ë×Ö·û´®¿ÉÄÜ»á±»ÆÆ»µ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»ØÒ»×Ö·û´®±íÊ¾Ä¿Ç°µ±µØµÄÊ±¼äÈÕÆÚ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      main()<br>
-      {<br>
-      time_t timep;<br>
-      time (&timep);<br>
-      printf(¡°%s¡±,ctime(&timep));<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Sat Oct 28 10 : 12 : 05 2000<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc34></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      gettimeofday£¨È¡µÃÄ¿Ç°µÄÊ±¼ä£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time£¬ctime£¬ftime£¬settimeofday<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;sys/time.h&gt;<br>
-	#include &lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>
-  
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int gettimeofday ( struct timeval 
-      * tv , struct timezone * tz )<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> gettimeofday()»á°ÑÄ¿Ç°µÄÊ±¼äÓĞtvËùÖ¸µÄ½á¹¹·µ»Ø£¬µ±µØÊ±ÇøµÄĞÅÏ¢Ôò·Åµ½tzËùÖ¸µÄ½á¹¹ÖĞ¡£<br>
-      timeval½á¹¹¶¨ÒåÎª:<br>
-      struct timeval{<br>
-      long tv_sec; /*Ãë*/<br>
-      long tv_usec; /*Î¢Ãë*/<br>
-      };<br>
-      timezone ½á¹¹¶¨ÒåÎª:<br>
-      struct timezone{<br>
-      int tz_minuteswest; /*ºÍGreenwich Ê±¼ä²îÁË¶àÉÙ·ÖÖÓ*/<br>
-      int tz_dsttime; /*ÈÕ¹â½ÚÔ¼Ê±¼äµÄ×´Ì¬*/<br>
-      };<br>
-      ÉÏÊöÁ½¸ö½á¹¹¶¼¶¨ÒåÔÚ/usr/include/sys/time.h¡£tz_dsttime Ëù´ú±íµÄ×´Ì¬ÈçÏÂ<br>
-      DST_NONE /*²»Ê¹ÓÃ*/<br>
-      DST_USA /*ÃÀ¹ú*/<br>
-      DST_AUST /*°ÄÖŞ*/<br>
-      DST_WET /*Î÷Å·*/<br>
-      DST_MET /*ÖĞÅ·*/<br>
-      DST_EET /*¶«Å·*/<br>
-      DST_CAN /*¼ÓÄÃ´ó*/<br>
-      DST_GB /*´ó²»ÁĞµß*/<br>
-      DST_RUM /*ÂŞÂíÄáÑÇ*/<br>
-      DST_TUR /*ÍÁ¶úÆä*/<br>
-      DST_AUSTALT /*°ÄÖŞ£¨1986ÄêÒÔºó£©*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø£­1£¬´íÎó´úÂë´æÓÚerrno¡£¸½¼ÓËµÃ÷EFAULTÖ¸ÕëtvºÍtzËùÖ¸µÄÄÚ´æ¿Õ¼ä³¬³ö´æÈ¡È¨ÏŞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/time.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      main(){<br>
-      struct timeval tv;<br>
-      struct timezone tz;<br>
-      gettimeofday (&tv , &tz);<br>
-      printf(¡°tv_sec; %d\n¡±, tv,.tv_sec) ;<br>
-      printf(¡°tv_usec; %d\n¡±,tv.tv_usec);<br>
-      printf(¡°tz_minuteswest; %d\n¡±, tz.tz_minuteswest);<br>
-      printf(¡°tz_dsttime, %d\n¡±,tz.tz_dsttime);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> tv_sec: 974857339<br>
-      tv_usec:136996<br>
-      tz_minuteswest:-540<br>
-      tz_dsttime:0<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc35></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      gmtime£¨È¡µÃÄ¿Ç°Ê±¼äºÍÈÕÆÚ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time,asctime,ctime,localtime<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> struct tm*gmtime(const time_t*timep);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> gmtime()½«²ÎÊıtimep ËùÖ¸µÄtime_t ½á¹¹ÖĞµÄĞÅÏ¢×ª»»³ÉÕæÊµÊÀ½çËùÊ¹ÓÃµÄÊ±¼äÈÕÆÚ±íÊ¾·½·¨£¬È»ºó½«½á¹ûÓÉ½á¹¹tm·µ»Ø¡£<br>
-      ½á¹¹tmµÄ¶¨ÒåÎª<br>
-      struct tm<br>
-      {<br>
-      int tm_sec;<br>
-      int tm_min;<br>
-      int tm_hour;<br>
-      int tm_mday;<br>
-      int tm_mon;<br>
-      int tm_year;<br>
-      int tm_wday;<br>
-      int tm_yday;<br>
-      int tm_isdst;<br>
-      };<br>
-      int tm_sec ´ú±íÄ¿Ç°ÃëÊı£¬Õı³£·¶Î§Îª0-59£¬µ«ÔÊĞíÖÁ61Ãë<br>
-      int tm_min ´ú±íÄ¿Ç°·ÖÊı£¬·¶Î§0-59<br>
-      int tm_hour ´ÓÎçÒ¹ËãÆğµÄÊ±Êı£¬·¶Î§Îª0-23<br>
-      int tm_mday Ä¿Ç°ÔÂ·İµÄÈÕÊı£¬·¶Î§01-31<br>
-      int tm_mon ´ú±íÄ¿Ç°ÔÂ·İ£¬´ÓÒ»ÔÂËãÆğ£¬·¶Î§´Ó0-11<br>
-      int tm_year ´Ó1900 ÄêËãÆğÖÁ½ñµÄÄêÊı<br>
-      int tm_wday Ò»ĞÇÆÚµÄÈÕÊı£¬´ÓĞÇÆÚÒ»ËãÆğ£¬·¶Î§Îª0-6<br>
-      int tm_yday ´Ó½ñÄê1ÔÂ1ÈÕËãÆğÖÁ½ñµÄÌìÊı£¬·¶Î§Îª0-365<br>
-      int tm_isdst ÈÕ¹â½ÚÔ¼Ê±¼äµÄÆì±ê<br>
-      ´Ëº¯Êı·µ»ØµÄÊ±¼äÈÕÆÚÎ´¾­Ê±Çø×ª»»£¬¶øÊÇUTCÊ±¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø½á¹¹tm´ú±íÄ¿Ç°UTC Ê±¼ä<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;time.h&gt;<br>
-      main(){<br>
-      char *wday[]={"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};<br>
-      time_t timep;<br>
-      struct tm *p;<br>
-      time(&timep);<br>
-      p=gmtime(&timep);<br>
-      printf(¡°%d%d%d¡±,(1900+p-&gt;tm_year), (1+p-&gt;tm_mon),p-&gt;tm_mday);<br>
-      printf(¡°%s%d;%d;%d\n¡±, wday[p-&gt;tm_wday], p-&gt;tm_hour, p-&gt;tm_min, 
-      p-&gt;tm_sec);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 2000/10/28 Sat 8:15:38<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc36></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      localtime£¨È¡µÃµ±µØÄ¿Ç°Ê±¼äºÍÈÕÆÚ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time, asctime, ctime, gmtime<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> struct tm *localtime(const time_t 
-      * timep);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> localtime()½«²ÎÊıtimepËùÖ¸µÄtime_t½á¹¹ÖĞµÄĞÅÏ¢×ª»»³ÉÕæÊµÊÀ½çËùÊ¹ÓÃµÄÊ±¼äÈÕÆÚ±íÊ¾·½·¨£¬È»ºó½«½á¹ûÓÉ½á¹¹tm·µ»Ø¡£½á¹¹tmµÄ¶¨ÒåÇë²Î¿¼gmtime()¡£´Ëº¯Êı·µ»ØµÄÊ±¼äÈÕÆÚÒÑ¾­×ª»»³Éµ±µØÊ±Çø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø½á¹¹tm´ú±íÄ¿Ç°µÄµ±µØÊ±¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      main(){<br>
-      char *wday[]={¡°Sun¡±,¡±Mon¡±,¡±Tue¡±,¡±Wed¡±,¡±Thu¡±,¡±Fri¡±,¡±Sat¡±};<br>
-      time_t timep;<br>
-      struct tm *p;<br>
-      time(&timep);<br>
-      p=localtime(&timep); /*È¡µÃµ±µØÊ±¼ä*/<br>
-      printf (¡°%d%d%d ¡±, (1900+p-&gt;tm_year),( l+p-&gt;tm_mon), p-&gt;tm_mday);<br>
-      printf(¡°%s%d:%d:%d\n¡±, wday[p-&gt;tm_wday],p-&gt;tm_hour, p-&gt;tm_min, 
-      p-&gt;tm_sec);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 2000/10/28 Sat 11:12:22<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc37></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      mktime£¨½«Ê±¼ä½á¹¹Êı¾İ×ª»»³É¾­¹ıµÄÃëÊı£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time£¬asctime£¬gmtime£¬localtime<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time_t mktime(strcut tm * timeptr);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> mktime()ÓÃÀ´½«²ÎÊıtimeptrËùÖ¸µÄtm½á¹¹Êı¾İ×ª»»³É´Ó¹«Ôª1970Äê1ÔÂ1ÈÕ0Ê±0·Ö0 
-      ÃëËãÆğÖÁ½ñµÄUTCÊ±¼äËù¾­¹ıµÄÃëÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø¾­¹ıµÄÃëÊı¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÓÃtime()È¡µÃÊ±¼ä£¨ÃëÊı£©£¬ÀûÓÃlocaltime()<br>
-      ×ª»»³Éstruct tm ÔÙÀûÓÃmktine£¨£©½«struct tm×ª»»³ÉÔ­À´µÄÃëÊı*/<br>
-      #include&lt;time.h&gt;<br>
-      main()<br>
-      {<br>
-      time_t timep;<br>
-      strcut tm *p;<br>
-      time(&timep);<br>
-      printf(¡°time() : %d \n¡±,timep);<br>
-      p=localtime(&timep);<br>
-      timep = mktime(p);<br>
-      printf(¡°time()-&gt;localtime()-&gt;mktime():%d\n¡±,timep);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time():974943297<br>
-      time()-&gt;localtime()-&gt;mktime():974943297<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc38></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      settimeofday£¨ÉèÖÃÄ¿Ç°Ê±¼ä£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time£¬ctime£¬ftime£¬gettimeofday<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/time.h&gt;<br>
-		#include&lt;unistd.h&gt;<br>
-      </font> </td>
-  </tr>  
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int settimeofday ( const struct 
-      timeval *tv,const struct timezone *tz);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> settimeofday()»á°ÑÄ¿Ç°Ê±¼äÉè³ÉÓÉtvËùÖ¸µÄ½á¹¹ĞÅÏ¢£¬µ±µØÊ±ÇøĞÅÏ¢ÔòÉè³ÉtzËùÖ¸µÄ½á¹¹¡£ÏêÏ¸µÄËµÃ÷Çë²Î¿¼gettimeofday()¡£×¢Òâ£¬Ö»ÓĞrootÈ¨ÏŞ²ÅÄÜÊ¹ÓÃ´Ëº¯ÊıĞŞ¸ÄÊ±¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø£­1£¬´íÎó´úÂë´æÓÚerrno¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EPERM ²¢·ÇÓÉrootÈ¨ÏŞµ÷ÓÃsettimeofday£¨£©£¬È¨ÏŞ²»¹»¡£<br>
-      EINVAL Ê±Çø»òÄ³¸öÊı¾İÊÇ²»ÕıÈ·µÄ£¬ÎŞ·¨ÕıÈ·ÉèÖÃÊ±¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc39></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      time£¨È¡µÃÄ¿Ç°µÄÊ±¼ä£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ctime£¬ftime£¬gettimeofday<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> time_t time(time_t *t);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ´Ëº¯Êı»á·µ»Ø´Ó¹«Ôª1970Äê1ÔÂ1ÈÕµÄUTCÊ±¼ä´Ó0Ê±0·Ö0ÃëËãÆğµ½ÏÖÔÚËù¾­¹ıµÄÃëÊı¡£Èç¹ût 
-      ²¢·Ç¿ÕÖ¸ÕëµÄ»°£¬´Ëº¯ÊıÒ²»á½«·µ»ØÖµ´æµ½tÖ¸ÕëËùÖ¸µÄÄÚ´æ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»ØÃëÊı£¬Ê§°ÜÔò·µ»Ø((time_t)-1)Öµ£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;time.h&gt;<br>
-      mian()<br>
-      {<br>
-      int seconds= time((time_t*)NULL);<br>
-      printf(¡°%d\n¡±,seconds);<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> 9.73E+08<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+asctimeï¼ˆå°†æ—¶é—´å’Œæ—¥æœŸä»¥å­—ç¬¦ä¸²æ ¼å¼è¡¨ç¤ºï¼‰
+ç›¸å…³å‡½æ•°
+timeï¼Œctimeï¼Œgmtimeï¼Œlocaltime
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+char * asctime(const struct tm * timeptr);
+å‡½æ•°è¯´æ˜
+asctime()å°†å‚æ•°timeptræ‰€æŒ‡çš„tmç»“æ„ä¸­çš„ä¿¡æ¯è½¬æ¢æˆçœŸå®ä¸–ç•Œæ‰€ä½¿ç”¨çš„æ—¶é—´æ—¥æœŸè¡¨ç¤ºæ–¹æ³•ï¼Œç„¶åå°†ç»“æœä»¥å­—ç¬¦ä¸²å½¢æ€è¿”å›ã€‚æ­¤å‡½æ•°å·²ç»ç”±æ—¶åŒºè½¬æ¢æˆå½“åœ°æ—¶é—´ï¼Œå­—ç¬¦ä¸²æ ¼å¼ä¸º:â€œWed Jun 30 21:49:08 1993\nâ€
+è¿”å›å€¼
+è‹¥å†è°ƒç”¨ç›¸å…³çš„æ—¶é—´æ—¥æœŸå‡½æ•°ï¼Œæ­¤å­—ç¬¦ä¸²å¯èƒ½ä¼šè¢«ç ´åã€‚æ­¤å‡½æ•°ä¸ctimeä¸åŒå¤„åœ¨äºä¼ å…¥çš„å‚æ•°æ˜¯ä¸åŒçš„ç»“æ„ã€‚
+é™„åŠ è¯´æ˜
+è¿”å›ä¸€å­—ç¬¦ä¸²è¡¨ç¤ºç›®å‰å½“åœ°çš„æ—¶é—´æ—¥æœŸã€‚
+èŒƒä¾‹
+#include <time.h>
+main()
+{
+time_t timep;
+time (&timep);
+printf(â€œ%sâ€,asctime(gmtime(&timep)));
+}
+æ‰§è¡Œ
+Sat Oct 28 02:10:06 2000
+ã€€
+
+
+
+ctimeï¼ˆå°†æ—¶é—´å’Œæ—¥æœŸä»¥å­—ç¬¦ä¸²æ ¼å¼è¡¨ç¤ºï¼‰
+ç›¸å…³å‡½æ•°
+timeï¼Œasctimeï¼Œgmtimeï¼Œlocaltime
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+char *ctime(const time_t *timep);
+å‡½æ•°è¯´æ˜
+ctime()å°†å‚æ•°timepæ‰€æŒ‡çš„time_tç»“æ„ä¸­çš„ä¿¡æ¯è½¬æ¢æˆçœŸå®ä¸–ç•Œæ‰€ä½¿ç”¨çš„æ—¶é—´æ—¥æœŸè¡¨ç¤ºæ–¹æ³•ï¼Œç„¶åå°†ç»“æœä»¥å­—ç¬¦ä¸²å½¢æ€è¿”å›ã€‚æ­¤å‡½æ•°å·²ç»ç”±æ—¶åŒºè½¬æ¢æˆå½“åœ°æ—¶é—´ï¼Œå­—ç¬¦ä¸²æ ¼å¼ä¸ºâ€œWed Jun 30 21 :49 :08 1993\nâ€ã€‚è‹¥å†è°ƒç”¨ç›¸å…³çš„æ—¶é—´æ—¥æœŸå‡½æ•°ï¼Œæ­¤å­—ç¬¦ä¸²å¯èƒ½ä¼šè¢«ç ´åã€‚
+è¿”å›å€¼
+è¿”å›ä¸€å­—ç¬¦ä¸²è¡¨ç¤ºç›®å‰å½“åœ°çš„æ—¶é—´æ—¥æœŸã€‚
+èŒƒä¾‹
+#include<time.h>
+main()
+{
+time_t timep;
+time (&timep);
+printf(â€œ%sâ€,ctime(&timep));
+}
+æ‰§è¡Œ
+Sat Oct 28 10 : 12 : 05 2000
+ã€€
+
+
+
+gettimeofdayï¼ˆå–å¾—ç›®å‰çš„æ—¶é—´ï¼‰
+ç›¸å…³å‡½æ•°
+timeï¼Œctimeï¼Œftimeï¼Œsettimeofday
+è¡¨å¤´æ–‡ä»¶
+#include <sys/time.h>
+#include <unistd.h>
+å®šä¹‰å‡½æ•°
+int gettimeofday ( struct timeval * tv , struct timezone * tz )
+å‡½æ•°è¯´æ˜
+gettimeofday()ä¼šæŠŠç›®å‰çš„æ—¶é—´æœ‰tvæ‰€æŒ‡çš„ç»“æ„è¿”å›ï¼Œå½“åœ°æ—¶åŒºçš„ä¿¡æ¯åˆ™æ”¾åˆ°tzæ‰€æŒ‡çš„ç»“æ„ä¸­ã€‚
+timevalç»“æ„å®šä¹‰ä¸º:
+struct timeval{
+long tv_sec; /*ç§’*/
+long tv_usec; /*å¾®ç§’*/
+};
+timezone ç»“æ„å®šä¹‰ä¸º:
+struct timezone{
+int tz_minuteswest; /*å’ŒGreenwich æ—¶é—´å·®äº†å¤šå°‘åˆ†é’Ÿ*/
+int tz_dsttime; /*æ—¥å…‰èŠ‚çº¦æ—¶é—´çš„çŠ¶æ€*/
+};
+ä¸Šè¿°ä¸¤ä¸ªç»“æ„éƒ½å®šä¹‰åœ¨/usr/include/sys/time.hã€‚tz_dsttime æ‰€ä»£è¡¨çš„çŠ¶æ€å¦‚ä¸‹
+DST_NONE /*ä¸ä½¿ç”¨*/
+DST_USA /*ç¾å›½*/
+DST_AUST /*æ¾³æ´²*/
+DST_WET /*è¥¿æ¬§*/
+DST_MET /*ä¸­æ¬§*/
+DST_EET /*ä¸œæ¬§*/
+DST_CAN /*åŠ æ‹¿å¤§*/
+DST_GB /*å¤§ä¸åˆ—é¢ */
+DST_RUM /*ç½—é©¬å°¼äºš*/
+DST_TUR /*åœŸè€³å…¶*/
+DST_AUSTALT /*æ¾³æ´²ï¼ˆ1986å¹´ä»¥åï¼‰*/
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›ï¼1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚é™„åŠ è¯´æ˜EFAULTæŒ‡é’ˆtvå’Œtzæ‰€æŒ‡çš„å†…å­˜ç©ºé—´è¶…å‡ºå­˜å–æƒé™ã€‚
+èŒƒä¾‹
+#include<sys/time.h>
+#include<unistd.h>
+main(){
+struct timeval tv;
+struct timezone tz;
+gettimeofday (&tv , &tz);
+printf(â€œtv_sec; %d\nâ€, tv,.tv_sec) ;
+printf(â€œtv_usec; %d\nâ€,tv.tv_usec);
+printf(â€œtz_minuteswest; %d\nâ€, tz.tz_minuteswest);
+printf(â€œtz_dsttime, %d\nâ€,tz.tz_dsttime);
+}
+æ‰§è¡Œ
+tv_sec: 974857339
+tv_usec:136996
+tz_minuteswest:-540
+tz_dsttime:0
+ã€€
+
+
+
+gmtimeï¼ˆå–å¾—ç›®å‰æ—¶é—´å’Œæ—¥æœŸï¼‰
+ç›¸å…³å‡½æ•°
+time,asctime,ctime,localtime
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+struct tm*gmtime(const time_t*timep);
+å‡½æ•°è¯´æ˜
+gmtime()å°†å‚æ•°timep æ‰€æŒ‡çš„time_t ç»“æ„ä¸­çš„ä¿¡æ¯è½¬æ¢æˆçœŸå®ä¸–ç•Œæ‰€ä½¿ç”¨çš„æ—¶é—´æ—¥æœŸè¡¨ç¤ºæ–¹æ³•ï¼Œç„¶åå°†ç»“æœç”±ç»“æ„tmè¿”å›ã€‚
+ç»“æ„tmçš„å®šä¹‰ä¸º
+struct tm
+{
+int tm_sec;
+int tm_min;
+int tm_hour;
+int tm_mday;
+int tm_mon;
+int tm_year;
+int tm_wday;
+int tm_yday;
+int tm_isdst;
+};
+int tm_sec ä»£è¡¨ç›®å‰ç§’æ•°ï¼Œæ­£å¸¸èŒƒå›´ä¸º0-59ï¼Œä½†å…è®¸è‡³61ç§’
+int tm_min ä»£è¡¨ç›®å‰åˆ†æ•°ï¼ŒèŒƒå›´0-59
+int tm_hour ä»åˆå¤œç®—èµ·çš„æ—¶æ•°ï¼ŒèŒƒå›´ä¸º0-23
+int tm_mday ç›®å‰æœˆä»½çš„æ—¥æ•°ï¼ŒèŒƒå›´01-31
+int tm_mon ä»£è¡¨ç›®å‰æœˆä»½ï¼Œä»ä¸€æœˆç®—èµ·ï¼ŒèŒƒå›´ä»0-11
+int tm_year ä»1900 å¹´ç®—èµ·è‡³ä»Šçš„å¹´æ•°
+int tm_wday ä¸€æ˜ŸæœŸçš„æ—¥æ•°ï¼Œä»æ˜ŸæœŸä¸€ç®—èµ·ï¼ŒèŒƒå›´ä¸º0-6
+int tm_yday ä»ä»Šå¹´1æœˆ1æ—¥ç®—èµ·è‡³ä»Šçš„å¤©æ•°ï¼ŒèŒƒå›´ä¸º0-365
+int tm_isdst æ—¥å…‰èŠ‚çº¦æ—¶é—´çš„æ——æ ‡
+æ­¤å‡½æ•°è¿”å›çš„æ—¶é—´æ—¥æœŸæœªç»æ—¶åŒºè½¬æ¢ï¼Œè€Œæ˜¯UTCæ—¶é—´ã€‚
+è¿”å›å€¼
+è¿”å›ç»“æ„tmä»£è¡¨ç›®å‰UTC æ—¶é—´
+èŒƒä¾‹
+#include <time.h>
+main(){
+char *wday[]={"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
+time_t timep;
+struct tm *p;
+time(&timep);
+p=gmtime(&timep);
+printf(â€œ%d%d%dâ€,(1900+p->tm_year), (1+p->tm_mon),p->tm_mday);
+printf(â€œ%s%d;%d;%d\nâ€, wday[p->tm_wday], p->tm_hour, p->tm_min, p->tm_sec);
+}
+æ‰§è¡Œ
+2000/10/28 Sat 8:15:38
+ã€€
+
+
+
+localtimeï¼ˆå–å¾—å½“åœ°ç›®å‰æ—¶é—´å’Œæ—¥æœŸï¼‰
+ç›¸å…³å‡½æ•°
+time, asctime, ctime, gmtime
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+struct tm *localtime(const time_t * timep);
+å‡½æ•°è¯´æ˜
+localtime()å°†å‚æ•°timepæ‰€æŒ‡çš„time_tç»“æ„ä¸­çš„ä¿¡æ¯è½¬æ¢æˆçœŸå®ä¸–ç•Œæ‰€ä½¿ç”¨çš„æ—¶é—´æ—¥æœŸè¡¨ç¤ºæ–¹æ³•ï¼Œç„¶åå°†ç»“æœç”±ç»“æ„tmè¿”å›ã€‚ç»“æ„tmçš„å®šä¹‰è¯·å‚è€ƒgmtime()ã€‚æ­¤å‡½æ•°è¿”å›çš„æ—¶é—´æ—¥æœŸå·²ç»è½¬æ¢æˆå½“åœ°æ—¶åŒºã€‚
+è¿”å›å€¼
+è¿”å›ç»“æ„tmä»£è¡¨ç›®å‰çš„å½“åœ°æ—¶é—´ã€‚
+èŒƒä¾‹
+#include<time.h>
+main(){
+char *wday[]={â€œSunâ€,â€Monâ€,â€Tueâ€,â€Wedâ€,â€Thuâ€,â€Friâ€,â€Satâ€};
+time_t timep;
+struct tm *p;
+time(&timep);
+p=localtime(&timep); /*å–å¾—å½“åœ°æ—¶é—´*/
+printf (â€œ%d%d%d â€, (1900+p->tm_year),( l+p->tm_mon), p->tm_mday);
+printf(â€œ%s%d:%d:%d\nâ€, wday[p->tm_wday],p->tm_hour, p->tm_min, p->tm_sec);
+}
+æ‰§è¡Œ
+2000/10/28 Sat 11:12:22
+ã€€
+
+
+
+mktimeï¼ˆå°†æ—¶é—´ç»“æ„æ•°æ®è½¬æ¢æˆç»è¿‡çš„ç§’æ•°ï¼‰
+ç›¸å…³å‡½æ•°
+timeï¼Œasctimeï¼Œgmtimeï¼Œlocaltime
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+time_t mktime(strcut tm * timeptr);
+å‡½æ•°è¯´æ˜
+mktime()ç”¨æ¥å°†å‚æ•°timeptræ‰€æŒ‡çš„tmç»“æ„æ•°æ®è½¬æ¢æˆä»å…¬å…ƒ1970å¹´1æœˆ1æ—¥0æ—¶0åˆ†0 ç§’ç®—èµ·è‡³ä»Šçš„UTCæ—¶é—´æ‰€ç»è¿‡çš„ç§’æ•°ã€‚
+è¿”å›å€¼
+è¿”å›ç»è¿‡çš„ç§’æ•°ã€‚
+èŒƒä¾‹
+/* ç”¨time()å–å¾—æ—¶é—´ï¼ˆç§’æ•°ï¼‰ï¼Œåˆ©ç”¨localtime()
+è½¬æ¢æˆstruct tm å†åˆ©ç”¨mktineï¼ˆï¼‰å°†struct tmè½¬æ¢æˆåŸæ¥çš„ç§’æ•°*/
+#include<time.h>
+main()
+{
+time_t timep;
+strcut tm *p;
+time(&timep);
+printf(â€œtime() : %d \nâ€,timep);
+p=localtime(&timep);
+timep = mktime(p);
+printf(â€œtime()->localtime()->mktime():%d\nâ€,timep);
+}
+æ‰§è¡Œ
+time():974943297
+time()->localtime()->mktime():974943297
+ã€€
+
+
+
+settimeofdayï¼ˆè®¾ç½®ç›®å‰æ—¶é—´ï¼‰
+ç›¸å…³å‡½æ•°
+timeï¼Œctimeï¼Œftimeï¼Œgettimeofday
+è¡¨å¤´æ–‡ä»¶
+#include<sys/time.h>
+#include<unistd.h>
+å®šä¹‰å‡½æ•°
+int settimeofday ( const struct timeval *tv,const struct timezone *tz);
+å‡½æ•°è¯´æ˜
+settimeofday()ä¼šæŠŠç›®å‰æ—¶é—´è®¾æˆç”±tvæ‰€æŒ‡çš„ç»“æ„ä¿¡æ¯ï¼Œå½“åœ°æ—¶åŒºä¿¡æ¯åˆ™è®¾æˆtzæ‰€æŒ‡çš„ç»“æ„ã€‚è¯¦ç»†çš„è¯´æ˜è¯·å‚è€ƒgettimeofday()ã€‚æ³¨æ„ï¼Œåªæœ‰rootæƒé™æ‰èƒ½ä½¿ç”¨æ­¤å‡½æ•°ä¿®æ”¹æ—¶é—´ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›ï¼1ï¼Œé”™è¯¯ä»£ç å­˜äºerrnoã€‚
+é”™è¯¯ä»£ç 
+EPERM å¹¶éç”±rootæƒé™è°ƒç”¨settimeofdayï¼ˆï¼‰ï¼Œæƒé™ä¸å¤Ÿã€‚
+EINVAL æ—¶åŒºæˆ–æŸä¸ªæ•°æ®æ˜¯ä¸æ­£ç¡®çš„ï¼Œæ— æ³•æ­£ç¡®è®¾ç½®æ—¶é—´ã€‚
+ã€€
+
+
+
+timeï¼ˆå–å¾—ç›®å‰çš„æ—¶é—´ï¼‰
+ç›¸å…³å‡½æ•°
+ctimeï¼Œftimeï¼Œgettimeofday
+è¡¨å¤´æ–‡ä»¶
+#include<time.h>
+å®šä¹‰å‡½æ•°
+time_t time(time_t *t);
+å‡½æ•°è¯´æ˜
+æ­¤å‡½æ•°ä¼šè¿”å›ä»å…¬å…ƒ1970å¹´1æœˆ1æ—¥çš„UTCæ—¶é—´ä»0æ—¶0åˆ†0ç§’ç®—èµ·åˆ°ç°åœ¨æ‰€ç»è¿‡çš„ç§’æ•°ã€‚å¦‚æœt å¹¶éç©ºæŒ‡é’ˆçš„è¯ï¼Œæ­¤å‡½æ•°ä¹Ÿä¼šå°†è¿”å›å€¼å­˜åˆ°tæŒ‡é’ˆæ‰€æŒ‡çš„å†…å­˜ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›ç§’æ•°ï¼Œå¤±è´¥åˆ™è¿”å›((time_t)-1)å€¼ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+èŒƒä¾‹
+#include<time.h>
+mian()
+{
+int seconds= time((time_t*)NULL);
+printf(â€œ%d\nâ€,seconds);
+}
+æ‰§è¡Œ
+9.73E+08
+ã€€
+
+
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>

@@ -1,1912 +1,866 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <html>
 <head>
-<title>Untitled Document</title>
+<title>æ¥å£å¤„ç†ç¯‡</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Courier New, Verdana, Arial, sans-serif;
+        background-color: #D7D6AD
+    }
+    pre {
+        font-family: Source Pro, Courier New, Consolas, Comic sans MS;
+        color:       rgb(200, 20, 30);
+        font-size:   16px;
+        font-style:  italic;
+    }
+    a {
+        font-family: Courier New;
+        color:blue;
+        font-size:20px;
+        font-weight:bold;
+    }
+    a:link {
+        color: rgb(200, 100, 20);
+    }
+    a:visited {
+        color: rgb(200, 20, 20);
+        font-size:20px;
+    }
+    a:hover {
+        color: red;
+        font-size:24px;
+    }
+    a:active {
+        color: yellow;
+        font-size:28px;
+    }
+</style>
 </head>
 <body>
-<table width="100%">
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc263></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      accept£¨½ÓÊÜsocketÁ¬Ïß£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket£¬bind£¬listen£¬connect<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int accept(int s,struct sockaddr 
-      * addr,int * addrlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> accept()ÓÃÀ´½ÓÊÜ²ÎÊısµÄsocketÁ¬Ïß¡£²ÎÊısµÄsocket±ØĞèÏÈ¾­bind()¡¢listen()º¯Êı´¦Àí¹ı£¬µ±ÓĞÁ¬Ïß½øÀ´Ê±accept()»á·µ»ØÒ»¸öĞÂµÄsocket´¦Àí´úÂë£¬ÍùºóµÄÊı¾İ´«ËÍÓë¶ÁÈ¡¾ÍÊÇ¾­ÓÉĞÂµÄsocket´¦Àí£¬¶øÔ­À´²ÎÊısµÄsocketÄÜ¼ÌĞøÊ¹ÓÃaccept()À´½ÓÊÜĞÂµÄÁ¬ÏßÒªÇó¡£Á¬Ïß³É¹¦Ê±£¬²ÎÊıaddrËùÖ¸µÄ½á¹¹»á±»ÏµÍ³ÌîÈëÔ¶³ÌÖ÷»úµÄµØÖ·Êı¾İ£¬²ÎÊıaddrlenÎªscokaddrµÄ½á¹¹³¤¶È¡£¹ØÓÚ½á¹¹sockaddrµÄ¶¨ÒåÇë²Î¿¼bind()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»ØĞÂµÄsocket´¦Àí´úÂë£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs ·ÇºÏ·¨socket´¦Àí´úÂë¡£<br>
-      EFAULT ²ÎÊıaddrÖ¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä¡£<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EOPNOTSUPP Ö¸¶¨µÄsocket²¢·ÇSOCK_STREAM¡£<br>
-      EPERM ·À»ğÇ½¾Ü¾ø´ËÁ¬Ïß¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã¡£<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼listen()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc264></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      bind£¨¶Ôsocket¶¨Î»£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket£¬accept£¬connect£¬listen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int bind(int sockfd,struct sockaddr 
-      * my_addr,int addrlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> bind()ÓÃÀ´ÉèÖÃ¸ø²ÎÊısockfdµÄsocketÒ»¸öÃû³Æ¡£´ËÃû³ÆÓÉ²ÎÊımy_addrÖ¸ÏòÒ»sockaddr½á¹¹£¬¶ÔÓÚ²»Í¬µÄsocket 
-      domain¶¨ÒåÁËÒ»¸öÍ¨ÓÃµÄÊı¾İ½á¹¹<br>
-      struct sockaddr<br>
-      {<br>
-      unsigned short int sa_family;<br>
-      char sa_data[14];<br>
-      };<br>
-      sa_family Îªµ÷ÓÃsocket£¨£©Ê±µÄdomain²ÎÊı£¬¼´AF_xxxxÖµ¡£<br>
-      sa_data ×î¶àÊ¹ÓÃ14¸ö×Ö·û³¤¶È¡£<br>
-      ´Ësockaddr½á¹¹»áÒòÊ¹ÓÃ²»Í¬µÄsocket domain¶øÓĞ²»Í¬½á¹¹¶¨Òå£¬ÀıÈçÊ¹ÓÃAF_INET domain£¬Æäsocketaddr½á¹¹¶¨Òå±ãÎª<br>
-      struct socketaddr_in<br>
-      {<br>
-      unsigned short int sin_family;<br>
-      uint16_t sin_port;<br>
-      struct in_addr sin_addr;<br>
-      unsigned char sin_zero[8];<br>
-      };<br>
-      struct in_addr<br>
-      {<br>
-      uint32_t s_addr;<br>
-      };<br>
-      sin_family ¼´Îªsa_family<br>
-      sin_port ÎªÊ¹ÓÃµÄport±àºÅ<br>
-      sin_addr.s_addr ÎªIP µØÖ·<br>
-      sin_zero Î´Ê¹ÓÃ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> addrlenÎªsockaddrµÄ½á¹¹³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊısockfd ·ÇºÏ·¨socket´¦Àí´úÂë¡£<br>
-      EACCESS È¨ÏŞ²»×ã<br>
-      ENOTSOCK ²ÎÊısockfdÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼listen()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc265></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      connect£¨½¨Á¢socketÁ¬Ïß£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket£¬bind£¬listen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int connect (int sockfd,struct 
-      sockaddr * serv_addr,int addrlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> connect()ÓÃÀ´½«²ÎÊısockfd µÄsocket Á¬ÖÁ²ÎÊıserv_addr 
-      Ö¸¶¨µÄÍøÂçµØÖ·¡£½á¹¹sockaddrÇë²Î¿¼bind()¡£²ÎÊıaddrlenÎªsockaddrµÄ½á¹¹³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊısockfd ·ÇºÏ·¨socket´¦Àí´úÂë<br>
-      EFAULT ²ÎÊıserv_addrÖ¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      ENOTSOCK ²ÎÊısockfdÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EISCONN ²ÎÊısockfdµÄsocketÒÑÊÇÁ¬Ïß×´Ì¬<br>
-      ECONNREFUSED Á¬ÏßÒªÇó±»server¶Ë¾Ü¾ø¡£<br>
-      ETIMEDOUT ÆóÍ¼Á¬ÏßµÄ²Ù×÷³¬¹ıÏŞ¶¨Ê±¼äÈÔÎ´ÓĞÏìÓ¦¡£<br>
-      ENETUNREACH ÎŞ·¨´«ËÍÊı¾İ°üÖÁÖ¸¶¨µÄÖ÷»ú¡£<br>
-      EAFNOSUPPORT sockaddr½á¹¹µÄsa_family²»ÕıÈ·¡£<br>
-      EALREADY socketÎª²»¿É×è¶ÏÇÒÏÈÇ°µÄÁ¬Ïß²Ù×÷»¹Î´Íê³É¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /* ÀûÓÃsocketµÄTCP client<br>
-      ´Ë³ÌĞò»áÁ¬ÏßTCP server£¬²¢½«¼üÅÌÊäÈëµÄ×Ö·û´®´«ËÍ¸øserver¡£<br>
-      TCP server·¶ÀıÇë²Î¿¼listen£¨£©¡£<br>
-      */<br>
-      #include&lt;sys/stat.h&gt;<br>
-      #include&lt;fcntl.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      #define PORT 1234<br>
-      #define SERVER_IP ¡°127.0.0.1¡±<br>
-      main()<br>
-      {<br>
-      int s;<br>
-      struct sockaddr_in addr;<br>
-      char buffer[256];<br>
-      if((s = socket(AF_INET,SOCK_STREAM,0))&lt;0){<br>
-      perror(¡°socket¡±);<br>
-      exit(1);<br>
-      }<br>
-      /* ÌîĞ´sockaddr_in½á¹¹*/<br>
-      bzero(&addr,sizeof(addr));<br>
-      addr.sin_family = AF_INET;<br>
-      addr.sin_port=htons(PORT);<br>
-      addr.sin_addr.s_addr = inet_addr(SERVER_IP);<br>
-      /* ³¢ÊÔÁ¬Ïß*/<br>
-      if(connect(s,&addr,sizeof(addr))&lt;0){<br>
-      perror(¡°connect¡±);<br>
-      exit(1);<br>
-      }<br>
-      /* ½ÓÊÕÓÉserver¶Ë´«À´µÄĞÅÏ¢*/<br>
-      recv(s,buffer,sizeof(buffer),0);<br>
-      printf(¡°%s\n¡±,buffer);<br>
-      while(1){<br>
-      bzero(buffer,sizeof(buffer));<br>
-      /* ´Ó±ê×¼ÊäÈëÉè±¸È¡µÃ×Ö·û´®*/<br>
-      read(STDIN_FILENO,buffer,sizeof(buffer));<br>
-      /* ½«×Ö·û´®´«¸øserver¶Ë*/<br>
-      if(send(s,buffer,sizeof(buffer),0)&lt;0){<br>
-      perror(¡°send¡±);<br>
-      exit(1);<br>
-      }<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> $ ./connect<br>
-      Welcome to server!<br>
-      hi I am client! /*¼üÅÌÊäÈë*/<br>
-      /*&lt;Ctrl+C&gt;ÖĞ¶Ï³ÌĞò*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc266></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      endprotoent£¨½áÊøÍøÂçĞ­ÒéÊı¾İµÄ¶ÁÈ¡£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getprotoent£¬getprotobyname£¬getprotobynumber£¬setprotoent<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netdb.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void endprotoent(void);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> endprotoent()ÓÃÀ´¹Ø±ÕÓÉgetprotoent()´ò¿ªµÄÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getprotoent()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc267></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      endservent£¨½áÊøÍøÂç·şÎñÊı¾İµÄ¶ÁÈ¡£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getservent£¬getservbyname£¬getservbyport£¬setservent<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netdb.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void endservent(void);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> endservent()ÓÃÀ´¹Ø±ÕÓÉgetservent()Ëù´ò¿ªµÄÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getservent()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc268></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      getsockopt£¨È¡µÃsocket×´Ì¬£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> setsockopt<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int getsockopt(int s,int level,int 
-      optname,void* optval,socklen_t* optlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getsockopt()»á½«²ÎÊısËùÖ¸¶¨µÄsocket×´Ì¬·µ»Ø¡£²ÎÊıoptname´ú±íÓûÈ¡µÃºÎÖÖÑ¡Ïî×´Ì¬£¬¶ø²ÎÊıoptvalÔòÖ¸ÏòÓû±£´æ½á¹ûµÄÄÚ´æµØÖ·£¬²ÎÊıoptlenÔòÎª¸Ã¿Õ¼äµÄ´óĞ¡¡£²ÎÊılevel¡¢optnameÇë²Î¿¼setsockopt()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬ÈôÓĞ´íÎóÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs ²¢·ÇºÏ·¨µÄsocket´¦Àí´úÂë<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket<br>
-      ENOPROTOOPT ²ÎÊıoptnameÖ¸¶¨µÄÑ¡Ïî²»ÕıÈ·<br>
-      EFAULT ²ÎÊıoptvalÖ¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      main()<br>
-      {<br>
-      int s,optval,optlen = sizeof(int);<br>
-      if((s = socket(AF_INET,SOCK_STREAM,0))&lt;0) perror(¡°socket¡±);<br>
-      getsockopt(s,SOL_SOCKET,SO_TYPE,&optval,&optlen);<br>
-      printf(¡°optval = %d\n¡±,optval);<br>
-      close(s);}<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> optval = 1 /*SOCK_STREAMµÄ¶¨ÒåÕıÊÇ´ËÖµ*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc269></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      htonl£¨½«32Î»Ö÷»ú×Ö·ûË³Ğò×ª»»³ÉÍøÂç×Ö·ûË³Ğò£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htons£¬ntohl£¬ntohs<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netinet/in.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned long int htonl(unsigned 
-      long int hostlong);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htonl£¨£©ÓÃÀ´½«²ÎÊıÖ¸¶¨µÄ32Î»hostlong ×ª»»³ÉÍøÂç×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø¶ÔÓ¦µÄÍøÂç×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getservbyport()»òconnect()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc270></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      htons£¨½«16Î»Ö÷»ú×Ö·ûË³Ğò×ª»»³ÉÍøÂç×Ö·ûË³Ğò£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htonl£¬ntohl£¬ntohs<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netinet/in.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned short int htons(unsigned 
-      short int hostshort);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htons()ÓÃÀ´½«²ÎÊıÖ¸¶¨µÄ16Î»hostshort×ª»»³ÉÍøÂç×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø¶ÔÓ¦µÄÍøÂç×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼connect()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc271></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      inet_addr£¨½«ÍøÂçµØÖ·×ª³É¶ş½øÖÆµÄÊı×Ö£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_aton£¬inet_ntoa<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/socket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned long int inet_addr(const 
-      char *cp);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_addr()ÓÃÀ´½«²ÎÊıcpËùÖ¸µÄÍøÂçµØÖ·×Ö·û´®×ª»»³ÉÍøÂçËùÊ¹ÓÃµÄ¶ş½øÖÆÊı×Ö¡£ÍøÂçµØÖ·×Ö·û´®ÊÇÒÔÊı×ÖºÍµã×é³ÉµÄ×Ö·û´®£¬ÀıÈç:¡°163.13.132.68¡±¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø¶ÔÓ¦µÄÍøÂç¶ş½øÖÆµÄÊı×Ö£¬Ê§°Ü·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc272></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      inet_aton£¨½«ÍøÂçµØÖ·×ª³ÉÍøÂç¶ş½øÖÆµÄÊı×Ö£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_addr£¬inet_ntoa<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/scoket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int inet_aton(const char * cp,struct 
-      in_addr *inp);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_aton()ÓÃÀ´½«²ÎÊıcpËùÖ¸µÄÍøÂçµØÖ·×Ö·û´®×ª»»³ÉÍøÂçÊ¹ÓÃµÄ¶ş½øÖÆµÄÊı×Ö£¬È»ºó´æÓÚ²ÎÊıinpËùÖ¸µÄin_addr½á¹¹ÖĞ¡£<br>
-      ½á¹¹in_addr¶¨ÒåÈçÏÂ<br>
-      struct in_addr<br>
-      {<br>
-      unsigned long int s_addr;<br>
-      };<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø·Ç0Öµ£¬Ê§°ÜÔò·µ»Ø0¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc273></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      inet_ntoa£¨½«ÍøÂç¶ş½øÖÆµÄÊı×Ö×ª»»³ÉÍøÂçµØÖ·£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_addr£¬inet_aton<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/socket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> char * inet_ntoa(struct in_addr 
-      in);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> inet_ntoa()ÓÃÀ´½«²ÎÊıinËùÖ¸µÄÍøÂç¶ş½øÖÆµÄÊı×Ö×ª»»³ÉÍøÂçµØÖ·£¬È»ºó½«Ö¸Ïò´ËÍøÂçµØÖ·×Ö·û´®µÄÖ¸Õë·µ»Ø¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø×Ö·û´®Ö¸Õë£¬Ê§°ÜÔò·µ»ØNULL¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc274></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      listen£¨µÈ´ıÁ¬½Ó£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket£¬bind£¬accept£¬connect<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int listen(int s,int backlog);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> listen()ÓÃÀ´µÈ´ı²ÎÊıs µÄsocketÁ¬Ïß¡£²ÎÊıbacklogÖ¸¶¨Í¬Ê±ÄÜ´¦ÀíµÄ×î´óÁ¬½ÓÒªÇó£¬Èç¹ûÁ¬½ÓÊıÄ¿´ï´ËÉÏÏŞÔòclient¶Ë½«ÊÕµ½ECONNREFUSEDµÄ´íÎó¡£Listen()²¢Î´¿ªÊ¼½ÓÊÕÁ¬Ïß£¬Ö»ÊÇÉèÖÃsocketÎªlistenÄ£Ê½£¬ÕæÕı½ÓÊÕclient¶ËÁ¬ÏßµÄÊÇaccept()¡£Í¨³£listen()»áÔÚsocket()£¬bind()Ö®ºóµ÷ÓÃ£¬½Ó×Å²Åµ÷ÓÃaccept()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> listen()Ö»ÊÊÓÃSOCK_STREAM»òSOCK_SEQPACKETµÄsocketÀàĞÍ¡£Èç¹ûsocketÎªAF_INETÔò²ÎÊıbacklog 
-      ×î´óÖµ¿ÉÉèÖÁ128¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊısockfd·ÇºÏ·¨socket´¦Àí´úÂë<br>
-      EACCESS È¨ÏŞ²»×ã<br>
-      EOPNOTSUPP Ö¸¶¨µÄsocket²¢Î´Ö§Ô®listenÄ£Ê½¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      #define PORT 1234<br>
-      #define MAXSOCKFD 10<br>
-      main()<br>
-      {<br>
-      int sockfd,newsockfd,is_connected[MAXSOCKFD],fd;<br>
-      struct sockaddr_in addr;<br>
-      int addr_len = sizeof(struct sockaddr_in);<br>
-      fd_set readfds;<br>
-      char buffer[256];<br>
-      char msg[ ] =¡±Welcome to server!¡±;<br>
-      if ((sockfd = socket(AF_INET,SOCK_STREAM,0))&lt;0){<br>
-      perror(¡°socket¡±);<br>
-      exit(1);<br>
-      }<br>
-      bzero(&addr,sizeof(addr));<br>
-      addr.sin_family =AF_INET;<br>
-      addr.sin_port = htons(PORT);<br>
-      addr.sin_addr.s_addr = htonl(INADDR_ANY);<br>
-      if(bind(sockfd,&addr,sizeof(addr))&lt;0){<br>
-      perror(¡°connect¡±);<br>
-      exit(1);<br>
-      }<br>
-      if(listen(sockfd,3)&lt;0){<br>
-      perror(¡°listen¡±);<br>
-      exit(1);<br>
-      }<br>
-      for(fd=0;fd&lt;MAXSOCKFD;fd++)<br>
-      is_connected[fd]=0;<br>
-      while(1){<br>
-      FD_ZERO(&readfds);<br>
-      FD_SET(sockfd,&readfds);<br>
-      for(fd=0;fd&lt;MAXSOCKFD;fd++)<br>
-      if(is_connected[fd]) FD_SET(fd,&readfds);<br>
-      if(!select(MAXSOCKFD,&readfds,NULL,NULL,NULL))continue;<br>
-      for(fd=0;fd&lt;MAXSOCKFD;fd++)<br>
-      if(FD_ISSET(fd,&readfds)){<br>
-      if(sockfd = =fd){<br>
-      if((newsockfd = accept (sockfd,&addr,&addr_len))&lt;0)<br>
-      perror(¡°accept¡±);<br>
-      write(newsockfd,msg,sizeof(msg));<br>
-      is_connected[newsockfd] =1;<br>
-      printf(¡°cnnect from %s\n¡±,inet_ntoa(addr.sin_addr));<br>
-      }else{<br>
-      bzero(buffer,sizeof(buffer));<br>
-      if(read(fd,buffer,sizeof(buffer))&lt;=0){<br>
-      printf(¡°connect closed.\n¡±);<br>
-      is_connected[fd]=0;<br>
-      close(fd);<br>
-      }else<br>
-      printf(¡°%s¡±,buffer);<br>
-      }<br>
-      }<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> $ ./listen<br>
-      connect from 127.0.0.1<br>
-      hi I am client<br>
-      connected closed.<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc275></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      ntohl£¨½«32Î»ÍøÂç×Ö·ûË³Ğò×ª»»³ÉÖ÷»ú×Ö·ûË³Ğò£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htonl£¬htons£¬ntohs<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netinet/in.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned long int ntohl(unsigned 
-      long int netlong);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ntohl()ÓÃÀ´½«²ÎÊıÖ¸¶¨µÄ32Î»netlong×ª»»³ÉÖ÷»ú×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø¶ÔÓ¦µÄÖ÷»ú×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getservent()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc276></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      ntohs£¨½«16Î»ÍøÂç×Ö·ûË³Ğò×ª»»³ÉÖ÷»ú×Ö·ûË³Ğò£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> htonl£¬htons£¬ntohl<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;netinet/in.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> unsigned short int ntohs(unsigned 
-      short int netshort);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ntohs()ÓÃÀ´½«²ÎÊıÖ¸¶¨µÄ16Î»netshort×ª»»³ÉÖ÷»ú×Ö·ûË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ·µ»Ø¶ÔÓ¦µÄÖ÷»úË³Ğò¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getservent()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc277></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      recv£¨¾­socket½ÓÊÕÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recvfrom£¬recvmsg£¬send£¬sendto£¬socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int recv(int s,void *buf,int len,unsigned 
-      int flags);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recv()ÓÃÀ´½ÓÊÕÔ¶¶ËÖ÷»ú¾­Ö¸¶¨µÄsocket´«À´µÄÊı¾İ£¬²¢°ÑÊı¾İ´æµ½ÓÉ²ÎÊıbuf 
-      Ö¸ÏòµÄÄÚ´æ¿Õ¼ä£¬²ÎÊılenÎª¿É½ÓÊÕÊı¾İµÄ×î´ó³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> flagsÒ»°ãÉè0¡£ÆäËûÊıÖµ¶¨ÒåÈçÏÂ:<br>
-      MSG_OOB ½ÓÊÕÒÔout-of-band ËÍ³öµÄÊı¾İ¡£<br>
-      MSG_PEEK ·µ»ØÀ´µÄÊı¾İ²¢²»»áÔÚÏµÍ³ÄÚÉ¾³ı£¬Èç¹ûÔÙµ÷ÓÃrecv()»á·µ»ØÏàÍ¬µÄÊı¾İÄÚÈİ¡£<br>
-      MSG_WAITALLÇ¿ÆÈ½ÓÊÕµ½len´óĞ¡µÄÊı¾İºó²ÅÄÜ·µ»Ø£¬³ı·ÇÓĞ´íÎó»òĞÅºÅ²úÉú¡£<br>
-      MSG_NOSIGNAL´Ë²Ù×÷²»Ô¸±»SIGPIPEĞÅºÅÖĞ¶Ï·µ»ØÖµ³É¹¦Ôò·µ»Ø½ÓÊÕµ½µÄ×Ö·ûÊı£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs·ÇºÏ·¨µÄsocket´¦Àí´úÂë<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï<br>
-      EAGAIN ´Ë¶¯×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsocketÎª²»¿É×è¶Ï<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã¡£<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼listen()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc278></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      recvfrom£¨¾­socket½ÓÊÕÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recv£¬recvmsg£¬send£¬sendto£¬socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int recvfrom(int s,void *buf,int 
-      len,unsigned int flags ,struct sockaddr *from ,int *fromlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recv()ÓÃÀ´½ÓÊÕÔ¶³ÌÖ÷»ú¾­Ö¸¶¨µÄsocket ´«À´µÄÊı¾İ£¬²¢°ÑÊı¾İ´æµ½ÓÉ²ÎÊıbuf 
-      Ö¸ÏòµÄÄÚ´æ¿Õ¼ä£¬²ÎÊılen Îª¿É½ÓÊÕÊı¾İµÄ×î´ó³¤¶È¡£²ÎÊıflags Ò»°ãÉè0£¬ÆäËûÊıÖµ¶¨ÒåÇë²Î¿¼recv()¡£²ÎÊıfromÓÃÀ´Ö¸¶¨Óû´«ËÍµÄÍøÂçµØÖ·£¬½á¹¹sockaddr 
-      Çë²Î¿¼bind()¡£²ÎÊıfromlenÎªsockaddrµÄ½á¹¹³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø½ÓÊÕµ½µÄ×Ö·ûÊı£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs·ÇºÏ·¨µÄsocket´¦Àí´úÂë<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä¡£<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      EAGAIN ´Ë¶¯×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsocketÎª²»¿É×è¶Ï¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> /*ÀûÓÃsocketµÄUDP client<br>
-      ´Ë³ÌĞò»áÁ¬ÏßUDP server£¬²¢½«¼üÅÌÊäÈëµÄ×Ö·û´®´«¸øserver¡£<br>
-      UDP server ·¶ÀıÇë²Î¿¼sendto£¨£©¡£<br>
-      */<br>
-      #include&lt;sys/stat.h&gt;<br>
-      #include&lt;fcntl.h&gt;<br>
-      #include&lt;unistd.h&gt;<br>
-      #include&lt;sys/typs.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      #include&lt;netinet/in.h&gt;<br>
-      #include&lt;arpa/inet.h&gt;<br>
-      #define PORT 2345<br>
-      #define SERVER_IP ¡°127.0.0.1¡±<br>
-      main()<br>
-      {<br>
-      int s,len;<br>
-      struct sockaddr_in addr;<br>
-      int addr_len =sizeof(struct sockaddr_in);<br>
-      char buffer[256];<br>
-      /* ½¨Á¢socket*/<br>
-      if((s = socket(AF_INET,SOCK_DGRAM,0))&lt;0){<br>
-      perror(¡°socket¡±);<br>
-      exit(1);<br>
-      }<br>
-      /* ÌîĞ´sockaddr_in*/<br>
-      bzero(&addr,sizeof(addr));<br>
-      addr.sin_family = AF_INET;<br>
-      addr.sin_port = htons(PORT);<br>
-      addr.sin_addr.s_addr = inet_addr(SERVER_IP);<br>
-      while(1){<br>
-      bzero(buffer,sizeof(buffer));<br>
-      /* ´Ó±ê×¼ÊäÈëÉè±¸È¡µÃ×Ö·û´®*/<br>
-      len =read(STDIN_FILENO,buffer,sizeof(buffer));<br>
-      /* ½«×Ö·û´®´«ËÍ¸øserver¶Ë*/<br>
-      sendto(s,buffer,len,0,&addr,addr_len);<br>
-      /* ½ÓÊÕserver¶Ë·µ»ØµÄ×Ö·û´®*/<br>
-      len = recvfrom(s,buffer,sizeof(buffer),0,&addr,&addr_len);<br>
-      printf(¡°receive: %s¡±,buffer);<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> (ÏÈÖ´ĞĞudp server ÔÙÖ´ĞĞudp client)<br>
-      hello /*´Ó¼üÅÌÊäÈë×Ö·û´®*/<br>
-      receive: hello /*server¶Ë·µ»ØÀ´µÄ×Ö·û´®*/<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc279></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      recvmsg£¨¾­socket½ÓÊÕÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recv£¬recvfrom£¬send£¬sendto£¬sendmsg£¬socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socktet.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int recvmsg(int s,struct msghdr 
-      *msg,unsigned int flags);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> recvmsg()ÓÃÀ´½ÓÊÕÔ¶³ÌÖ÷»ú¾­Ö¸¶¨µÄsocket´«À´µÄÊı¾İ¡£²ÎÊısÎªÒÑ½¨Á¢ºÃÁ¬ÏßµÄsocket£¬Èç¹ûÀûÓÃUDPĞ­ÒéÔò²»Ğè¾­¹ıÁ¬Ïß²Ù×÷¡£²ÎÊımsgÖ¸ÏòÓûÁ¬ÏßµÄÊı¾İ½á¹¹ÄÚÈİ£¬²ÎÊıflagsÒ»°ãÉè0£¬ÏêÏ¸ÃèÊöÇë²Î¿¼send()¡£¹ØÓÚ½á¹¹msghdrµÄ¶¨ÒåÇë²Î¿¼sendmsg()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø½ÓÊÕµ½µÄ×Ö·ûÊı£¬Ê§°ÜÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrnoÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs·ÇºÏ·¨µÄsocket´¦Àí´úÂë¡£<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      EAGAIN ´Ë²Ù×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsocketÎª²»¿É×è¶Ï¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼recvfrom()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc280></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      send£¨¾­socket´«ËÍÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> sendto£¬sendmsg£¬recv£¬recvfrom£¬socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int send(int s,const void * msg,int 
-      len,unsigned int falgs);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> send()ÓÃÀ´½«Êı¾İÓÉÖ¸¶¨µÄsocket ´«¸ø¶Ô·½Ö÷»ú¡£²ÎÊısÎªÒÑ½¨Á¢ºÃÁ¬½ÓµÄsocket¡£²ÎÊımsgÖ¸ÏòÓûÁ¬ÏßµÄÊı¾İÄÚÈİ£¬²ÎÊılenÔòÎªÊı¾İ³¤¶È¡£²ÎÊıflagsÒ»°ãÉè0£¬ÆäËûÊıÖµ¶¨ÒåÈçÏÂ<br>
-      MSG_OOB ´«ËÍµÄÊı¾İÒÔout-of-band ËÍ³ö¡£<br>
-      MSG_DONTROUTE È¡ÏûÂ·ÓÉ±í²éÑ¯<br>
-      MSG_DONTWAIT ÉèÖÃÎª²»¿É×è¶ÏÔË×÷<br>
-      MSG_NOSIGNAL ´Ë¶¯×÷²»Ô¸±»SIGPIPE ĞÅºÅÖĞ¶Ï¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»ØÊµ¼Ê´«ËÍ³öÈ¥µÄ×Ö·ûÊı£¬Ê§°Ü·µ»Ø-1¡£´íÎóÔ­Òò´æÓÚerrno<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs ·ÇºÏ·¨µÄsocket´¦Àí´úÂë¡£<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      EAGAIN ´Ë²Ù×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsocketÎª²»¿É×è¶Ï¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼connect()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc281></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      sendmsg£¨¾­socket´«ËÍÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> send£¬sendto£¬recv£¬recvfrom£¬recvmsg£¬socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int sendmsg(int s,const strcut 
-      msghdr *msg,unsigned int flags);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> sendmsg()ÓÃÀ´½«Êı¾İÓÉÖ¸¶¨µÄsocket´«¸ø¶Ô·½Ö÷»ú¡£²ÎÊısÎªÒÑ½¨Á¢ºÃÁ¬ÏßµÄsocket£¬Èç¹ûÀûÓÃUDPĞ­ÒéÔò²»Ğè¾­¹ıÁ¬Ïß²Ù×÷¡£²ÎÊımsg 
-      Ö¸ÏòÓûÁ¬ÏßµÄÊı¾İ½á¹¹ÄÚÈİ£¬²ÎÊıflagsÒ»°ãÄ¬ÈÏÎª0£¬ÏêÏ¸ÃèÊöÇë²Î¿¼send()¡£<br>
-      ½á¹¹msghdr¶¨ÒåÈçÏÂ<br>
-      struct msghdr<br>
-      {<br>
-      void *msg_name; /*Address to send to /receive from . */<br>
-      socklen_t msg_namelen; /* Length of addres data */<br>
-      strcut iovec * msg_iov; /* Vector of data to send/receive into */<br>
-      size_t msg_iovlen; /* Number of elements in the vector */<br>
-      void * msg_control; /* Ancillary dat */<br>
-      size_t msg_controllen; /* Ancillary data buffer length */<br>
-      int msg_flags; /* Flags on received message */<br>
-      };<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»ØÊµ¼Ê´«ËÍ³öÈ¥µÄ×Ö·ûÊı£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs ·ÇºÏ·¨µÄsocket´¦Àí´úÂë¡£<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      EAGAIN ´Ë²Ù×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsocketÎª²»¿É×è¶Ï¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã<br>
-      ENOMEM ºËĞÄÄÚ´æ²»×ã<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼sendto()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc282></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      sendto£¨¾­socket´«ËÍÊı¾İ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> send , sendmsg,recv , recvfrom 
-      , socket<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt; sys/types.h &gt;<br>
-      #include &lt; sys/socket.h &gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int sendto ( int s , const void 
-      * msg, int len, unsigned int flags, const <br>
-      struct sockaddr * to , int tolen ) ;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> sendto() ÓÃÀ´½«Êı¾İÓÉÖ¸¶¨µÄsocket´«¸ø¶Ô·½Ö÷»ú¡£²ÎÊısÎªÒÑ½¨ºÃÁ¬ÏßµÄsocket,Èç¹ûÀûÓÃUDPĞ­ÒéÔò²»Ğè¾­¹ıÁ¬Ïß²Ù×÷¡£²ÎÊımsgÖ¸ÏòÓûÁ¬ÏßµÄÊı¾İÄÚÈİ£¬²ÎÊıflags 
-      Ò»°ãÉè0£¬ÏêÏ¸ÃèÊöÇë²Î¿¼send()¡£²ÎÊıtoÓÃÀ´Ö¸¶¨Óû´«ËÍµÄÍøÂçµØÖ·£¬½á¹¹sockaddrÇë²Î¿¼bind()¡£²ÎÊıtolenÎªsockaddrµÄ½á¹û³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»ØÊµ¼Ê´«ËÍ³öÈ¥µÄ×Ö·ûÊı£¬Ê§°Ü·µ»Ø£­1£¬´íÎóÔ­Òò´æÓÚerrno 
-      ÖĞ¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs·Ç·¨µÄsocket´¦Àí´úÂë¡£<br>
-      EFAULT ²ÎÊıÖĞÓĞÒ»Ö¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä¡£<br>
-      WNOTSOCK canshu sÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket¡£<br>
-      EINTR ±»ĞÅºÅËùÖĞ¶Ï¡£<br>
-      EAGAIN ´Ë¶¯×÷»áÁî½ø³Ì×è¶Ï£¬µ«²ÎÊısµÄsoketÎª²¹¿Î×è¶ÏµÄ¡£<br>
-      ENOBUFS ÏµÍ³µÄ»º³åÄÚ´æ²»×ã¡£<br>
-      EINVAL ´«¸øÏµÍ³µ÷ÓÃµÄ²ÎÊı²»ÕıÈ·¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt; sys/types.h &gt;<br>
-      #include &lt; sys/socket.h &gt;<br>
-      # include &lt;netinet.in.h&gt;<br>
-      #include &lt;arpa.inet.h&gt;<br>
-      #define PORT 2345 /*Ê¹ÓÃµÄport*/<br>
-      main(){<br>
-      int sockfd,len;<br>
-      struct sockaddr_in addr;<br>
-      char buffer[256];<br>
-      /*½¨Á¢socket*/<br>
-      if(sockfd=socket (AF_INET,SOCK_DGRAM,0))&lt;0){<br>
-      perror (¡°socket¡±);<br>
-      exit(1);<br>
-      }<br>
-      /*ÌîĞ´sockaddr_in ½á¹¹*/<br>
-      bzero ( &addr, sizeof(addr) );<br>
-      addr.sin_family=AF_INET;<br>
-      addr.sin_port=htons(PORT);<br>
-      addr.sin_addr=hton1(INADDR_ANY) ;<br>
-      if (bind(sockfd, &addr, sizeof(addr))&lt;0){<br>
-      perror(¡°connect¡±);<br>
-      exit(1);<br>
-      }<br>
-      while(1){<br>
-      bezro(buffer,sizeof(buffer));<br>
-      len = recvfrom(socket,buffer,sizeof(buffer), 0 , &addr &addr_len);<br>
-      /*ÏÔÊ¾client¶ËµÄÍøÂçµØÖ·*/<br>
-      printf(¡°receive from %s\n ¡° , inet_ntoa( addr.sin_addr));<br>
-      /*½«×Ö´®·µ»Ø¸øclient¶Ë*/<br>
-      sendto(sockfd,buffer,len,0,&addr,addr_len);¡±<br>
-      }<br>
-      }<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ö´ĞĞ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> Çë²Î¿¼recvfrom()<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc283></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      setprotoent£¨´ò¿ªÍøÂçĞ­ÒéµÄÊı¾İÎÄ¼ş£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getprotobyname, getprotobynumber, 
-      endprotoent<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt;netdb.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void setprotoent (int stayopen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> setprotoent()ÓÃÀ´´ò¿ª/etc/protocols£¬ 
-      Èç¹û²ÎÊıstayopenÖµÎª1£¬Ôò½ÓÏÂÀ´µÄgetprotobyname()»ògetprotobynumber()½«²»»á×Ô¶¯¹Ø±Õ´ËÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc284></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      setservent£¨´ò¿ªÖ÷»úÍøÂç·şÎñµÄÊı¾İÎÄ¼ş£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getservent, getservbyname, getservbyport, 
-      endservent<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include &lt; netdb.h &gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> void setservent (int stayopen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> setservent()ÓÃÀ´´ò¿ª/etc/services£¬Èç¹û²ÎÊıstayopenÖµÎª1£¬Ôò½ÓÏÂÀ´µÄgetservbyname()»ògetservbyport()½«²¹»Ø×Ô¶¯¹Ø±ÕÎÄ¼ş¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc285></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      setsockopt£¨ÉèÖÃsocket×´Ì¬£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> getsockopt<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int setsockopt(int s,int level,int 
-      optname,const void * optval,,socklen_toptlen);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> setsockopt()ÓÃÀ´ÉèÖÃ²ÎÊısËùÖ¸¶¨µÄsocket×´Ì¬¡£²ÎÊılevel´ú±íÓûÉèÖÃµÄÍøÂç²ã£¬Ò»°ãÉè³ÉSOL_SOCKETÒÔ´æÈ¡socket²ã¡£²ÎÊıoptname´ú±íÓûÉèÖÃµÄÑ¡Ïî£¬ÓĞÏÂÁĞ¼¸ÖÖÊıÖµ:<br>
-      SO_DEBUG ´ò¿ª»ò¹Ø±ÕÅÅ´íÄ£Ê½<br>
-      SO_REUSEADDR ÔÊĞíÔÚbind£¨£©¹ı³ÌÖĞ±¾µØµØÖ·¿ÉÖØ¸´Ê¹ÓÃ<br>
-      SO_TYPE ·µ»ØsocketĞÎÌ¬¡£<br>
-      SO_ERROR ·µ»ØsocketÒÑ·¢ÉúµÄ´íÎóÔ­Òò<br>
-      SO_DONTROUTE ËÍ³öµÄÊı¾İ°ü²»ÒªÀûÓÃÂ·ÓÉÉè±¸À´´«Êä¡£<br>
-      SO_BROADCAST Ê¹ÓÃ¹ã²¥·½Ê½´«ËÍ<br>
-      SO_SNDBUF ÉèÖÃËÍ³öµÄÔİ´æÇø´óĞ¡<br>
-      SO_RCVBUF ÉèÖÃ½ÓÊÕµÄÔİ´æÇø´óĞ¡<br>
-      SO_KEEPALIVE ¶¨ÆÚÈ·¶¨Á¬ÏßÊÇ·ñÒÑÖÕÖ¹¡£<br>
-      SO_OOBINLINE µ±½ÓÊÕµ½OOB Êı¾İÊ±»áÂíÉÏËÍÖÁ±ê×¼ÊäÈëÉè±¸<br>
-      SO_LINGER È·±£Êı¾İ°²È«ÇÒ¿É¿¿µÄ´«ËÍ³öÈ¥¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> optval´ú±íÓûÉèÖÃµÄÖµ£¬²ÎÊıoptlenÔòÎªoptvalµÄ³¤¶È¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬ÈôÓĞ´íÎóÔò·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¸½¼ÓËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs²¢·ÇºÏ·¨µÄsocket´¦Àí´úÂë<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket<br>
-      ENOPROTOOPT ²ÎÊıoptnameÖ¸¶¨µÄÑ¡Ïî²»ÕıÈ·¡£<br>
-      EFAULT ²ÎÊıoptvalÖ¸ÕëÖ¸ÏòÎŞ·¨´æÈ¡µÄÄÚ´æ¿Õ¼ä¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼getsockopt()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc286></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      shutdown£¨ÖÕÖ¹socketÍ¨ĞÅ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket£¬connect<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int shutdown(int s,int how);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> shutdown()ÓÃÀ´ÖÕÖ¹²ÎÊısËùÖ¸¶¨µÄsocketÁ¬Ïß¡£²ÎÊısÊÇÁ¬ÏßÖĞµÄsocket´¦Àí´úÂë£¬²ÎÊıhowÓĞÏÂÁĞ¼¸ÖÖÇé¿ö:<br>
-      how=0 ÖÕÖ¹¶ÁÈ¡²Ù×÷¡£<br>
-      how=1 ÖÕÖ¹´«ËÍ²Ù×÷<br>
-      how=2 ÖÕÖ¹¶ÁÈ¡¼°´«ËÍ²Ù×÷<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Ø0£¬Ê§°Ü·µ»Ø-1£¬´íÎóÔ­Òò´æÓÚerrno¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EBADF ²ÎÊıs²»ÊÇÓĞĞ§µÄsocket´¦Àí´úÂë<br>
-      ENOTSOCK ²ÎÊısÎªÒ»ÎÄ¼şÃèÊö´Ê£¬·Çsocket<br>
-      ENOTCONN ²ÎÊısÖ¸¶¨µÄsocket²¢Î´Á¬Ïß<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-        <font face='ËÎÌå' size='2'><a name=linuxc287></a></font> </div>
-    </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> <br>
-        </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> <br>
-      socket£¨½¨Á¢Ò»¸ösocketÍ¨ĞÅ£© </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> Ïà¹Øº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> accept£¬bind£¬connect£¬listen<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ±íÍ·ÎÄ¼ş </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> #include&lt;sys/types.h&gt;<br>
-      #include&lt;sys/socket.h&gt;<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ¶¨Òåº¯Êı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> int socket(int domain,int type,int 
-      protocol);<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> º¯ÊıËµÃ÷ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> socket()ÓÃÀ´½¨Á¢Ò»¸öĞÂµÄsocket£¬Ò²¾ÍÊÇÏòÏµÍ³×¢²á£¬Í¨ÖªÏµÍ³½¨Á¢Ò»Í¨ĞÅ¶Ë¿Ú¡£²ÎÊıdomain 
-      Ö¸¶¨Ê¹ÓÃºÎÖÖµÄµØÖ·ÀàĞÍ£¬ÍêÕûµÄ¶¨ÒåÔÚ/usr/include/bits/socket.h ÄÚ£¬µ×ÏÂÊÇ³£¼ûµÄĞ­Òé:<br>
-      PF_UNIX/PF_LOCAL/AF_UNIX/AF_LOCAL UNIX ½ø³ÌÍ¨ĞÅĞ­Òé<br>
-      PF_INET?AF_INET Ipv4ÍøÂçĞ­Òé<br>
-      PF_INET6/AF_INET6 Ipv6 ÍøÂçĞ­Òé<br>
-      PF_IPX/AF_IPX IPX-NovellĞ­Òé<br>
-      PF_NETLINK/AF_NETLINK ºËĞÄÓÃ»§½Ó¿Ú×°ÖÃ<br>
-      PF_X25/AF_X25 ITU-T X.25/ISO-8208 Ğ­Òé<br>
-      PF_AX25/AF_AX25 ÒµÓàÎŞÏßAX.25Ğ­Òé<br>
-      PF_ATMPVC/AF_ATMPVC ´æÈ¡Ô­Ê¼ATM PVCs<br>
-      PF_APPLETALK/AF_APPLETALK appletalk£¨DDP£©Ğ­Òé<br>
-      PF_PACKET/AF_PACKET ³õ¼¶·â°ü½Ó¿Ú<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ²ÎÊı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> typeÓĞÏÂÁĞ¼¸ÖÖÊıÖµ:<br>
-      SOCK_STREAM Ìá¹©Ë«ÏòÁ¬ĞøÇÒ¿ÉĞÅÀµµÄÊı¾İÁ÷£¬¼´TCP¡£Ö§³Ö<br>
-      OOB »úÖÆ£¬ÔÚËùÓĞÊı¾İ´«ËÍÇ°±ØĞëÊ¹ÓÃconnect()À´½¨Á¢Á¬Ïß×´Ì¬¡£<br>
-      SOCK_DGRAM Ê¹ÓÃ²»Á¬Ğø²»¿ÉĞÅÀµµÄÊı¾İ°üÁ¬½Ó<br>
-      SOCK_SEQPACKET Ìá¹©Á¬Ğø¿ÉĞÅÀµµÄÊı¾İ°üÁ¬½Ó<br>
-      SOCK_RAW Ìá¹©Ô­Ê¼ÍøÂçĞ­Òé´æÈ¡<br>
-      SOCK_RDM Ìá¹©¿ÉĞÅÀµµÄÊı¾İ°üÁ¬½Ó<br>
-      SOCK_PACKET Ìá¹©ºÍÍøÂçÇı¶¯³ÌĞòÖ±½ÓÍ¨ĞÅ¡£<br>
-      protocolÓÃÀ´Ö¸¶¨socketËùÊ¹ÓÃµÄ´«ÊäĞ­Òé±àºÅ£¬Í¨³£´Ë²Î¿¼²»ÓÃ¹ÜËü£¬ÉèÎª0¼´¿É¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·µ»ØÖµ </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ³É¹¦Ôò·µ»Øsocket´¦Àí´úÂë£¬Ê§°Ü·µ»Ø-1¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ´íÎó´úÂë </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> EPROTONOSUPPORT ²ÎÊıdomainÖ¸¶¨µÄÀàĞÍ²»Ö§³Ö²ÎÊıtype»òprotocolÖ¸¶¨µÄĞ­Òé<br>
-      ENFILE ºËĞÄÄÚ´æ²»×ã£¬ÎŞ·¨½¨Á¢ĞÂµÄsocket½á¹¹<br>
-      EMFILE ½ø³ÌÎÄ¼ş±íÒç³ö£¬ÎŞ·¨ÔÙ½¨Á¢ĞÂµÄsocket<br>
-      EACCESS È¨ÏŞ²»×ã£¬ÎŞ·¨½¨Á¢type»òprotocolÖ¸¶¨µÄĞ­Òé<br>
-      ENOBUFS/ENOMEM ÄÚ´æ²»×ã<br>
-      EINVAL ²ÎÊıdomain/type/protocol²»ºÏ·¨<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top"> 
-      <div align="right"><font face='ËÎÌå' size='2'> ·¶Àı </font> </div>
-    </td>
-    <td valign="top"> <font face='ËÎÌå' size='2'> ²Î¿¼connect()¡£<br>
-      </font> </td>
-  </tr>
-  <tr> 
-    <td width="80" valign="top">¡¡ 
-      <div align="right"><br>
-      </div>
-    </td>
-  </tr>
-</table>
+<br /><br /><br />
+
+<pre>
+acceptï¼ˆæ¥å—socketè¿çº¿ï¼‰
+ç›¸å…³å‡½æ•°
+socketï¼Œbindï¼Œlistenï¼Œconnect
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int accept(int s,struct sockaddr * addr,int * addrlen);
+å‡½æ•°è¯´æ˜
+accept()ç”¨æ¥æ¥å—å‚æ•°sçš„socketè¿çº¿ã€‚å‚æ•°sçš„socketå¿…éœ€å…ˆç»bind()ã€listen()å‡½æ•°å¤„ç†è¿‡ï¼Œå½“æœ‰è¿çº¿è¿›æ¥æ—¶accept()ä¼šè¿”å›ä¸€ä¸ªæ–°çš„socketå¤„ç†ä»£ç ï¼Œå¾€åçš„æ•°æ®ä¼ é€ä¸è¯»å–å°±æ˜¯ç»ç”±æ–°çš„socketå¤„ç†ï¼Œ
+è€ŒåŸæ¥å‚æ•°sçš„socketèƒ½ç»§ç»­ä½¿ç”¨accept()æ¥æ¥å—æ–°çš„è¿çº¿è¦æ±‚ã€‚è¿çº¿æˆåŠŸæ—¶ï¼Œ
+å‚æ•°addræ‰€æŒ‡çš„ç»“æ„ä¼šè¢«ç³»ç»Ÿå¡«å…¥è¿œç¨‹ä¸»æœºçš„åœ°å€æ•°æ®ï¼Œ
+å‚æ•°addrlenä¸ºscokaddrçš„ç»“æ„é•¿åº¦ã€‚å…³äºç»“æ„sockaddrçš„å®šä¹‰è¯·å‚è€ƒbind()ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›æ–°çš„socketå¤„ç†ä»£ç ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°s éåˆæ³•socketå¤„ç†ä»£ç ã€‚
+EFAULT å‚æ•°addræŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´ã€‚
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EOPNOTSUPP æŒ‡å®šçš„socketå¹¶éSOCK_STREAMã€‚
+EPERM é˜²ç«å¢™æ‹’ç»æ­¤è¿çº¿ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³ã€‚
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³ã€‚
+èŒƒä¾‹
+å‚è€ƒlisten()ã€‚
+
+
+bindï¼ˆå¯¹socketå®šä½ï¼‰
+ç›¸å…³å‡½æ•°
+socketï¼Œacceptï¼Œconnectï¼Œlisten
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int bind(int sockfd,struct sockaddr * my_addr,int addrlen);
+å‡½æ•°è¯´æ˜
+bind()ç”¨æ¥è®¾ç½®ç»™å‚æ•°sockfdçš„socketä¸€ä¸ªåç§°ã€‚æ­¤åç§°ç”±å‚æ•°my_addræŒ‡å‘ä¸€sockaddrç»“æ„ï¼Œ
+å¯¹äºä¸åŒçš„socket domainå®šä¹‰äº†ä¸€ä¸ªé€šç”¨çš„æ•°æ®ç»“æ„
+
+struct sockaddr {
+    unsigned short int sa_family;
+    char sa_data[14];
+};
+sa_family ä¸ºè°ƒç”¨socketï¼ˆï¼‰æ—¶çš„domainå‚æ•°ï¼Œå³AF_xxxxå€¼ã€‚
+sa_data æœ€å¤šä½¿ç”¨14ä¸ªå­—ç¬¦é•¿åº¦ã€‚
+æ­¤sockaddrç»“æ„ä¼šå› ä½¿ç”¨ä¸åŒçš„socket domainè€Œæœ‰ä¸åŒç»“æ„å®šä¹‰ï¼Œä¾‹å¦‚ä½¿ç”¨AF_INET domainï¼Œ
+å…¶socketaddrç»“æ„å®šä¹‰ä¾¿ä¸º
+
+struct socketaddr_in {
+    unsigned short int sin_family;
+    uint16_t sin_port;
+    struct in_addr sin_addr;
+    unsigned char sin_zero[8];
+};
+struct in_addr {
+    uint32_t s_addr;
+};
+
+sin_family å³ä¸ºsa_family
+sin_port ä¸ºä½¿ç”¨çš„portç¼–å·
+sin_addr.s_addr ä¸ºIP åœ°å€
+sin_zero æœªä½¿ç”¨ã€‚
+å‚æ•°
+addrlenä¸ºsockaddrçš„ç»“æ„é•¿åº¦ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°sockfd éåˆæ³•socketå¤„ç†ä»£ç ã€‚
+EACCESS æƒé™ä¸è¶³
+ENOTSOCK å‚æ•°sockfdä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+èŒƒä¾‹
+å‚è€ƒlisten()
+
+
+connectï¼ˆå»ºç«‹socketè¿çº¿ï¼‰
+ç›¸å…³å‡½æ•°
+socketï¼Œbindï¼Œlisten
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int connect (int sockfd,struct sockaddr * serv_addr,int addrlen);
+å‡½æ•°è¯´æ˜
+connect()ç”¨æ¥å°†å‚æ•°sockfd çš„socket è¿è‡³å‚æ•°serv_addr æŒ‡å®šçš„ç½‘ç»œåœ°å€ã€‚ç»“æ„sockaddrè¯·å‚è€ƒbind()ã€‚
+
+å‚æ•°addrlenä¸ºsockaddrçš„ç»“æ„é•¿åº¦ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°sockfd éåˆæ³•socketå¤„ç†ä»£ç 
+EFAULT å‚æ•°serv_addræŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+ENOTSOCK å‚æ•°sockfdä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EISCONN å‚æ•°sockfdçš„socketå·²æ˜¯è¿çº¿çŠ¶æ€
+ECONNREFUSED è¿çº¿è¦æ±‚è¢«serverç«¯æ‹’ç»ã€‚
+ETIMEDOUT ä¼å›¾è¿çº¿çš„æ“ä½œè¶…è¿‡é™å®šæ—¶é—´ä»æœªæœ‰å“åº”ã€‚
+ENETUNREACH æ— æ³•ä¼ é€æ•°æ®åŒ…è‡³æŒ‡å®šçš„ä¸»æœºã€‚
+EAFNOSUPPORT sockaddrç»“æ„çš„sa_familyä¸æ­£ç¡®ã€‚
+EALREADY socketä¸ºä¸å¯é˜»æ–­ä¸”å…ˆå‰çš„è¿çº¿æ“ä½œè¿˜æœªå®Œæˆã€‚
+
+èŒƒä¾‹
+/* åˆ©ç”¨socketçš„TCP client
+æ­¤ç¨‹åºä¼šè¿çº¿TCP serverï¼Œå¹¶å°†é”®ç›˜è¾“å…¥çš„å­—ç¬¦ä¸²ä¼ é€ç»™serverã€‚
+TCP serverèŒƒä¾‹è¯·å‚è€ƒlistenï¼ˆï¼‰ã€‚
+*/
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#define PORT 1234
+#define SERVER_IP â€œ127.0.0.1â€
+
+void main() {
+    int s;
+    struct sockaddr_in addr;
+    char buffer[256];
+    if((s = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        perror(â€œsocketâ€);
+        exit(1);
+    }
+    // å¡«å†™sockaddr_inç»“æ„
+    bzero(&addr, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(PORT);
+    addr.sin_addr.s_addr = inet_addr(SERVER_IP);
+    // å°è¯•è¿çº¿
+    if (connect(s, &addr, sizeof(addr)) < 0) {
+        perror(â€œconnectâ€);
+        exit(1);
+    }
+    // æ¥æ”¶ç”±serverç«¯ä¼ æ¥çš„ä¿¡æ¯
+    recv(s, buffer, sizeof(buffer), 0);
+    printf("%s\n", buffer);
+    while(1) {
+        bzero(buffer, sizeof(buffer));
+        // ä»æ ‡å‡†è¾“å…¥è®¾å¤‡å–å¾—å­—ç¬¦ä¸²
+        read(STDIN_FILENO, buffer, sizeof(buffer));
+        // å°†å­—ç¬¦ä¸²ä¼ ç»™serverç«¯
+        if(send(s, buffer, sizeof(buffer), 0)<0){
+            perror("send");
+            exit(1);
+        }
+    }
+}
+æ‰§è¡Œ
+$ ./connect
+Welcome to server!
+hi I am client! /*é”®ç›˜è¾“å…¥*/
+/*<Ctrl+C>ä¸­æ–­ç¨‹åº*/
+
+
+endprotoentï¼ˆç»“æŸç½‘ç»œåè®®æ•°æ®çš„è¯»å–ï¼‰
+ç›¸å…³å‡½æ•°
+getprotoentï¼Œgetprotobynameï¼Œgetprotobynumberï¼Œsetprotoent
+è¡¨å¤´æ–‡ä»¶
+#include<netdb.h>
+å®šä¹‰å‡½æ•°
+void endprotoent(void);
+å‡½æ•°è¯´æ˜
+endprotoent()ç”¨æ¥å…³é—­ç”±getprotoent()æ‰“å¼€çš„æ–‡ä»¶ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+å‚è€ƒgetprotoent()
+
+
+endserventï¼ˆç»“æŸç½‘ç»œæœåŠ¡æ•°æ®çš„è¯»å–ï¼‰
+ç›¸å…³å‡½æ•°
+getserventï¼Œgetservbynameï¼Œgetservbyportï¼Œsetservent
+è¡¨å¤´æ–‡ä»¶
+#include<netdb.h>
+å®šä¹‰å‡½æ•°
+void endservent(void);
+å‡½æ•°è¯´æ˜
+endservent()ç”¨æ¥å…³é—­ç”±getservent()æ‰€æ‰“å¼€çš„æ–‡ä»¶ã€‚
+è¿”å›å€¼
+
+èŒƒä¾‹
+å‚è€ƒgetservent()ã€‚
+
+
+getsockoptï¼ˆå–å¾—socketçŠ¶æ€ï¼‰
+ç›¸å…³å‡½æ•°
+setsockopt
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int getsockopt(int s,int level,int optname,void* optval,socklen_t* optlen);
+å‡½æ•°è¯´æ˜
+getsockopt()ä¼šå°†å‚æ•°sæ‰€æŒ‡å®šçš„socketçŠ¶æ€è¿”å›ã€‚å‚æ•°optnameä»£è¡¨æ¬²å–å¾—ä½•ç§é€‰é¡¹çŠ¶æ€ï¼Œ
+è€Œå‚æ•°optvalåˆ™æŒ‡å‘æ¬²ä¿å­˜ç»“æœçš„å†…å­˜åœ°å€ï¼Œ
+å‚æ•°optlenåˆ™ä¸ºè¯¥ç©ºé—´çš„å¤§å°ã€‚
+å‚æ•°levelã€optnameè¯·å‚è€ƒsetsockopt()ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œè‹¥æœ‰é”™è¯¯åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrno
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°s å¹¶éåˆæ³•çš„socketå¤„ç†ä»£ç 
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocket
+ENOPROTOOPT å‚æ•°optnameæŒ‡å®šçš„é€‰é¡¹ä¸æ­£ç¡®
+EFAULT å‚æ•°optvalæŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+èŒƒä¾‹
+#include<sys/types.h>
+#include<sys/socket.h>
+main()
+{
+int s,optval,optlen = sizeof(int);
+if((s = socket(AF_INET,SOCK_STREAM,0))<0) perror(â€œsocketâ€);
+getsockopt(s,SOL_SOCKET,SO_TYPE,&optval,&optlen);
+printf(â€œoptval = %d\nâ€,optval);
+close(s);}
+æ‰§è¡Œ
+optval = 1 /*SOCK_STREAMçš„å®šä¹‰æ­£æ˜¯æ­¤å€¼*/
+
+
+htonlï¼ˆå°†32ä½ä¸»æœºå­—ç¬¦é¡ºåºè½¬æ¢æˆç½‘ç»œå­—ç¬¦é¡ºåºï¼‰
+ç›¸å…³å‡½æ•°
+htonsï¼Œntohlï¼Œntohs
+è¡¨å¤´æ–‡ä»¶
+#include<netinet/in.h>
+å®šä¹‰å‡½æ•°
+unsigned long int htonl(unsigned long int hostlong);
+å‡½æ•°è¯´æ˜
+htonlï¼ˆï¼‰ç”¨æ¥å°†å‚æ•°æŒ‡å®šçš„32ä½hostlong è½¬æ¢æˆç½‘ç»œå­—ç¬¦é¡ºåºã€‚
+è¿”å›å€¼
+è¿”å›å¯¹åº”çš„ç½‘ç»œå­—ç¬¦é¡ºåºã€‚
+èŒƒä¾‹
+å‚è€ƒgetservbyport()æˆ–connect()ã€‚
+
+
+htonsï¼ˆå°†16ä½ä¸»æœºå­—ç¬¦é¡ºåºè½¬æ¢æˆç½‘ç»œå­—ç¬¦é¡ºåºï¼‰
+ç›¸å…³å‡½æ•°
+htonlï¼Œntohlï¼Œntohs
+è¡¨å¤´æ–‡ä»¶
+#include<netinet/in.h>
+å®šä¹‰å‡½æ•°
+unsigned short int htons(unsigned short int hostshort);
+å‡½æ•°è¯´æ˜
+htons()ç”¨æ¥å°†å‚æ•°æŒ‡å®šçš„16ä½hostshortè½¬æ¢æˆç½‘ç»œå­—ç¬¦é¡ºåºã€‚
+è¿”å›å€¼
+è¿”å›å¯¹åº”çš„ç½‘ç»œå­—ç¬¦é¡ºåºã€‚
+èŒƒä¾‹
+å‚è€ƒconnect()ã€‚
+
+
+inet_addrï¼ˆå°†ç½‘ç»œåœ°å€è½¬æˆäºŒè¿›åˆ¶çš„æ•°å­—ï¼‰
+ç›¸å…³å‡½æ•°
+inet_atonï¼Œinet_ntoa
+è¡¨å¤´æ–‡ä»¶
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+å®šä¹‰å‡½æ•°
+unsigned long int inet_addr(const char *cp);
+å‡½æ•°è¯´æ˜
+inet_addr()ç”¨æ¥å°†å‚æ•°cpæ‰€æŒ‡çš„ç½‘ç»œåœ°å€å­—ç¬¦ä¸²è½¬æ¢æˆç½‘ç»œæ‰€ä½¿ç”¨çš„äºŒè¿›åˆ¶æ•°å­—ã€‚
+ç½‘ç»œåœ°å€å­—ç¬¦ä¸²æ˜¯ä»¥æ•°å­—å’Œç‚¹ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œä¾‹å¦‚:â€œ163.13.132.68â€ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›å¯¹åº”çš„ç½‘ç»œäºŒè¿›åˆ¶çš„æ•°å­—ï¼Œå¤±è´¥è¿”å›-1ã€‚
+
+
+inet_atonï¼ˆå°†ç½‘ç»œåœ°å€è½¬æˆç½‘ç»œäºŒè¿›åˆ¶çš„æ•°å­—ï¼‰
+ç›¸å…³å‡½æ•°
+inet_addrï¼Œinet_ntoa
+è¡¨å¤´æ–‡ä»¶
+#include<sys/scoket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+å®šä¹‰å‡½æ•°
+int inet_aton(const char * cp,struct in_addr *inp);
+å‡½æ•°è¯´æ˜
+inet_aton()ç”¨æ¥å°†å‚æ•°cpæ‰€æŒ‡çš„ç½‘ç»œåœ°å€å­—ç¬¦ä¸²è½¬æ¢æˆç½‘ç»œä½¿ç”¨çš„äºŒè¿›åˆ¶çš„æ•°å­—ï¼Œ
+ç„¶åå­˜äºå‚æ•°inpæ‰€æŒ‡çš„in_addrç»“æ„ä¸­ã€‚
+ç»“æ„in_addrå®šä¹‰å¦‚ä¸‹
+struct in_addr
+{
+unsigned long int s_addr;
+};
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›é0å€¼ï¼Œå¤±è´¥åˆ™è¿”å›0ã€‚
+
+
+inet_ntoaï¼ˆå°†ç½‘ç»œäºŒè¿›åˆ¶çš„æ•°å­—è½¬æ¢æˆç½‘ç»œåœ°å€ï¼‰
+ç›¸å…³å‡½æ•°
+inet_addrï¼Œinet_aton
+è¡¨å¤´æ–‡ä»¶
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+å®šä¹‰å‡½æ•°
+char * inet_ntoa(struct in_addr in);
+å‡½æ•°è¯´æ˜
+inet_ntoa()ç”¨æ¥å°†å‚æ•°inæ‰€æŒ‡çš„ç½‘ç»œäºŒè¿›åˆ¶çš„æ•°å­—è½¬æ¢æˆç½‘ç»œåœ°å€ï¼Œç„¶åå°†æŒ‡å‘æ­¤ç½‘ç»œåœ°å€å­—ç¬¦ä¸²çš„æŒ‡é’ˆè¿”å›ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›å­—ç¬¦ä¸²æŒ‡é’ˆï¼Œå¤±è´¥åˆ™è¿”å›NULLã€‚
+
+
+listenï¼ˆç­‰å¾…è¿æ¥ï¼‰
+ç›¸å…³å‡½æ•°
+socketï¼Œbindï¼Œacceptï¼Œconnect
+è¡¨å¤´æ–‡ä»¶
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int listen(int s,int backlog);
+å‡½æ•°è¯´æ˜
+listen()ç”¨æ¥ç­‰å¾…å‚æ•°s çš„socketè¿çº¿ã€‚å‚æ•°backlogæŒ‡å®šåŒæ—¶èƒ½å¤„ç†çš„æœ€å¤§è¿æ¥è¦æ±‚ï¼Œ
+å¦‚æœè¿æ¥æ•°ç›®è¾¾æ­¤ä¸Šé™åˆ™clientç«¯å°†æ”¶åˆ°ECONNREFUSEDçš„é”™è¯¯ã€‚Listen()å¹¶æœªå¼€å§‹æ¥æ”¶è¿çº¿ï¼Œ
+åªæ˜¯è®¾ç½®socketä¸ºlistenæ¨¡å¼ï¼ŒçœŸæ­£æ¥æ”¶clientç«¯è¿çº¿çš„æ˜¯accept()ã€‚
+é€šå¸¸listen()ä¼šåœ¨socket()ï¼Œbind()ä¹‹åè°ƒç”¨ï¼Œæ¥ç€æ‰è°ƒç”¨accept()ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrno
+é™„åŠ è¯´æ˜
+listen()åªé€‚ç”¨SOCK_STREAMæˆ–SOCK_SEQPACKETçš„socketç±»å‹ã€‚å¦‚æœsocketä¸ºAF_INETåˆ™å‚æ•°backlog æœ€å¤§å€¼å¯è®¾è‡³128ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°sockfdéåˆæ³•socketå¤„ç†ä»£ç 
+EACCESS æƒé™ä¸è¶³
+EOPNOTSUPP æŒ‡å®šçš„socketå¹¶æœªæ”¯æ´listenæ¨¡å¼ã€‚
+èŒƒä¾‹
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include<unistd.h>
+#define PORT 1234
+#define MAXSOCKFD 10
+main()
+{
+int sockfd,newsockfd,is_connected[MAXSOCKFD],fd;
+struct sockaddr_in addr;
+int addr_len = sizeof(struct sockaddr_in);
+fd_set readfds;
+char buffer[256];
+char msg[ ] =â€Welcome to server!â€;
+if ((sockfd = socket(AF_INET,SOCK_STREAM,0))<0){
+perror(â€œsocketâ€);
+exit(1);
+}
+bzero(&addr,sizeof(addr));
+addr.sin_family =AF_INET;
+addr.sin_port = htons(PORT);
+addr.sin_addr.s_addr = htonl(INADDR_ANY);
+if(bind(sockfd,&addr,sizeof(addr))<0){
+perror(â€œconnectâ€);
+exit(1);
+}
+if(listen(sockfd,3)<0){
+perror(â€œlistenâ€);
+exit(1);
+}
+for(fd=0;fd<MAXSOCKFD;fd++)
+is_connected[fd]=0;
+while(1){
+FD_ZERO(&readfds);
+FD_SET(sockfd,&readfds);
+for(fd=0;fd<MAXSOCKFD;fd++)
+if(is_connected[fd]) FD_SET(fd,&readfds);
+if(!select(MAXSOCKFD,&readfds,NULL,NULL,NULL))continue;
+for(fd=0;fd<MAXSOCKFD;fd++)
+if(FD_ISSET(fd,&readfds)){
+if(sockfd = =fd){
+if((newsockfd = accept (sockfd,&addr,&addr_len))<0)
+perror(â€œacceptâ€);
+write(newsockfd,msg,sizeof(msg));
+is_connected[newsockfd] =1;
+printf(â€œcnnect from %s\nâ€,inet_ntoa(addr.sin_addr));
+}else{
+bzero(buffer,sizeof(buffer));
+if(read(fd,buffer,sizeof(buffer))<=0){
+printf(â€œconnect closed.\nâ€);
+is_connected[fd]=0;
+close(fd);
+}else
+printf(â€œ%sâ€,buffer);
+}
+}
+}
+}
+æ‰§è¡Œ
+$ ./listen
+connect from 127.0.0.1
+hi I am client
+connected closed.
+
+
+ntohlï¼ˆå°†32ä½ç½‘ç»œå­—ç¬¦é¡ºåºè½¬æ¢æˆä¸»æœºå­—ç¬¦é¡ºåºï¼‰
+ç›¸å…³å‡½æ•°
+htonlï¼Œhtonsï¼Œntohs
+è¡¨å¤´æ–‡ä»¶
+#include<netinet/in.h>
+å®šä¹‰å‡½æ•°
+unsigned long int ntohl(unsigned long int netlong);
+å‡½æ•°è¯´æ˜
+ntohl()ç”¨æ¥å°†å‚æ•°æŒ‡å®šçš„32ä½netlongè½¬æ¢æˆä¸»æœºå­—ç¬¦é¡ºåºã€‚
+è¿”å›å€¼
+è¿”å›å¯¹åº”çš„ä¸»æœºå­—ç¬¦é¡ºåºã€‚
+èŒƒä¾‹
+å‚è€ƒgetservent()ã€‚
+
+
+ntohsï¼ˆå°†16ä½ç½‘ç»œå­—ç¬¦é¡ºåºè½¬æ¢æˆä¸»æœºå­—ç¬¦é¡ºåºï¼‰
+ç›¸å…³å‡½æ•°
+htonlï¼Œhtonsï¼Œntohl
+è¡¨å¤´æ–‡ä»¶
+#include<netinet/in.h>
+å®šä¹‰å‡½æ•°
+unsigned short int ntohs(unsigned short int netshort);
+å‡½æ•°è¯´æ˜
+ntohs()ç”¨æ¥å°†å‚æ•°æŒ‡å®šçš„16ä½netshortè½¬æ¢æˆä¸»æœºå­—ç¬¦é¡ºåºã€‚
+è¿”å›å€¼
+è¿”å›å¯¹åº”çš„ä¸»æœºé¡ºåºã€‚
+èŒƒä¾‹
+å‚è€ƒgetservent()ã€‚
+
+
+recvï¼ˆç»socketæ¥æ”¶æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+recvfromï¼Œrecvmsgï¼Œsendï¼Œsendtoï¼Œsocket
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int recv(int s,void *buf,int len,unsigned int flags);
+å‡½æ•°è¯´æ˜
+recv()ç”¨æ¥æ¥æ”¶è¿œç«¯ä¸»æœºç»æŒ‡å®šçš„socketä¼ æ¥çš„æ•°æ®ï¼Œå¹¶æŠŠæ•°æ®å­˜åˆ°ç”±å‚æ•°buf æŒ‡å‘çš„å†…å­˜ç©ºé—´ï¼Œ
+å‚æ•°lenä¸ºå¯æ¥æ”¶æ•°æ®çš„æœ€å¤§é•¿åº¦ã€‚
+å‚æ•°
+flagsä¸€èˆ¬è®¾0ã€‚å…¶ä»–æ•°å€¼å®šä¹‰å¦‚ä¸‹:
+MSG_OOB æ¥æ”¶ä»¥out-of-band é€å‡ºçš„æ•°æ®ã€‚
+MSG_PEEK è¿”å›æ¥çš„æ•°æ®å¹¶ä¸ä¼šåœ¨ç³»ç»Ÿå†…åˆ é™¤ï¼Œå¦‚æœå†è°ƒç”¨recv()ä¼šè¿”å›ç›¸åŒçš„æ•°æ®å†…å®¹ã€‚
+MSG_WAITALLå¼ºè¿«æ¥æ”¶åˆ°lenå¤§å°çš„æ•°æ®åæ‰èƒ½è¿”å›ï¼Œé™¤éæœ‰é”™è¯¯æˆ–ä¿¡å·äº§ç”Ÿã€‚
+MSG_NOSIGNALæ­¤æ“ä½œä¸æ„¿è¢«SIGPIPEä¿¡å·ä¸­æ–­è¿”å›å€¼æˆåŠŸåˆ™è¿”å›æ¥æ”¶åˆ°çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°séåˆæ³•çš„socketå¤„ç†ä»£ç 
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­
+EAGAIN æ­¤åŠ¨ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„socketä¸ºä¸å¯é˜»æ–­
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³ã€‚
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+å‚è€ƒlisten()ã€‚
+
+
+recvfromï¼ˆç»socketæ¥æ”¶æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+recvï¼Œrecvmsgï¼Œsendï¼Œsendtoï¼Œsocket
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int recvfrom(int s,void *buf,int len,unsigned int flags ,struct sockaddr *from ,int *fromlen);
+å‡½æ•°è¯´æ˜
+recv()ç”¨æ¥æ¥æ”¶è¿œç¨‹ä¸»æœºç»æŒ‡å®šçš„socket ä¼ æ¥çš„æ•°æ®ï¼Œå¹¶æŠŠæ•°æ®å­˜åˆ°ç”±å‚æ•°buf æŒ‡å‘çš„å†…å­˜ç©ºé—´ï¼Œ
+å‚æ•°len ä¸ºå¯æ¥æ”¶æ•°æ®çš„æœ€å¤§é•¿åº¦ã€‚
+å‚æ•°flags ä¸€èˆ¬è®¾0ï¼Œå…¶ä»–æ•°å€¼å®šä¹‰è¯·å‚è€ƒrecv()ã€‚
+å‚æ•°fromç”¨æ¥æŒ‡å®šæ¬²ä¼ é€çš„ç½‘ç»œåœ°å€ï¼Œç»“æ„sockaddr è¯·å‚è€ƒbind()ã€‚
+å‚æ•°fromlenä¸ºsockaddrçš„ç»“æ„é•¿åº¦ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›æ¥æ”¶åˆ°çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°séåˆæ³•çš„socketå¤„ç†ä»£ç 
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´ã€‚
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+EAGAIN æ­¤åŠ¨ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„socketä¸ºä¸å¯é˜»æ–­ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+/*åˆ©ç”¨socketçš„UDP client
+æ­¤ç¨‹åºä¼šè¿çº¿UDP serverï¼Œå¹¶å°†é”®ç›˜è¾“å…¥çš„å­—ç¬¦ä¸²ä¼ ç»™serverã€‚
+UDP server èŒƒä¾‹è¯·å‚è€ƒsendtoï¼ˆï¼‰ã€‚
+*/
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<unistd.h>
+#include<sys/typs.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#define PORT 2345
+#define SERVER_IP â€œ127.0.0.1â€
+main()
+{
+int s,len;
+struct sockaddr_in addr;
+int addr_len =sizeof(struct sockaddr_in);
+char buffer[256];
+/* å»ºç«‹socket*/
+if((s = socket(AF_INET,SOCK_DGRAM,0))<0){
+perror(â€œsocketâ€);
+exit(1);
+}
+/* å¡«å†™sockaddr_in*/
+bzero(&addr,sizeof(addr));
+addr.sin_family = AF_INET;
+addr.sin_port = htons(PORT);
+addr.sin_addr.s_addr = inet_addr(SERVER_IP);
+while(1){
+bzero(buffer,sizeof(buffer));
+/* ä»æ ‡å‡†è¾“å…¥è®¾å¤‡å–å¾—å­—ç¬¦ä¸²*/
+len =read(STDIN_FILENO,buffer,sizeof(buffer));
+/* å°†å­—ç¬¦ä¸²ä¼ é€ç»™serverç«¯*/
+sendto(s,buffer,len,0,&addr,addr_len);
+/* æ¥æ”¶serverç«¯è¿”å›çš„å­—ç¬¦ä¸²*/
+len = recvfrom(s,buffer,sizeof(buffer),0,&addr,&addr_len);
+printf(â€œreceive: %sâ€,buffer);
+}
+}
+æ‰§è¡Œ
+(å…ˆæ‰§è¡Œudp server å†æ‰§è¡Œudp client)
+hello /*ä»é”®ç›˜è¾“å…¥å­—ç¬¦ä¸²*/
+receive: hello /*serverç«¯è¿”å›æ¥çš„å­—ç¬¦ä¸²*/
+
+
+recvmsgï¼ˆç»socketæ¥æ”¶æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+recvï¼Œrecvfromï¼Œsendï¼Œsendtoï¼Œsendmsgï¼Œsocket
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socktet.h>
+å®šä¹‰å‡½æ•°
+int recvmsg(int s,struct msghdr *msg,unsigned int flags);
+å‡½æ•°è¯´æ˜
+recvmsg()ç”¨æ¥æ¥æ”¶è¿œç¨‹ä¸»æœºç»æŒ‡å®šçš„socketä¼ æ¥çš„æ•°æ®ã€‚å‚æ•°sä¸ºå·²å»ºç«‹å¥½è¿çº¿çš„socketï¼Œ
+å¦‚æœåˆ©ç”¨UDPåè®®åˆ™ä¸éœ€ç»è¿‡è¿çº¿æ“ä½œã€‚
+
+å‚æ•°msgæŒ‡å‘æ¬²è¿çº¿çš„æ•°æ®ç»“æ„å†…å®¹ï¼Œ
+å‚æ•°flagsä¸€èˆ¬è®¾0ï¼Œè¯¦ç»†æè¿°è¯·å‚è€ƒsend()ã€‚å…³äºç»“æ„msghdrçš„å®šä¹‰è¯·å‚è€ƒsendmsg()ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›æ¥æ”¶åˆ°çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°séåˆæ³•çš„socketå¤„ç†ä»£ç ã€‚
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+EAGAIN æ­¤æ“ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„socketä¸ºä¸å¯é˜»æ–­ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+å‚è€ƒrecvfrom()ã€‚
+
+
+sendï¼ˆç»socketä¼ é€æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+sendtoï¼Œsendmsgï¼Œrecvï¼Œrecvfromï¼Œsocket
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int send(int s,const void * msg,int len,unsigned int falgs);
+å‡½æ•°è¯´æ˜
+send()ç”¨æ¥å°†æ•°æ®ç”±æŒ‡å®šçš„socket ä¼ ç»™å¯¹æ–¹ä¸»æœºã€‚å‚æ•°sä¸ºå·²å»ºç«‹å¥½è¿æ¥çš„socketã€‚
+å‚æ•°msgæŒ‡å‘æ¬²è¿çº¿çš„æ•°æ®å†…å®¹ï¼Œ
+å‚æ•°lenåˆ™ä¸ºæ•°æ®é•¿åº¦ã€‚
+å‚æ•°flagsä¸€èˆ¬è®¾0ï¼Œå…¶ä»–æ•°å€¼å®šä¹‰å¦‚ä¸‹
+MSG_OOB ä¼ é€çš„æ•°æ®ä»¥out-of-band é€å‡ºã€‚
+MSG_DONTROUTE å–æ¶ˆè·¯ç”±è¡¨æŸ¥è¯¢
+MSG_DONTWAIT è®¾ç½®ä¸ºä¸å¯é˜»æ–­è¿ä½œ
+MSG_NOSIGNAL æ­¤åŠ¨ä½œä¸æ„¿è¢«SIGPIPE ä¿¡å·ä¸­æ–­ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›å®é™…ä¼ é€å‡ºå»çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥è¿”å›-1ã€‚é”™è¯¯åŸå› å­˜äºerrno
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°s éåˆæ³•çš„socketå¤„ç†ä»£ç ã€‚
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+EAGAIN æ­¤æ“ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„socketä¸ºä¸å¯é˜»æ–­ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+å‚è€ƒconnect()
+
+
+sendmsgï¼ˆç»socketä¼ é€æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+sendï¼Œsendtoï¼Œrecvï¼Œrecvfromï¼Œrecvmsgï¼Œsocket
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int sendmsg(int s,const strcut msghdr *msg,unsigned int flags);
+å‡½æ•°è¯´æ˜
+sendmsg()ç”¨æ¥å°†æ•°æ®ç”±æŒ‡å®šçš„socketä¼ ç»™å¯¹æ–¹ä¸»æœºã€‚å‚æ•°sä¸ºå·²å»ºç«‹å¥½è¿çº¿çš„socketï¼Œ
+å¦‚æœåˆ©ç”¨UDPåè®®åˆ™ä¸éœ€ç»è¿‡è¿çº¿æ“ä½œã€‚
+
+å‚æ•°msg æŒ‡å‘æ¬²è¿çº¿çš„æ•°æ®ç»“æ„å†…å®¹ï¼Œ
+å‚æ•°flagsä¸€èˆ¬é»˜è®¤ä¸º0ï¼Œè¯¦ç»†æè¿°è¯·å‚è€ƒsend()ã€‚
+ç»“æ„msghdrå®šä¹‰å¦‚ä¸‹
+struct msghdr
+{
+void *msg_name; /*Address to send to /receive from . */
+socklen_t msg_namelen; /* Length of addres data */
+strcut iovec * msg_iov; /* Vector of data to send/receive into */
+size_t msg_iovlen; /* Number of elements in the vector */
+void * msg_control; /* Ancillary dat */
+size_t msg_controllen; /* Ancillary data buffer length */
+int msg_flags; /* Flags on received message */
+};
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›å®é™…ä¼ é€å‡ºå»çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrno
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°s éåˆæ³•çš„socketå¤„ç†ä»£ç ã€‚
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+EAGAIN æ­¤æ“ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„socketä¸ºä¸å¯é˜»æ–­ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³
+ENOMEM æ ¸å¿ƒå†…å­˜ä¸è¶³
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+å‚è€ƒsendto()ã€‚
+
+
+sendtoï¼ˆç»socketä¼ é€æ•°æ®ï¼‰
+ç›¸å…³å‡½æ•°
+send , sendmsg,recv , recvfrom , socket
+è¡¨å¤´æ–‡ä»¶
+#include < sys/types.h >
+#include < sys/socket.h >
+å®šä¹‰å‡½æ•°
+int sendto ( int s , const void * msg, int len, unsigned int flags, const 
+struct sockaddr * to , int tolen ) ;
+å‡½æ•°è¯´æ˜
+sendto() ç”¨æ¥å°†æ•°æ®ç”±æŒ‡å®šçš„socketä¼ ç»™å¯¹æ–¹ä¸»æœºã€‚å‚æ•°sä¸ºå·²å»ºå¥½è¿çº¿çš„socket,
+å¦‚æœåˆ©ç”¨UDPåè®®åˆ™ä¸éœ€ç»è¿‡è¿çº¿æ“ä½œã€‚
+å‚æ•°msgæŒ‡å‘æ¬²è¿çº¿çš„æ•°æ®å†…å®¹ï¼Œ
+å‚æ•°flags ä¸€èˆ¬è®¾0ï¼Œè¯¦ç»†æè¿°è¯·å‚è€ƒsend()ã€‚
+å‚æ•°toç”¨æ¥æŒ‡å®šæ¬²ä¼ é€çš„ç½‘ç»œåœ°å€ï¼Œç»“æ„sockaddrè¯·å‚è€ƒbind()ã€‚
+å‚æ•°tolenä¸ºsockaddrçš„ç»“æœé•¿åº¦ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›å®é™…ä¼ é€å‡ºå»çš„å­—ç¬¦æ•°ï¼Œå¤±è´¥è¿”å›ï¼1ï¼Œé”™è¯¯åŸå› å­˜äºerrno ä¸­ã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°séæ³•çš„socketå¤„ç†ä»£ç ã€‚
+EFAULT å‚æ•°ä¸­æœ‰ä¸€æŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´ã€‚
+WNOTSOCK canshu sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocketã€‚
+EINTR è¢«ä¿¡å·æ‰€ä¸­æ–­ã€‚
+EAGAIN æ­¤åŠ¨ä½œä¼šä»¤è¿›ç¨‹é˜»æ–­ï¼Œä½†å‚æ•°sçš„soketä¸ºè¡¥è¯¾é˜»æ–­çš„ã€‚
+ENOBUFS ç³»ç»Ÿçš„ç¼“å†²å†…å­˜ä¸è¶³ã€‚
+EINVAL ä¼ ç»™ç³»ç»Ÿè°ƒç”¨çš„å‚æ•°ä¸æ­£ç¡®ã€‚
+èŒƒä¾‹
+#include < sys/types.h >
+#include < sys/socket.h >
+# include <netinet.in.h>
+#include <arpa.inet.h>
+#define PORT 2345 /*ä½¿ç”¨çš„port*/
+main(){
+int sockfd,len;
+struct sockaddr_in addr;
+char buffer[256];
+/*å»ºç«‹socket*/
+if(sockfd=socket (AF_INET,SOCK_DGRAM,0))<0){
+perror (â€œsocketâ€);
+exit(1);
+}
+/*å¡«å†™sockaddr_in ç»“æ„*/
+bzero ( &addr, sizeof(addr) );
+addr.sin_family=AF_INET;
+addr.sin_port=htons(PORT);
+addr.sin_addr=hton1(INADDR_ANY) ;
+if (bind(sockfd, &addr, sizeof(addr))<0){
+perror(â€œconnectâ€);
+exit(1);
+}
+while(1){
+bezro(buffer,sizeof(buffer));
+len = recvfrom(socket,buffer,sizeof(buffer), 0 , &addr &addr_len);
+/*æ˜¾ç¤ºclientç«¯çš„ç½‘ç»œåœ°å€*/
+printf(â€œreceive from %s\n â€œ , inet_ntoa( addr.sin_addr));
+/*å°†å­—ä¸²è¿”å›ç»™clientç«¯*/
+sendto(sockfd,buffer,len,0,&addr,addr_len);â€
+}
+}
+æ‰§è¡Œ
+è¯·å‚è€ƒrecvfrom()
+
+
+setprotoentï¼ˆæ‰“å¼€ç½‘ç»œåè®®çš„æ•°æ®æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getprotobyname, getprotobynumber, endprotoent
+è¡¨å¤´æ–‡ä»¶
+#include <netdb.h>
+å®šä¹‰å‡½æ•°
+void setprotoent (int stayopen);
+å‡½æ•°è¯´æ˜
+setprotoent()ç”¨æ¥æ‰“å¼€/etc/protocolsï¼Œ 
+å¦‚æœå‚æ•°stayopenå€¼ä¸º1ï¼Œåˆ™æ¥ä¸‹æ¥çš„getprotobyname()æˆ–getprotobynumber()å°†ä¸ä¼šè‡ªåŠ¨å…³é—­æ­¤æ–‡ä»¶ã€‚
+
+
+setserventï¼ˆæ‰“å¼€ä¸»æœºç½‘ç»œæœåŠ¡çš„æ•°æ®æ–‡ä»¶ï¼‰
+ç›¸å…³å‡½æ•°
+getservent, getservbyname, getservbyport, endservent
+è¡¨å¤´æ–‡ä»¶
+#include < netdb.h >
+å®šä¹‰å‡½æ•°
+void setservent (int stayopen);
+å‡½æ•°è¯´æ˜
+setservent()ç”¨æ¥æ‰“å¼€/etc/servicesï¼Œ
+å¦‚æœå‚æ•°stayopenå€¼ä¸º1ï¼Œåˆ™æ¥ä¸‹æ¥çš„getservbyname()æˆ–getservbyport()å°†è¡¥å›è‡ªåŠ¨å…³é—­æ–‡ä»¶ã€‚
+
+
+setsockoptï¼ˆè®¾ç½®socketçŠ¶æ€ï¼‰
+ç›¸å…³å‡½æ•°
+getsockopt
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int setsockopt(int s,int level,int optname,const void * optval,,socklen_toptlen);
+å‡½æ•°è¯´æ˜
+setsockopt()ç”¨æ¥è®¾ç½®å‚æ•°sæ‰€æŒ‡å®šçš„socketçŠ¶æ€ã€‚
+å‚æ•°levelä»£è¡¨æ¬²è®¾ç½®çš„ç½‘ç»œå±‚ï¼Œä¸€èˆ¬è®¾æˆSOL_SOCKETä»¥å­˜å–socketå±‚ã€‚
+å‚æ•°optnameä»£è¡¨æ¬²è®¾ç½®çš„é€‰é¡¹ï¼Œæœ‰ä¸‹åˆ—å‡ ç§æ•°å€¼:
+SO_DEBUG æ‰“å¼€æˆ–å…³é—­æ’é”™æ¨¡å¼
+SO_REUSEADDR å…è®¸åœ¨bindï¼ˆï¼‰è¿‡ç¨‹ä¸­æœ¬åœ°åœ°å€å¯é‡å¤ä½¿ç”¨
+SO_TYPE è¿”å›socketå½¢æ€ã€‚
+SO_ERROR è¿”å›socketå·²å‘ç”Ÿçš„é”™è¯¯åŸå› 
+SO_DONTROUTE é€å‡ºçš„æ•°æ®åŒ…ä¸è¦åˆ©ç”¨è·¯ç”±è®¾å¤‡æ¥ä¼ è¾“ã€‚
+SO_BROADCAST ä½¿ç”¨å¹¿æ’­æ–¹å¼ä¼ é€
+SO_SNDBUF è®¾ç½®é€å‡ºçš„æš‚å­˜åŒºå¤§å°
+SO_RCVBUF è®¾ç½®æ¥æ”¶çš„æš‚å­˜åŒºå¤§å°
+SO_KEEPALIVE å®šæœŸç¡®å®šè¿çº¿æ˜¯å¦å·²ç»ˆæ­¢ã€‚
+SO_OOBINLINE å½“æ¥æ”¶åˆ°OOB æ•°æ®æ—¶ä¼šé©¬ä¸Šé€è‡³æ ‡å‡†è¾“å…¥è®¾å¤‡
+SO_LINGER ç¡®ä¿æ•°æ®å®‰å…¨ä¸”å¯é çš„ä¼ é€å‡ºå»ã€‚
+
+å‚æ•°
+optvalä»£è¡¨æ¬²è®¾ç½®çš„å€¼ï¼Œå‚æ•°optlenåˆ™ä¸ºoptvalçš„é•¿åº¦ã€‚
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œè‹¥æœ‰é”™è¯¯åˆ™è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoã€‚
+é™„åŠ è¯´æ˜
+EBADF å‚æ•°så¹¶éåˆæ³•çš„socketå¤„ç†ä»£ç 
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocket
+ENOPROTOOPT å‚æ•°optnameæŒ‡å®šçš„é€‰é¡¹ä¸æ­£ç¡®ã€‚
+EFAULT å‚æ•°optvalæŒ‡é’ˆæŒ‡å‘æ— æ³•å­˜å–çš„å†…å­˜ç©ºé—´ã€‚
+èŒƒä¾‹
+å‚è€ƒgetsockopt()ã€‚
+
+
+shutdownï¼ˆç»ˆæ­¢socketé€šä¿¡ï¼‰
+ç›¸å…³å‡½æ•°
+socketï¼Œconnect
+è¡¨å¤´æ–‡ä»¶
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int shutdown(int s,int how);
+å‡½æ•°è¯´æ˜
+shutdown()ç”¨æ¥ç»ˆæ­¢å‚æ•°sæ‰€æŒ‡å®šçš„socketè¿çº¿ã€‚å‚æ•°sæ˜¯è¿çº¿ä¸­çš„socketå¤„ç†ä»£ç ï¼Œå‚æ•°howæœ‰ä¸‹åˆ—å‡ ç§æƒ…å†µ:
+how=0 ç»ˆæ­¢è¯»å–æ“ä½œã€‚
+how=1 ç»ˆæ­¢ä¼ é€æ“ä½œ
+how=2 ç»ˆæ­¢è¯»å–åŠä¼ é€æ“ä½œ
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›0ï¼Œå¤±è´¥è¿”å›-1ï¼Œé”™è¯¯åŸå› å­˜äºerrnoã€‚
+é”™è¯¯ä»£ç 
+EBADF å‚æ•°sä¸æ˜¯æœ‰æ•ˆçš„socketå¤„ç†ä»£ç 
+ENOTSOCK å‚æ•°sä¸ºä¸€æ–‡ä»¶æè¿°è¯ï¼Œésocket
+ENOTCONN å‚æ•°sæŒ‡å®šçš„socketå¹¶æœªè¿çº¿
+
+
+socketï¼ˆå»ºç«‹ä¸€ä¸ªsocketé€šä¿¡ï¼‰
+ç›¸å…³å‡½æ•°
+acceptï¼Œbindï¼Œconnectï¼Œlisten
+è¡¨å¤´æ–‡ä»¶
+#include<sys/types.h>
+#include<sys/socket.h>
+å®šä¹‰å‡½æ•°
+int socket(int domain,int type,int protocol);
+å‡½æ•°è¯´æ˜
+socket()ç”¨æ¥å»ºç«‹ä¸€ä¸ªæ–°çš„socketï¼Œä¹Ÿå°±æ˜¯å‘ç³»ç»Ÿæ³¨å†Œï¼Œé€šçŸ¥ç³»ç»Ÿå»ºç«‹ä¸€é€šä¿¡ç«¯å£ã€‚
+
+å‚æ•°domain æŒ‡å®šä½¿ç”¨ä½•ç§çš„åœ°å€ç±»å‹ï¼Œå®Œæ•´çš„å®šä¹‰åœ¨/usr/include/bits/socket.h å†…ï¼Œåº•ä¸‹æ˜¯å¸¸è§çš„åè®®:
+PF_UNIX/PF_LOCAL/AF_UNIX/AF_LOCAL UNIX è¿›ç¨‹é€šä¿¡åè®®
+PF_INET?AF_INET Ipv4ç½‘ç»œåè®®
+PF_INET6/AF_INET6 Ipv6 ç½‘ç»œåè®®
+PF_IPX/AF_IPX IPX-Novellåè®®
+PF_NETLINK/AF_NETLINK æ ¸å¿ƒç”¨æˆ·æ¥å£è£…ç½®
+PF_X25/AF_X25 ITU-T X.25/ISO-8208 åè®®
+PF_AX25/AF_AX25 ä¸šä½™æ— çº¿AX.25åè®®
+PF_ATMPVC/AF_ATMPVC å­˜å–åŸå§‹ATM PVCs
+PF_APPLETALK/AF_APPLETALK appletalkï¼ˆDDPï¼‰åè®®
+PF_PACKET/AF_PACKET åˆçº§å°åŒ…æ¥å£
+
+å‚æ•°
+typeæœ‰ä¸‹åˆ—å‡ ç§æ•°å€¼:
+SOCK_STREAM æä¾›åŒå‘è¿ç»­ä¸”å¯ä¿¡èµ–çš„æ•°æ®æµï¼Œå³TCPã€‚æ”¯æŒ
+OOB æœºåˆ¶ï¼Œåœ¨æ‰€æœ‰æ•°æ®ä¼ é€å‰å¿…é¡»ä½¿ç”¨connect()æ¥å»ºç«‹è¿çº¿çŠ¶æ€ã€‚
+SOCK_DGRAM ä½¿ç”¨ä¸è¿ç»­ä¸å¯ä¿¡èµ–çš„æ•°æ®åŒ…è¿æ¥
+SOCK_SEQPACKET æä¾›è¿ç»­å¯ä¿¡èµ–çš„æ•°æ®åŒ…è¿æ¥
+SOCK_RAW æä¾›åŸå§‹ç½‘ç»œåè®®å­˜å–
+SOCK_RDM æä¾›å¯ä¿¡èµ–çš„æ•°æ®åŒ…è¿æ¥
+SOCK_PACKET æä¾›å’Œç½‘ç»œé©±åŠ¨ç¨‹åºç›´æ¥é€šä¿¡ã€‚
+protocolç”¨æ¥æŒ‡å®šsocketæ‰€ä½¿ç”¨çš„ä¼ è¾“åè®®ç¼–å·ï¼Œé€šå¸¸æ­¤å‚è€ƒä¸ç”¨ç®¡å®ƒï¼Œè®¾ä¸º0å³å¯ã€‚
+
+è¿”å›å€¼
+æˆåŠŸåˆ™è¿”å›socketå¤„ç†ä»£ç ï¼Œå¤±è´¥è¿”å›-1ã€‚
+é”™è¯¯ä»£ç 
+EPROTONOSUPPORT å‚æ•°domainæŒ‡å®šçš„ç±»å‹ä¸æ”¯æŒå‚æ•°typeæˆ–protocolæŒ‡å®šçš„åè®®
+ENFILE æ ¸å¿ƒå†…å­˜ä¸è¶³ï¼Œæ— æ³•å»ºç«‹æ–°çš„socketç»“æ„
+EMFILE è¿›ç¨‹æ–‡ä»¶è¡¨æº¢å‡ºï¼Œæ— æ³•å†å»ºç«‹æ–°çš„socket
+EACCESS æƒé™ä¸è¶³ï¼Œæ— æ³•å»ºç«‹typeæˆ–protocolæŒ‡å®šçš„åè®®
+ENOBUFS/ENOMEM å†…å­˜ä¸è¶³
+EINVAL å‚æ•°domain/type/protocolä¸åˆæ³•
+èŒƒä¾‹
+å‚è€ƒconnect()ã€‚
+<pre />
+
+<h2>End</h2>
+
 </body>
 </html>
