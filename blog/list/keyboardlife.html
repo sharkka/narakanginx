@@ -68,7 +68,7 @@ document.write(`<font face="楷体">`
     + s.fontcolor("rgb(200, 240, 60)").fontsize(4)
     + `</font>`);
 </script>
-<img src="/imgs/goldenii.jpg" wight=600 height=600 alt="" />
+
 <hr />
 <pre>
     有这么几件事，学校不教，爹妈不聊，国人要想有所成，全靠天赋，或者自学成才。
@@ -81,8 +81,90 @@ document.write(`<font face="楷体">`
 中最后来访的朋友。
 
 </pre>
-<hr />
 
+<hr />
+<pre>
+
+试着给那把球帽做一个主控吧
+
+/**
+ * @File     cuskbd.h
+ * @Brief    
+ * @Author   Naraka
+ * @DateTime 2019/9/2 10:29:23
+ */
+
+#include <Keypad.h>
+
+char keys[4][4] = {
+  {'1','2','3','A'},
+  {'4','5','6','B'},
+  {'7','8','9','C'},
+  {'*','0','#','D'}
+};
+byte rowPins[4] = {9, 8, 7, 6}; //行所使用的针脚
+byte colPins[4] = {5, 4, 3, 2}; //列所使用的针脚
+
+Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, 4, 4);
+byte ledPin = 13;
+ 
+boolean blink = false;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, HIGH);
+  // 添加监听事件 类似于SerialEvent
+  keypad.addEventListener(keypadEvent);
+  // 设置长按触发时间，默认为1000ms
+  keypad.setHoldTime(500);
+}
+
+void loop() {
+  char key = keypad.getKey();
+  
+  if (key) {
+    Serial.println(key);
+  }
+  if (blink) {
+    //*键长按每200ms闪一次，*键松开时停止
+    digitalWrite(ledPin, !digitalRead(ledPin));
+    delay(100);
+  }
+}
+ 
+// 上边提到的监听事件，SerialEvent在每次循环结束会执行一次，这个估计也差不多。
+// 总之程序一个循环只会执行一次吧
+void keypadEvent(KeypadEvent key){
+  switch (keypad.getState()) {
+    // 获取键值
+    case PRESSED:
+      switch (key) {
+        case '#': digitalWrite(ledPin,!digitalRead(ledPin));
+          break;
+        case '*': 
+          digitalWrite(ledPin,!digitalRead(ledPin));
+          break;
+      }
+    break;
+    case RELEASED:
+      switch (key) {
+        case '*': 
+          digitalWrite(ledPin,!digitalRead(ledPin));
+          blink = false;
+          break;
+      }
+    break;
+    case HOLD:
+      switch (key) {
+        case '*': blink = true; break;
+      }
+      break;
+  }
+}
+<pre />
+<hr />
+<img src="/imgs/goldenii.jpg" wight=600 height=600 alt="" />
 <h2>End</h2>
 
 </body>
