@@ -104,14 +104,42 @@ document.write(`<font face="楷体">` + s.fontcolor("rgb(200, 240, 60)").fontsiz
 <hr />
 
 <script type="text/javascript"> 
+function wk(w) {
+    switch (w) {
+      case 1:
+        return '一'
+        break;
+      case 2:
+        return '二'
+        break;
+      case 3:
+        return '三'
+        break;
+      case 5:
+        return '四'
+        break;
+      case 6:
+        return '五'
+        break;
+      case 7:
+        return '六'
+        break;
+      case 0:
+        return '日'
+        break;
+    }
+}
+
 window.onload = function() { 
 var show = document.getElementById("show"); 
 setInterval(function() {  
 var time = new Date();  // 程序计时的月从0开始取值后+1  
+
+var wkday=date.getDay(); //获取当前星期几
 var m = time.getMonth() + 1;  
 var t = time.getFullYear() + "-" + m + "-"  
 + time.getDate() + " " + time.getHours() + ":"  
-+ time.getMinutes() + ":" + time.getSeconds();  
++ time.getMinutes() + ":" + time.getSeconds() + " 星期" + wk(day);
 show.innerHTML = t; 
 }, 1000); 
 };
