@@ -139,7 +139,7 @@ var wkday = date.getDay(); //获取当前星期几
 var m = time.getMonth() + 1;  
 var t = time.getFullYear() + "-" + m + "-"  
 + time.getDate() + " " + time.getHours() + ":"  
-+ time.getMinutes() + ":" + time.getSeconds() + " 星期" + wk(day);
++ time.getMinutes() + ":" + time.getSeconds() + " 星期" + wk(wkday);
 show.innerHTML = t; 
 }, 1000); 
 };
