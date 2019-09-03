@@ -57,6 +57,38 @@ document.write(`<font face="楷体">`
 </script>
 
 <hr />
+本一出现，叨咕着弗洛伊德的一句话：“爱和工作，是生活的全部。”如果这句话是对的，
+那么老去简直就是生活的全部杀手：爱人离去，出席最多的社交活动就是老朋友的葬礼，
+工作不再需要自己，即便一身智慧，却无用武之地。想想由“衰老”激活的那些形象：
+暮气沉沉、执着养生、人傻钱多、市侩刻薄、倚老卖老、缓慢迟钝、不合时宜……
+似乎本也应该在打完太极拳之后回到形只影单的家里追忆追忆似水流年然后在感怀壮士暮年
+后饱含泪水告诉自己inner peace很重要最后坐吃等死。
+
+然而本才不是普通的老头，还记得吗，他是完美老头。本在问过9岁的孙子什么是usb接口
+之后对着摄像机勇敢说出了“我想要属于某个群体，我想要被别人需要”的心声，
+接着成为了一个电商企业的老年实习生。然后，新生的、蓬勃的、时尚的、互联网的，
+和老派的、古板的、头头是道的、一丝不苟的，看似格格不入地，相遇了。对，只是看似，
+因为我们的完美老头本，很快用他一生的经验和智慧，统整了一切可能的不和谐，他体贴友善，
+毫无压力地和年轻同事打成一片，他主动学习，新科技新媒体分分钟搞定，他观察入微，
+公司大小事迅速洞悉，他投入体验，开启一段办公室恋情也不在话下，
+最后他还解锁了他的终极任务，那就是成为年轻女boss的人生导师：微笑、做你自己、
+成为你能成为的人，这些人生信条主旋律而又不生硬地经由两人的互动一一传递，直至功德圆满。
+
+
+或许像本这样的老头实在太励志了，令我感觉些许理想化的不真实。在国人文化下，
+一辈子为儿为女，畅想未来担心的也只是老有所依而非老有所为。
+今年另一部探讨暮年话题的佳片《年轻气盛》里导演老头讲过一段话：
+“年轻时，一切都很近，那是未来；年老时，一切都很远，那是过去。
+”如何能在年华老去时依然朝向未来看到希望？或将成为跨越温饱和尊严后急需修炼的课题。
+完美的本提示了几个要素：保有人际关系，拥抱这个时代，以及，实现自我价值。
+
+不知道本知不知道弗洛伊德有个后继者叫艾里克森，他说人生最后阶段叫做“成熟期”，
+其使命是自我统合，把过去的现在的未来的是我的不是我的好的坏的悉数做个整理，
+若回望来时路感到心满意足多而遗憾悔恨少，便会收获人生的终极大礼，名曰“智慧”。
+Experience never gets old, so does wisdom.
+
+祈望多年后，长成一个老者，健气、优雅、独立，像本一样。
+
 <pre>
     有这么几件事，学校不教，爹妈不聊，国人要想有所成，全靠天赋，或者自学成才。
     第一，如何谈恋爱，
@@ -67,6 +99,13 @@ document.write(`<font face="楷体">`
 可这第三件，每个人都在漫长的讳莫如深后突然迎接了它的到来，接着手足无措茫然尴尬地应对起生命
 中最后来访的朋友。
 
+所以，想看看范本级的老年生存手册吗？来来来，你的完美老头已上线，他叫本，70岁。
+
+本一出现，叨咕着弗洛伊德的一句话：“爱和工作 ，是生活的全部。”，如果这句话是对的，
+那么老去简直就是生活全部杀手，爱人离去，出席最多的社交活动就是老朋友的葬礼，工作不再需要自己，
+即便一身智慧，却无用武之地，想想由衰老激活的那些形象：
+暮气沉沉、执着养生、人傻钱多、市侩刻薄、倚老卖老、缓慢迟钝、不合时宜......
+
 </pre>
 <img src="/imgs/goldenii.jpg" wight=600 height=600 alt="" />
 <hr />
@@ -76,82 +115,6 @@ document.write(`<font face="楷体">`
   昨天看了一下，那张球帽的pcb板，利用原来的pcb布线肯定是不行了，似乎没有矩阵的概念，
 我看大家都是飞线的，所以貌似也只能飞线了，不过，飞线凌乱不说，轴也不能拆卸了，
 还要每个都接二极管，工作量实在是大。所以还在考虑中
-
-/**
- * @File     cuskbd.h
- * @Brief    
- * @Author   Naraka
- * @DateTime 2019/9/2 10:29:23
- */
-
-#include <Keypad.h>
-
-char keys[4][4] = {
-  {'1','2','3','A'},
-  {'4','5','6','B'},
-  {'7','8','9','C'},
-  {'*','0','#','D'}
-};
-byte rowPins[4] = {9, 8, 7, 6}; //行所使用的针脚
-byte colPins[4] = {5, 4, 3, 2}; //列所使用的针脚
-
-Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, 4, 4);
-byte ledPin = 13;
- 
-boolean blink = false;
-
-void setup() {
-  Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, HIGH);
-  // 添加监听事件 类似于SerialEvent
-  keypad.addEventListener(keypadEvent);
-  // 设置长按触发时间，默认为1000ms
-  keypad.setHoldTime(500);
-}
-
-void loop() {
-  char key = keypad.getKey();
-  
-  if (key) {
-    Serial.println(key);
-  }
-  if (blink) {
-    //*键长按每200ms闪一次，*键松开时停止
-    digitalWrite(ledPin, !digitalRead(ledPin));
-    delay(100);
-  }
-}
- 
-// 上边提到的监听事件，SerialEvent在每次循环结束会执行一次，这个估计也差不多。
-// 总之程序一个循环只会执行一次吧
-void keypadEvent(KeypadEvent key){
-  switch (keypad.getState()) {
-    // 获取键值
-    case PRESSED:
-      switch (key) {
-        case '#': digitalWrite(ledPin,!digitalRead(ledPin));
-          break;
-        case '*': 
-          digitalWrite(ledPin,!digitalRead(ledPin));
-          break;
-      }
-    break;
-    case RELEASED:
-      switch (key) {
-        case '*': 
-          digitalWrite(ledPin,!digitalRead(ledPin));
-          blink = false;
-          break;
-      }
-    break;
-    case HOLD:
-      switch (key) {
-        case '*': blink = true; break;
-      }
-      break;
-  }
-}
 <pre />
 <hr />
 
