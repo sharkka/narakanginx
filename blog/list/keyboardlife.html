@@ -73,6 +73,7 @@ document.write(`<font face="楷体">`
 <pre>
 
 试着给那把球帽做一个主控吧
+昨天看了一下，那张球帽的pcb板，利用原来的pcb布线肯定是不行了，似乎没有矩阵的概念，我看大家都是飞线的，所以貌似也只能飞线了，不过，飞线凌乱不说，轴也不能拆卸了，还要每个都接二极管，工作量实在是大。所以还在考虑中
 
 /**
  * @File     cuskbd.h
@@ -97,7 +98,7 @@ byte ledPin = 13;
  
 boolean blink = false;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, HIGH);
@@ -325,6 +326,20 @@ document.write(`<font face="楷体">`
 </pre>
 <img src="/imgs/alps_switches.jpg" alt="" />
 
+<hr />
+
+<pre>
+印制板中通过PCB板上丝印来判别二极管方向的方法总结如下：
+  通常情况下：
+
+1、有缺口的一端为负极；
+2、有横杠的一端为负极；
+3、有白色双杠的一端为负极；
+4、三角形箭头方向的一端为负极；
+5、插件二极管丝印小圆一端是负极，大圆是正极。
+6、插件发光二极管方孔为第一脚为正极。
+
+</pre>
 <hr />
 
 <h2>End</h2>
